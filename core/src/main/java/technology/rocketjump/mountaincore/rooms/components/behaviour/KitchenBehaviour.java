@@ -48,6 +48,16 @@ import static technology.rocketjump.mountaincore.misc.VectorUtils.toGridPoint;
 
 public class KitchenBehaviour extends RoomBehaviourComponent implements Telegraph, Prioritisable {
 
+	/**
+	 * A session which has attracted nothing at all after this long is dropped so the furniture is reusable
+	 */
+	private static final double HOURS_BEFORE_EMPTY_SESSION_ABANDONED = 12;
+	/**
+	 * A part-assembled session that stops making progress is dropped, or its furniture is stuck for
+	 * the rest of the game.
+	 */
+	private static final double HOURS_BEFORE_PARTIAL_SESSION_ABANDONED = 48;
+
 	private Collection<CookingRecipe> cookingRecipes;
 
 	private Map<Long, CookingSession> cookingSessions = new HashMap<>();
@@ -133,25 +143,7 @@ public class KitchenBehaviour extends RoomBehaviourComponent implements Telegrap
 				}
 			}
 		}
-		cookingSessions.entrySet().removeIf(entry -> {
-			CookingSession cookingSession = entry.getValue();
-			if (!cookingSession.isCompleted() && Math.abs(gameTime - cookingSession.getGameTimeStart()) > 12) {
-
-
-				LiquidContainerComponent liquid = cookingSession.getAssignedFurnitureEntity().getComponent(LiquidContainerComponent.class);
-				InventoryComponent inventory = cookingSession.getAssignedFurnitureEntity().getComponent(InventoryComponent.class);
-				float ingredientCount = 0;
-				if (liquid != null) {
-					ingredientCount += liquid.getLiquidQuantity();
-				}
-				if (inventory != null) {
-					ingredientCount += inventory.getInventoryEntries().size();
-				}
-				ingredientCount += cookingSession.getInputIngredientJobs().size();
-				return ingredientCount == 0;
-			}
-			return false;
-		});
+		abandonStalledSessions(gameTime);
 
 
 		for (CookingSession cookingSession : cookingSessions.values()) {
@@ -163,6 +155,62 @@ public class KitchenBehaviour extends RoomBehaviourComponent implements Telegrap
 				}
 			}
 		}
+	}
+
+	/**
+	 * Drops sessions that will never finish. What was already delivered stays and counts towards the
+	 * next one started there.
+	 */
+	private void abandonStalledSessions(double gameTime) {
+		List<Long> stalledFurnitureIds = new ArrayList<>();
+		for (Map.Entry<Long, CookingSession> entry : cookingSessions.entrySet()) {
+			if (isStalled(entry.getValue(), gameTime)) {
+				stalledFurnitureIds.add(entry.getKey());
+			}
+		}
+
+		// Removed outside the loop above because cancelling a job dispatches messages which can come
+		// back into this component
+		for (Long stalledFurnitureId : stalledFurnitureIds) {
+			CookingSession stalledSession = cookingSessions.remove(stalledFurnitureId);
+			if (stalledSession != null) {
+				for (Job inputJob : new ArrayList<>(stalledSession.getInputIngredientJobs())) {
+					messageDispatcher.dispatchMessage(MessageType.JOB_REMOVED, inputJob);
+				}
+				stalledSession.getInputIngredientJobs().clear();
+			}
+		}
+	}
+
+	private boolean isStalled(CookingSession cookingSession, double gameTime) {
+		if (cookingSession.isCompleted() || cookingSession.getCookingJob() != null) {
+			// Either holding finished food, or only waiting for a cook to come and work it
+			return false;
+		}
+
+		double hoursOpen = Math.abs(gameTime - cookingSession.getGameTimeStart());
+		if (hoursOpen <= HOURS_BEFORE_EMPTY_SESSION_ABANDONED) {
+			return false;
+		}
+
+		LiquidContainerComponent liquid = cookingSession.getAssignedFurnitureEntity().getComponent(LiquidContainerComponent.class);
+		InventoryComponent inventory = cookingSession.getAssignedFurnitureEntity().getComponent(InventoryComponent.class);
+		float ingredientCount = 0;
+		if (liquid != null) {
+			ingredientCount += liquid.getLiquidQuantity();
+		}
+		if (inventory != null) {
+			ingredientCount += inventory.getInventoryEntries().size();
+		}
+		ingredientCount += cookingSession.getInputIngredientJobs().size();
+
+		if (ingredientCount == 0) {
+			// Nothing arrived and nothing is on its way
+			return true;
+		}
+
+		// Part-assembled but going nowhere for days, so give the furniture a fresh start
+		return hoursOpen > HOURS_BEFORE_PARTIAL_SESSION_ABANDONED;
 	}
 
 	private boolean ingredientsAreAvailable(CookingRecipe cookingRecipe) {
@@ -280,7 +328,7 @@ public class KitchenBehaviour extends RoomBehaviourComponent implements Telegrap
 		// Add any incoming hauling jobs
 		for (Job job : cookingSession.getInputIngredientJobs()) {
 			if (job.getType().equals(haulingJobType)) {
-				if (job.getHaulingAllocation() != null) {
+				if (job.getHaulingAllocation() != null && job.getHaulingAllocation().getItemAllocation() != null) {
 					totalItems += job.getHaulingAllocation().getItemAllocation().getAllocationAmount();
 				}
 			}

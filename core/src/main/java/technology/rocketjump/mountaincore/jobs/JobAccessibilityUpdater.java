@@ -32,13 +32,22 @@ import static technology.rocketjump.mountaincore.misc.VectorUtils.toGridPoint;
 public class JobAccessibilityUpdater implements Updatable {
 
 	public static final float TIME_BETWEEN_INACCESSIBLE_RETRIES = 3.143f;
+	/**
+	 * Retry the whole inaccessible backlog within this many seconds, so a large one cannot starve the
+	 * queue of jobs that have become reachable.
+	 */
+	public static final float SECONDS_PER_FULL_INACCESSIBLE_SWEEP = 30f;
+	/**
+	 * Upper bound per update so a pathological backlog can't cause a frame spike
+	 */
+	private static final int MAX_RETRIES_PER_UPDATE = 25;
 
 	private final JobStore jobStore;
 	private final EntityStore entityStore;
 	private final MessageDispatcher messageDispatcher;
 
 	private GameContext gameContext;
-	private float timeSinceLastInaccessibleUpdate = 0f;
+	private float retriesDue = 0f;
 
 	@Inject
 	public JobAccessibilityUpdater(JobStore jobStore, EntityStore entityStore, MessageDispatcher messageDispatcher) {
@@ -48,43 +57,73 @@ public class JobAccessibilityUpdater implements Updatable {
 	}
 
 	/**
-	 * This method works through one potentially accessible job per frame
+	 * Retries inaccessible jobs at a rate which scales with how many there are, then re-checks
+	 * the same number of potentially accessible jobs so the two queues stay in step.
 	 * @param deltaTime
 	 */
 	@Override
 	public void update(float deltaTime) {
-		if (gameContext != null) {
-			timeSinceLastInaccessibleUpdate += deltaTime;
-			if (timeSinceLastInaccessibleUpdate > TIME_BETWEEN_INACCESSIBLE_RETRIES) {
-				timeSinceLastInaccessibleUpdate = 0f;
+		if (gameContext == null) {
+			return;
+		}
 
-				Job inaccessibleJob = jobStore.getCollectionByState(JobState.INACCESSIBLE).next();
-				if (inaccessibleJob != null) {
-					jobStore.switchState(inaccessibleJob, JobState.POTENTIALLY_ACCESSIBLE);
-				}
+		int inaccessibleJobCount = jobStore.getCollectionByState(JobState.INACCESSIBLE).size();
+		float retriesPerSecond = Math.max(1f / TIME_BETWEEN_INACCESSIBLE_RETRIES,
+				inaccessibleJobCount / SECONDS_PER_FULL_INACCESSIBLE_SWEEP);
+		retriesDue = Math.min(retriesDue + (retriesPerSecond * deltaTime), MAX_RETRIES_PER_UPDATE);
+
+		int retriesThisUpdate = (int) retriesDue;
+		retriesDue -= retriesThisUpdate;
+
+		for (int cursor = 0; cursor < retriesThisUpdate; cursor++) {
+			Job inaccessibleJob = jobStore.getCollectionByState(JobState.INACCESSIBLE).next();
+			if (inaccessibleJob == null) {
+				break;
 			}
+			// next() walks a snapshot which can still hold jobs that have already changed state,
+			// so only promote the ones which really are still inaccessible
+			if (inaccessibleJob.getJobState().equals(JobState.INACCESSIBLE)) {
+				jobStore.switchState(inaccessibleJob, JobState.POTENTIALLY_ACCESSIBLE);
+			}
+		}
 
-			checkNextPotentiallyAccessible();
+		for (int cursor = 0; cursor < Math.max(1, retriesThisUpdate); cursor++) {
+			if (!checkNextPotentiallyAccessible()) {
+				break;
+			}
 		}
 	}
 
-	private void checkNextPotentiallyAccessible() {
+	/**
+	 * @return false when there is nothing more worth checking this update
+	 */
+	private boolean checkNextPotentiallyAccessible() {
 		Job potentiallyAccessibleJob = jobStore.getCollectionByState(JobState.POTENTIALLY_ACCESSIBLE).next();
 		if (potentiallyAccessibleJob == null) {
 			// No outstanding potentially accessible jobs
-			return;
+			return false;
+		}
+		if (!potentiallyAccessibleJob.getJobState().equals(JobState.POTENTIALLY_ACCESSIBLE)) {
+			// Stale entry from the iteration snapshot, skip it but keep working through the queue
+			return true;
 		}
 		Entity assignableEntity = getEntityToPathfindFrom(potentiallyAccessibleJob);
 		if (assignableEntity == null) {
 			// No entities to assign to
-			return;
+			return false;
 		}
 		Vector2 entityWorldPosition = assignableEntity.getLocationComponent().getWorldOrParentPosition();
 
 		List<GridPoint2> jobLocations = new ArrayList<>();
 
 		if (potentiallyAccessibleJob.getHaulingAllocation() != null) {
-			jobLocations.add(toGridPoint(calculatePosition(potentiallyAccessibleJob.getHaulingAllocation(), gameContext)));
+			GridPoint2 haulingPosition = toGridPoint(calculatePosition(potentiallyAccessibleJob.getHaulingAllocation(), gameContext));
+			if (haulingPosition == null) {
+				// No navigable way to the allocation right now, e.g. furniture with no reachable workspace
+				jobStore.switchState(potentiallyAccessibleJob, JobState.INACCESSIBLE);
+				return true;
+			}
+			jobLocations.add(haulingPosition);
 		} else if (potentiallyAccessibleJob.getType().isAccessedFromAdjacentTile()) {
 			TileNeighbours jobNeighbourTiles = gameContext.getAreaMap().getOrthogonalNeighbours(potentiallyAccessibleJob.getJobLocation().x, potentiallyAccessibleJob.getJobLocation().y);
 			for (CompassDirection compassDirection : jobNeighbourTiles.keySet()) {
@@ -95,7 +134,7 @@ public class JobAccessibilityUpdater implements Updatable {
 			if (jobNeighbourTiles.isEmpty()) {
 				// None of the adjacent tiles were accessible, so this job is actually inaccessible now
 				jobStore.switchState(potentiallyAccessibleJob, JobState.INACCESSIBLE);
-				return;
+				return true;
 			} else {
 				for (MapTile mapTile : jobNeighbourTiles.values()) {
 					jobLocations.add(mapTile.getTilePosition());
@@ -106,7 +145,7 @@ public class JobAccessibilityUpdater implements Updatable {
 			if (potentiallyAccessibleJob.getJobLocation() == null) {
 				Logger.error("Job location is null for job {}, will cancel", potentiallyAccessibleJob);
 				messageDispatcher.dispatchMessage(MessageType.JOB_REMOVED, potentiallyAccessibleJob);
-				return;
+				return true;
 			}
 			jobLocations.add(potentiallyAccessibleJob.getJobLocation());
 		}
@@ -116,6 +155,7 @@ public class JobAccessibilityUpdater implements Updatable {
 		} else {
 			jobStore.switchState(potentiallyAccessibleJob, JobState.INACCESSIBLE);
 		}
+		return true;
 	}
 
 	@Override
@@ -140,17 +180,21 @@ public class JobAccessibilityUpdater implements Updatable {
 	}
 
 	private boolean isLocationNavigable(List<GridPoint2> locations, Vector2 entityWorldPosition) {
-		if (locations.isEmpty()) {
+		MapTile originTile = gameContext.getAreaMap().getTile(entityWorldPosition);
+		if (originTile == null) {
 			return false;
-		} else {
-			GridPoint2 locationToTry = locations.get(gameContext.getRandom().nextInt(locations.size()));
-
-			MapTile originTile = gameContext.getAreaMap().getTile(entityWorldPosition);
-			MapTile targetTile = gameContext.getAreaMap().getTile(locationToTry);
-
-			// Just checking if job is in same region
-			return originTile != null && targetTile != null && originTile.getRegionId() == targetTile.getRegionId();
 		}
+
+		// The job is accessible if ANY of the candidate locations is reachable. Testing only one at
+		// random condemned jobs which were perfectly reachable from another of their workspaces.
+		for (GridPoint2 locationToTry : locations) {
+			MapTile targetTile = gameContext.getAreaMap().getTile(locationToTry);
+			// Just checking if job is in same region
+			if (targetTile != null && originTile.getRegionId() == targetTile.getRegionId()) {
+				return true;
+			}
+		}
+		return false;
 	}
 
 	@Override

@@ -1573,7 +1573,7 @@
     } ]
   },
   "tags" : {
-    "STOCKPILE" : [ "4", "ItemType_Treasure-Coin" ]
+    "STOCKPILE" : [ "6" ]
   },
   "hiddenFromPlacementMenu" : false
 }, {

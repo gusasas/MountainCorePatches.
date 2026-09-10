@@ -64,6 +64,15 @@ public class StockpileTag extends Tag {
 			furnitureStockpile.setMaxQuantity(maxQuantity);
 
 			StockpileSettings stockpileSettings = new StockpileSettings();
+			if (args.size() <= 1) {
+				// No restrictions given, so it holds anything; the player can still switch entries off.
+				for (ItemType itemType : tagProcessingUtils.itemTypeDictionary.getAll()) {
+					// A handful of item types have no stockpile group, so don't ask for the parent to
+					// be kept in step for those
+					boolean hasParentGroup = itemType.getStockpileGroup() != null;
+					stockpileComponentUpdater.toggleItem(stockpileSettings, itemType, true, hasParentGroup, true);
+				}
+			}
 			for (int i = 1; i < args.size(); i++) {
 				String restrictionArgumentString = args.get(i);
 				Matcher isMacroMatcher = IS_MACRO_PATTERN.matcher(restrictionArgumentString);

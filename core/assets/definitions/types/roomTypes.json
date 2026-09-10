@@ -3,7 +3,7 @@
   "i18nKey" : "ROOMS.STOCKPILE",
   "drawableName" : "btn_room_stockpiles",
   "colorCode" : "#c88a64",
-  "furnitureNames" : [ ],
+  "furnitureNames" : [ "TRADE_CHEST" ],
   "tags" : {
     "STOCKPILE" : [ ]
   }

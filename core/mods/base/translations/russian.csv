@@ -1,0 +1,1766 @@
+KEY,NOTES,RUSSIAN
+ACTION.DRINK_FROM_RIVER,,из реки
+ACTION.JOB.BUTCHER_CREATURE,,Разделка мяса
+ACTION.JOB.CLEAR_GROUND,,Расчистка {{plantDescription}}
+ACTION.JOB.CONSTRUCT_FLOORING,,Укладка пола
+ACTION.JOB.CONSTRUCT_FURNITURE,,Изготовление мебели: {{profession.verb}} 
+ACTION.JOB.CONSTRUCT_MECHANISM,,Размещение механизмов
+ACTION.JOB.CONSTRUCT_PIPING,,Установка труб
+ACTION.JOB.CONSTRUCT_ROOFING,,Соорожение крыши
+ACTION.JOB.CREATE_GENERIC,,Производство {{targetDescription}}
+ACTION.JOB.DECONSTRUCT,,Удаление: {{targetDescription}}
+ACTION.JOB.DECONSTRUCT_MECHANISM,,Удаление механизмов
+ACTION.JOB.DECONSTRUCT_PIPING,,Удаление труб
+ACTION.JOB.DECONSTRUCT_ROOFING,,Удаление крыши
+ACTION.JOB.DIGGING,,Копание {{targetDescription}}
+ACTION.JOB.DUMP_LIQUID_FROM_CONTAINER,,Опорожнение содержимого {{targetDescription}} 
+ACTION.JOB.EXTINGUISH_FLAMES,,Тушение огоня
+ACTION.JOB.FILL_GRAVE,,Заполнение {{targetDescription}}
+ACTION.JOB.FISHING,,Рыбалка
+ACTION.JOB.GENERIC,,Изготовление деревянных досок {{profession.verb}} {{targetDescription}}
+ACTION.JOB.HARVESTING,,Сбор урожая: {{targetPlant}}
+ACTION.JOB.INNOCULATE_MUSHROOM_LOG,,Введение грибных спор
+ACTION.JOB.LOGGING,,{{profession.verb}} {{targetPlant}}
+ACTION.JOB.PLANTING,,Посадка: {{requiredItem}}
+ACTION.JOB.REMOVE_PESTS_FROM_CROP,,Удаление вредителей из: {{targetPlant}}
+ACTION.JOB.SHOVELLING,,Перекапывание{{targetDescription}}
+ACTION.JOB.TILLING,,Возделывание земли
+ACTION.JOB.TRANSFER_LIQUID,,Заполнение: {{targetDescription}}
+ACTION.KNOCKED_UNCONSCIOUS,,Потерял сознание
+ACTION.MALTING.VERB,,Соложение
+ACTION.PREPARATION.VERB,,Подготовка
+ACTION.SELECT_JOB.DESCRIPTION,,Поиск работы которую нужно сделать
+ACTION.SLEEP_ON_FLOOR.DESCRIPTION,,Спящий на: {{tileDescription}}
+ACTION.STUNNED,,Ошеломленный
+ARMOUR.LEATHER,,
+ARMOUR.LEATHER.TOOLTIP,,
+ARMOUR.ORC.HEAVY,,
+ARMOUR.ORC.LIGHT,,
+ARMOUR.PLATE,,
+ARMOUR.PLATE.TOOLTIP,,
+ASHES.NOUN,,Пепел
+BODY_STRUCTURE.ABDOMEN,,Брюшная полость
+BODY_STRUCTURE.ARM,,Рука
+BODY_STRUCTURE.CEPHALOTHORAX,,
+BODY_STRUCTURE.DAMAGE.BLEEDING,,Кровотечение
+BODY_STRUCTURE.DAMAGE.BROKENBONES,,Сломанный
+BODY_STRUCTURE.DAMAGE.BRUISED,,Ушибленный
+BODY_STRUCTURE.DAMAGE.DESTROYED,,Уничтоженный
+BODY_STRUCTURE.DAMAGE.NOT_INJURED,,
+BODY_STRUCTURE.DISCRIMINATOR.BACKLEFT,,Задний нижний
+BODY_STRUCTURE.DISCRIMINATOR.BACKRIGHT,,Задний правый
+BODY_STRUCTURE.DISCRIMINATOR.FIRSTLEFT,,
+BODY_STRUCTURE.DISCRIMINATOR.FIRSTRIGHT,,
+BODY_STRUCTURE.DISCRIMINATOR.FOURTHLEFT,,
+BODY_STRUCTURE.DISCRIMINATOR.FOURTHRIGHT,,
+BODY_STRUCTURE.DISCRIMINATOR.FRONTLEFT,,
+BODY_STRUCTURE.DISCRIMINATOR.FRONTRIGHT,,Передний правый
+BODY_STRUCTURE.DISCRIMINATOR.LEFT,,Лево
+BODY_STRUCTURE.DISCRIMINATOR.RIGHT,,Право
+BODY_STRUCTURE.DISCRIMINATOR.SECONDLEFT,,
+BODY_STRUCTURE.DISCRIMINATOR.SECONDRIGHT,,
+BODY_STRUCTURE.DISCRIMINATOR.THIRDLEFT,,
+BODY_STRUCTURE.DISCRIMINATOR.THIRDRIGHT,,
+BODY_STRUCTURE.FOOT,,Ступня
+BODY_STRUCTURE.HAND,,Рука
+BODY_STRUCTURE.HEAD,,Голова
+BODY_STRUCTURE.HOOF,,Копыто
+BODY_STRUCTURE.LEFT-ARM,,
+BODY_STRUCTURE.LEFT-HAND,,
+BODY_STRUCTURE.LEG,,Нога
+BODY_STRUCTURE.ORGAN.BRAIN,,Мозг
+BODY_STRUCTURE.ORGAN.EYE,,Глаз
+BODY_STRUCTURE.ORGAN.HEART,,Сердце
+BODY_STRUCTURE.ORGAN.INTESTINES,,Кишечник
+BODY_STRUCTURE.ORGAN.KIDNEY,,Почка
+BODY_STRUCTURE.ORGAN.LUNG,,Печень
+BODY_STRUCTURE.ORGAN_DAMAGE.DESTROYED,,Уничтожен
+BODY_STRUCTURE.ORGAN_DAMAGE.HEAVY,,Серьезное повреждение
+BODY_STRUCTURE.ORGAN_DAMAGE.LIGHT,,Легкое повреждение
+BODY_STRUCTURE.PAW,,Лапа
+BODY_STRUCTURE.RIGHT-ARM,,
+BODY_STRUCTURE.RIGHT-HAND,,
+BODY_STRUCTURE.TORSO,,Грудь
+BODY_STRUCTURE.TRUNK,,
+BONE.BONE,,Кость
+CARCASS.CARP.PREPARED.NOUN,,Филе карпа
+CARCASS.CARP.PREPARED.PLURAL,,Филе карпа
+CARCASS.GROUP,,Трупы
+CARCASS.HIDE.NOUN,,
+CARCASS.HIDE.PLURAL,,
+CARCASS.MEAT.LARGE,,Большой кусок мяса
+CARCASS.MEAT.MEDIUM,,Средний кусок мяса
+CARCASS.MEAT.SMALL,,Маленький кусок мяса
+CARCASS.PERCH.PREPARED.NOUN,,Филе окуня
+CARCASS.PERCH.PREPARED.PLURAL,,Филе окуня
+CARCASS.PIKE.PREPARED.NOUN,,Филе щуки
+CARCASS.PIKE.PREPARED.PLURAL,,Филе щуки
+CLOTH.BRONZED_HEMP,,Пенька
+CLOTH.HEMP-LINEN,,Пенька
+CLOTH.LIGHT_HEMP,,Пенька
+CLOTH.TOBACCO_CLOTH,,Табачная ткань
+COMBAT.DAMAGE_TYPE.CRUSHING,,
+COMBAT.DAMAGE_TYPE.SLASHING,,
+COMBAT.DAMAGE_TYPE.STABBING,,
+COMBAT.DESCRIPTION.FLEEING,,
+COMBAT.DESCRIPTION.GENERIC,,
+COMBAT.DESCRIPTION.VERSUS_OPPONENT,,
+CONSTRUCTION.DESCRIPTION,,Строительство: {{furnitureType.noun}} {{materialType.adjective}}
+CONSTRUCTION.REQUIREMENT_ALLOCATION,,
+CONSTRUCTION.REQUIREMENT_RECIPE_MULTIPLE,,
+CONSTRUCTION.REQUIREMENT_RECIPE_SINGULAR,,
+CONSTRUCTION.STATUS.CLEARING_WORK_SITE,,Убирает другие предметы
+CONSTRUCTION.STATUS.CLEARING_WORK_SITE.TOOLTIP,,"Есть предметы, которые необходимо удалить из строительной зоны, прежде, чем эта мебель будет установлена."
+CONSTRUCTION.STATUS.SELECTING_MATERIALS,,Ожидание дополнительных материалов: {{materialType}} {{itemDescription.plural}}
+CONSTRUCTION.STATUS.WAITING_FOR_COMPLETION,,Идет строительство
+CONSTRUCTION.STATUS.WAITING_FOR_RESOURCES,,Ожидание доставки ресурсов
+COOKING.BREAD.DESCRIPTION,,{{materialDescription}} Хлеб
+COOKING.DUAL_INGREDIENT.DESCRIPTION,,{{materialOne}} и {{materialTwo}}
+COOKING.RATION.DESCRIPTION,,
+COOKING.SOUP.DESCRIPTION,,{{materialDescription}} Суп
+COOKING.TRIPLE_INGREDIENT.DESCRIPTION,,"{{materialOne}}, {{materialTwo}} и {{materialThree}}"
+CRAFTING_TYPE.BAKING,,Выпечка
+CRAFTING_TYPE.BLACKSMITHING,,Кузнечное дело
+CRAFTING_TYPE.BONE_CRAFTING,,
+CRAFTING_TYPE.CARPENTRY,,Плотницкое дело
+CRAFTING_TYPE.CARVING_VERB,,
+CRAFTING_TYPE.COKE_OVEN_BAKING,,Коксирование каменного угля
+CRAFTING_TYPE.FERMENTING,,Фермерство
+CRAFTING_TYPE.FINE_DETAIL_CRAFTING,,
+CRAFTING_TYPE.FLETCHING,,Оперение стрел
+CRAFTING_TYPE.LEATHERWORKING,,
+CRAFTING_TYPE.MALTING,,Соложение
+CRAFTING_TYPE.MALT_MASHING,,Замешивание солода
+CRAFTING_TYPE.MILLING,,Измельчение
+CRAFTING_TYPE.MINTING,,
+CRAFTING_TYPE.ORE_CRUSHING,,Дробление руды
+CRAFTING_TYPE.SMELTING,,Плавление металлов
+CRAFTING_TYPE.STONEMASONRY,,Работа с камнем
+CRAFTING_TYPE.TANNING_HIDE,,
+CRAFTING_TYPE.WEAPONSMITHING,,
+CRAFTING_TYPE.WEAVING,,Ткачество
+CRAFTING_TYPE.WOODCUTTING,,Резьба по дереву
+CRAFTING_TYPE.WORT_BREWING,,Пивоварение
+CREATURE.DAMAGE.DESCRIPTION_A,,
+CREATURE.DAMAGE.DESCRIPTION_B,,
+CREATURE.DESCRIPTION,,
+CREATURE.STATUS.BLINDED,,Ослепленный
+CREATURE.STATUS.DEAD,,Мертвый
+CROP.AFFLICTED_BY_PESTS,,Поражено вредителями
+CROP.AFFLICTED_BY_PESTS.TOOLTIP,,"Это растение пострадало от чрезмерного количества тлей и других насекомых, которых необходимо удалить {{PROFESSION.FARMER}}, прежде чем оно сможет снова расти. Несвоевременное удаление вредителей приведет к гибели урожая!"
+CROP.DESCRIPTION,,Растение: {{materialType.noun}}
+CROP.HARVEST_PROGRESS,,
+CROP.MOISTURE_STATE.DROUGHTED,,Это растение долгое время не имеет доступа к воде и перестало расти. 
+CROP.MOISTURE_STATE.NEEDS_WATERING,,Это растение не поливали и оно медленно растет 
+CROP.MOISTURE_STATE.NEEDS_WATERING.TOOLTIP,,"Вы можете поливать свои посевы с помощью канала, содержащего воду в 2 клетках."
+CROP.MOISTURE_STATE.WATERED,,Это растение недавно поливали и оно быстро растет. 
+DEATH_REASON.BURNING,,Горящий
+DEATH_REASON.CRITICAL_ORGAN_DAMAGE,,Критическое повреждение органа 
+DEATH_REASON.CRUSHED_BY_FALLING_DEBRIS,,Падающие обломки
+DEATH_REASON.DEHYDRATION,,Обезвоживание
+DEATH_REASON.EXHAUSTION,,Истощение 
+DEATH_REASON.EXTENSIVE_INJURIES,,
+DEATH_REASON.FOOD_POISONING,,Пищевое отравление
+DEATH_REASON.FROZEN,,Воздействие холода
+DEATH_REASON.GIVEN_UP_ON_LIFE,,Отказавшись от жизни 
+DEATH_REASON.INTERNAL_BLEEDING,,Внутреннее кровотечение
+DEATH_REASON.KILLED_BY_ENTITY,,
+DEATH_REASON.MURDERED.UNKNOWN_KILLER,,
+DEATH_REASON.STARVATION,,Голод
+DEATH_REASON.SUFFOCATION,,Удушье 
+DEATH_REASON.UNKNOWN,,Таинственные обстоятельства
+EARTH.DIRT,,Грязь
+EARTH.GRASS,,Трава
+EFFECT.FIRE,,
+ENTITY.DESTRUCTION_DESCRIPTION.BURNED,,Уничтожен огнем
+ENTITY.DESTRUCTION_DESCRIPTION.COMBAT_DAMAGE,,
+ENTITY.DESTRUCTION_DESCRIPTION.OXIDISED,,Разрушается при длительном пребывании под дождем 
+FACTION.HOSTILE_INVASION,,
+FACTION.MERCHANTS,,
+FACTION.MONSTERS,,
+FACTION.PIRATES,,
+FACTION.SETTLEMENT,,
+FACTION.SETTLEMENT.ANIMAL,,
+FACTION.WILD_ANIMALS,,
+FLOOR.CHANNEL.DESCRIPTION,,Оросительный канал ({{state}}) 
+FLOOR.CHANNEL.DESCRIPTION.TOOLTIP,,Оросительные каналы обеспечивают доступ к воде сельскохозяйственных культур в пределах 2 клеток. Постройте водяной насос и подключите к нему каналы с помощью труб. 
+FLOOR.CHANNEL.STATE.EMPTY,,Пустой
+FLOOR.CHANNEL.STATE.FULL,,Полный
+FLOOR.CHANNEL.STATE.PARTIALLY_FILLED,,Частично заполнен 
+FLOOR.COBBLESTONE,,Булыжник
+FLOOR.DESCRIPTION,,{{floorType.noun}}
+FLOOR.DIRT,,Грязь
+FLOOR.GRASS,,Трава
+FLOOR.GRAVEL,,Гравий
+FLOOR.PIPE.DESCRIPTION,,{{material}} труба ({{state}}) 
+FLOOR.POWER.DESCRIPTION,,Доступная энергия: {{powerAmount}} 
+FLOOR.RIVER,,Река
+FLOOR.ROUGH_STONE,,Грубый каменный пол
+FLOOR.SNOW,,Выпавший снег
+FLOOR.STONE_PAVING,,Брусчатка 
+FLOOR.STONE_SLAB,,Каменная плитка
+FLOOR.TILLED_EARTH,,Обработанная земля
+FLOOR.UNEXPLORED,,Неисследованные
+FLOOR.WOODEN,,Деревянные половые доски 
+FOODSTUFF.ROCKBREAD,,Каменный хлеб
+FOODSTUFF.ROCKBREAD.TOOLTIP,,"Это печально известный жесткий хлеб, который настолько твердый и практически несъедобный, что потребуется очень много времени, чтобы он испортился. Человек-исследователь Дж. А. Моффатт описал его вкус как «Сродни жеваемому гравию, который был вынут из болота». К счастью, большинство гномов, кажется, не против их есть."
+FOODSTUFF.WHEAT-BREAD,,Пшеница
+FUEL.SACK,,Топливо
+FUEL.SACK.TOOLTIP,,"Топливо требуется при производстве металла, как {{FURNITURE.BLOOMERY_FURNACE}}, так и {{FURNITURE.FORGE}}."
+FURNITURE.ARCHERY_TARGET,,
+FURNITURE.ARCHERY_TARGET.TOOLTIP,,
+FURNITURE.ARMOUR_STAND,,
+FURNITURE.ARMOUR_STAND.TOOLTIP,,
+FURNITURE.ARTISAN_WORKSTATION,,
+FURNITURE.ARTISAN_WORKSTATION.TOOLTIP,,
+FURNITURE.BAKERS_WORKTOP,,Стол пекаря
+FURNITURE.BAKERS_WORKTOP.TOOLTIP,,"{{PROFESSION.CHEF}} работает здесь, чтобы превратить {{RESOURCE.FLOUR.SACK.PLURAL}} в {{INGREDIENT.DOUGH}}."
+FURNITURE.BAKING_OVEN,,Плита для выпечки хлеба
+FURNITURE.BAKING_OVEN.TOOLTIP,,"{{PROFESSION.CHEF}} выпекает здесь хлеб, используя приготовленные {{INGREDIENT.DOUGH}}."
+FURNITURE.BEER_TAPPER,,Пивной кран 
+FURNITURE.BEER_TAPPER.STATE.BEER_AVAILABLE,,Пиво доступно
+FURNITURE.BEER_TAPPER.STATE.BEER_BARREL_INCOMING,,Бочонок с пивом уже в пути 
+FURNITURE.BEER_TAPPER.STATE.BEER_EXHAUSTED,,Все пиво пропало! 
+FURNITURE.BEER_TAPPER.STATE.IDLE,,В режиме ожидания (пиво недоступно) 
+FURNITURE.BEER_TAPPER.TOOLTIP,,Здесь ферментируется{{LIQUID.BEER}} 
+FURNITURE.BLOOMERY_FURNACE,,Блумерская печь 
+FURNITURE.BLOOMERY_FURNACE.TOOLTIP,,"{{PROFESSION.BLACKSMITH}} используйте эту печь с ручным управлением, чтобы превратить {{RESOURCE.ORE.CRUSHED.PLURAL}} и {{FUEL.SACK}} в {{MATERIAL_TYPE.METAL.ADJECTIVE}} {RESOURCE.METAL.INGOT.PLURAL}}."
+FURNITURE.BONE_CRAFTING_BENCH,,
+FURNITURE.BONE_CRAFTING_BENCH.TOOLTIP,,
+FURNITURE.BREW_KETTLE,,Заварочный чайник 
+FURNITURE.BREW_KETTLE.TOOLTIP,,Это используется для производства конечного сусла (неферментированного пива) с использованием {{VEGETABLE.HOPS}} и сусла из {{FURNITURE.MASH_TUN}} 
+FURNITURE.BUTCHERY_WORKTOP,,Стол для разделки мяса
+FURNITURE.BUTCHERY_WORKTOP.TOOLTIP,,Туши рыбы и животных здесь превращают в пригодное для употребления мясо
+FURNITURE.BUYING_PALLET,,
+FURNITURE.BUYING_PALLET.TOOLTIP,,
+FURNITURE.CARPENTRY_WORKBENCH,,Столярный верстак
+FURNITURE.CARPENTRY_WORKBENCH.TOOLTIP,,"Здесь производится большинство деревянных изделий и инструментов, таких как {{PRODUCT.BUCKET.PLURAL}} и {PRODUCT.BARREL.PLURAL}}."
+FURNITURE.CAULDRON,,Котел
+FURNITURE.CAULDRON.TOOLTIP,,Котел используется для подачи большого количества супа голодным поселенцам. Суп производится в {{ROOMS.KITCHEN}} перед перемещением в {{ROOMS.FEASTING_HALL}} для подачи.
+FURNITURE.CHAIR,,Стул
+FURNITURE.CHAIR.TOOLTIP,,
+FURNITURE.CHARCOAL_CLAMP,,Куча угля
+FURNITURE.CHARCOAL_CLAMP.TOOLTIP,,"Это куча {{RESOURCE.LOGS.PLURAL}}, покрытая {{MATERIAL_TYPE.EARTH}} и медленно сжигаемая для получения {{ORE.CHARCOAL.NOUN}}, которую затем можно использовать как {{FUEL.SACK}}."
+FURNITURE.COKE_OVEN,,Коксовая печь
+FURNITURE.COKE_OVEN.TOOLTIP,,"Коксовая печь преобразует {{ORE.BITUMINOUS_COAL.NOUN}} в {{ORE.COKE.NOUN}}, чтобы ее можно было использовать как {{FUEL.SACK}}."
+FURNITURE.DESCRIPTION,,Гранитный верстак каменщика {{materialType.adjective}} {{furnitureType.noun}}
+FURNITURE.DESCRIPTION.GENERIC_PROGRESS,,Прогресс до завершения: {{progress}}%
+FURNITURE.DESCRIPTION.MUSHROOM_INNOCULATION_IN_PROGRESS,,Прогресс до завершения введения грибных спор {{progress}}%
+FURNITURE.DESCRIPTION.SHOCKING_IN_PROGRESS,,Прогресс: {{progress}}%
+FURNITURE.DESCRIPTION.WAITING_FOR_ITEM,,Ожидание {{itemType.noun}}
+FURNITURE.DESCRIPTION.WAITING_FOR_LIQUID,,Ожидание заполнения
+FURNITURE.DESCRIPTION.WAITING_FOR_MUSHROOM_SPAWN,,Ожидание введения грибных спор
+FURNITURE.DOUGH_PROOFING_TABLE,,
+FURNITURE.DOUGH_PROOFING_TABLE.TOOLTIP,,
+FURNITURE.EXPORT_PALLET,,
+FURNITURE.EXPORT_PALLET.TOOLTIP,,
+FURNITURE.FEASTING_TABLE,,Праздничный стол 
+FURNITURE.FEASTING_TABLE.TOOLTIP,,"С {{FURNITURE.CHAIR}}, ваши поселенцы будут наслаждаться трапезой за этим столом."
+FURNITURE.FERMENTATION_TANK,,Резервуар для брожения 
+FURNITURE.FERMENTATION_TANK.TOOLTIP,,Здесь {{LIQUID.HOPPED_WORT}} ферментируется до {{LIQUID.BEER}} 
+FURNITURE.FISH_BARREL,,
+FURNITURE.FISH_BARREL.TOOLTIP,,
+FURNITURE.FLETCHERS_WORKBENCH,,Верстак лучника
+FURNITURE.FLETCHERS_WORKBENCH.TOOLTIP,,
+FURNITURE.FLOUR_MILL,,Мельница
+FURNITURE.FLOUR_MILL.TOOLTIP,,"Мельница измельчает {{VEGETABLE.WHEAT}} в {{RESOURCE.FLOUR.SACK.NOUN}}, чтобы ее можно было использовать {{PROFESSION.CHEF}}."
+FURNITURE.FORGE,,Кузница
+FURNITURE.FORGE.TOOLTIP,,Здесь {{PROFESSION.BLACKSMITH}} работает с {{MATERIAL_TYPE.METAL.ADJECTIVE}} {{RESOURCE.METAL.INGOT.PLURAL}} и {{FUEL.SACK}} для создания предметов и оружия.
+FURNITURE.GRAVE,,Могила
+FURNITURE.GRAVE.TOOLTIP,,"Поспешно вырытая могила для умерших поселенцев, которая может быть расмещена только в {{MATERIAL_TYPE.EARTH}}."
+FURNITURE.HITCHING_POST,,
+FURNITURE.HITCHING_POST.TOOLTIP,,
+FURNITURE.IMPORT_PALLET,,
+FURNITURE.IMPORT_PALLET.TOOLTIP,,
+FURNITURE.INVADER_CAMPFIRE,,
+FURNITURE.KITCHEN_WORKTOP,,Кухонный стол
+FURNITURE.KITCHEN_WORKTOP.TOOLTIP,,Область для хранения ингредиентов нужных для приготовления супа {{PROFESSION.CHEF}}.
+FURNITURE.LANTERN,,Фонарь
+FURNITURE.LANTERN.TOOLTIP,,Фонарь обеспечивает свет — в настоящее время это не имеет эффекта в игре.
+FURNITURE.LEATHERWORKING_STATION,,
+FURNITURE.LEATHERWORKING_STATION.TOOLTIP,,
+FURNITURE.LEDGER_TABLE,,
+FURNITURE.LEDGER_TABLE.TOOLTIP,,
+FURNITURE.LOOM,,Ткацкий станок 
+FURNITURE.LOOM.TOOLTIP,,
+FURNITURE.MALTING_STATION,,Солодовый аппарат
+FURNITURE.MALTING_STATION.TOOLTIP,,"Здесь пивовары варят ячмень, а затем сушат его в печи для производства солода."
+FURNITURE.MASH_TUN,,Бочка для бражения
+FURNITURE.MASH_TUN.TOOLTIP,,Используется для производства сусла (неферментированного пива) из молотого солода и воды. 
+FURNITURE.MUSHROOM_LOG,,Грибное бревно
+FURNITURE.MUSHROOM_LOG.TOOLTIP,,"Бревно, в которое были введены {{INGREDIENT.MUSHROOM.SPAWN.PLURAL}} для получения нескольких урожаев вкусных и сочных грибов."
+FURNITURE.MUSHROOM_SHOCK_TANK,,Шоковый бак
+FURNITURE.MUSHROOM_SHOCK_TANK.TOOLTIP,,"После введения спор в этот бак помещается {{FURNITURE.MUSHROOM_LOG}}, чтобы «шокировать» колонию грибов и побудить их к росту."
+FURNITURE.ORE_CRUSHING_STATION,,Станция дробления руды
+FURNITURE.ORE_CRUSHING_STATION.TOOLTIP,,"Сырье {{RESOURCE.ORE.UNREFINED.PLURAL}} измельчается до более приемлимого размера, чтобы его можно было использовать в {{FURNITURE.BLOOMERY_FURNACE}}."
+FURNITURE.PILLAR,,Колонна
+FURNITURE.PILLAR.TOOLTIP,,"Колонна необходима для предотвращения обрушения крупных выкопанных помещений. Область площадью 7x7 квадратов обрушится, если не использовать колонны для поддержания потолка."
+FURNITURE.RETTING_TANK,,Сливной бак
+FURNITURE.RETTING_TANK.TOOLTIP,,Он используется для переработки сырья из {{VEGETABLE.HEMP}} в конопляное волокно которое может быть переработано в полезные материалы
+FURNITURE.SARCOPHAGUS,,Саркофаг
+FURNITURE.SARCOPHAGUS.TOOLTIP,,Этот изящный каменный гроб является последним местом упокоения для поселенца.
+FURNITURE.SELLING_PALLET,,
+FURNITURE.SELLING_PALLET.TOOLTIP,,
+FURNITURE.SERVING_TABLE,,Сервировочный стол
+FURNITURE.SERVING_TABLE.TOOLTIP,,{{PRODUCT.BREAD.LOAF.PLURAL}} размещаются здесь для подачи на стол после выпечки в {{FURNITURE.BAKING_OVEN}}.
+FURNITURE.SINGLE_BED,,Кровать
+FURNITURE.SINGLE_BED.TOOLTIP,,Кровать — лучшее место для комфортного сна.
+FURNITURE.SINGLE_DOOR,,Дверь
+FURNITURE.SINGLE_DOOR_FRAME,,Дверной косяк
+FURNITURE.SLEEPING_SPOT,,Спальное место 
+FURNITURE.SLEEPING_SPOT.TOOLTIP,,"Ваши поселенцы будут использовать это место, чтобы спать на полу. Это не очень удобно!"
+FURNITURE.STONEMASON_WORKBENCH,,Верстак каменщика
+FURNITURE.STONEMASON_WORKBENCH.TOOLTIP,,{{PROFESSION.STONEMASON}} работает здесь с ресурсами {{MATERIAL_TYPE.STONE.ADJECTIVE}}.
+FURNITURE.TANNING_FRAME,,
+FURNITURE.TANNING_FRAME.TOOLTIP,,
+FURNITURE.TRADE_BANNER,,
+FURNITURE.TRADE_BANNER.TOOLTIP,,
+FURNITURE.TRAINING_DUMMY,,
+FURNITURE.TRAINING_DUMMY.TOOLTIP,,
+FURNITURE.WAGON_PARKED,,
+FURNITURE.WATERWHEEL,,Водяная мельница
+FURNITURE.WATERWHEEL.PLURAL,,
+FURNITURE.WATERWHEEL.TOOLTIP,,Обеспечивает энергией другие устройства через {{PRODUCT.STONE.GEAR.PLURAL}} и валы. Должна быть построена рядом с рекой 
+FURNITURE.WATER_BARREL,,Бочка для воды
+FURNITURE.WATER_BARREL.TOOLTIP,,"Бочка с водой — это место, где ваши поселенцы смогут утолить жажду, вместо того, чтобы искать естественный источник воды, такой как река."
+FURNITURE.WATER_PUMP,,Водяной насос
+FURNITURE.WATER_PUMP.PLURAL,,
+FURNITURE.WATER_PUMP.TOOLTIP,,Перемещает воду из реки в систему трубопроводов.
+FURNITURE.WEAPON_RACK,,
+FURNITURE.WEAPON_RACK.TOOLTIP,,
+FURNITURE.WELL,,Колодец
+FURNITURE.WELL.TOOLTIP,,"Колодец является источником воды, но должен быть подключен к работающей системе трубопроводов"
+FURNITURE.WINDMILL,,Ветряная мельница
+FURNITURE.WINDMILL.PLURAL,,
+FURNITURE.WINDMILL.TOOLTIP,,Обеспечивает энергией другие устройства через {{PRODUCT.STONE.GEAR.PLURAL}} и валы. 
+FURNITURE.WOODCUTTERS_BENCH,,Верстак резчика по дереву
+FURNITURE.WOODCUTTERS_BENCH.TOOLTIP,,"{{PROFESSION.WOODCUTTER}} работает здесь, чтобы превратить {{RESOURCE.LOGS.PLURAL}} в {{RESOURCE.PLANKS.PLURAL}}."
+GEM.AMETHYST.ADJECTIVE,,Аметистовый
+GEM.AMETHYST.NOUN,,Аметист
+GEM.AMETHYST.TOOLTIP,,"Разновидность кварца с фиолетовыми оттенком. Древние люди верили, что он может волшебным образом защитить их от опьянения. По этой причине он не очень популярен у гномов."
+GEM.AMMOLITE.ADJECTIVE,,Аммолитовый
+GEM.AMMOLITE.NOUN,,Аммолит
+GEM.AMMOLITE.TOOLTIP,,"Драгоценный камень, похожий на опал, с переливами от красного до зеленого. Он также известен как «охотничий камень», и сделанные из него амулеты приносят удачу на охоте."
+GEM.AQUAMARINE.ADJECTIVE,,Аквамариновый
+GEM.AQUAMARINE.NOUN,,Аквамарин
+GEM.AQUAMARINE.TOOLTIP,,"Разновидность берилла голубого цвета. Некоторые люди считают, что он одает магическую защиту от опасностей на море. Это связано с тем, что древний маг использовал комбинацию небесной и ледяной магии для защиты торговых судов в эпоху Тьмы."
+GEM.BIXBITE.ADJECTIVE,,Биксибитовый
+GEM.BIXBITE.NOUN,,Биксибит
+GEM.BIXBITE.TOOLTIP,,"Также известный как красный берилл, это очень редкий драгоценный камень. Его часто путают с изумрудом красного цвета."
+GEM.CINNABAR.ADJECTIVE,,Синнабаровый
+GEM.CINNABAR.NOUN,,Синнабар
+GEM.CINNABAR.TOOLTIP,,"Ртутная руда, которая часто используется в ювелирных изделиях из-за ее темно-красного оттенка. Он также используется для производства красителя, известного как вермиллион."
+GEM.CITRINE.ADJECTIVE,,Цитриновый
+GEM.CITRINE.NOUN,,Цитрин
+GEM.CITRINE.TOOLTIP,,"Желтоватая разновидность кварца. Это драгоценный камень, наиболее похожий по цвету на золото, поэтому большинство гномов считают, что цитрин приносит удачу."
+GEM.DIAMOND.ADJECTIVE,,Алмазный
+GEM.DIAMOND.NOUN,,Алмаз
+GEM.DIAMOND.TOOLTIP,,"Самый твердый из известных материалов и один из самых важных из семи небесных камней. Алмазы - это наиболее концентрированная форма нейтрального элемента, известного как “дух” или “эфир”."
+GEM.EMERALD.ADJECTIVE,,Изумрудный
+GEM.EMERALD.NOUN,,Изумруд
+GEM.EMERALD.TOOLTIP,,"A vibrant green variety of beryl. It is thought that engraving on an emerald brings great misfortune. Emeralds are closely related to elemental life and associated magic
+Ярко-зеленая разновидность берилла. Считается, что гравировка на изумруде приносит большое несчастье. Изумруды тесно связаны с элементарной жизнью и связанной с ней магией."
+GEM.GARNET.ADJECTIVE,,Гранатовый
+GEM.GARNET.NOUN,,Гранат
+GEM.GARNET.TOOLTIP,,"Гранат покрывает различные минералы, используемые в качестве драгоценных камней, и все они темно-красного цвета. Некоторые гранаты на самом деле являются концентрированной формой элементарного огня."
+GEM.JADE.ADJECTIVE,,Нефритовый
+GEM.JADE.NOUN,,Нефрит
+GEM.JADE.TOOLTIP,,"Минерал светло-зеленого цвета часто используется для украшения. Кроме того, известно, что эльфы используют нефрит для производства лекарств, которые могут вылечить болезни кишечника."
+GEM.JASPER.ADJECTIVE,,Яшмовый
+GEM.JASPER.NOUN,,Яшма
+GEM.JASPER.TOOLTIP,,"Нечистая разновидность кремнезема, которая может иметь нескольких цветов, но чаще всего красный. Орки предпочитают использовать яшму в качестве отделочного материала из-за его разнообразия."
+GEM.LABRADORITE.ADJECTIVE,,Лабрадоритовый
+GEM.LABRADORITE.NOUN,,Лабрадорит
+GEM.LABRADORITE.TOOLTIP,,"Камень, который сияет типичным светло-голубым переливом. Более редкие экземпляры могут отражать более широкий спектр цветов."
+GEM.LAPIS.ADJECTIVE,,Лазуритовый
+GEM.LAPIS.NOUN,,Лазурит
+GEM.LAPIS.TOOLTIP,,"Камень с блестящим темно-синим оттенком, который используется как драгоценный камень."
+GEM.MAGNESITE.ADJECTIVE,,Магнезитовый
+GEM.MAGNESITE.NOUN,,Магнезит
+GEM.MAGNESITE.TOOLTIP,,"Минерал, который можно отполировать в виде бусин и использовать в ювелирных изделиях. Эти бусины могут быть окрашены в различные цвета."
+GEM.MOONSTONE.ADJECTIVE,,Лунно каменьный
+GEM.MOONSTONE.NOUN,,Лунный камень
+GEM.MOONSTONE.TOOLTIP,,"Считается, что он образован лунным светом, запечатленным в камне, поэтому это любимый камень эльфов."
+GEM.MORGANITE.ADJECTIVE,,Морганитовый
+GEM.MORGANITE.NOUN,,Морганит
+GEM.MORGANITE.TOOLTIP,,"Розовая разновидность берилла. Он был назван в честь очень богатого купца, который популяризировал его в эпоху Мифов."
+GEM.OPAL.ADJECTIVE,,Опаловый
+GEM.OPAL.NOUN,,Опал
+GEM.OPAL.TOOLTIP,,"Вид кремнезема, наполненный магией океанов, что делает его любимым камнем моряков и рыбаков."
+GEM.PAINITE.ADJECTIVE,,Пейнитовый 
+GEM.PAINITE.NOUN,,Пейнит 
+GEM.PAINITE.TOOLTIP,,"Очень редкий драгоценный камень, который часто называют бесцветным сапфиром. Кристаллы имеют естественную шестиугольную форму, что делает его любимым камнем полководцев."
+GEM.RHODOCHROSITE.ADJECTIVE,,Родохрозитовый
+GEM.RHODOCHROSITE.NOUN,,Родохрозит
+GEM.RHODOCHROSITE.TOOLTIP,,"Встречается в различных оттенках от красного до розового. Он не так тверд, как большинство драгоценных камней, что делает его плохим выбором для колец и других ударопрочных украшений."
+GEM.ROCK_CRYSTAL.ADJECTIVE,,Горно хрустальный
+GEM.ROCK_CRYSTAL.NOUN,,Горный хрусталь
+GEM.ROCK_CRYSTAL.TOOLTIP,,"Чистейшая форма кварца. Горные кристаллы часто используются в магических артефактах, поскольку они представляют собой концентрированную форму элемента льда."
+GEM.RUBY.ADJECTIVE,,Рубиновый
+GEM.RUBY.NOUN,,Рубин
+GEM.RUBY.TOOLTIP,,"Один из семи небесных камней, рубины являются элементом огня, сконцентрированного в твердую форму."
+GEM.SAPPHIRE.ADJECTIVE,,Сапфировый
+GEM.SAPPHIRE.NOUN,,Сапфир
+GEM.SAPPHIRE.TOOLTIP,,"Часто считают, что сапфиры защищают владельца от демонов, поэтому он пользуется большим спросом для использования в небесной и воздушной магии."
+GEM.SPINEL.ADJECTIVE,,Шпинелевый
+GEM.SPINEL.NOUN,,Шпинель
+GEM.SPINEL.TOOLTIP,,"Шпинель часто путают с небесными камнями, такими как настоящие рубины и сапфиры, шпинель - это меньшая форма наполненного магией драгоценного камня, который может ассоциироваться с любым из элементов, в зависимости от цвета."
+GEM.TANZANITE.ADJECTIVE,,Танзанитовый
+GEM.TANZANITE.NOUN,,Танзанит
+GEM.TANZANITE.TOOLTIP,,"Редкий драгоценный камень, оттенок которого может переливается между синим и фиолетовым цветом. Считается, что он образован из материального тела мертвого бога."
+GEM.TOPAZ.ADJECTIVE,,Топазовый
+GEM.TOPAZ.NOUN,,Топаз
+GEM.TOPAZ.TOOLTIP,,"Иногда его путают с более распространенным драгоценным камнем {{GEM.CITRINE.NOUN}}, топаз встречается в нескольких цветах, но чаще всего имеет желтовато-коричневый оттенок. Впервые он был обнаружен на острове, который больше не существует."
+GEM.TOURMALINE.ADJECTIVE,,Турмалиновый
+GEM.TOURMALINE.NOUN,,Турмалин
+GEM.TOURMALINE.TOOLTIP,,Часто встречается вместе с {{ORE.CASSITERITE.ADJECTIVE}} руды. Иногда это связано с магией земли.
+GEM.TURQUOISE.ADJECTIVE,,Бирюзовый
+GEM.TURQUOISE.NOUN,,Бирюза
+GEM.TURQUOISE.TOOLTIP,,"Сине-зеленый минерал, который часто используется в декорациях. Считается, что он приносит удачу. В нем часто встречается элемент земли."
+GOAL.ABANDON_JOB.DESCRIPTION,,Отказ от задачи 
+GOAL.ADD_TO_INVENTORY.DESCRIPTION,,Сбор: {{targetDescription}}
+GOAL.COMBAT.DESCRIPTION,,Атакующий {{targetDescription}} 
+GOAL.DRINK.DESCRIPTION,,Пьющий{{targetZoneMaterial}}
+GOAL.DUMP_LIQUID.DESCRIPTION,,Выгрузка содержимого {{targetDescription}}
+GOAL.EAT.DESCRIPTION,,Кушающий {{targetDescription}}
+GOAL.EXTINGUISH_FIRE.DESCRIPTION,,Тушит пожар
+GOAL.FLEE_FROM_AGGRESSOR.DESCRIPTION,,Убегает от {{targetDescription}}
+GOAL.HAULING.DESCRIPTION,,Переноска: {{itemDescription}}
+GOAL.IDLE.DESCRIPTION,,Бездельничает
+GOAL.INVADER.CREATE_CAMP.DESCRIPTION,,
+GOAL.INVADER.RETREAT.DESCRIPTION,,
+GOAL.INVADER.STEAL_RESOURCES.DESCRIPTION,,
+GOAL.MILITARY.ATTACK_TARGET.DESCRIPTION,,
+GOAL.MILITARY.STAND_IN_FORMATION.DESCRIPTION,,
+GOAL.MILITARY.TRAINING.DESCRIPTION,,
+GOAL.ON_FIRE.DESCRIPTION,,Горит!
+GOAL.REFILL_WATERSKIN.DESCRIPTION,,
+GOAL.SLEEP.DESCRIPTION,,Собирается спать
+GOAL.TRANSFER_LIQUID.DESCRIPTION,,Переносит: {{targetZoneMaterial}}
+GUI.ADD_REMOVE_TILES,,Добавление/удаление клеток
+GUI.ADD_TILES,,Добавить клетки
+GUI.AMBIENT_EFFECT_VOLUME,,
+GUI.AVAILABLE_PROGRESS_BAR,,
+GUI.BACK_LABEL,,Назад
+GUI.BUILD.BRIDGE,,Мост
+GUI.BUILD.DOORS,,Двери
+GUI.BUILD.FLOOR,,Полы
+GUI.BUILD.PILLARS,,
+GUI.BUILD.PIPING,,Трубы
+GUI.BUILD.POWER,,Энергия
+GUI.BUILD.ROOFING,,Крыша
+GUI.BUILD.WALLS,,Стены
+GUI.BUILD_FURNITURE,,Мебель
+GUI.BUILD_LABEL,,Строить
+GUI.CANCEL_LABEL,,Отмена
+GUI.CHANGE_PROFESSION_LABEL,,Сменить профессию
+GUI.CHANGE_WEAPON_LABEL,,Сменить оружие
+GUI.COMBAT_LABEL,,
+GUI.CONSTRUCTION_LABEL,,
+GUI.CRAFTING_MANAGEMENT.MAINTAINING_TEXT,,Поддержание 
+GUI.CRAFTING_MANAGEMENT.SUBTITLE,,
+GUI.CRAFTING_MANAGEMENT.TABLE.CRAFTED_WITH,,
+GUI.CRAFTING_MANAGEMENT.TABLE.ITEM,,
+GUI.CRAFTING_MANAGEMENT.TABLE.MANAGEMENT,,
+GUI.CRAFTING_MANAGEMENT.TABLE.MANAGEMENT.LIMIT,,
+GUI.CRAFTING_MANAGEMENT.TABLE.MANAGEMENT.QUANTITY,,
+GUI.CRAFTING_MANAGEMENT.TABLE.MANAGEMENT.QUANTITY.DECREMENT,,
+GUI.CRAFTING_MANAGEMENT.TABLE.MANAGEMENT.QUANTITY.INCREMENT,,
+GUI.CRAFTING_MANAGEMENT.TITLE,,Ремесло
+GUI.CRAFTING_MANAGEMENT.TOTAL_QUANTITY_ACTUAL,,Текущий итог: {{quantity}}
+GUI.CRAFTING_MANAGEMENT.TOTAL_QUANTITY_HINT,,Всего ({{quantity}}
+GUI.CREDITS.AND_YOU_TITLE,,
+GUI.CREDITS.DEVELOPERS.CHARACTER_ART,,
+GUI.CREDITS.DEVELOPERS.CONCEPT_ART,,
+GUI.CREDITS.DEVELOPERS.ENVIRONMENT_ART,,
+GUI.CREDITS.DEVELOPERS.LEAD_DESIGN,,
+GUI.CREDITS.DEVELOPERS.LEAD_UI,,
+GUI.CREDITS.DEVELOPERS.MUSIC,,
+GUI.CREDITS.DEVELOPERS.MUSIC_ADDITIONAL,,
+GUI.CREDITS.DEVELOPERS.PROGRAMMING,,
+GUI.CREDITS.DEVELOPERS.SPECIAL_THANKS,,
+GUI.CREDITS.FOUNDING_BACKERS_TITLE,,
+GUI.CREDITS.PATREON_KICKSTARTER_TITLE,,
+GUI.CREDITS.TRANSLATORS_TITLE,,
+GUI.CROP_SELECTION,,Обрезать:
+GUI.CROP_SELECTION.DESCRIPTION,,
+GUI.CROP_SELECTION.PLANTING_HINT.SEASONS_0,,
+GUI.CROP_SELECTION.PLANTING_HINT.SEASONS_1,,
+GUI.CROP_SELECTION.PLANTING_HINT.SEASONS_2,,
+GUI.CROP_SELECTION.PLANTING_HINT.SEASONS_3,,
+GUI.CROP_SELECTION.PLANTING_HINT.SEASONS_4,,
+GUI.DATE_TIME_YEAR_LABEL,,"{{timeOfDay}}, день {{dayNumber}}, год {{year}}"
+GUI.DAY_LABEL,,
+GUI.DECONSTRUCT_LABEL,,Снести
+GUI.DIALOG.CANCEL_BUTTON,,Отмена
+GUI.DIALOG.CONFIRM,,
+GUI.DIALOG.CONFIRM_DELETE_SAVE,,Вы действительно хотите удалить {{name}} ?
+GUI.DIALOG.DISMISS,,Уволить
+GUI.DIALOG.ERROR_ROOM_NAME_ALREADY_EXISTS,,Комната с таким названием уже существует.
+GUI.DIALOG.ERROR_SAVE_INCOMPATIBLE,,"Не удалось загрузить файл сохранения, поскольку он несовместим с данной версией игры."
+GUI.DIALOG.ERROR_TITLE,,Произошла ошибка
+GUI.DIALOG.ERROR_WHILE_LOADING,,При загрузке игры произошла непредвиденная ошибка.
+GUI.DIALOG.ERROR_WHILE_SAVING,,При сохранении игры произошла непредвиденная ошибка.
+GUI.DIALOG.HIDE_FURTHER_NOTIFICATIONS,,
+GUI.DIALOG.INFO_TITLE,,Информация
+GUI.DIALOG.JUMP_TO,,Перейти к местоположению
+GUI.DIALOG.LANGUAGE_TRANSLATION_INCOMPLETE,,"Выбранный перевод языка в настоящее время неполный, и в нем отсутствует текст. Будет использоваться резервный язык."
+GUI.DIALOG.MOD_CHANGES_OUTSTANDING,,Вы выбрали другой набор модов для применения к игре. Они будут применены при следующем перезапуске игры.
+GUI.DIALOG.MOD_INCOMPATIBLE,,Один или несколько модов несовместимы с данной версией игры и были деактивированы. Проверить наличие обновлений можно в меню модов.
+GUI.DIALOG.OK_BUTTON,,OK
+GUI.DIALOG.RENAME_ROOM_TITLE,,Переименовать комнату
+GUI.DIALOG.RENAME_SETTLER_TITLE,,Переименовать поселенца
+GUI.DIALOG.RESTART_REQUIRED,,"Вы должны перезапустить игру, чтобы это изменение вступило в силу"
+GUI.DIALOG.SETTLEMENT_NAME_ALREADY_IN_USE,,У вас уже есть сохраненная игра для поселения {{name}}. При запуске новой игры существующий файл сохранения будет перезаписан. Вы уверены что хотите продолжить? 
+GUI.DIALOG.SETTLEMENT_NAME_NOT_SPECIFIED,,Необходимо указать название населенного пункта.
+GUI.DIALOG.STOCKPILE_MANAGEMENT.TITLE,,Настройка хранилища
+GUI.EMBARK.DISCORD_LINK,,Нажмите чтобы присоединиться к нашему сообществу в Discord
+GUI.EMBARK.MAP_SEED,,
+GUI.EMBARK.MAP_SIZE,,
+GUI.EMBARK.MAP_SIZE.LARGE,,
+GUI.EMBARK.MAP_SIZE.MEDIUM,,
+GUI.EMBARK.MAP_SIZE.SMALL,,
+GUI.EMBARK.PEACEFUL_MODE,,
+GUI.EMBARK.SETTLEMENT_NAME,,
+GUI.EMBARK.START,,Начать!
+GUI.EMBARK.TITLE,,
+GUI.EMPTY_CONTAINER_LABEL,,Пусто
+GUI.EMPTY_CONTAINER_LABEL.BEING_ACTIONED,,Содержимое опорожняется 
+GUI.EMPTY_CONTAINER_LABEL.HINT,,Вылейте содержимое этого контейнера на землю. 
+GUI.FURNITURE_ASSIGNED_TO,,Принадлежит: {{name}}
+GUI.FURNITURE_BEING_REMOVED,,В процессе удаления
+GUI.FURNITURE_REQUIREMENT.ALL_MATERIALS,,
+GUI.FURNITURE_REQUIREMENT.SPECIFIED_MATERIALS,,
+GUI.GRAPHICS.FULLSCREEN,,Во весь экран
+GUI.GRAPHICS.RESOLUTION,,Разрешение экрана
+GUI.INVASION_LABEL,,
+GUI.ITEM.WEAPON_ARMOR_NEGATION_DESCRIPTION,,
+GUI.ITEM.WEAPON_ATTACK_DESCRIPTION,,
+GUI.KEY_BINDING.DEBUG_FRAME_BUFFER_0,,
+GUI.KEY_BINDING.DEBUG_FRAME_BUFFER_1,,
+GUI.KEY_BINDING.DEBUG_FRAME_BUFFER_2,,
+GUI.KEY_BINDING.DEBUG_FRAME_BUFFER_3,,
+GUI.KEY_BINDING.DEBUG_FRAME_BUFFER_4,,
+GUI.KEY_BINDING.DEBUG_FRAME_BUFFER_5,,
+GUI.KEY_BINDING.DEBUG_FRAME_BUFFER_6,,
+GUI.KEY_BINDING.DEBUG_FRAME_BUFFER_7,,
+GUI.KEY_BINDING.DEBUG_FRAME_BUFFER_8,,
+GUI.KEY_BINDING.DEBUG_FRAME_BUFFER_9,,
+GUI.KEY_BINDING.DEBUG_GAME_SPEED_SLOW,,
+GUI.KEY_BINDING.DEBUG_GAME_SPEED_ULTRA_FAST,,
+GUI.KEY_BINDING.DEBUG_HIDE_GUI,,
+GUI.KEY_BINDING.DEBUG_SHOW_INDIVIDUAL_LIGHTING_BUFFERS,,
+GUI.KEY_BINDING.DEBUG_SHOW_JOB_STATUS,,
+GUI.KEY_BINDING.DEBUG_SHOW_LIQUID_FLOW,,
+GUI.KEY_BINDING.DEBUG_SHOW_MENU,,
+GUI.KEY_BINDING.DEBUG_SHOW_PATHFINDING_NODES,,
+GUI.KEY_BINDING.DEBUG_SHOW_ZONES,,
+GUI.KEY_BINDING.DEBUG_TOGGLE_FLOOR_OVERLAP_RENDERING,,
+GUI.KEY_BINDING.FAST_PAN,,
+GUI.KEY_BINDING.GAME_SPEED_FAST,,
+GUI.KEY_BINDING.GAME_SPEED_FASTER,,
+GUI.KEY_BINDING.GAME_SPEED_FASTEST,,
+GUI.KEY_BINDING.GAME_SPEED_NORMAL,,
+GUI.KEY_BINDING.PAN_CAMERA_DOWN,,
+GUI.KEY_BINDING.PAN_CAMERA_LEFT,,
+GUI.KEY_BINDING.PAN_CAMERA_RIGHT,,
+GUI.KEY_BINDING.PAN_CAMERA_UP,,
+GUI.KEY_BINDING.PAUSE,,
+GUI.KEY_BINDING.QUICKLOAD,,
+GUI.KEY_BINDING.QUICKSAVE,,
+GUI.KEY_BINDING.ROTATE,,
+GUI.KEY_BINDING.ZOOM_IN,,
+GUI.KEY_BINDING.ZOOM_OUT,,
+GUI.LEAVE_CROP_FALLOW,,Ничего (оставить невозделанной)
+GUI.LOAD_GAME.TABLE.COPY_SEED,,
+GUI.LOAD_GAME.TABLE.DATE_TIME,,Последнее изменение
+GUI.LOAD_GAME.TABLE.DELETE,,Удалить
+GUI.LOAD_GAME.TABLE.GAME_TIME,,Мировое время
+GUI.LOAD_GAME.TABLE.PLAY,,
+GUI.LOAD_GAME.TABLE.SETTLEMENT_NAME,,Имя
+GUI.LOAD_GAME.TABLE.VERSION,,Версия
+GUI.LOAD_GAME.TITLE,,Загрузить игру
+GUI.MAP_SEED.COPY_TO_CLIPBOARD,,Скопировать в буфер обмена
+GUI.MAP_SEED_DISPLAY,,Текущее значение карты:
+GUI.MECHANISM.SHAFT.HORIZONTAL,,Горизонтальный
+GUI.MECHANISM.SHAFT.VERTICAL,,Вертикальный
+GUI.MILITARY.DIALOG.ADD_SQUAD,,
+GUI.MILITARY.DIALOG.CHOOSE_EMBLEM,,
+GUI.MILITARY.DIALOG.RENAME_SQUAD,,
+GUI.MILITARY.DIALOG.SELECT_SQUAD,,
+GUI.MILITARY.NEW_SQUAD,,
+GUI.MILITARY.ORDERS,,
+GUI.MILITARY.ORDERS.ATTACK,,
+GUI.MILITARY.ORDERS.CANCEL_ATTACK,,
+GUI.MILITARY.ORDERS.GUARD,,
+GUI.MILITARY.ORDERS.RETREAT,,
+GUI.MILITARY.ORDERS.TRAIN,,
+GUI.MILITARY.REMOVE_SQUAD,,
+GUI.MILITARY.REMOVE_SQUAD.DIALOG,,
+GUI.MILITARY.SET_FORMATION,,
+GUI.MILITARY.SET_ORDERS,,
+GUI.MILITARY.TAB.DWARVES,,
+GUI.MILITARY.TAB.SQUADS,,
+GUI.MILITARY.TAB.TRAINED_CIVILIANS,,
+GUI.MINIMAP.LABEL,,Миникарта
+GUI.MUSIC_VOLUME,,
+GUI.NEXT_LABEL,,Далее
+GUI.NON_ROTATABLE_FURNITURE.HINT,,Эта мебель не может быть повернута в этой версии игры
+GUI.OK_LABEL,,OK
+GUI.OPTIONS.AUDIO.TITLE,,Настройки звука
+GUI.OPTIONS.GAMEPLAY.HIDE_TREES_OBSCURING_SETTLERS,,Сделать деревья прозрачными при затемнении поселенцев
+GUI.OPTIONS.GAMEPLAY.TITLE,, Настройки игры 
+GUI.OPTIONS.GAMEPLAY.USE_EDGE_SCROLLING,,"Прокрутка, когда курсор находится на краю экрана"
+GUI.OPTIONS.GAMEPLAY.ZOOM_TO_CURSOR,,Прокрутка к курсору при масштабировании 
+GUI.OPTIONS.GRAPHICS.FULLSCREENMODE.BORDERLESS_FULLSCREEN,,Полный экран
+GUI.OPTIONS.GRAPHICS.FULLSCREENMODE.EXCLUSIVE_FULLSCREEN,,Эксклюзивный полноэкранный режим 
+GUI.OPTIONS.GRAPHICS.FULLSCREENMODE.WINDOWED,,В окне
+GUI.OPTIONS.GRAPHICS.TITLE,,Настройки графики 
+GUI.OPTIONS.GRAPHICS.WEATHER_EFFECTS,,
+GUI.OPTIONS.GRAPHICS.WEATHER_EFFECTS_TOOLTIP,,
+GUI.OPTIONS.KEY_BINDINGS,,
+GUI.OPTIONS.MISC.CRASH_REPORTING_ENABLED,,
+GUI.OPTIONS.MISC.TITLE,,Разное
+GUI.OPTIONS.MISC.TUTORIAL_ENABLED,,
+GUI.OPTIONS.RESET,,
+GUI.OPTIONS.TAB.AUDIO,,Аудио
+GUI.OPTIONS.TAB.GAMEPLAY,,Игра
+GUI.OPTIONS.TAB.GRAPHICS,,Графика
+GUI.OPTIONS.TAB.MISC,,Прочее
+GUI.OPTIONS.TAB.TWITCH,,Twitch
+GUI.OPTIONS.TWITCH.ACCOUNT_LABEL,,Аккаунт Twitch:
+GUI.OPTIONS.TWITCH.CODE_LABEL,,Кож
+GUI.OPTIONS.TWITCH.CONNECTED_LABEL,,Аккаунт Twitch подключен 
+GUI.OPTIONS.TWITCH.DISCONNECT,,Отключен
+GUI.OPTIONS.TWITCH.DISCONNECTED_LABEL,,Аккаунт Twitch отключен
+GUI.OPTIONS.TWITCH.ENABLED,,Интеграция с Twitch включена 
+GUI.OPTIONS.TWITCH.GENERAL_ERROR,,Произошла ошибка при подключении к Twitch 
+GUI.OPTIONS.TWITCH.LINK_ACCOUNT_BUTTON,,
+GUI.OPTIONS.TWITCH.PRIORITISE_SUBSCRIBERS,,Отдавайте приоритет подписчикам 
+GUI.OPTIONS.TWITCH.SUBMIT_BUTTON,,Отправить
+GUI.OPTIONS.TWITCH.TITLE,,Интеграция с Twitch 
+GUI.OPTIONS.TWITCH.VIEWERS_AS_SETTLERS,,Используйте зрителей как имена поселенцев 
+GUI.OPTIONS.TWITCH.VIEWERS_LABEL,,
+GUI.ORDERS.CHOP_WOOD,,Рубить
+GUI.ORDERS.CLEAR_GROUND,,Расчистить
+GUI.ORDERS.DIG_CHANNELS,,Орошение
+GUI.ORDERS.DIG_CHANNELS.TOOLTIP,,Используйте для рытья каналов в земле
+GUI.ORDERS.EXTINGUISH_FLAMES,,Тушить пожар
+GUI.ORDERS.EXTINGUISH_FLAMES.TOOLTIP,,"Этот приказ используется для тушения пожаров, которые в настоящее время горят"
+GUI.ORDERS.HARVEST_PLANTS,,Собирать
+GUI.ORDERS.HUNT,,Охотиться
+GUI.ORDERS.HUNT.TOOLTIP,,Используется для выбора животных для охоты
+GUI.ORDERS.MINE,,Копать
+GUI.ORDERS_LABEL,,Приказы
+GUI.PLACE_BRIDGE.HINT,,Мост должен покрывать обе стороны реки и иметь размер не менее 3x3 клетки
+GUI.POWER_LABEL,,
+GUI.POWER_WATER_INFO,,
+GUI.PRIORITY_LABEL,,Приоритеты
+GUI.PRODUCTION_EXPORT.CHOOSE_ITEM_TYPE,,
+GUI.PRODUCTION_EXPORT.LIMIT.REACHED,,
+GUI.PRODUCTION_IMPORT.CHOOSE_ITEM_TYPE,,
+GUI.REMOVE_LABEL,,Удалить
+GUI.REMOVE_TILES,,Удалить квадраты
+GUI.RESOURCE_MANAGEMENT.ALL_OF,,
+GUI.RESOURCE_MANAGEMENT.AVAILABLE,,
+GUI.RESOURCE_MANAGEMENT.AVAILABLE_OF_TOTAL,,
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.CONTENTS_TO_BE_DUMPED,,
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.CONTENTS_TO_BE_DUMPED.PLURAL,,
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.DUE_TO_BE_HAULED,,
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.DUE_TO_BE_HAULED.PLURAL,,
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.EQUIPPED,,
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.EQUIPPED.PLURAL,,
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.FOOD_ALLOCATION,,
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.FOOD_ALLOCATION.PLURAL,,
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.HAULING,,
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.HAULING.PLURAL,,
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.HELD_IN_INVENTORY,,
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.HELD_IN_INVENTORY.PLURAL,,
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.ON_FIRE,,
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.ON_FIRE.PLURAL,,
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.PLACED_FOR_CONSTRUCTION,,
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.PLACED_FOR_CONSTRUCTION.PLURAL,,
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.PRODUCTION_IMPORT,,
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.PRODUCTION_IMPORT.PLURAL,,
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.PRODUCTION_OUTPUT,,
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.PRODUCTION_OUTPUT.PLURAL,,
+GUI.RESOURCE_MANAGEMENT.QUANTIFIED_ITEM,,
+GUI.RESOURCE_MANAGEMENT.SEARCH,,
+GUI.RESOURCE_MANAGEMENT.SORT_BY,,
+GUI.RESOURCE_MANAGEMENT.TITLE,,Ресурсы
+GUI.RESOURCE_MANAGEMENT.TOTAL,,
+GUI.RESOURCE_MANAGEMENT.UNALLOCATED_LABEL,,Доступно: {{count}}
+GUI.ROOFING.ADD,,Добавить
+GUI.ROOMS_LABEL,,
+GUI.ROTATE_FURNITURE.HINT,,"Нажмите (R), чтобы повернуть мебель"
+GUI.SAVING_PROMPT,,Сохранение…
+GUI.SELECT_WEAPON.LABEL,,
+GUI.SETTINGS.LABEL,,Настройки
+GUI.SETTLER_MANAGEMENT.CHOOSE_ARMOUR,,
+GUI.SETTLER_MANAGEMENT.CHOOSE_SHIELD,,
+GUI.SETTLER_MANAGEMENT.CHOOSE_WEAPON,,
+GUI.SETTLER_MANAGEMENT.HAPPINESS,,
+GUI.SETTLER_MANAGEMENT.IMMIGRATION,,
+GUI.SETTLER_MANAGEMENT.MAIN_HAND.STATUS,,
+GUI.SETTLER_MANAGEMENT.OFF_HAND.STATUS,,
+GUI.SETTLER_MANAGEMENT.OFF_HAND.TWO_HANDED_WEAPON,,
+GUI.SETTLER_MANAGEMENT.POPULATION_STATISTICS,,
+GUI.SETTLER_MANAGEMENT.PROFESSION.CIVILIAN,,
+GUI.SETTLER_MANAGEMENT.PROFESSION.MILITARY,,
+GUI.SETTLER_MANAGEMENT.PROFESSION.VILLAGER,,
+GUI.SETTLER_MANAGEMENT.SEARCH,,
+GUI.SETTLER_MANAGEMENT.SORT.HAPPINESS,,
+GUI.SETTLER_MANAGEMENT.SORT.MILITARY_CIVILIAN,,
+GUI.SETTLER_MANAGEMENT.SORT.NAME,,
+GUI.SETTLER_MANAGEMENT.SORT.SKILL_LEVEL,,
+GUI.SETTLER_MANAGEMENT.SORT_BY,,
+GUI.SETTLER_MANAGEMENT.TITLE,,Поселенцы
+GUI.SOUND_EFFECT_VOLUME,,
+GUI.UI_SCALE,,Размер интерфейса:
+GUI.VIEW_MODE.DEFAULT,,
+GUI.VIEW_MODE.JOB_PRIORITY,,
+GUI.VIEW_MODE.MECHANISMS,,
+GUI.VIEW_MODE.PIPING,,
+GUI.VIEW_MODE.ROOFING_INFO,,
+GUI.VIEW_ROADMAP,,Посмотреть планы разработки
+GUI.YEAR_LABEL,,
+HAPPINESS_MODIFIER.ALCOHOL_WITHDRAWAL,,Трезвый 
+HAPPINESS_MODIFIER.ATE_NICELY_PREPARED_FOOD,,Съел хорошо приготовленную еду 
+HAPPINESS_MODIFIER.BLEEDING,,Обильное кровотечение 
+HAPPINESS_MODIFIER.CARRIED_DEAD_BODY,,Несет мертвое тело 
+HAPPINESS_MODIFIER.CAUGHT_IN_RAIN,,Попал под дождь на улице 
+HAPPINESS_MODIFIER.DRANK_ALCOHOL,,Под воздействием алкоголя 
+HAPPINESS_MODIFIER.DRANK_FROM_RIVER,,Пьет речную воду
+HAPPINESS_MODIFIER.DYING_OF_HUNGER,,Голод
+HAPPINESS_MODIFIER.DYING_OF_THIRST,,Критически обезвоженн
+HAPPINESS_MODIFIER.HAD_A_TANTRUM,,Впал в ярость
+HAPPINESS_MODIFIER.NEW_SETTLEMENT_OPTIMISM,,Оптимистичный подход к новому поселению
+HAPPINESS_MODIFIER.ON_FIRE,,Сильно обгорел 
+HAPPINESS_MODIFIER.POISONED,,Отравлен
+HAPPINESS_MODIFIER.SAW_DEAD_BODY,,Видел труп
+HAPPINESS_MODIFIER.SLEEPING_IN_RAIN,,Спал под дождем 
+HAPPINESS_MODIFIER.SLEEPING_IN_SNOW,,Спал на снегу
+HAPPINESS_MODIFIER.SLEPT_IN_BED,,
+HAPPINESS_MODIFIER.SLEPT_ON_GROUND,,Спал на грубой земле
+HAPPINESS_MODIFIER.SLEPT_OUTSIDE,,Спал под звездами
+HAPPINESS_MODIFIER.TITLE,,Счастье:
+HAPPINESS_MODIFIER.VERY_HUNGRY,,Очень голодный
+HAPPINESS_MODIFIER.VERY_THIRSTY,,Очень хочется пить
+HAPPINESS_MODIFIER.VERY_TIRED,,Очень устал
+HAPPINESS_MODIFIER.WORKED_IN_ENCLOSED_ROOM,,Работал в закрытом помещении 
+HAPPINESS_MODIFIER.WORKED_IN_RAIN,,Работал под дождем 
+HAULING.ASSIGNMENT.DESCRIPTION,,{{quantity}} назначено {{targetDescription}}
+HINT.BUILD_PIPES.1,,"Вы можете использовать этот вид для прокладки труб между входами и выходами жидкости, а также оросительными каналами». "
+HINT.BUILD_PIPES.2,,"Они размещены под землей, поэтому убедитесь, что ваши поселенцы могут получить доступ к каждой клетке сбоку."
+HINT.BUILD_PIPES.3,,"Мебель с входом или выходом жидкости отображается синим или зеленым значком, указывающим, являются ли они входом или выходом в сеть."
+HINT.BUILD_POWER.1,,"Используйте этот вид, чтобы связать конструкции, требующие питания, с механизмами, построенными из {{PRODUCT.STONE.GEAR.PLURAL}} и валов."
+HINT.BUILD_POWER.2,,"Они размещены под землей, поэтому убедитесь, что ваши поселенцы могут получить доступ к каждой клетке сбоку."
+HINT.BUILD_POWER.3,,"Конструкции, которые требуют или производят энергию, будут отображать красный или зеленый значок, указывающий, являются ли они входом или выходом для сети."
+HINT.BUILD_ROOFING.1,,"Этот вид позволяет вам увидеть, какие клетки находятся снаружи без крыши над ними (светло-голубой), и те, у которых есть крыша над головой (темно-коричневый)."
+HINT.BUILD_ROOFING.2,,"Вы можете использовать параметры {{GUI.ROOFING.ADD}} и {{GUI.CANCEL_LABEL}}, чтобы поставить кровлю в очередь, которую нужно построить, и {{GUI.DECONSTRUCT_LABEL}}, чтобы удалить любую существующую черепицу."
+HINT.BUILD_ROOFING.3,,Крышу можно построить только в пределах 3-х клеток от стены или {{FURNITURE.PILLAR}}. 
+HINT.BUTTON.BEGIN_TUTORIAL,,
+HINT.BUTTON.DISABLE_ALL,,Отключить все подсказки
+HINT.BUTTON.DISMISS,,Отключить
+HINT.BUTTON.HINTS_ONLY,,Только подсказки
+HINT.BUTTON.NEXT,,Следующий
+HINT.OPEN_PRIORITY_MENU.1,,"Вы можете использовать это меню для изменения приоритета заданий и задач, чтобы задания с более высоким приоритетом были назначены перед заданиями с более низким приоритетом."
+HINT.OPEN_PRIORITY_MENU.2,,"Пока открыто меню приоритета, значки приоритета отображаются в игровом мире, где есть задание или задача, которую нужно выполнить, или где комната или предмет мебели могут создать рабочие места в будущем."
+HINT.TOOL_DEPLETED.AXE1,,Для вашего поселения больше нет доступного {{TOOL.AXE}}. Вы больше не сможете рубить деревья 
+HINT.TOOL_DEPLETED.AXE2,,"На {{FURNITURE.FORGE}} можно изготовить другие топоры. Если у вас нет работающего {{FURNITURE.FORGE}}, вам может потребоваться удалить {{FURNITURE.WOODCUTTERS_BENCH}}."
+HINT.TOOL_DEPLETED.CHISEL1,,Для вашего поселения больше нет доступного {{TOOL.CHISEL}}. Это необходимо для изготовления каменной мебели. 
+HINT.TOOL_DEPLETED.CHISEL2,,"На {{FURNITURE.FORGE}} можно изготовить и другие долота. Если у вас нет работающего {{FURNITURE.FORGE}}, вам может потребоваться удалить {{FURNITURE.STONEMASON_WORKBENCH}}."
+HINT.TOOL_DEPLETED.PLANE1,,В вашем поселении больше нет {{TOOL.PLANE}}. Это необходимо для изготовления деревянной мебели. 
+HINT.TOOL_DEPLETED.PLANE2,,More planes can be crafted at the {{FURNITURE.CARPENTRY_WORKBENCH}} from a {{RESOURCE.PLANKS.NOUN}}
+HINT.TOOL_DEPLETED.SAW1,,В вашем поселении больше нет {{TOOL.SAW}}. Это необходимо для создания {{FURNITURE.WOODCUTTERS_BENCH}} или {{FURNITURE.CARPENTRY_WORKBENCH}} 
+HINT.TOOL_DEPLETED.SAW2,,"На {{FURNITURE.FORGE}} можно изготовить другие пилы. Если у вас нет работающего {{FURNITURE.FORGE}}, вам может потребоваться удалить {{FURNITURE.WOODCUTTERS_BENCH}} или {{FURNITURE .CARPENTRY_WORKBENCH}}."
+HINT.WEAPON_SELECTION.1,,"Используйте это представление, чтобы выбрать тип оружия, которое поселенец будет держать в своем инвентаре на случай боя."
+HINT.WEAPON_SELECTION.2,,"Настоятельно рекомендуется назначить оружие дальнего боя, такое как {{WEAPON.BOW}} или {{WEAPON.CROSSBOW}}, тем поселенцам, которым назначен {{PROFESSION.HUNTER}}"
+HINT.WEAPON_SELECTION.3,,"Оружие, которого у вас нет, отображается красным цветом."
+HINT.WELCOME.NEXT_STEPS,,"«Выберите « Обучение », чтобы ознакомиться с основами игры, « Только подсказки », чтобы пропустить обучение, но получать информацию во время игры, или « Отключить все подсказки », чтобы перестать показывать эти сообщения»."
+HINT.WELCOME.PRE_SPAWN,,"«Запустите игру, выбрав на карте место с достаточным пространством и нажав кнопку '{{GUI.EMBARK.START}}'»."
+HUMANOID.BROKEN.DESCRIPTION,,"{{name}}, {{madness.прилагательное}} {{race.noun}}"
+HUMANOID.DESCRIPTION,,"{{name}}, {{race.noun}}-{{profession.noun}}"
+INGREDIENT.DOUGH,,Тесто
+INGREDIENT.FLOUR,,Мука
+INGREDIENT.LOAF,,Качан капусты
+INGREDIENT.LOAF.PLURAL,,Качаны капусты
+INGREDIENT.MALT.SACK.NOUN,,Солод
+INGREDIENT.MALT.SACK.TOOLTIP,,"Его необходимо измельчить, прежде чем его можно будет использовать в дальнейшем для пивоварения."
+INGREDIENT.MILLED.MALT.SACK.NOUN,,Измельченный солод
+INGREDIENT.MILLED.MALT.SACK.TOOLTIP,,Он смешивается с водой в {{FURNITURE.MASH_TUN}} для получения {{LIQUID.WORT}} 
+INGREDIENT.MUSHROOM.SPAWN.NOUN,,Грибница
+INGREDIENT.MUSHROOM.SPAWN.PLURAL,,Грибница
+INGREDIENT.MUSHROOM.SPAWN.TOOLTIP,,"Также известный как мицелий, это можно рассматривать как «семена», из которых выращивать грибы в {{ROOMS.MUSHROOM_FARM}}."
+INGREDIENT.SEEDS.NOUN,,Семя:
+INGREDIENT.SEEDS.PLURAL,,Семена:
+INGREDIENT.SEEDS.TOOLTIP,,Семена нужного типа необходимы для посадки в {{ROOMS.FARM}}. Они также должны быть доступны в запасе {{STOCKPILE.GRANARY}}.
+INGREDIENT.VEGETABLE.CRATE.NOUN,,Овощи (ящик) 
+INGREDIENT.VEGETABLE.CRATE.PLURAL,,Овощи (ящики)
+INGREDIENT.VEGETABLE.SACK.NOUN,,Овощи (мешок)
+INGREDIENT.VEGETABLE.SACK.PLURAL,,Овощи (мешки)
+INVENTORY.CONTAINS.LABEL,,Инвентарь:
+ITEM.AVAILABILITY.DESCRIPTION,,
+ITEM.DESCRIPTION,,{{quantity_if_multiple}}{{itemType.noun_or_plural}} {{materialType.adjective}}
+ITEM.INGREDIENT.DESCRIPTION,,{{quantity_if_multiple}}{{materialType.noun_or_plural}}
+ITEM.NONE_SELECTED,,
+ITEM.QUALITY.PREFIX.AWFUL.ADJECTIVE,,
+ITEM.QUALITY.PREFIX.AWFUL.TOOLTIP,,
+ITEM.QUALITY.PREFIX.MASTERWORK.ADJECTIVE,,
+ITEM.QUALITY.PREFIX.MASTERWORK.TOOLTIP,,
+ITEM.QUALITY.PREFIX.POOR.ADJECTIVE,,
+ITEM.QUALITY.PREFIX.POOR.TOOLTIP,,
+ITEM.QUALITY.PREFIX.SUPERIOR.ADJECTIVE,,
+ITEM.QUALITY.PREFIX.SUPERIOR.TOOLTIP,,
+ITEM_GROUP.FUEL.PLURAL,,Топливо
+ITEM_GROUP.PRODUCT.PLURAL,,Продукты
+ITEM_GROUP.RESOURCE.PLURAL,,Ресурсы
+ITEM_GROUP.TOOL.PLURAL,,Инструменты
+LANGUAGE.LABEL,,Язык
+LIQUID.BEER.NOUN,,Пиво
+LIQUID.BEER.TOOLTIP,,"Любимый гномами, это на время даст существенный бонус к счастью. Единственная проблема в том, что они в конечном итоге потребуют этого, чтобы пережить рабочий день »."
+LIQUID.HOPPED_WORT.NOUN,,Сусло с хмелем
+LIQUID.HOPPED_WORT.TOOLTIP,,Это заключительный этап производства неферментированного пива перед его помещением в {{FERMENTATION_TANK}} для производства питьевого пива. 
+LIQUID.WATER.NOUN,,Вода
+LIQUID.WORT.NOUN,,Сусло
+LIQUID.WORT.TOOLTIP,,"Это неферментированное пиво, перед ферментацией необходимо добавить {{VEGETABLE.HOPS}} в {{FURNITURE.BREW_KETTLE}} для придания вкуса. "
+MADNESS.BROKEN.ADJECTIVE,,Сломленный
+MADNESS.BROKEN.TOOLTIP,,"Этот поселенец был настолько несчастен, что его психика не выдержала и он больше не будут работать и даже есть!"
+MATERIAL,,Материал
+MATERIAL_TYPE,,Тип
+MATERIAL_TYPE.ANY,,Любой
+MATERIAL_TYPE.CLOTH.ADJECTIVE,,Одежда
+MATERIAL_TYPE.CLOTH.NOUN,,Одежда
+MATERIAL_TYPE.EARTH.ADJECTIVE,,Землю
+MATERIAL_TYPE.EARTH.NOUN,,Земля
+MATERIAL_TYPE.FOODSTUFF.NOUN,,Еда
+MATERIAL_TYPE.GEM.NOUN,,Самоцвет
+MATERIAL_TYPE.METAL.ADJECTIVE,,Металлический
+MATERIAL_TYPE.METAL.NOUN,,Металл
+MATERIAL_TYPE.ORE.NOUN,,Руда
+MATERIAL_TYPE.OTHER.NOUN,,Другое
+MATERIAL_TYPE.ROPE.ADJECTIVE,,Веревочный
+MATERIAL_TYPE.ROPE.NOUN,,Веревка
+MATERIAL_TYPE.SEED.NOUN,,Семя
+MATERIAL_TYPE.SKIN.ADJECTIVE,,
+MATERIAL_TYPE.SKIN.NOUN,,
+MATERIAL_TYPE.STONE.ADJECTIVE,,Каменный
+MATERIAL_TYPE.STONE.NOUN,,Камень
+MATERIAL_TYPE.VEGETABLE.NOUN,,Овощной
+MATERIAL_TYPE.VITRIOL.ADJECTIVE,,Витриол из
+MATERIAL_TYPE.VITRIOL.NOUN,,Витриол
+MATERIAL_TYPE.WOOD.ADJECTIVE,,Деревянный
+MATERIAL_TYPE.WOOD.NOUN,,Дерево
+MEAT.BOAR_MEAT,,Кабан
+MEAT.CARP_MEAT.NOUN,,Карп
+MEAT.CARP_MEAT.PLURAL,,Карпы
+MEAT.DEER_MEAT,,Олень
+MEAT.DWARF_FLESH,,
+MEAT.ELEPHANT_MEAT,,Слон
+MEAT.FOX_MEAT,,Лисица
+MEAT.HORSE_MEAT,,
+MEAT.PERCH_MEAT.NOUN,,Окунь
+MEAT.PERCH_MEAT.PLURAL,,Окуни
+MEAT.PIKE_MEAT.NOUN,,Щука
+MEAT.PIKE_MEAT.PLURAL,,Щуки
+MECHANISM.FURNITURE.CONSUMING_POWER,,Работает - потребляемая {{power}} энергия
+MECHANISM.FURNITURE.CRAFTING_STATION_REQUIRES_POWER,,Работает очень медленно - не хватает энергии
+MECHANISM.FURNITURE.CRAFTING_STATION_REQUIRES_POWER.TOOLTIP,,"Эта мебель требует подземного подключения к источнику энергии, такому как {{FURNITURE.WINDMILL}} или {{FURNITURE.WATERWHEEL}}."
+MECHANISM.FURNITURE.PRODUCING_POWER,,Работает - производимая {{power}} мощность
+MECHANISM.FURNITURE.REQUIRES_OUTSIDE_PLACEMENT,,"Это должно быть расположено снаружи, чтобы правильно работать"
+MECHANISM.FURNITURE.REQUIRES_POWER,,Недостаточно энергии 
+MECHANISM.FURNITURE.REQUIRES_POWER.TOOLTIP,,"Эта мебель требует подземного подключения к источнику энергии, такому как {{FURNITURE.WINDMILL}} или {{FURNITURE.WATERWHEEL}}"
+MECHANISM.FURNITURE.REQUIRES_POWER_GRID,,Подключиться к подземному источнику энергии
+MECHANISM.FURNITURE.REQUIRES_POWER_GRID.TOOLTIP,,Эта мебель требует подземного подключения к источнику энергии - см. Параметр {{GUI.BUILD.POWER}} в меню {{GUI.BUILD_LABEL}}. 
+MECHANISM.STONE.GEAR.NOUN,,Сборка шестерен 
+MECHANISM.STONE.GEAR.TOOLTIP,,Эта штуковина связывает механическую энергию во всех 4 направлениях
+MECHANISM.WOODEN.SHAFT.NOUN,,Вал
+MECHANISM.WOODEN.SHAFT.TOOLTIP,,Деревянный вал связывает механическую силу в двух направлениях
+MENU.CONTINUE_GAME,,Продолжить игру
+MENU.CREDITS,,
+MENU.JOIN_DISCORD,,
+MENU.LINK_TWITCH_ACCOUNT,,
+MENU.LOAD_GAME,,Загрузить игру
+MENU.MODS,,Моды
+MENU.NEW_GAME,,Начать новую игру
+MENU.OPTIONS,,Настройки
+MENU.QUIT,,Выйти
+MENU.SAVE_AND_QUIT,,
+MENU.SOURCE_CODE,,
+MENU.TOGGLE_FULLSCREEN,,Во весь экран
+METAL.BRONZE.ADJECTIVE,,Бронзовый
+METAL.BRONZE.NOUN,,Бронза
+METAL.BRONZE.TOOLTIP,,"Бронза представляет собой сплав меди и олова. Она тверже и намного прочнее, чем медь. (Сплавы еще не внедрены в King under the Mountain)"
+METAL.COPPER.ADJECTIVE,,Медный
+METAL.COPPER.NOUN,,Медь
+METAL.COPPER.TOOLTIP,,"Помимо того, что она встречается естественным образом в виде {{ORE.NATIVE_COPPER.NOUN}}, ее также легко плавить из {{ORE.MALACHITE.NOUN}} руды. Медь имеет много применений, особенно в чеканке монет, хотя из нее достаточно сложно создать эффективное оружие."
+METAL.COPPER_PATINA.ADJECTIVE,,Медь
+METAL.COPPER_PATINA.NOUN,,Мель (патина)
+METAL.COPPER_PATINA.TOOLTIP,,{{METAL.COPPER.TOOLTIP}}
+METAL.DURALUMINIUM.ADJECTIVE,,
+METAL.DURALUMINIUM.NOUN,,
+METAL.DURALUMINIUM.TOOLTIP,,
+METAL.GOLD.ADJECTIVE,,Золотой
+METAL.GOLD.NOUN,,Золото
+METAL.GOLD.TOOLTIP,,"Король металлов. Хотя золото и не самое редкое и ценное, оно является самым желанным металлом большинства рас — особенно гномов."
+METAL.IRON.ADJECTIVE,,Железный
+METAL.IRON.NOUN,,Железо
+METAL.IRON.TOOLTIP,,"Плоха то армия, у которой который нет доступа к железу. Гномьи кузнецы знают секреты работы с {{METAL.STEEL.NOUN}}."
+METAL.PLATINUM.ADJECTIVE,,Платиновый
+METAL.PLATINUM.NOUN,,Платина
+METAL.PLATINUM.TOOLTIP,,"Серебристо-белый металл, который обладает высокой устойчивостью к коррозии. Платина встречается реже и поэтому более ценна, чем {{METAL.GOLD.NOUN}}."
+METAL.RUSTED_IRON.ADJECTIVE,,Ржавое железо 
+METAL.RUSTED_IRON.NOUN,,Ржавое железо
+METAL.RUSTED_IRON.TOOLTIP,,Железо ржавеет при длительном воздействии дождя. В конце концов оно полностью разрушится! 
+METAL.SILVER.ADJECTIVE,,Серебряный
+METAL.SILVER.NOUN,,Серебро
+METAL.SILVER.TOOLTIP,,"Как и {{METAL.GOLD.NOUN}}, серебро часто используется для чеканки монет и в качестве слитков для торговли."
+METAL.STEEL.ADJECTIVE,,Стальной
+METAL.STEEL.NOUN,,Сталь
+METAL.STEEL.TOOLTIP,,"Гораздо прочнее, чем {{METAL.IRON.NOUN}}, что позволяет делать из него провосходное оружие и инструменты, только гномы знают секрет создания стали."
+METAL.TIN.ADJECTIVE,,Оловянный
+METAL.TIN.NOUN,,Олово
+METAL.TIN.TOOLTIP,,Олово может быть выплавлено из {{ORE.CASSITERITE.NOUN}} и легировано {{METAL.COPPER.NOUN}} для получения {{METAL.BRONZE.NOUN}}. (Сплавы еще не внедрены в King under the Mountain)
+MILITARY.FORMATION.COLUMN,,
+MILITARY.FORMATION.COLUMN_DOUBLE,,
+MILITARY.FORMATION.COLUMN_SINGLE,,
+MILITARY.FORMATION.GRID,,
+MILITARY.FORMATION.GRID_DOUBLE,,
+MILITARY.FORMATION.GRID_SINGLE,,
+MILITARY.FORMATION.LINE,,
+MILITARY.FORMATION.LINE_DOUBLE,,
+MILITARY.FORMATION.LINE_SINGLE,,
+MILITARY.SQUAD.DEFAULT_NAME,,
+MILITARY.SQUAD.ORDER_DESCRIPTION.COMBAT,,
+MILITARY.SQUAD.ORDER_DESCRIPTION.GUARDING,,
+MILITARY.SQUAD.ORDER_DESCRIPTION.OFF_DUTY,,
+MILITARY.SQUAD.ORDER_DESCRIPTION.RETREATING,,
+MILITARY.SQUAD.ORDER_DESCRIPTION.TRAINING,,
+MILITARY.SQUAD.SHIFT.DAYTIME,,
+MILITARY.SQUAD.SHIFT.NIGHTTIME,,
+MODS.APPLY,,Применить
+MODS.BUTTON.BROWSE,,
+MODS.BUTTON.REFRESH,,
+MODS.COMPATIBILITY.COMPATIBLE,,Да
+MODS.COMPATIBILITY.INCOMPATIBLE,,Нет
+MODS.COMPATIBILITY.UNKNOWN,,Неизвестно
+MODS.EMAIL_LOGIN.CHECK_EMAIL,,
+MODS.EMAIL_LOGIN.CODE_LABEL,,
+MODS.EMAIL_LOGIN.EMAIL,,
+MODS.EMAIL_LOGIN.EMAIL_LABEL,,
+MODS.EMAIL_LOGIN.ERROR,,
+MODS.EMAIL_LOGIN.INFO,,
+MODS.EMAIL_LOGIN.REQUEST_CODE,,
+MODS.EMAIL_LOGIN.SUBMIT_CODE,,
+MODS.INCOMPATIBLE_VERSION_DESCRIPTION,,
+MODS.MISSING_HOMEPAGE_URL,,
+MODS.MISSING_MODS_DIALOG_TEXT,,"Этот файл сохранения использовался в последний раз, когда были активны следующие моды. Эти моды теперь отсутствуют или отключены, поэтому сохранение может загружаться неправильно."
+MODS.MISSING_MODS_SAVE_EXCEPTION_DIALOG_TEXT,,"Не удалось загрузить файл сохранения, так как он несовместим с этой версией игры, или потому, что некоторые моды были отключены или удалены с момента последней загрузки этого сохранения. Ожидались следующие моды, но больше не активны:"
+MODS.SYNC_IN_PROGRESS,,
+MODS.TABLE.COMPATIBILITY,,
+MODS.TABLE.ENABLED,,
+MODS.TABLE.NAME,,
+MODS.TABLE.ORDERING,,Повторная сортировка
+MODS.TABLE.VERSION,,
+MUSHROOM.DESCRIPTION,,Поганка{{materialType.noun}}
+NEEDS.DRINK,,Жажда
+NEEDS.FOOD,,Голод
+NEEDS.SLEEP,,Усталость
+NOTIFICATION.AREA_REVEALED.DESCRIPTION,,Ваши шахтеры открыли новую территорию!
+NOTIFICATION.AREA_REVEALED.TITLE,,Исследование
+NOTIFICATION.DEATH.DESCRIPTION,,"{{character}}, умер из-за {{reason}}."
+NOTIFICATION.DEATH.KILLED_BY_DESCRIPTION,,
+NOTIFICATION.DEATH.SHORT_DESCRIPTION,,Умер из-за {{reason}}
+NOTIFICATION.DEATH.TITLE,,Смерть поселенцев
+NOTIFICATION.FIRE_STARTED.DESCRIPTION,,В вашем поселении вспыхнул пожар! 
+NOTIFICATION.FIRE_STARTED.TITLE,,Пожар!
+NOTIFICATION.FISH_EXHAUSTED.DESCRIPTION,,"Вы выловили так много рыбы в реке, что рыбы больше не осталось. Вам придется подождать до начала сезона нереста следующей весной, чтобы рыба вернулась."
+NOTIFICATION.FISH_EXHAUSTED.TITLE,,Рыба закончилась
+NOTIFICATION.GAME_OVER.DESCRIPTION,,Все должно закончиться. Ваше поселение заброшено.
+NOTIFICATION.GAME_OVER.TITLE,,Игра окончена
+NOTIFICATION.IMMIGRANTS_ARRIVED.DESCRIPTION,,"Процветание вашего поселения привлекло ряд новых жителей, чтобы увеличить ваше население."
+NOTIFICATION.IMMIGRANTS_ARRIVED.TITLE,,Жители
+NOTIFICATION.INVASION.DESCRIPTION,,
+NOTIFICATION.INVASION.TITLE,,
+NOTIFICATION.MINING_COLLAPSE.DESCRIPTION,,Область провалилась из-за отсутствия столбов и опор.
+NOTIFICATION.MINING_COLLAPSE.TITLE,,Шахта обрушилась
+NOTIFICATION.OXIDISATION_DESTRUCTION.DESCRIPTION,,"Предмет или мебель были разрушены из-за длительного пребывания под дождем. Некоторые материалы, такие как железо и сталь, не следует оставлять на улице в течение длительного времени."
+NOTIFICATION.OXIDISATION_DESTRUCTION.TITLE,,Заржавело
+NOTIFICATION.PIRATE_INVASION.DESCRIPTION,,
+NOTIFICATION.PIRATE_INVASION.TITLE,,
+NOTIFICATION.ROOFING_COLLAPSE.DESCRIPTION,,Обрушилась крыша из-за отсутствия столбов и опор
+NOTIFICATION.ROOFING_COLLAPSE.TITLE,,Крыша обрушилась
+NOTIFICATION.SETTLER_MENTAL_BREAK.DESCRIPTION,,Ужасающие трудности оказались слишком сложными для {{character}}.
+NOTIFICATION.SETTLER_MENTAL_BREAK.TITLE,,Нервный срыв
+NOTIFICATION.SETTLER_STUCK.DESCRIPTION,,
+NOTIFICATION.SETTLER_STUCK.TITLE,,
+NOTIFICATION.SETTLER_TANTRUM.DESCRIPTION,,"{{character}} стал так недоволен, что впал в ярость!"
+NOTIFICATION.SETTLER_TANTRUM.TITLE,,Ярость!
+NOTIFICATION.TRADER_ARRIVED.DESCRIPTION,,
+NOTIFICATION.TRADER_ARRIVED.TITLE,,
+NOTIFICATION.TRADER_ARRIVED_NO_DEPOT.DESCRIPTION,,
+NOTIFICATION.TRADER_ARRIVED_NO_DEPOT.TITLE,,
+ORE.BAUXITE.ADJECTIVE,,Бокситовый
+ORE.BAUXITE.NOUN,,Боксит
+ORE.BAUXITE.TOOLTIP,,"Боксит является основной рудой алюминия. К сожалению, способ производства алюминия пока не найден."
+ORE.BITUMINOUS_COAL.ADJECTIVE,,Каменно угольный
+ORE.BITUMINOUS_COAL.NOUN,,Каменный уголь
+ORE.BITUMINOUS_COAL.TOOLTIP,,Он может быть преобразован в {{ORE.COKE.NOUN}} с помощью {{FURNITURE.COKE_OVEN}}.
+ORE.CASSITERITE.ADJECTIVE,,Касситеритовый
+ORE.CASSITERITE.NOUN,,Касситерит
+ORE.CASSITERITE.TOOLTIP,,"Руда, которая может быть переплавлена для получения {{METAL.TIN.NOUN}}."
+ORE.CHARCOAL.ADJECTIVE,,Древесно угольный
+ORE.CHARCOAL.NOUN,,Древесный уголь
+ORE.CHARCOAL.TOOLTIP,,{{FUEL.SACK}} производится из дерева {{RESOURCE.LOGS.PLURAL}}.
+ORE.CHRYSOCOLLA.ADJECTIVE,,Хрисолловый
+ORE.CHRYSOCOLLA.NOUN,,Хрисолла
+ORE.CHRYSOCOLLA.TOOLTIP,,"Часто путают с бирюзой, но на самом деле руда {{METAL.COPPER}}."
+ORE.COKE.ADJECTIVE,,Коксовый
+ORE.COKE.NOUN,,Кокс
+ORE.COKE.TOOLTIP,,"Уточненная форма {{ORE.BITUMINOUS_COAL}}, которую можно использовать как {{FUEL.SACK}}."
+ORE.GALENA.ADJECTIVE,,Галеновый
+ORE.GALENA.NOUN,,Галенит
+ORE.GALENA.TOOLTIP,,"Руда, которая может быть переплавлена для получения{{METAL.SILVER}}."
+ORE.HEMATITE.ADJECTIVE,,Гематитовый
+ORE.HEMATITE.NOUN,,Гематит
+ORE.HEMATITE.TOOLTIP,,"Руда, которая может быть переплавлена для получения {{METAL.IRON}}."
+ORE.ILMENITE.ADJECTIVE,,Илменитовый
+ORE.ILMENITE.NOUN,,Илменит
+ORE.ILMENITE.TOOLTIP,,"Ильменит является основной рудой титана. К сожалению, способ производства титана пока не найден."
+ORE.MALACHITE.ADJECTIVE,,Малахитовый
+ORE.MALACHITE.NOUN,,Малахит
+ORE.MALACHITE.TOOLTIP,,"Руда, которая может быть переплавлена для получения {{METAL.COPPER}}."
+ORE.NATIVE_COPPER.ADJECTIVE,,Самородная медь
+ORE.NATIVE_COPPER.NOUN,,Самородная медь
+ORE.NATIVE_COPPER.TOOLTIP,,"Встречается в естественном виде {{METAL.COPPER}}, должно быть переплавлено перед использование."
+ORE.NATIVE_GOLD.ADJECTIVE,,Самородное золото
+ORE.NATIVE_GOLD.NOUN,,Самородное золото
+ORE.NATIVE_GOLD.TOOLTIP,,"Встречается в естественном виде {{METAL.GOLD}}, должно быть переплавлено перед использование."
+ORE.NATIVE_PLATINUM.ADJECTIVE,,Самородная платина
+ORE.NATIVE_PLATINUM.NOUN,,Самородная платина
+ORE.NATIVE_PLATINUM.TOOLTIP,,"Встречается в естественном виде {{METAL.PLATINUM}}, должно быть переплавлено перед использование."
+ORE.NATIVE_SILVER.ADJECTIVE,,Самородное серебро
+ORE.NATIVE_SILVER.NOUN,,Самородное серебро
+ORE.NATIVE_SILVER.TOOLTIP,,"Встречается в естественном виде {{METAL.SILVER}}, должно быть переплавлено перед использованием."
+ORE.POLLUCITE.ADJECTIVE,,Поллюцитовый
+ORE.POLLUCITE.NOUN,,Поллюцит
+ORE.POLLUCITE.TOOLTIP,,"Поллюцит является рудой цезия, которая в настоящее время слишком опасна для производства. Особенно отчаянные кузнецы гномы в настоящее время пытаются найти надежный способ его производства."
+ORE.PYRITE.ADJECTIVE,,Пиритовый
+ORE.PYRITE.NOUN,,Пирит
+ORE.PYRITE.TOOLTIP,,"Также известен как Золото дураков, его бледно-желтый внешний вид заставляет некоторых принять его за золото. Он имеет несколько применений при дроблении, но необходимо проявлять осторожность, поскольку он крошится при ударе."
+ORE.THORIUM.ADJECTIVE,,Ториевый
+ORE.THORIUM.NOUN,,Торий
+ORE.THORIUM.TOOLTIP,,"Серебристая металлическая руда, которая становится черной при воздействии воздуха. Странная и теплая на ощупь."
+ORE.WOLFRAMITE.ADJECTIVE,,Вольфрамовый
+ORE.WOLFRAMITE.NOUN,,Вольфрам
+ORE.WOLFRAMITE.TOOLTIP,,"Металлическая руда, которая усложняет плавку олова. Она имеет слишком высокую температуру плавления, чтобы быть выплавленной обычным способом."
+OTHER.ASH,,Обгоревший
+OTHER.BRICK.NOUN,,Кирпич
+OTHER.CLAY_SOIL.NOUN,,Глинозем
+OTHER.GRASS.NOUN,,Трава
+PRIORITY.DISABLED,,
+PRIORITY.HIGHER,,Высокий
+PRIORITY.HIGHEST,,Наивысший
+PRIORITY.LOWER,,Низкий
+PRIORITY.LOWEST,,Очень низкий
+PRIORITY.NORMAL,,Нормальный
+PRIVACY.OPT_IN.ACCEPT_BUTTON,,Я принимаю
+PRIVACY.OPT_IN.DATA_POINT.1,,
+PRIVACY.OPT_IN.DATA_POINT.2,,
+PRIVACY.OPT_IN.DATA_POINT.3,,
+PRIVACY.OPT_IN.DESCRIPTION,,
+PRIVACY.OPT_IN.DO_NOT_ACCEPT_BUTTON,,Отключить отчеты
+PRODUCT.ANVIL,,Наковальня
+PRODUCT.ANVIL.PLURAL,,
+PRODUCT.ANVIL.TOOLTIP,,"Большой блок металла, используемый для придания формы нагретому металлу. Требуется для создания {{FURNITURE.FORGE}."
+PRODUCT.BARREL.HOOPS,,Обручи для бочек
+PRODUCT.BARREL.HOOPS.TOOLTIP,,"Металлические обручи, используемые для построения {{PRODUCT.BARREL.NOUN}}. Также используется в некоторых машинах."
+PRODUCT.BARREL.NOUN,,Бочка
+PRODUCT.BARREL.PLURAL,,Бочки
+PRODUCT.BARREL.STAVES,,Бочарные клепки
+PRODUCT.BARREL.STAVES.TOOLTIP,,"Изогнутые деревянные доски, используемые для построения {{PRODUCT.BARREL.NOUN}}."
+PRODUCT.BARREL.TOOLTIP,,Цилиндрический контейнер для жидкостей. Изогнутая форма облегчает транспортировку.
+PRODUCT.BOWL,,Миска
+PRODUCT.BOWL.DESCRIPTION,,Миска с супом ({{cooking.soup.description}})
+PRODUCT.BOWL.PLURAL,,
+PRODUCT.BREAD.DOUGH.NOUN,,Тесто
+PRODUCT.BREAD.DOUGH.PLURAL,,Тесто
+PRODUCT.BREAD.DOUGH.TOOLTIP,,"Смесь ингредиентов, которые могут быть запечены в {{PRODUCT.BREAD.LOAF.PLURAL}}, используя {{FURNITURE.BAKING_OVEN}}."
+PRODUCT.BREAD.LOAF.NOUN,,Хлеб
+PRODUCT.BREAD.LOAF.PLURAL,,Хлеб
+PRODUCT.BREAD.LOAF.TOOLTIP,,"Готовый хлеб, готовый к употреблению!"
+PRODUCT.BUCKET.NOUN,,Ведро
+PRODUCT.BUCKET.PLURAL,,Ведра
+PRODUCT.BUCKET.TOOLTIP,,"Небольшой контейнер, используемый для перемещения жидкостей вручную."
+PRODUCT.CAULDRON,,Котел
+PRODUCT.CAULDRON.PLURAL,,
+PRODUCT.CAULDRON.TOOLTIP,,"Используется {{PROFESSION.CHEF}} для приготовления супа в {{ROOMS.KITCHEN}}, где он затем перемещается в {{ROOMS.FEASTING_HALL}}."
+PRODUCT.CHEST.NOUN,,
+PRODUCT.CHEST.PLURAL,,
+PRODUCT.CHEST.TOOLTIP,,
+PRODUCT.LEATHER.NOUN,,
+PRODUCT.LEATHER.PLURAL,,
+PRODUCT.LINEN.NOUN,,Лен
+PRODUCT.LINEN.PLURAL,,Льна
+PRODUCT.LINEN.TOOLTIP,,
+PRODUCT.LIQUID.TANK,,Бак
+PRODUCT.LIQUID.TANK.PLURAL,,
+PRODUCT.LIQUID.TANK.TOOLTIP,,"Это металлический контейнер, используемый для хранения жидкостей, который должен быть изготовлен на {{FURNITURE.FORGE}}."
+PRODUCT.MILLSTONE,,Жернов
+PRODUCT.MILLSTONE.PLURAL,,
+PRODUCT.MILLSTONE.TOOLTIP,,"Два больших каменных диска, которые измельчают зерно. Используется для построения {{FURNITURE.FLOUR_MILL}}."
+PRODUCT.RATION.DOUGH.NOUN,,
+PRODUCT.RATION.DOUGH.PLURAL,,
+PRODUCT.RATION.DOUGH.TOOLTIP,,
+PRODUCT.RATION.NOUN,,Паек
+PRODUCT.RATION.PLURAL,,Пайки
+PRODUCT.RATION.TOOLTIP,,"Их ватит на долгое время чтобы накормить ваших поселенцев, но в первую очередь вам понадобятся другие источники пищи."
+PRODUCT.ROPE.NOUN,,Веревка
+PRODUCT.ROPE.PLURAL,,Веревки
+PRODUCT.STONE.GEAR.NOUN,,Шестерня
+PRODUCT.STONE.GEAR.PLURAL,,Шестерни
+PRODUCT.STONE.GEAR.TOOLTIP,,Используется при строительстве механизмов 
+PRODUCT.STONE.PIPE.NOUN,,Труба
+PRODUCT.STONE.PIPE.PLURAL,,Трубы
+PRODUCT.STONE.PIPE.TOOLTIP,,Используется для перемещения жидкостей под землей
+PRODUCT.WATERSKIN.NOUN,,
+PRODUCT.WATERSKIN.PLURAL,,
+PRODUCT.WOODEN.SHAFT.HORIZONTAL.NOUN,,Горизонтальный вал 
+PRODUCT.WOODEN.SHAFT.HORIZONTAL.PLURAL,,Горизонтальные валы 
+PRODUCT.WOODEN.SHAFT.HORIZONTAL.TOOLTIP,,"Используется для соединения механизмов, которые производят и требуют энергии"
+PRODUCT.WOODEN.SHAFT.VERTICAL.NOUN,,Вертикальный вал
+PRODUCT.WOODEN.SHAFT.VERTICAL.PLURAL,,Вертикальные валы
+PRODUCT.WOODEN.SHAFT.VERTICAL.TOOLTIP,,"Используется для соединения механизмов, которые производят и требуют энергии"
+PROFESSION.ARTISAN.FEMALE_NOUN,,
+PROFESSION.ARTISAN.MALE_NOUN,,
+PROFESSION.ARTISAN.PLURAL,,
+PROFESSION.ARTISAN.VERB,,
+PROFESSION.BAKER.VERB,,Выпекание
+PROFESSION.BLACKSMITH.FEMALE_NOUN,,Кузнец
+PROFESSION.BLACKSMITH.MALE_NOUN,,Кузнец
+PROFESSION.BLACKSMITH.PLURAL,,
+PROFESSION.BLACKSMITH.TOOLTIP,,"Изготавливает предметы из металла, а также производит металл из руды."
+PROFESSION.BLACKSMITH.VERB,,Ковка
+PROFESSION.BREWER.FEMALE_NOUN,,Пивовар
+PROFESSION.BREWER.MALE_NOUN,,Пивовар
+PROFESSION.BREWER.PLURAL,,
+PROFESSION.BREWER.TOOLTIP,,Производит пиво в {{ROOMS.BREWERY}} 
+PROFESSION.BREWER.VERB,,Пивоварение
+PROFESSION.CARPENTER.FEMALE_NOUN,,Плотник
+PROFESSION.CARPENTER.MALE_NOUN,,Плотник
+PROFESSION.CARPENTER.PLURAL,,
+PROFESSION.CARPENTER.TOOLTIP,,Создает мебель и предметы из дерева.
+PROFESSION.CARPENTER.VERB,,Изготовление
+PROFESSION.CHEF.FEMALE_NOUN,,Повар
+PROFESSION.CHEF.MALE_NOUN,,Повар
+PROFESSION.CHEF.PLURAL,,
+PROFESSION.CHEF.TOOLTIP,,"Готовит все продукты питания, которые будут потребляться вашими поселенцами."
+PROFESSION.CHEF.VERB,,Приготовление еды
+PROFESSION.DESCRIPTION,,
+PROFESSION.FARMER.FEMALE_NOUN,,Фермер
+PROFESSION.FARMER.MALE_NOUN,,Фермер
+PROFESSION.FARMER.PLURAL,,Фермеры
+PROFESSION.FARMER.TOOLTIP,,"Сажает, ухаживает и собирает урожай."
+PROFESSION.FARMER.VERB,,Выращивание
+PROFESSION.FISHER.FEMALE_NOUN,,Рыболов
+PROFESSION.FISHER.MALE_NOUN,,Рыболов
+PROFESSION.FISHER.TOOLTIP,,Ловит рыбу из водоемов для использования в качестве пищи и ресурсов.
+PROFESSION.FISHER.VERB,,Рыбалка
+PROFESSION.HUNTER.FEMALE_NOUN,,Охотница
+PROFESSION.HUNTER.MALE_NOUN,,Охотник
+PROFESSION.HUNTER.TOOLTIP,,Выслеживает и убивает диких животных ради их мяса и шкур.
+PROFESSION.HUNTER.VERB,,Охота
+PROFESSION.LEATHERWORKER.FEMALE_NOUN,,
+PROFESSION.LEATHERWORKER.MALE_NOUN,,
+PROFESSION.LEATHERWORKER.PLURAL,,
+PROFESSION.LEATHERWORKER.TOOLTIP,,
+PROFESSION.LEATHERWORKER.VERB,,
+PROFESSION.MAYOR.FEMALE_NOUN,,Мэр
+PROFESSION.MAYOR.MALE_NOUN,,Мэр
+PROFESSION.MAYOR.VERB,,Управляющий
+PROFESSION.MERCHANT.FEMALE_NOUN,,Торговец
+PROFESSION.MERCHANT.MALE_NOUN,,Торговец
+PROFESSION.MERCHANT.VERB,,Торговля
+PROFESSION.MILLER.VERB,,Измельчение
+PROFESSION.MINER.FEMALE_NOUN,,Шахтер
+PROFESSION.MINER.MALE_NOUN,,Шахтер
+PROFESSION.MINER.PLURAL,,
+PROFESSION.MINER.TOOLTIP,,Выкапывает новые участки с помощью {{TOOL.PICKAXE}}.
+PROFESSION.MINER.VERB,,Копание
+PROFESSION.NOBLE.FEMALE_NOUN,,Аристократка
+PROFESSION.NOBLE.MALE_NOUN,,Аристократ
+PROFESSION.NOBLE.TOOLTIP,,"Дворяне выполняют работу так же, как обычные поселенцы, но приносят славу и престиж вашему поселению."
+PROFESSION.NOBLE.VERB,,Царствование
+PROFESSION.PIRATE.FEMALE_NOUN,,
+PROFESSION.PIRATE.MALE_NOUN,,
+PROFESSION.PIRATE.VERB,,
+PROFESSION.RUNESMITH.FEMALE_NOUN,,Мастер рун
+PROFESSION.RUNESMITH.MALE_NOUN,,Мастер рун
+PROFESSION.RUNESMITH.TOOLTIP,,"Зачаровывает оружие, доспехи и предметы магическими рунами, чтобы повысить их характеристики."
+PROFESSION.RUNESMITH.VERB,,Зачарование
+PROFESSION.SKILL_LEVEL.1,,
+PROFESSION.SKILL_LEVEL.1.TOOLTIP,,
+PROFESSION.SKILL_LEVEL.2,,
+PROFESSION.SKILL_LEVEL.2.TOOLTIP,,
+PROFESSION.SKILL_LEVEL.3,,
+PROFESSION.SKILL_LEVEL.3.TOOLTIP,,
+PROFESSION.SKILL_LEVEL.4,,
+PROFESSION.SKILL_LEVEL.4.TOOLTIP,,
+PROFESSION.SKILL_LEVEL.5,,
+PROFESSION.SKILL_LEVEL.5.TOOLTIP,,
+PROFESSION.SKILL_LEVEL.6,,
+PROFESSION.SKILL_LEVEL.6.TOOLTIP,,
+PROFESSION.SKILL_LEVEL.7,,
+PROFESSION.SKILL_LEVEL.7.TOOLTIP,,
+PROFESSION.SKILL_LEVEL.8,,
+PROFESSION.SKILL_LEVEL.8.TOOLTIP,,
+PROFESSION.SKILL_LEVEL.9,,
+PROFESSION.SKILL_LEVEL.9.TOOLTIP,,
+PROFESSION.STONEMASON.FEMALE_NOUN,,Каменщица
+PROFESSION.STONEMASON.MALE_NOUN,,Каменщик
+PROFESSION.STONEMASON.PLURAL,,
+PROFESSION.STONEMASON.TOOLTIP,,Создает мебель и предметы из камня.
+PROFESSION.STONEMASON.VERB,,Высекание
+PROFESSION.VILLAGER.FEMALE_NOUN,,Крестьянка
+PROFESSION.VILLAGER.MALE_NOUN,,Крестьянин
+PROFESSION.VILLAGER.TOOLTIP,,"Этот поселенец не имеет какой-либо конкретной профессии и будет выполнять любые повседневные задачи, такие как транспортировка предметов."
+PROFESSION.VILLAGER.VERB,,Рабочий
+PROFESSION.WEAVER.FEMALE_NOUN,,
+PROFESSION.WEAVER.MALE_NOUN,,
+PROFESSION.WEAVER.PLURAL,,
+PROFESSION.WEAVER.TOOLTIP,,
+PROFESSION.WEAVER.VERB,,
+PROFESSION.WOODCUTTER.FEMALE_NOUN,,Резчица по дереву
+PROFESSION.WOODCUTTER.MALE_NOUN,,Резчик по дереву
+PROFESSION.WOODCUTTER.PLURAL,,
+PROFESSION.WOODCUTTER.TOOLTIP,,"Рубит деревья на пиломатериалы, которые могут быть использованы в {{ROOMS.SAWMILL}}."
+PROFESSION.WOODCUTTER.VERB,,Рубка
+QUOTA.FIXED_AMOUNT,,Всего
+QUOTA.PER_SETTLER,,На поселенца
+RACE.BOAR.NOUN,,Кабан
+RACE.CARP.NOUN,,Карп
+RACE.DEER.FEMALE_NOUN,,Лань
+RACE.DEER.MALE_NOUN,,Олень
+RACE.DEER.TOOLTIP,,"Олень - неопасное травоядное животное, которое убегает при любом признаке опасности"
+RACE.DWARF.FEMALE_ADJECTIVE,,Гномий
+RACE.DWARF.FEMALE_NOUN,,Гномиха
+RACE.DWARF.FEMALE_PLURAL,,Гномы
+RACE.DWARF.MALE_ADJECTIVE,,Гномий
+RACE.DWARF.MALE_NOUN,,Гном
+RACE.DWARF.MALE_PLURAL,,Гномы
+RACE.DWARF.TOOLTIP,,Гномы низкие и похожи на людей. Они мастера работы с камнем и металлом. Большинство гномов любят жить под открытым небом и предпочитают оставаться под землей.
+RACE.ELEPHANT.NOUN,,Слон
+RACE.FOX.FEMALE_NOUN,,Лисица
+RACE.FOX.MALE_NOUN,,Лис
+RACE.FUNGOLEM,,
+RACE.HORSE.NOUN,,
+RACE.ORC.MALE_ADJECTIVE,,
+RACE.ORC.MALE_NOUN,,
+RACE.PERCH.NOUN,,Окунь
+RACE.PIKE.NOUN,,Щука
+RACE.SPIDER,,
+RACE.UNDEAD_DWARF,,
+RACE.WURM,,
+RESOURCE.BONE.LARGE.NOUN,,
+RESOURCE.BONE.LARGE.PLURAL,,
+RESOURCE.BONE.MEDIUM.NOUN,,
+RESOURCE.BONE.MEDIUM.PLURAL,,
+RESOURCE.BONE.SMALL.NOUN,,
+RESOURCE.BONE.SMALL.PLURAL,,
+RESOURCE.FLOUR.SACK.NOUN,,Мука
+RESOURCE.FLOUR.SACK.PLURAL,,Мука
+RESOURCE.FLOUR.SACK.TOOLTIP,,"Зерно, которое было измельчено в мелкий порошок, готовый к использованию в качестве ингредиента в производстве продуктов питания."
+RESOURCE.GEMS.UNREFINED.NOUN,,Необработанный самоцвет
+RESOURCE.GEMS.UNREFINED.PLURAL,,Необработанные самоцветы
+RESOURCE.GEMS.UNREFINED.TOOLTIP,,"Кусок породы, содержащий драгоценные камни, готовые к разрезанию и полировке."
+RESOURCE.GRAIN.SACK.NOUN,,Зерно (мешок)
+RESOURCE.GRAIN.SACK.PLURAL,,Зерно (мешок)
+RESOURCE.HEMP.BUNDLE.NOUN,,Пучок пеньки
+RESOURCE.HEMP.BUNDLE.PLURAL,,Пучок пеньки
+RESOURCE.HEMP.FIBRE.BUNDLE.NOUN,,Пучок волокон пеньки
+RESOURCE.HEMP.FIBRE.BUNDLE.PLURAL,,Пучок волокон пеньки
+RESOURCE.LOGS.NOUN,,Бревно
+RESOURCE.LOGS.PLURAL,,Бревна
+RESOURCE.LOGS.TOOLTIP,,"Отрезки дерева, которые чаще всего подготавливаются в {{RESOURCE.PLANKS.PLURAL}}, но имеют и другие виды применения."
+RESOURCE.METAL.BLOOM.NOUN,,Цветение
+RESOURCE.METAL.BLOOM.PLURAL,,Цветет
+RESOURCE.METAL.BLOOM.TOOLTIP,,"Кусок металла, смешанного со шлаком, который необходимо перековать в пригодную для использования форму."
+RESOURCE.METAL.INGOT.NOUN,,Слиток
+RESOURCE.METAL.INGOT.PLURAL,,Слитки
+RESOURCE.METAL.INGOT.TOOLTIP,,"Обработанные металлические блоки, готовые к использованию в производстве и строительстве."
+RESOURCE.METAL.PLATE.NOUN,,Пластина
+RESOURCE.METAL.PLATE.PLURAL,,Пластины
+RESOURCE.METAL.PLATE.TOOLTIP,,"Большие плоские пластины, которые используются в некоторых крупных машинах."
+RESOURCE.MUSHROOM.LOG.NOUN,,Грибное бревно
+RESOURCE.MUSHROOM.LOG.PLURAL,,Грибные бревна
+RESOURCE.MUSHROOM.LOG.TOOLTIP,,"Бревно, которое было использовано с {{INGREDIENT.MUSHROOM.SPAWN.NOUN}}. Тело самого бревна — это место, откуда грибы черпают питательные вещества. Оно требует обливания в {{FURNITURE.MUSHROOM_SHOCK_TANK}} после того, как он станет полностью покрытым спорами."
+RESOURCE.MUSHROOM.LUMBER.NOUN,,Грибное бревно
+RESOURCE.MUSHROOM.LUMBER.PLURAL,,Грибные бревна
+RESOURCE.MUSHROOM.LUMBER.TOOLTIP,,"Куски гигантского гриба, которые можно использовать так же, как дерево {{RESOURCE.LOGS.PLURAL}}."
+RESOURCE.ORE.CRUSHED.NOUN,,Дробленая руда
+RESOURCE.ORE.CRUSHED.PLURAL,,Дробленые руды
+RESOURCE.ORE.CRUSHED.TOOLTIP,,"Металлический песок, созданный путем разрушения необработанной металлической руды, готовый к использованию в {{FURNITURE.BLOOMERY_FURNACE}}."
+RESOURCE.ORE.UNREFINED.NOUN,,Руда
+RESOURCE.ORE.UNREFINED.PLURAL,,Руды
+RESOURCE.ORE.UNREFINED.TOOLTIP,,"Камень, содержащий металлические руды, которые могут быть переработаны в пригодный для использования металл."
+RESOURCE.PLANKS.NOUN,,Доска
+RESOURCE.PLANKS.PLURAL,,Доски
+RESOURCE.PLANKS.TOOLTIP,,"Отрезки дерева фиксированного размера, поэтому они могут быть легко использованы в строительстве или производстве."
+RESOURCE.SHOCKED.MUSHROOM.LOG.NOUN,,Грибное бревно
+RESOURCE.SHOCKED.MUSHROOM.LOG.PLURAL,,Грибные бревна
+RESOURCE.SHOCKED.MUSHROOM.LOG.TOOLTIP,,"Это пропитанное грибами бревно было “шокировано” водой, чтобы стимулировать развитие грибов, и вскоре должно дать урожай."
+RESOURCE.STONE.BLOCK.NOUN,,Блок
+RESOURCE.STONE.BLOCK.PLURAL,,Блоки
+RESOURCE.STONE.BLOCK.TOOLTIP,,"Камень, который был обработан в виде куба, так что его можно легко использовать в строительстве или производстве."
+RESOURCE.STONE.UNREFINED.NOUN,,Грубый валун
+RESOURCE.STONE.UNREFINED.PLURAL,,Грубые валуны
+RESOURCE.STONE.UNREFINED.TOOLTIP,,"Огромный кусок камня, который должен быть обработан в более полезную форму с помощью {{PROFESSION.STONEMASON}}."
+RESOURCE.WHEAT.SACK.NOUN,,Пшеница (мешок)
+RESOURCE.WHEAT.SACK.PLURAL,,Пшеница (мешки)
+RESOURCE.WHEAT.SACK.TOOLTIP,,
+ROOMS.ARMOURY,,Оружейная
+ROOMS.ARMOURY.TOOLTIP,,Здесь создаются оружие и доспехи 
+ROOMS.ARTISAN_WORKSHOP,,
+ROOMS.ARTISAN_WORKSHOP.TOOLTIP,,
+ROOMS.BAKERY,,
+ROOMS.BAKERY.TOOLTIP,,
+ROOMS.BARRACKS,,
+ROOMS.BARRACKS.TOOLTIP,,
+ROOMS.BEDROOM,,Спальня
+ROOMS.BEDROOM.TOOLTIP,,"Место для ночлега ваших поселенцев. Они предпочитают иметь отдельные спальни размером не менее 9 квадратов, а жалательно не менее 13 квадратов."
+ROOMS.BREWERY,,Пивоварня
+ROOMS.BREWERY.TOOLTIP,,Варите пиво для ваших поселенцев! Другие алкогольные напитки будут реализованы в будущем. 
+ROOMS.BRIDGE,,Мост
+ROOMS.BRIDGE.TOOLTIP,,"Размещенный через реку, чтобы обеспечить доступ к другой стороне."
+ROOMS.CARPENTRY_WORKSHOP,,Мастерская плотника
+ROOMS.CARPENTRY_WORKSHOP.TOOLTIP,,Эта мастерская производит большинство деревянных инструментов и предметов.
+ROOMS.COMPONENT.STOCKPILE.DESCRIPTION,,"{{выделено}} {{total}} пробелов, используемых в настоящее время"
+ROOMS.FARM,,Огород
+ROOMS.FARM.PLURAL,,Земельные участки
+ROOMS.FARM.TOOLTIP,,Растет посевы с помощью {{INGREDIENT.SEEDS.PLURAL}}. Должен быть помещен на {{MATERIAL_TYPE.EARTH.NOUN}}.
+ROOMS.FEASTING_HALL,,Праздничный зал
+ROOMS.FEASTING_HALL.TOOLTIP,,"Место для поселенцев, чтобы собраться, чтобы поесть, выпить и веселиться!"
+ROOMS.FUEL_REFINERY,,
+ROOMS.FUEL_REFINERY.TOOLTIP,,
+ROOMS.GRAVEYARD,,Кладбище
+ROOMS.GRAVEYARD.TOOLTIP,,Здесь покоятся умершие поселенцы.
+ROOMS.ITERATIVE_NAMED_ROOM,,
+ROOMS.KITCHEN,,Кухня
+ROOMS.KITCHEN.TOOLTIP,,Большая часть пищи готовится здесь перед подачей в {{ROOMS.FEASTING_HALL}}.
+ROOMS.LEATHER_WORKSHOP,,
+ROOMS.LEATHER_WORKSHOP.TOOLTIP,,
+ROOMS.MASONRY_WORKSHOP,,Мастерская каменщика
+ROOMS.MASONRY_WORKSHOP.TOOLTIP,,Эта мастерская производит большинство изделий из камня.
+ROOMS.MUSHROOM_FARM,,Грибная ферма
+ROOMS.MUSHROOM_FARM.TOOLTIP,,Грибы можно выращивать с использованием {{INGREDIENT.MUSHROOM.SPAWN.NOUN}} и деревянных {{RESOURCE.LOGS.PLURAL}}.
+ROOMS.SAWMILL,,Лесопилка
+ROOMS.SAWMILL.TOOLTIP,,Деревянные {{RESOURCE.LOGS.PLURAL}} превращются {{RESOURCE.PLANKS.PLURAL}} здесь.
+ROOMS.SMELTERY,,
+ROOMS.SMELTERY.TOOLTIP,,
+ROOMS.SMITHY,,
+ROOMS.SMITHY.TOOLTIP,,
+ROOMS.STOCKPILE,,Хранилища
+ROOMS.STOCKPILE.TOOLTIP,,В зависимости от настроек здесь хранятся различные предметы 
+ROOMS.STOCKPILES,,Склады
+ROOMS.STOCKPILES.TOOLTIP,,Неиспользованные предметы помещаются на склады для облегчения доступа.
+ROOMS.STOCKPILE_WITH_GROUP_NAME,,
+ROOMS.TEXTILE_WORKSHOP,,Швейная мастерская
+ROOMS.TEXTILE_WORKSHOP.TOOLTIP,,Превращает {{SEED.HEMP_SEED}} в различные ткани
+ROOMS.TRADING_DEPOT,,
+ROOMS.TRADING_DEPOT.TOOLTIP,,
+ROPE.AGED_ROPE,,
+ROPE.BRONZED_ROPE,,
+ROPE.GRAY_ROPE,,
+ROPE.HEMP-ROPE,,Пенька
+ROPE.TOBACCO_ROPE,,
+RUSTED_SCRAP.NOUN,,Лом
+RUSTED_SCRAP.TOOLTIP,,"Это остатки предмета, который полностью разрушился из-за ржавчины."
+SEASON.AUTUMN,,Осень
+SEASON.SPRING,,Весна
+SEASON.SUMMER,,Лето
+SEASON.WINTER,,Зима
+SEED.BARLEY_SEED,,Ячмень
+SEED.BARLEY_SEED.TOOLTIP,,"Зерно используется только при производстве пива. Можно посадить в {{SEASON.SPRING}}, {{SEASON.SUMMER}} или {{SEASON.AUTUMN}}."
+SEED.BERSERKER_MUSHROOM_SPAWN,,Мухомор
+SEED.BERSERKER_MUSHROOM_SPAWN.TOOLTIP,,"Гриб с розово-красной крышкой с белыми пятнами. Он обладает галлюциногенными свойствами, которые иногда используют воины при подготовке к бою."
+SEED.CARROT_SEED,,Морковь
+SEED.CARROT_SEED.TOOLTIP,,"Выносливый корнеплод, который переживет морозную {{SEASON.WINTER}}. Морковь растет быстро, но дает небольшой урожай. Можно посадить в {{SEASON.SPRING}}, {{SEASON.SUMMER}} или {{SEASON.AUTUMN}}."
+SEED.CORN_SEED,,Кукуруза
+SEED.CORN_SEED.TOOLTIP,,"Зерно, также известное как кукуруза. Она дает обильный урожай, но растет около 2 сезонов и не может пережить {{SEASON.WINTER}}, поэтому ее нужно сажать в начале {{SEASON.SPRING}}."
+SEED.DEATH_CAP_SPAWN,,Смертошляпник
+SEED.DEATH_CAP_SPAWN.TOOLTIP,,"Очень ядовитый гриб с широкой плоской крышкой. Поедать даже крошечное количество почти наверняка приведет к отравлению, которое может привести к смерти."
+SEED.ELFSBANE_SPAWN,,Эльфийский аконит
+SEED.ELFSBANE_SPAWN.TOOLTIP,,"Этот гриб имеет простой, безвкусный вкус для большинства гуманоидов. Как ни странно, это на вкус абсолютно отвратительно для эльфов, которые часто реагируют с взрывной рвотой при потреблении, а в крайних случаях — сердечный приступ."
+SEED.FIST_SPAWN,,Кулаковик
+SEED.FIST_SPAWN.TOOLTIP,,Черно-синий гриб с металлическим вкусом. Он назван в честь группы бардов из эпохи тьмы.
+SEED.GLOW_SPAWN,,Светлянка
+SEED.GLOW_SPAWN.TOOLTIP,,"Волшебный гриб, который излучает свет и меняет цвет в зависимости от сезона."
+SEED.HEMP_SEED,,Пенька
+SEED.HEMP_SEED.TOOLTIP,,"Используется для производства веревки и ткани после того, как она была обработана"
+SEED.HOPS_SEED,,Хмель
+SEED.HOPS_SEED.TOOLTIP,,"Цветок, используемый для ароматизации пива. Должен быть посажен в {{SEASON.SPRING}}."
+SEED.MILTONIA_SPAWN,,Мильтония
+SEED.MILTONIA_SPAWN.TOOLTIP,,"Когда-то считалось, что существует только в регионе Хаддс, он сейчас встречается во всем мире."
+SEED.POTATO_SEED,,Картофель
+SEED.POTATO_SEED.TOOLTIP,,"Крахмалистый корнеплод, который может пережить {{SEASON.WINTER}}, что делает его хорошим выбором для большинства поселений. Можно посадить в {{SEASON.SPRING}}, {{SEASON.SUMMER}} или {{SEASON.AUTUMN}}."
+SEED.PURPLE_HELMET_SPAWN,,Пурпурошляпник
+SEED.PURPLE_HELMET_SPAWN.TOOLTIP,,"Толстошляпник, Пухлотюрбаннник, Пухлошлемник; Этот легендарный гриб имеет множество названий. Легенда гласит, что многие сообщества гномов питались только одним видом этого гриба."
+SEED.ROCIOMYCOTA_MUSHROOM_SPAWN,,Роциомикота
+SEED.ROCIOMYCOTA_MUSHROOM_SPAWN.TOOLTIP,,"Бело-черный пятнистый гриб. Известно, что он влияет на внешний вид тех, кто его ест."
+SEED.SUNGLOW_SPAWN,,Солнцесветник
+SEED.SUNGLOW_SPAWN.TOOLTIP,,"Ярко-желтый гриб, который светится с появлением солнечного света. Он теряет это свечение в момент сбора урожая."
+SEED.SYRUP_POWDER_SPAWN,,Пончиковник
+SEED.SYRUP_POWDER_SPAWN.TOOLTIP,,"Круглый оранжевый или желтый гриб с белой нижней стороной. Говорят, что его использовали маги давным-давно, но с какой целью никто не знает."
+SEED.TOMATO_SEED,,Помидоры
+SEED.TOMATO_SEED.TOOLTIP,,"Растение, на котором растут крупные красные ягоды, часто используемое в качестве овоща. Можно посадить только в {{SEASON.SPRING}}."
+SEED.WHEAT_SEED,,Пшеница
+SEED.WHEAT_SEED.TOOLTIP,,"Злаковое зерно, обычно используемое для производства хлеба. Она может пережить {{SEASON.WINTER}}, но растет долго, поэтому его сожают либо в {{SEASON.SPRING}}, либо {{SEASON.AUTUMN}}."
+SHRUB.DESCRIPTION,,Куст
+SKILL.ARCHERY.FEMALE_NOUN,,
+SKILL.ARCHERY.MALE_NOUN,,
+SKILL.ARCHERY.TOOLTIP,,
+SKILL.AXES.FEMALE_NOUN,,
+SKILL.AXES.MALE_NOUN,,
+SKILL.AXES.TOOLTIP,,
+SKILL.CROSSBOWS.FEMALE_NOUN,,
+SKILL.CROSSBOWS.MALE_NOUN,,
+SKILL.CROSSBOWS.TOOLTIP,,
+SKILL.MACES.FEMALE_NOUN,,
+SKILL.MACES.MALE_NOUN,,
+SKILL.MACES.TOOLTIP,,
+SKILL.SWORDSMANSHIP.FEMALE_NOUN,,
+SKILL.SWORDSMANSHIP.MALE_NOUN,,
+SKILL.SWORDSMANSHIP.TOOLTIP,,
+SKILL.UNARMED_COMBAT.FEMALE_NOUN,,
+SKILL.UNARMED_COMBAT.MALE_NOUN,,
+SKILL.UNARMED_COMBAT.TOOLTIP,,
+SKIN.BOAR_HIDE,,
+SKIN.DEER_HIDE,,
+SKIN.DWARF_HIDE,,
+SKIN.ELEPHANT_HIDE,,
+SKIN.HORSE_HIDE,,
+STATUS.ALCOHOL_WITHDRAWL,,Отказ от алкоголя
+STATUS.BLEEDING,,Кровотечение 
+STATUS.BLINDED,,Слепота
+STATUS.DEATH,,Мертвый
+STATUS.DRUNK,,Пьяный
+STATUS.DYING_OF_HUNGER,,Умирает от голода
+STATUS.DYING_OF_THIRST,,Умирает от жажды
+STATUS.EXHAUSTED,,Измученный 
+STATUS.INTERNAL_BLEEDING,,Внутреннее кровотечение
+STATUS.KNOCKED_UNCONSCIOUS,,Без сознания
+STATUS.LOSS_MAIN_HAND,,
+STATUS.LOSS_OFF_HAND,,
+STATUS.MOVEMENT_IMPAIRED,,Нарушение движения 
+STATUS.ON_FIRE,,Горит
+STATUS.POISONED,,Отравлен
+STATUS.TEMPORARILY_BLINDED,,Временно ослеплен 
+STATUS.VERY_HUNGRY,,Очень голоден
+STATUS.VERY_THIRSTY,,Очень хочет пить
+STOCKPILE.GROUP.FOOD,,Еда
+STOCKPILE.GROUP.FOOD.TOOLTIP,,"Хранит собранные фрукты и овощи, срок годности которых истекает."
+STOCKPILE.GROUP.FUEL,,Топливо
+STOCKPILE.GROUP.GRANARY,,Амбар
+STOCKPILE.GROUP.GRANARY.TOOLTIP,,Хранит зерно и семена с неограниченным сроком годности 
+STOCKPILE.GROUP.PRODUCTS,,Продукты
+STOCKPILE.GROUP.RAW_MATERIALS,,Необработанные материалы
+STOCKPILE.GROUP.SEEDS,,Семена
+STOCKPILE.GROUP.TOOLS,,Инструменты
+STOCKPILE.GROUP.TOOLS.TOOLTIP,,"Хранит инструменты, необходимые для работы на рабочих местах"
+STOCKPILE.GROUP.TREASURE,,
+STOCKPILE.GROUP.WEAPONS,,Оружие
+STOCKPILE.GROUP.WEAPONS.TOOLTIP,,"Хранит собранные фрукты и овощи, срок годности которых истекает."
+STONE.BASALT.ADJECTIVE,,Базальтовый
+STONE.BASALT.NOUN,,Базальт
+STONE.BASALT.TOOLTIP,,"Вулканический камень, образованный быстрым охлаждением лавы. Почти вся вулканическая порода в мире является базальтом."
+STONE.DOLOSTONE.ADJECTIVE,,Доломитовый
+STONE.DOLOSTONE.NOUN,,Доломитид
+STONE.DOLOSTONE.TOOLTIP,,"Осадочная порода, состоящая в основном из доломита, поэтому она также известна как доломитовая порода."
+STONE.FRONITE.ADJECTIVE,,Фронитовый
+STONE.FRONITE.NOUN,,Фронит
+STONE.FRONITE.TOOLTIP,,"Камень голубого цвета, в основном встречается на ледяном острове на севере. Содержит много железа."
+STONE.GRANITE.ADJECTIVE,,Гранитный
+STONE.GRANITE.NOUN,,Гранит
+STONE.GRANITE.TOOLTIP,,"Обычная вулканическая порода. Она содержит много кварца, что делает её хорошим маркером для обнаружения некоторых драгоценных камней."
+STONE.LIMESTONE.ADJECTIVE,,Известковый
+STONE.LIMESTONE.NOUN,,Известняк
+STONE.LIMESTONE.TOOLTIP,,"Светлая осадочная порода, которая является хорошим строительным материалом. Она также используется в качестве флюса в производстве {{METAL.STEEL.NOUN}}."
+STONE.MARBLE.ADJECTIVE,,Мраморный
+STONE.MARBLE.NOUN,,Мрамор
+STONE.MARBLE.TOOLTIP,,"Метаморфическая породаа, которая благодаря своему блестящему внешнему виду используется в качестве высококачественного материала для скульптуры и отделки."
+STONE.SANDSTONE.ADJECTIVE,,Песчаниковый
+STONE.SANDSTONE.NOUN,,Песчаник
+STONE.SANDSTONE.TOOLTIP,,"Осадочная порода, состоящая из песчаных фрагментов."
+STONE.SHALE.ADJECTIVE,,Глинисто сланецевый
+STONE.SHALE.NOUN,,Глинистый сланец
+STONE.SHALE.TOOLTIP,,"Мелкозернистая осадочная порода, состоящая из спрессованного ила. Ее можно легко разбить на тонкие слои."
+STONE.SLATE.ADJECTIVE,,Аспидно сланецевый
+STONE.SLATE.NOUN,,Аспидный сланец
+STONE.SLATE.TOOLTIP,,"Метаморфическая порода, которая обычно образуется из {{STONE.SHALE.NOUN}}. Из него часто делают в черепицу для крыши."
+TOOL.AXE.NOUN,,Топор
+TOOL.AXE.PLURAL,,
+TOOL.AXE.TOOLTIP,,Используется для рубки деревьев. Основной инструмент {{PROFESSION.WOODCUTTER}}.
+TOOL.CHISEL.NOUN,,Резец
+TOOL.CHISEL.PLURAL,,
+TOOL.CHISEL.TOOLTIP,,"Используется для обработки камня. Один из инструментов, используемых {{PROFESSION.STONEMASON}}."
+TOOL.FISHING.ROD.NOUN,,Удочка
+TOOL.FISHING.ROD.PLURAL,,
+TOOL.FISHING.ROD.TOOLTIP,,Используется для ловли рыбы из водоема. Основной инструмент {{PROFESSION.FISHER}}.
+TOOL.KITCHEN.KNIFE.NOUN,,Кухонный нож
+TOOL.KITCHEN.KNIFE.PLURAL,,
+TOOL.KITCHEN.KNIFE.TOOLTIP,,"Используется для приготовления пищи, особенно мяса."
+TOOL.LARGE.HAMMER.NOUN,,Молот
+TOOL.LARGE.HAMMER.PLURAL,,
+TOOL.LARGE.HAMMER.TOOLTIP,,Используется для придания формы крупным предметам из камня и металла. Основной инструмент {{PROFESSION.BLACKSMITH}}.
+TOOL.PICKAXE.NOUN,,Кирка
+TOOL.PICKAXE.PLURAL,,
+TOOL.PICKAXE.TOOLTIP,,Используется для разбивания камня на мелкие кусочки. Основной инструмент {{PROFESSION.MiNER}}.
+TOOL.PLANE.NOUN,,Рубанок
+TOOL.PLANE.PLURAL,,
+TOOL.PLANE.TOOLTIP,,Используется для обработки деревянной мебели и предметов. Основной инструмент {{PROFESSION.CARPENTER}}.
+TOOL.ROLLING.PIN.NOUN,,Скалка
+TOOL.ROLLING.PIN.PLURAL,,
+TOOL.ROLLING.PIN.TOOLTIP,,"Используется для приготовления теста. Один из инструментов, используемых {{PROFESSION.CHEF}}."
+TOOL.SAW.NOUN,,Пила
+TOOL.SAW.PLURAL,,
+TOOL.SAW.TOOLTIP,,Используется для придания дереву нужной формы. Требуется для резки пиломатериалов в {{ROOMS.SAWMILL}}.
+TOOL.SMALL.HAMMER.NOUN,,Молоток
+TOOL.SMALL.HAMMER.PLURAL,,
+TOOL.SMALL.HAMMER.TOOLTIP,,"Используется для придания формы мелким предметам из камня и металла. Один из инструментов, используемых {{PROFESSION.BLACKSMITH}}."
+TOOL.TONGS.NOUN,,Клещи
+TOOL.TONGS.PLURAL,,
+TOOL.TONGS.TOOLTIP,,Используется для хранения чрезвычайно горячих металлических предметов. Используется в процессе выплавки металлической руды.
+TREASURE.COIN.NOUN,,
+TREASURE.COIN.PLURAL,,
+TREASURE.COIN.TOOLTIP,,
+TREASURE.GEM.NOUN,,
+TREASURE.GEM.PLURAL,,
+TREASURE.GEM.TOOLTIP,,
+TREE.DESCRIPTION,,дерево{{materialType.noun}}
+TUTORIAL.COMPLETED.A,,
+TUTORIAL.COMPLETED.B,,
+TUTORIAL.COMPLETED.C,,
+TUTORIAL.COMPLETED.D,,
+TUTORIAL.CRAFTING.A,,
+TUTORIAL.CRAFTING.B,,
+TUTORIAL.CRAFTING.C,,
+TUTORIAL.CRAFTING_SELECTION.A,,
+TUTORIAL.CRAFTING_SELECTION.B,,
+TUTORIAL.CRAFTING_SELECTION.C,,
+TUTORIAL.DISMISS_DIALOG.CONFIRM_TEXT,,
+TUTORIAL.DISMISS_DIALOG.DESCRIPTION,,
+TUTORIAL.DISMISS_DIALOG.TITLE,,
+TUTORIAL.FARMING.A,,
+TUTORIAL.FARMING.B,,
+TUTORIAL.FARMING_2.A,,
+TUTORIAL.FARMING_2.A.STEAMDECK,,
+TUTORIAL.FARMING_2.B,,
+TUTORIAL.FEASTING_HALL.A,,
+TUTORIAL.FEASTING_HALL.B,,
+TUTORIAL.FEASTING_HALL.C,,
+TUTORIAL.FOOD_COMPLETE.A,,
+TUTORIAL.FOOD_COMPLETE.B,,
+TUTORIAL.KITCHEN.A,,
+TUTORIAL.KITCHEN.B,,
+TUTORIAL.KITCHEN.C,,
+TUTORIAL.MAIN_VIEW.A,,
+TUTORIAL.MAIN_VIEW.B,,
+TUTORIAL.MAIN_VIEW.C,,
+TUTORIAL.MAIN_VIEW.C.STEAMDECK,,
+TUTORIAL.MANAGEMENT_BUTTONS.DESCRIPTION,,
+TUTORIAL.MANAGEMENT_BUTTONS.RESOURCE_MANAGEMENT,,
+TUTORIAL.MANAGEMENT_BUTTONS.SETTLER_MANAGEMENT,,
+TUTORIAL.MINIMAP.DESCRIPTION,,
+TUTORIAL.MINIMAP.PROGRESS,,
+TUTORIAL.MINIMAP.PROGRESS.STEAMDECK,,
+TUTORIAL.NEEDS.A,,
+TUTORIAL.NEEDS.B,,
+TUTORIAL.NEEDS.C,,
+TUTORIAL.PROFESSIONS.A,,
+TUTORIAL.PROFESSIONS.B,,
+TUTORIAL.PROFESSIONS.C,,
+TUTORIAL.PROGRESS_DESCRIPTION.FARM_PLOT_SELECTIONS,,{{ROOMS.FARM.PLURAL}} с назначенным урожаем
+TUTORIAL.PROGRESS_DESCRIPTION.PROFESSIONS_ASSIGNED,,{{professionPlural}} назначен
+TUTORIAL.PROGRESS_DESCRIPTION.TEXT,,{{currentQuantity}} из {{requiredQuantity}} {{targetDescription}}
+TUTORIAL.PROGRESS_DESCRIPTION.TILES,,{{roomName}} клетки
+TUTORIAL.RESOURCES.A,,
+TUTORIAL.RESOURCES.B,,
+TUTORIAL.RESOURCES.C,,
+TUTORIAL.RESOURCE_COLLECTION.A,,
+TUTORIAL.RESOURCE_COLLECTION.B,,
+TUTORIAL.SAVING.A,,"Ваш прогресс сохраняется автоматически в полночь, а также при выходе из игры. Вы также можете быстро сохранить, нажав клавишу F5."
+TUTORIAL.SAVING.A.STEAMDECK,,
+TUTORIAL.SAVING.B,,
+TUTORIAL.SAVING.B.STEAMDECK,,
+TUTORIAL.SAVING.C,,
+TUTORIAL.SHOW_LABEL,,
+TUTORIAL.START.CAMERA_CONTROLS_1,,
+TUTORIAL.START.CAMERA_CONTROLS_1.STEAMDECK,,
+TUTORIAL.START.CAMERA_CONTROLS_2,,
+TUTORIAL.START.CAMERA_CONTROLS_2.STEAMDECK,,
+TUTORIAL.START.INTRO_1,,
+TUTORIAL.START.INTRO_2,,
+TUTORIAL.STOCKPILES.A,,
+TUTORIAL.STOCKPILES.B,,
+TUTORIAL.TIME_AND_DATE.DESCRIPTION,,
+TUTORIAL.TIME_AND_DATE.FAST_SPEED_STEP,,
+TUTORIAL.TIME_AND_DATE.FAST_SPEED_STEP.STEAMDECK,,
+TUTORIAL.TIME_AND_DATE.NORMAL_SPEED_STEP,,
+TUTORIAL.TIME_AND_DATE.NORMAL_SPEED_STEP.STEAMDECK,,
+TUTORIAL.TIME_AND_DATE.PAUSE_STEP,,
+TUTORIAL.TIME_AND_DATE.PAUSE_STEP.STEAMDECK,,
+TUTORIAL.VIEW_MODES.DEFAULT_STEP,,
+TUTORIAL.VIEW_MODES.DEFAULT_STEP.STEAMDECK,,
+TUTORIAL.VIEW_MODES.DESCRIPTION,,
+TUTORIAL.VIEW_MODES.OTHER_STEP,,
+TUTORIAL.VIEW_MODES.OTHER_STEP.STEAMDECK,,
+TUTORIAL.WORKSHOPS.A,,
+TUTORIAL.WORKSHOPS.B,,
+TUTORIAL.WORKSHOPS.C,,
+TUTORIAL.WORKSHOPS.C.STEAMDECK,,
+TUTORIAL.WORKSHOPS.D,,
+VEGETABLE.BARLEY,,Ячмень
+VEGETABLE.BARLEY.PLURAL,,Ячмень
+VEGETABLE.BARLEY.TOOLTIP,,"Зерно используется только при производстве пива. Можно посадить в {{SEASON.SPRING}}, {{SEASON.SUMMER}} или {{SEASON.AUTUMN}}."
+VEGETABLE.BERSERKER_MUSHROOM,,Мухомор
+VEGETABLE.BERSERKER_MUSHROOM.PLURAL,,Мухоморы
+VEGETABLE.BERSERKER_MUSHROOM.TOOLTIP,,"Гриб с розово-красной крышкой с белыми пятнами. Он обладает галлюциногенными свойствами, которые иногда используют воины при подготовке к бою."
+VEGETABLE.CARROT,,Морковь
+VEGETABLE.CARROT.PLURAL,,Моркови
+VEGETABLE.CARROT.TOOLTIP,,"Выносливый корнеплод, который переживет холодный {{SEASON.WINTER}}. Морковь растет быстро, но дает небольшой урожай. Можно посадить в {{SEASON.SPRING}}, {{SEASON.SUMMER}} или {{SEASON.AUTUMN}}."
+VEGETABLE.CORN,,Сахарная кукуруза
+VEGETABLE.CORN.PLURAL,,Сахарной кукурузы
+VEGETABLE.CORN.TOOLTIP,,"Зерно, также известное, как кукуруза. Оно дает большой урожай, но растет около 2 сезонов и не может пережить {{SEASON.WINTER}}, поэтому оно требует посадки в начале {{SEASON.SPRING}}."
+VEGETABLE.DEATH_CAP_MUSHROOM,,Смертошляпник
+VEGETABLE.DEATH_CAP_MUSHROOM.PLURAL,,Смертошляпники
+VEGETABLE.DEATH_CAP_MUSHROOM.TOOLTIP,,"Очень ядовитый гриб с широкой плоской шляпкой. Даже крошечное количество, употребленное в пищу, почти наверняка приведет к отравлению, которое может и к смерти."
+VEGETABLE.DRAGONFRUIT,,Драконфрут
+VEGETABLE.DRAGONFRUIT.PLURAL,,Драконфруты
+VEGETABLE.ELFSBANE_MUSHROOM,,Эльфсбан
+VEGETABLE.ELFSBANE_MUSHROOM.PLURAL,,Эльфсбаны
+VEGETABLE.ELFSBANE_MUSHROOM.TOOLTIP,,"Этот гриб имеет простой, безвкусный вкус для большинства гуманоидов. Как ни странно, но он абсолютно отвратителен для эльфов, у которых часто вызывает рвоту, а в крайних случаях — сердечный приступ."
+VEGETABLE.FIST_MUSHROOM,,Кулаковик
+VEGETABLE.FIST_MUSHROOM.PLURAL,,Кулаковики
+VEGETABLE.FIST_MUSHROOM.TOOLTIP,,Черно-синий гриб с металлическим вкусом. Он назван в честь группы бардов из эпохи Тьмы.
+VEGETABLE.FOR_BEER.USAGE,,
+VEGETABLE.FUNGOLEM_MUSHROOM,,
+VEGETABLE.FUNGOLEM_MUSHROOM.PLURAL,,
+VEGETABLE.FUNGOLEM_MUSHROOM.TOOLTIP,,
+VEGETABLE.GLOW_MUSHROOM,,Светящейся гриб
+VEGETABLE.GLOW_MUSHROOM.PLURAL,,Светящиеся грибы
+VEGETABLE.GLOW_MUSHROOM.TOOLTIP,,"Волшебный гриб, который излучает свет и меняет его в зависимости от сезона."
+VEGETABLE.HEMP,,Конопля
+VEGETABLE.HEMP.PLURAL,,Конопля
+VEGETABLE.HEMP.TOOLTIP,,
+VEGETABLE.HEMP.USAGE,,
+VEGETABLE.HEMP_FIBRE,,Полотно из конопли
+VEGETABLE.HEMP_FIBRE.PLURAL,,Полотна из конопли
+VEGETABLE.HOPS,,Хмель
+VEGETABLE.HOPS.PLURAL,,Хмель
+VEGETABLE.HOPS.TOOLTIP,,"Цветок, используемый для ароматизации пива. Должен быть посажен в {{SEASON.SPRING}}."
+VEGETABLE.INGREDIENT.USAGE,,
+VEGETABLE.LOQUAT,,Локват
+VEGETABLE.LOQUAT.PLURAL,,Локвоты
+VEGETABLE.MILTONIA_MUSHROOM,,Мильтовик
+VEGETABLE.MILTONIA_MUSHROOM.PLURAL,,Мильтовики
+VEGETABLE.MILTONIA_MUSHROOM.TOOLTIP,,"Когда-то считалось, что они встречаются только в регионе Хаддс, сейчас распространены во всем мире."
+VEGETABLE.POTATO,,Картофелина
+VEGETABLE.POTATO.PLURAL,,Картофелины
+VEGETABLE.POTATO.TOOLTIP,,"Крахмальный корнеплод, который может пережить {{SEASON.WINTER}}, что делает его хорошим выбором для большинства поселений. Можно посадить в {{SEASON.SPRING}}, {{SEASON.SUMMER}} или {{SEASON.AUTUMN}}."
+VEGETABLE.PURPLE_HELMET_MUSHROOM,,Пурпурошлемник
+VEGETABLE.PURPLE_HELMET_MUSHROOM.PLURAL,,Пурпурошлемники
+VEGETABLE.PURPLE_HELMET_MUSHROOM.TOOLTIP,,"Толстошляпник, Пухлотюрбинник, Пухлошлемник; У этого легендарного гриба много названий. Легенда гласит, что давным-давно многие сообщества гномов питались только одним одомашненным видом этого гриба."
+VEGETABLE.ROCIOMYCOTA_MUSHROOM,,Роциомикота 
+VEGETABLE.ROCIOMYCOTA_MUSHROOM.PLURAL,,Роциомикоты 
+VEGETABLE.ROCIOMYCOTA_MUSHROOM.TOOLTIP,,"Белый и черный пятнистый гриб. Известно, что он влияет на внешний вид тех, кто его ест."
+VEGETABLE.SUNGLOW_MUSHROOM,,Солнцесвет
+VEGETABLE.SUNGLOW_MUSHROOM.PLURAL,,Солнцесветы
+VEGETABLE.SUNGLOW_MUSHROOM.TOOLTIP,,"Ярко-желтый гриб, который светится с появлением солнечного света. Он теряет свечение в момент сбора урожая."
+VEGETABLE.SYRUP_POWDER_MUSHROOM,,Порошкообразные грибы в сиропе
+VEGETABLE.SYRUP_POWDER_MUSHROOM.PLURAL,,Порошкообразные грибы в сиропе
+VEGETABLE.SYRUP_POWDER_MUSHROOM.TOOLTIP,,"Круглый оранжевый или желтый гриб с белой нижней стороной. Говорят, что его использовали маги давным-давно, но с какой целью никто не знает."
+VEGETABLE.TAMARILLO,,Тамарильо
+VEGETABLE.TAMARILLO.PLURAL,,Тамарильосы
+VEGETABLE.THIMBLEBERRY,,Наперстянка
+VEGETABLE.THIMBLEBERRY.PLURAL,,Наперстянки
+VEGETABLE.TOMATO,,Помидор
+VEGETABLE.TOMATO.PLURAL,,Помидоры
+VEGETABLE.TOMATO.TOOLTIP,,"Растение, на котором растут большие красные ягоды, которые часто используются в качестве овоща. Можно посадить только в {{SEASON.SPRING}}."
+VEGETABLE.WHEAT,,Пшеница
+VEGETABLE.WHEAT.PLURAL,,Пшеницы
+VEGETABLE.WHEAT.TOOLTIP,,"Злаковое зерно обычно используется для производства хлеба. Оно может пережить {{SEASON.WINTER}}, но долго растет, поэтому его лучше сажать {{SEASON.SPRING}}, либо {{SEASON.AUTUMN}}."
+VEGETABLE.WHEAT.USAGE,,
+VEHICLE.DESCRIPTION,,
+WALL.DESCRIPTION,,{{wallType.noun}} {{materialType.adjective}}
+WALL.GEMS.NOUN,,Самоцветы
+WALL.ORE.NOUN,,Руда
+WALL.ROUGH_STONE.NOUN,,Каменная стена
+WALL.STONE_BLOCK.NOUN,,Стена из гладкого камня
+WALL.WOODEN.NOUN,,Деревянная стена
+WEAPON.BATTLE.AXE,,
+WEAPON.BATTLE.HAMMER,,
+WEAPON.BONE.ARROW.HEADS.NOUN,,
+WEAPON.BONE.ARROW.HEADS.PLURAL,,
+WEAPON.BONE.ARROWS.NOUN,,Стрела
+WEAPON.BONE.ARROWS.PLURAL,,Стрелы
+WEAPON.BOW,,Лук
+WEAPON.CROSSBOW,,
+WEAPON.METAL.ARROW.HEADS.NOUN,,
+WEAPON.METAL.ARROW.HEADS.PLURAL,,
+WEAPON.METAL.ARROWS.NOUN,,Стрела
+WEAPON.METAL.ARROWS.PLURAL,,Стрелы
+WEAPON.METAL.BOLTS.NOUN,,
+WEAPON.METAL.BOLTS.PLURAL,,
+WEAPON.METAL.SHIELD,,
+WEAPON.NONE,,
+WEAPON.NO_ARMOUR,,
+WEAPON.NO_SHIELD,,
+WEAPON.SWORD,,
+WEAPON.UNARMED,,Безоружный 
+WEAPON.WOODEN.SHIELD,,
+WEATHER.TYPE.CLOUDY,,Облачно
+WEATHER.TYPE.COLD_WINDS,,Холодный ветер
+WEATHER.TYPE.PERFECT,,Прекрасная погода
+WEATHER.TYPE.RAIN,,Ливень
+WEATHER.TYPE.SNOW,,Снегопад
+WEATHER.TYPE.THUNDERSTORM,,Гроза
+WOOD.ASPEN.ADJECTIVE,,Осиновый
+WOOD.ASPEN.NOUN,,Осина
+WOOD.BAOBAB.ADJECTIVE,,Баобабовый
+WOOD.BAOBAB.NOUN,,Баобаб
+WOOD.BARKSHROOM.ADJECTIVE,,Баркшрумовый
+WOOD.BARKSHROOM.NOUN,,Баркшрум
+WOOD.BEECH.ADJECTIVE,,Буковый
+WOOD.BEECH.NOUN,,Бук
+WOOD.BIRCH.ADJECTIVE,,Береза
+WOOD.BIRCH.NOUN,,Березовый
+WOOD.EBONY.ADJECTIVE,,Черно деревянный
+WOOD.EBONY.NOUN,,Черное дерево
+WOOD.FIR.ADJECTIVE,,Пихтовый
+WOOD.FIR.NOUN,,Пихта
+WOOD.FUNGIWOOD.ADJECTIVE,,Грибовниковый
+WOOD.FUNGIWOOD.NOUN,,Грибовник
+WOOD.IRONWOOD.ADJECTIVE,,Железно деревянный
+WOOD.IRONWOOD.NOUN,,Железное дерево
+WOOD.MAPLE.ADJECTIVE,,Кленовый
+WOOD.MAPLE.NOUN,,Клен
+WOOD.NUYTSIA.ADJECTIVE,,Нуитсовый
+WOOD.NUYTSIA.NOUN,,Нуитсия
+WOOD.OAK.ADJECTIVE,,Дубовый
+WOOD.OAK.NOUN,,Дуб
+WOOD.PECAN.ADJECTIVE,,Пекановый
+WOOD.PECAN.NOUN,,Пекан
+WOOD.PINE.ADJECTIVE,,Сосновый
+WOOD.PINE.NOUN,,Сосна
+WOOD.RED_CEDAR.ADJECTIVE,,Красно кедровый
+WOOD.RED_CEDAR.NOUN,,Красный кедр
+WOOD.RED_EMPEROR.ADJECTIVE,,Клен Красный император
+WOOD.RED_EMPEROR.NOUN,,Клен Красный император
+WOOD.ROSEWOOD.ADJECTIVE,,Палисандровый 
+WOOD.ROSEWOOD.NOUN,,Палисандр
+WOOD.SPRUCE.ADJECTIVE,,Еловый
+WOOD.SPRUCE.NOUN,,Ель
+WOOD.STAR_PINE.ADJECTIVE,,Звездчато сосновый
+WOOD.STAR_PINE.NOUN,,Звездчатая сосна  
+WOOD.SYCAMORE.ADJECTIVE,,Платановый
+WOOD.SYCAMORE.NOUN,,Платан

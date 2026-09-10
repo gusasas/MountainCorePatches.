@@ -1,0 +1,1765 @@
+KEY,NOTES,DANISH
+ACTION.DRINK_FROM_RIVER,,fra flod
+ACTION.JOB.BUTCHER_CREATURE,,Slagter
+ACTION.JOB.CLEAR_GROUND,,Rydder {{targetPlant}
+ACTION.JOB.CONSTRUCT_FLOORING,,Lægger gulv
+ACTION.JOB.CONSTRUCT_FURNITURE,,{{profession.verb}} {{targetDescription}}
+ACTION.JOB.CONSTRUCT_MECHANISM,,Placerer mekanismer
+ACTION.JOB.CONSTRUCT_PIPING,,Placerer rør
+ACTION.JOB.CONSTRUCT_ROOFING,,Bygger tag
+ACTION.JOB.CREATE_GENERIC,,Producerer {{targetDescription}}
+ACTION.JOB.DECONSTRUCT,,Fjerner {{targetDescription}}
+ACTION.JOB.DECONSTRUCT_MECHANISM,,Fjerner mekanisme
+ACTION.JOB.DECONSTRUCT_PIPING,,Fjerner rør
+ACTION.JOB.DECONSTRUCT_ROOFING,,Fjerner tag
+ACTION.JOB.DIGGING,,Graver {{targetDescription}}
+ACTION.JOB.DUMP_LIQUID_FROM_CONTAINER,,Tømmer indhold af {{targetDescription}}
+ACTION.JOB.EXTINGUISH_FLAMES,,Slukker ild
+ACTION.JOB.FILL_GRAVE,,Fylder {{targetDescription}}
+ACTION.JOB.FISHING,,Fisker
+ACTION.JOB.GENERIC,,{{profession.verb}} {{targetDescription}}
+ACTION.JOB.HARVESTING,,Høster {{targetPlant}}
+ACTION.JOB.INNOCULATE_MUSHROOM_LOG,,Indsprøjter svampesporer
+ACTION.JOB.LOGGING,,{{profession.verb}} {{targetDescription}}
+ACTION.JOB.PLANTING,,Planter {{requiredItem}}
+ACTION.JOB.REMOVE_PESTS_FROM_CROP,,Fjerner skadedyr fra {{targetPlant}}
+ACTION.JOB.SHOVELLING,,Graver {{targetDescription}}
+ACTION.JOB.TILLING,,Pløjer jorden
+ACTION.JOB.TRANSFER_LIQUID,,Fylder {{targetDescription}}
+ACTION.KNOCKED_UNCONSCIOUS,,Slået bevidstløs
+ACTION.MALTING.VERB,,Malter
+ACTION.PREPARATION.VERB,,Forbereder
+ACTION.SELECT_JOB.DESCRIPTION,,Leder efter arbejde
+ACTION.SLEEP_ON_FLOOR.DESCRIPTION,,Sover på {{tileDescription}}
+ACTION.STUNNED,,Lammet
+ARMOUR.LEATHER,,Læderrustning
+ARMOUR.LEATHER.TOOLTIP,,"En let og simpel rustning, beregnet til at beskytte dig i kamp"
+ARMOUR.ORC.HEAVY,,Orkrustning
+ARMOUR.ORC.LIGHT,,Ork læderrustning
+ARMOUR.PLATE,,Pladerustning
+ARMOUR.PLATE.TOOLTIP,,"Tyk og hårdfør rustning, som giver meget beskyttelse i kamp"
+ASHES.NOUN,,Aske
+BODY_STRUCTURE.ABDOMEN,,Mave
+BODY_STRUCTURE.ARM,,Arm
+BODY_STRUCTURE.CEPHALOTHORAX,,Cephalothorax
+BODY_STRUCTURE.DAMAGE.BLEEDING,,Bløder
+BODY_STRUCTURE.DAMAGE.BROKENBONES,,Brækket
+BODY_STRUCTURE.DAMAGE.BRUISED,,Forslået
+BODY_STRUCTURE.DAMAGE.DESTROYED,,Ødelagt
+BODY_STRUCTURE.DAMAGE.NOT_INJURED,,Ikke tilskadekommen
+BODY_STRUCTURE.DISCRIMINATOR.BACKLEFT,,Bagerst til venstre
+BODY_STRUCTURE.DISCRIMINATOR.BACKRIGHT,,Bagerst til højre
+BODY_STRUCTURE.DISCRIMINATOR.FIRSTLEFT,,Første til venstre
+BODY_STRUCTURE.DISCRIMINATOR.FIRSTRIGHT,,Første til højre
+BODY_STRUCTURE.DISCRIMINATOR.FOURTHLEFT,,Fjerde til venstre
+BODY_STRUCTURE.DISCRIMINATOR.FOURTHRIGHT,,Fjerde til højre
+BODY_STRUCTURE.DISCRIMINATOR.FRONTLEFT,,Venstre i front
+BODY_STRUCTURE.DISCRIMINATOR.FRONTRIGHT,,Højre i front
+BODY_STRUCTURE.DISCRIMINATOR.LEFT,,Venstre
+BODY_STRUCTURE.DISCRIMINATOR.RIGHT,,Højre
+BODY_STRUCTURE.DISCRIMINATOR.SECONDLEFT,,Anden til venstre
+BODY_STRUCTURE.DISCRIMINATOR.SECONDRIGHT,,Anden til højre
+BODY_STRUCTURE.DISCRIMINATOR.THIRDLEFT,,Tredje til venstre
+BODY_STRUCTURE.DISCRIMINATOR.THIRDRIGHT,,Tredje til højre
+BODY_STRUCTURE.FOOT,,Fod
+BODY_STRUCTURE.HAND,,Hånd
+BODY_STRUCTURE.HEAD,,Hoved
+BODY_STRUCTURE.HOOF,,Hov
+BODY_STRUCTURE.LEFT-ARM,,Venstre arm
+BODY_STRUCTURE.LEFT-HAND,,Venstre hånd
+BODY_STRUCTURE.LEG,,Ben
+BODY_STRUCTURE.ORGAN.BRAIN,,Hjerne
+BODY_STRUCTURE.ORGAN.EYE,,Øje
+BODY_STRUCTURE.ORGAN.HEART,,Hjerte
+BODY_STRUCTURE.ORGAN.INTESTINES,,Indvolde
+BODY_STRUCTURE.ORGAN.KIDNEY,,Nyre
+BODY_STRUCTURE.ORGAN.LUNG,,Lunge
+BODY_STRUCTURE.ORGAN_DAMAGE.DESTROYED,,Ødelagt
+BODY_STRUCTURE.ORGAN_DAMAGE.HEAVY,,Hårdt skadet
+BODY_STRUCTURE.ORGAN_DAMAGE.LIGHT,,Let skadet
+BODY_STRUCTURE.PAW,,Pote
+BODY_STRUCTURE.RIGHT-ARM,,Højre arm
+BODY_STRUCTURE.RIGHT-HAND,,Højre hånd
+BODY_STRUCTURE.TORSO,,Bryst
+BODY_STRUCTURE.TRUNK,,Bughule
+BONE.BONE,,Knogle
+CARCASS.CARP.PREPARED.NOUN,,Karpefilet
+CARCASS.CARP.PREPARED.PLURAL,,Karpefileter
+CARCASS.GROUP,,Lig
+CARCASS.HIDE.NOUN,,Skind
+CARCASS.HIDE.PLURAL,,Skind
+CARCASS.MEAT.LARGE,,Kød (Stort)
+CARCASS.MEAT.MEDIUM,,Kød (Mellem)
+CARCASS.MEAT.SMALL,,Kød (Lille)
+CARCASS.PERCH.PREPARED.NOUN,,Aborrefilet
+CARCASS.PERCH.PREPARED.PLURAL,,Aborrefileter
+CARCASS.PIKE.PREPARED.NOUN,,Geddefilet
+CARCASS.PIKE.PREPARED.PLURAL,,Geddefileter
+CLOTH.BRONZED_HEMP,,Bronzeret hamp
+CLOTH.HEMP-LINEN,,Hamplinned
+CLOTH.LIGHT_HEMP,,Let hamp
+CLOTH.TOBACCO_CLOTH,,Tobaksstof
+COMBAT.DAMAGE_TYPE.CRUSHING,,
+COMBAT.DAMAGE_TYPE.SLASHING,,
+COMBAT.DAMAGE_TYPE.STABBING,,
+COMBAT.DESCRIPTION.FLEEING,,Flygter fra kamp
+COMBAT.DESCRIPTION.GENERIC,,I kamp
+COMBAT.DESCRIPTION.VERSUS_OPPONENT,,I kamp med
+CONSTRUCTION.DESCRIPTION,,Bygning af {{materialType.adjective}} {{furnitureType.noun}}
+CONSTRUCTION.REQUIREMENT_ALLOCATION,,{{numRequired}} nødvendig{{\n}}{{numAvailable}} tilgængelig{{\n}}{{numAssigned}} tildelt
+CONSTRUCTION.REQUIREMENT_RECIPE_MULTIPLE,,{{outputItemType}} er lavet af {{inputItemTypes}} og {{lastInputItemType}} ved {{furnitureType}} af {{profession}}.
+CONSTRUCTION.REQUIREMENT_RECIPE_SINGULAR,,{{outputItemType}} er lavet af {{lastInputItemType}} ved {{furnitureType}} af {{profession}}.
+CONSTRUCTION.STATUS.CLEARING_WORK_SITE,,Fjerner andre genstande
+CONSTRUCTION.STATUS.CLEARING_WORK_SITE.TOOLTIP,,"Der er ting, der skal flyttes fra dette møbels byggeplads, før konstruktionen kan fortsætte."
+CONSTRUCTION.STATUS.SELECTING_MATERIALS,,Venter på mere {{materialType}} {{itemDescription.plural}} bliver tilgængeligt
+CONSTRUCTION.STATUS.WAITING_FOR_COMPLETION,,Under opbygning
+CONSTRUCTION.STATUS.WAITING_FOR_RESOURCES,,Venter på at resourcerne ankommer
+COOKING.BREAD.DESCRIPTION,,{{materialDescription}} brød
+COOKING.DUAL_INGREDIENT.DESCRIPTION,,{{materialOne}} og {{materialTwo}}
+COOKING.RATION.DESCRIPTION,,{{materialDescription}} ration
+COOKING.SOUP.DESCRIPTION,,{{materialDescription}} suppe
+COOKING.TRIPLE_INGREDIENT.DESCRIPTION,,"{{materialOne}}, {{materialTwo}} og {{materialThree}}"
+CRAFTING_TYPE.BAKING,,Bagning
+CRAFTING_TYPE.BLACKSMITHING,,Smedning
+CRAFTING_TYPE.BONE_CRAFTING,,Knoglebearbejdning
+CRAFTING_TYPE.CARPENTRY,,Snedkeri
+CRAFTING_TYPE.CARVING_VERB,,Udskærer
+CRAFTING_TYPE.COKE_OVEN_BAKING,,Koksbagning
+CRAFTING_TYPE.FERMENTING,,Gæring
+CRAFTING_TYPE.FINE_DETAIL_CRAFTING,,Findetaljering
+CRAFTING_TYPE.FLETCHING,,Pilefletning
+CRAFTING_TYPE.LEATHERWORKING,,Læderbearbejning
+CRAFTING_TYPE.MALTING,,Maltning
+CRAFTING_TYPE.MALT_MASHING,,Maltmæskning
+CRAFTING_TYPE.MILLING,,Maler
+CRAFTING_TYPE.MINTING,,Udmøntning
+CRAFTING_TYPE.ORE_CRUSHING,,Malmknusning
+CRAFTING_TYPE.SMELTING,,Smeltning
+CRAFTING_TYPE.STONEMASONRY,,Stenhugning
+CRAFTING_TYPE.TANNING_HIDE,,Skindgarvning
+CRAFTING_TYPE.WEAPONSMITHING,,Våbensmedning
+CRAFTING_TYPE.WEAVING,,Vævning
+CRAFTING_TYPE.WOODCUTTING,,Træhugning
+CRAFTING_TYPE.WORT_BREWING,,Brygning
+CREATURE.DAMAGE.DESCRIPTION_A,,{{damageType}} {{bodyPart}}
+CREATURE.DAMAGE.DESCRIPTION_B,,{damageType}} {{discriminator}} {{bodyPart}}
+CREATURE.DESCRIPTION,,{{gender.adjective}} {{race.noun}}
+CREATURE.STATUS.BLINDED,,Blændet
+CREATURE.STATUS.DEAD,,Død
+CROP.AFFLICTED_BY_PESTS,,Ramt af skadedyr
+CROP.AFFLICTED_BY_PESTS.TOOLTIP,,"Denne afgrød er ramt af en stor mængde bladlus og andre insekter, som skal fjernes af en {{PROFESSION.FARMER}} før den kan blomstre igen. Hvis ikke dette bliver gjort i tide, kan planten dø!"
+CROP.DESCRIPTION,,{{materialType.noun}} plante
+CROP.HARVEST_PROGRESS,,Fremskridt mod høst ({{progress}}%):
+CROP.MOISTURE_STATE.DROUGHTED,,"Denne plante har ikke haft adgang til vand i lang tid, og er derfor holdt op med at gro"
+CROP.MOISTURE_STATE.NEEDS_WATERING,,"Denne plante er ikke blevet vandet, og gror derfor langsomt"
+CROP.MOISTURE_STATE.NEEDS_WATERING.TOOLTIP,,"Du kan vande dine afgrøder med en kanal indeholdende vand, der er 2 felter bred."
+CROP.MOISTURE_STATE.WATERED,,Denne plante er blevet vandet for nyligt og gror derfor hurtigt
+DEATH_REASON.BURNING,,Brændt ihjel
+DEATH_REASON.CRITICAL_ORGAN_DAMAGE,,Kritisk organskade
+DEATH_REASON.CRUSHED_BY_FALLING_DEBRIS,,Faldene sten
+DEATH_REASON.DEHYDRATION,,Dehydrering
+DEATH_REASON.EXHAUSTION,,Udmattelse
+DEATH_REASON.EXTENSIVE_INJURIES,,Omfattende skader
+DEATH_REASON.FOOD_POISONING,,Madforgiftning
+DEATH_REASON.FROZEN,,Udsættelse for frostvejr
+DEATH_REASON.GIVEN_UP_ON_LIFE,,at have opgivet livet
+DEATH_REASON.INTERNAL_BLEEDING,,Indre blødninger
+DEATH_REASON.KILLED_BY_ENTITY,,sår tildelt i kamp
+DEATH_REASON.MURDERED.UNKNOWN_KILLER,,af en ukendt dræber
+DEATH_REASON.STARVATION,,Sult
+DEATH_REASON.SUFFOCATION,,Kvælning
+DEATH_REASON.UNKNOWN,,Mystiske omstændigheder
+EARTH.DIRT,,Jord
+EARTH.GRASS,,Græs
+EFFECT.FIRE,,Ild
+ENTITY.DESTRUCTION_DESCRIPTION.BURNED,,Ødelagt af ild
+ENTITY.DESTRUCTION_DESCRIPTION.COMBAT_DAMAGE,,Ødelagt under kamp
+ENTITY.DESTRUCTION_DESCRIPTION.OXIDISED,,Ødelagt af regn over længere tid
+FACTION.HOSTILE_INVASION,,Fjendtlig angriber
+FACTION.MERCHANTS,,Handelsmand
+FACTION.MONSTERS,,Monster
+FACTION.PIRATES,,
+FACTION.SETTLEMENT,,Bosætter
+FACTION.SETTLEMENT.ANIMAL,,Tæmmet dyr
+FACTION.WILD_ANIMALS,,Vildt dyr
+FLOOR.CHANNEL.DESCRIPTION,,Vandingskanal ({{state}})
+FLOOR.CHANNEL.DESCRIPTION.TOOLTIP,,Vandingskanal giver adgang til vand for alle planter indenfor 2 felter. Byg en vandpumpe og forbind den til kanalerne med rør.
+FLOOR.CHANNEL.STATE.EMPTY,,Tom
+FLOOR.CHANNEL.STATE.FULL,,Fuld
+FLOOR.CHANNEL.STATE.PARTIALLY_FILLED,,Delvist fyldt
+FLOOR.COBBLESTONE,,Brosten
+FLOOR.DESCRIPTION,,{{floorType.noun}}
+FLOOR.DIRT,,Jord
+FLOOR.GRASS,,Græs
+FLOOR.GRAVEL,,Grus
+FLOOR.PIPE.DESCRIPTION,,{{material}} rør ({{state}})
+FLOOR.POWER.DESCRIPTION,,{{entity}} - Tilgængelig kraft: {{powerAmount}}
+FLOOR.RIVER,,Flod
+FLOOR.ROUGH_STONE,,Ujævnt stengulv
+FLOOR.SNOW,,Sne
+FLOOR.STONE_PAVING,,Stenbelagt
+FLOOR.STONE_SLAB,,Stenplade
+FLOOR.TILLED_EARTH,,Pløjet jord
+FLOOR.UNEXPLORED,,Uudforsket
+FLOOR.WOODEN,,Trægulvplader
+FOODSTUFF.ROCKBREAD,,Stenbrød
+FOODSTUFF.ROCKBREAD.TOOLTIP,,"Dette er et berygted hårdt brød, der er så hårdt og uspiseligt, at det tager lang tid før det mugner. Den menneskelige opdagelsesrejsende J. A. Moffatt beskrev det engang, 'som at spise grus udgravet fra en sump'. Heldigvis virker de fleste dværge til at være ligeglade."
+FOODSTUFF.WHEAT-BREAD,,Hvede
+FUEL.SACK,,Brændstof
+FUEL.SACK.TOOLTIP,,"Brændstof er nødvendigt I produktionen af metal, både af {{FURNITURE.BLOOMERY_FURNACE}} og {{FURNITURE.FORGE}}."
+FURNITURE.ARCHERY_TARGET,,Mål til bueskydning
+FURNITURE.ARCHERY_TARGET.TOOLTIP,,Militære bosættere vil her træne deres fjernkampsegenskaber op til niveau 50.
+FURNITURE.ARMOUR_STAND,,Rustningsstativ
+FURNITURE.ARMOUR_STAND.TOOLTIP,,Bruges til at opstille rustninger
+FURNITURE.ARTISAN_WORKSTATION,,Håndværkers arbejdsstation
+FURNITURE.ARTISAN_WORKSTATION.TOOLTIP,,En arbejdsstation til indviklede ting lavet af {{PROFESSION.ARTISAN}}.
+FURNITURE.BAKERS_WORKTOP,,Bagers bordplade
+FURNITURE.BAKERS_WORKTOP.TOOLTIP,,"En {{PROFESSION.CHEF}} arbejder her, for at lave {{RESOURCE.FLOUR.SACK.PLURAL}} om til {{INGREDIENT.DOUGH}}."
+FURNITURE.BAKING_OVEN,,Bagers ovn
+FURNITURE.BAKING_OVEN.TOOLTIP,,En {{PROFESSION.CHEF}} bager her brød ved at bruge {{INGREDIENT.DOUGH}}.
+FURNITURE.BEER_TAPPER,,Ølhane
+FURNITURE.BEER_TAPPER.STATE.BEER_AVAILABLE,,Øl er tilgængeligt
+FURNITURE.BEER_TAPPER.STATE.BEER_BARREL_INCOMING,,En øltønde er på vej
+FURNITURE.BEER_TAPPER.STATE.BEER_EXHAUSTED,,Alt øl er væk!
+FURNITURE.BEER_TAPPER.STATE.IDLE,,Inaktiv (intet øl tilgængeligt)
+FURNITURE.BEER_TAPPER.TOOLTIP,,Det er her gæret {{LIQUID.BEER}} bliver serveret fra.
+FURNITURE.BLOOMERY_FURNACE,,Støbejernsovn
+FURNITURE.BLOOMERY_FURNACE.TOOLTIP,,En {{PROFESSION.BLACKSMITH}} bruger denne håndbetjente ovn til at lave {{RESOURCE.ORE.CRUSHED.PLURAL}} og {{FUEL.SACK}} om til {{MATERIAL_TYPE.METAL.ADJECTIVE}} {{RESOURCE.METAL.INGOT.PLURAL}}.
+FURNITURE.BONE_CRAFTING_BENCH,,Knoglebearbejdningsbænk
+FURNITURE.BONE_CRAFTING_BENCH.TOOLTIP,,Denne bliver brugt til at lave ting ud af knogler.
+FURNITURE.BREW_KETTLE,,Bryggekedel
+FURNITURE.BREW_KETTLE.TOOLTIP,,Denne kedel bliver brugt til at lave den færdige urt (ugæret øl) med {VEGETABLE.HOPS}} og urter fra {{FURNITURE.MASH_TUN}}.
+FURNITURE.BUTCHERY_WORKTOP,,Slagters bordplade
+FURNITURE.BUTCHERY_WORKTOP.TOOLTIP,,Dyr bliver her lavet om til brugbart kød.
+FURNITURE.BUYING_PALLET,,
+FURNITURE.BUYING_PALLET.TOOLTIP,,
+FURNITURE.CARPENTRY_WORKBENCH,,Tømrers arbejdsbord
+FURNITURE.CARPENTRY_WORKBENCH.TOOLTIP,,"De fleste trægenstande og værktøjer bliver produceret her, såsom {{PRODUCT.BUCKET.PLURAL}} og {{PRODUCT.BARREL.PLURAL}}."
+FURNITURE.CAULDRON,,Kogekedel
+FURNITURE.CAULDRON.TOOLTIP,,En kogekedel bliver brugt til at servere store mængder suppe til bosætterne. Suppen bliver tilberedt i et {{ROOMS.KITCHEN}} før den bliver bragt hen til {{ROOMS.FEASTING_HALL}} til servering.
+FURNITURE.CHAIR,,Stol
+FURNITURE.CHAIR.TOOLTIP,,Bosætterne kan sidde her imens de bruger {{FURNITURE.FEASTING_TABLE}}.
+FURNITURE.CHARCOAL_CLAMP,,Mile
+FURNITURE.CHARCOAL_CLAMP.TOOLTIP,,"Dette er en bunke af {{RESOURCE.LOGS.PLURAL}} tildækket af {{MATERIAL_TYPE.EARTH}}, som langsomt bliver brændt, for at producere {{ORE.CHARCOAL.NOUN}}, som så kan bruges til {{FUEL.SACK}}."
+FURNITURE.COKE_OVEN,,Koksovn
+FURNITURE.COKE_OVEN.TOOLTIP,,"En koksovn konverterer {{ORE.BITUMINOUS_COAL.NOUN}} til {{ORE.COKE.NOUN}}, så det kan bruges som {{FUEL.SACK}}."
+FURNITURE.DESCRIPTION,,{{materialType.adjective}} {{furnitureType.noun}}
+FURNITURE.DESCRIPTION.GENERIC_PROGRESS,,Fremskridt mod færdig: {{progress}}%
+FURNITURE.DESCRIPTION.MUSHROOM_INNOCULATION_IN_PROGRESS,,Fremskridt mod færdig podning: {{progress}}%
+FURNITURE.DESCRIPTION.SHOCKING_IN_PROGRESS,,Fremskridt: {{progress}}%
+FURNITURE.DESCRIPTION.WAITING_FOR_ITEM,,Venter på {{itemType.noun}}
+FURNITURE.DESCRIPTION.WAITING_FOR_LIQUID,,Venter på at blive fyldt
+FURNITURE.DESCRIPTION.WAITING_FOR_MUSHROOM_SPAWN,,Venter på at blive indsprøjtet med svampesporer
+FURNITURE.DOUGH_PROOFING_TABLE,,Dejhævningsbord
+FURNITURE.DOUGH_PROOFING_TABLE.TOOLTIP,,"Dej kan tages fra {{FURNITURE.BAKERS_WORKTOP}}, så det kan lagres her, før det bliver lagt i {{FURNITURE.BAKING_OVEN}}."
+FURNITURE.EXPORT_PALLET,,Eksportpalle
+FURNITURE.EXPORT_PALLET.TOOLTIP,,Brug denne til at bestemme hvilke ting der skal eksporteres fra rummet.
+FURNITURE.FEASTING_TABLE,,Festbord
+FURNITURE.FEASTING_TABLE.TOOLTIP,,Med {{FURNITURE.CHAR}} placeret vil dine bosættere nyde deres måltid ved bordet.
+FURNITURE.FERMENTATION_TANK,,Gæringstank
+FURNITURE.FERMENTATION_TANK.TOOLTIP,,Det er her {{LIQUID.HOPPED_WORT}} bliver lavet om til {{LIQUID.BEER}}.
+FURNITURE.FISH_BARREL,,Fisketønde
+FURNITURE.FISH_BARREL.TOOLTIP,,Denne giver god lagring af dine fangede fisk til fremtidig tilberedning.
+FURNITURE.FLETCHERS_WORKBENCH,,Pilefletters arbejdsbænk 
+FURNITURE.FLETCHERS_WORKBENCH.TOOLTIP,,Dette er en arbejdsstation til afstandsvåben og ammunition.
+FURNITURE.FLOUR_MILL,,Melkværn
+FURNITURE.FLOUR_MILL.TOOLTIP,,Melkværnen maler {{VEGETABLE.WHEAT}} til {{RESOURCE.FLOUR.SACK.NOUN}} så det kan bruges af en {{PROFESSION.CHEF}}.
+FURNITURE.FORGE,,Smedje
+FURNITURE.FORGE.TOOLTIP,,Det er her en {{PROFESSION.BLACKSMITH}} arbejder med {{MATERIAL_TYPE.METAL.ADJECTIVE}} {{RESOURCE.METAL.INGOT.PLURAL}} og {{FUEL.SACK}} for at smede våben og andre ting.
+FURNITURE.GRAVE,,Grav
+FURNITURE.GRAVE.TOOLTIP,,En hurtigt gravet grav til afdøde bosættere. Kan kun laves på {{MATERIAL_TYPE.EARTH}}.
+FURNITURE.HITCHING_POST,,Hængende stolpe
+FURNITURE.HITCHING_POST.TOOLTIP,,Besøgende handelsmænd parkerer deres vogne her.
+FURNITURE.IMPORT_PALLET,,Importpalle
+FURNITURE.IMPORT_PALLET.TOOLTIP,,Brug denne til at bestemme hvilke ting der skal eksporteres fra rummet.
+FURNITURE.INVADER_CAMPFIRE,,Lejrbål
+FURNITURE.KITCHEN_WORKTOP,,Køkkenbordplade
+FURNITURE.KITCHEN_WORKTOP.TOOLTIP,,Et område til at opbevare ingredienser som en {{PROFESSION.CHEF}} kan lave til suppe.
+FURNITURE.LANTERN,,Lanterne
+FURNITURE.LANTERN.TOOLTIP,,En lanterne giver lys. Denne har på nuværende tidspunkt ingen effekt i spillet.
+FURNITURE.LEATHERWORKING_STATION,,Læderbearbejdningsstation
+FURNITURE.LEATHERWORKING_STATION.TOOLTIP,,En arbejdsstation til produktion af lædervarer såsom rustninger og drikkeskind.
+FURNITURE.LEDGER_TABLE,,Hovedbogsbord
+FURNITURE.LEDGER_TABLE.TOOLTIP,,En markør for {{ROOMS.TRADING_DEPOT}}. Denne har på nuværende tidspunkt ingen effekt i spillet.
+FURNITURE.LOOM,,Væv
+FURNITURE.LOOM.TOOLTIP,,Denne bliver brugt til at lave tekstiler såsom {{PRODUCT.LINEN.NOUN}} af {{RESOURCE.HEMP.FIBRE.BUNDLE.PLURAL}}.
+FURNITURE.MALTING_STATION,,Maltningsstation
+FURNITURE.MALTING_STATION.TOOLTIP,,Her udfører bryggere mæskning af byg og tørrer det i en kiln for at producere malt.
+FURNITURE.MASH_TUN,,Mæskefad
+FURNITURE.MASH_TUN.TOOLTIP,,Dette bliver brugt til at producere maltafkog (ugæret øl) af malet malt og vand.
+FURNITURE.MUSHROOM_LOG,,Svampestamme
+FURNITURE.MUSHROOM_LOG.TOOLTIP,,En træstamme der er blevet indsprøjtet med svampe sporer for at producere flere lækre og saftige svampe.
+FURNITURE.MUSHROOM_SHOCK_TANK,,Choktank
+FURNITURE.MUSHROOM_SHOCK_TANK.TOOLTIP,,"Efter podningen bliver en {{FURNITURE.MUSHROOM_LOG}} placeret i tanken for at ""chocke"" svampekolonien og fremme vækstren."
+FURNITURE.ORE_CRUSHING_STATION,,Malmknusningsstation
+FURNITURE.ORE_CRUSHING_STATION.TOOLTIP,,"Rå {{RESOURCE.ORE.UNREFINED.PLURAL}} bliver knust til mere brugbare størrelser, så det kan bruges i en {{FURNITURE.BLOOMERY_FURNACE}}"
+FURNITURE.PILLAR,,Søjle
+FURNITURE.PILLAR.TOOLTIP,,"En søjle er nødvendig for at forhindre udgravede områder i at kollapse. Et område på 7x7 felter, der er udgravet uden en søjle eller anden støtte, vil kollapse."
+FURNITURE.RETTING_TANK,,Rettetank
+FURNITURE.RETTING_TANK.TOOLTIP,,"Denne bliver brugt til at lave rå {{VEGETABLE.HEMP}} om til hampfibre, der kan bearbejdes til brugbare materialer."
+FURNITURE.SARCOPHAGUS,,Sarkofag
+FURNITURE.SARCOPHAGUS.TOOLTIP,,Denne detaljerede stenbeholder er det endelige hvilested for en afdød bosætter.
+FURNITURE.SELLING_PALLET,,
+FURNITURE.SELLING_PALLET.TOOLTIP,,
+FURNITURE.SERVING_TABLE,,Serveringsbord
+FURNITURE.SERVING_TABLE.TOOLTIP,,{{PRODUCT.BREAD.LOAF.PLURAL}} bliver placeret her til servering efter bagning i en {{FURNITURE.BAKING_OVEN}}.
+FURNITURE.SINGLE_BED,,Seng
+FURNITURE.SINGLE_BED.TOOLTIP,,En seng er det bedste sted til en komfortabel nattesøvn.
+FURNITURE.SINGLE_DOOR,,Dør
+FURNITURE.SINGLE_DOOR_FRAME,,Dørramme
+FURNITURE.SLEEPING_SPOT,,Sovested
+FURNITURE.SLEEPING_SPOT.TOOLTIP,,Dine bosættere vil bruge dette sted til at sove på gulvet. Det er ikke særligt behageligt.
+FURNITURE.STONEMASON_WORKBENCH,,Stenhuggers arbejdsbord
+FURNITURE.STONEMASON_WORKBENCH.TOOLTIP,,En {{PROFESSION.STONEMASON}} arbejder her med {{MATERIAL_TYPE.STONE.ADJECTIVE}} ressourcer.
+FURNITURE.TANNING_FRAME,,Garvningsramme
+FURNITURE.TANNING_FRAME.TOOLTIP,,Denne bliver brugt til at lave {{CARCASS.HIDE.PLURAL}} om til {{PRODUCT.LEATHER.PLURAL}}.
+FURNITURE.TRADE_BANNER,,Banner
+FURNITURE.TRADE_BANNER.TOOLTIP,,"Et dekorativt banner, der viser hvor handelsdepotet ligger."
+FURNITURE.TRAINING_DUMMY,,Træningsdukke
+FURNITURE.TRAINING_DUMMY.TOOLTIP,,Militære bosættere vil her øve deres nærkampsegenskaber op til niveau 50.
+FURNITURE.WAGON_PARKED,,Vogn
+FURNITURE.WATERWHEEL,,Vandhjul
+FURNITURE.WATERWHEEL.PLURAL,,Vandhjul
+FURNITURE.WATERWHEEL.TOOLTIP,,Giver mekanisk kraft til andre indretninger via {{PRODUCT.STONE.GEAR.PLURAL}} og aksler. Skal bygges op af en flod.
+FURNITURE.WATER_BARREL,,Vandtønde
+FURNITURE.WATER_BARREL.TOOLTIP,,"En vandtønde er et sted, hvor dine bosættere kan få en tørstslukkende drink, i stedet for at skulle finde en naturlig vandkilde såsom floden."
+FURNITURE.WATER_PUMP,,Vandpumpe
+FURNITURE.WATER_PUMP.PLURAL,,Vandpumper
+FURNITURE.WATER_PUMP.TOOLTIP,,Flytter vand fra floden til rørsystemet.
+FURNITURE.WEAPON_RACK,,Våbenstativ
+FURNITURE.WEAPON_RACK.TOOLTIP,,Brugt til at lagre våben.
+FURNITURE.WELL,,Brønd
+FURNITURE.WELL.TOOLTIP,,"En brønd er en vandkilde, men den skal være forbundet til et fungerende rørsystem."
+FURNITURE.WINDMILL,,Vindmølle
+FURNITURE.WINDMILL.PLURAL,,Vindmøller
+FURNITURE.WINDMILL.TOOLTIP,,Giver mekanisk kraft til andre indretninger via {{PRODUCT.STONE.GEAR.PLURAL}} og aksler.
+FURNITURE.WOODCUTTERS_BENCH,,Snedkers bænk
+FURNITURE.WOODCUTTERS_BENCH.TOOLTIP,,En {{PROFESSION.WOODCUTTER}} arbejder her for at lave {{RESOURCE.LOGS.PLURAL}} om til {{RESOURCE.PLANKS.PLURAL}}.
+GEM.AMETHYST.ADJECTIVE,,Ametyst
+GEM.AMETHYST.NOUN,,Ametyst
+GEM.AMETHYST.TOOLTIP,,"En violetfarvet variant af kvarts. Oldtidens mennesker mente, at det på magisk vis kunne beskytte dem mod at blive for fulde. Af denne grund er det ikke særligt populært i dværgkultur."
+GEM.AMMOLITE.ADJECTIVE,,Ammolit
+GEM.AMMOLITE.NOUN,,Ammolit
+GEM.AMMOLITE.TOOLTIP,,"En opal-lignende ædelsten, som har en rød til grøn iriscens. Det er kendt som jagtstenen og amuletter lavet af det er beregnet til at bringe held og lykke til en jagt."
+GEM.AQUAMARINE.ADJECTIVE,,Akvamarin
+GEM.AQUAMARINE.NOUN,,Akvamarin
+GEM.AQUAMARINE.TOOLTIP,,"En cyan-farvet variant af sort beryl. Nogle mennesker mener, at den giver magisk beskyttelse mod farerne på havene. Dette skyldes, at en ældgammel magiker brugte en kombination af himmel- og is-magi til at beskytte handelsskibe under den mørke tidsalder."
+GEM.BIXBITE.ADJECTIVE,,Bixbit
+GEM.BIXBITE.NOUN,,Bixbit
+GEM.BIXBITE.TOOLTIP,,En meget sjælden ædelsten også kendt som rød beryl. Den bliver ofte forvekslet med en rødfarvet smaragd.
+GEM.CINNABAR.ADJECTIVE,,Cinnabarit
+GEM.CINNABAR.NOUN,,Cinnabarit
+GEM.CINNABAR.TOOLTIP,,"En kviksølvmalm, som ofte bruges i smykker på grund af sin dyb-røde nuance. Det bruges også til at producere farvestoffet kendt som vermilion."
+GEM.CITRINE.ADJECTIVE,,Citrin
+GEM.CITRINE.NOUN,,Citrin
+GEM.CITRINE.TOOLTIP,,"En gullig variant af kvarts. Det er den ædelsten, der ligner guld mest i farven, så de fleste dværge tror citrin bringer held."
+GEM.DIAMOND.ADJECTIVE,,Diamant
+GEM.DIAMOND.NOUN,,Diamant
+GEM.DIAMOND.TOOLTIP,,Det hårdeste kendte materiale og én af de vigtigste af de syv himmelske sten. Diamanter er den mest sammenpressede form af det neutrale element kendt som 'ånd' eller 'æter'.
+GEM.EMERALD.ADJECTIVE,,Smaragd
+GEM.EMERALD.NOUN,,Smaragd
+GEM.EMERALD.TOOLTIP,,"En levende grøn variant af beryl. Det menes, at graverer man på en smaragd, bringer det stor ulykke. Smaragder er nært knyttet til livselementet og tilhørende magi."
+GEM.GARNET.ADJECTIVE,,Granat
+GEM.GARNET.NOUN,,Granat
+GEM.GARNET.TOOLTIP,,"Granater dækker over en række mineraler, der anvendes som ædelstene, alle med en dyb rød farve. Nogle granatædelstene er faktisk en sammenpresset form for ildelementet."
+GEM.JADE.ADJECTIVE,,Jade
+GEM.JADE.NOUN,,Jade
+GEM.JADE.TOOLTIP,,"Et mineral med en lysegrøn farve, der ofte bruges til udsmykning. Elvere har også været kendt for at bruge jade til at producere medicin, der kan helbrede sygdomme i tarmen."
+GEM.JASPER.ADJECTIVE,,Jaspis
+GEM.JASPER.NOUN,,Jaspis
+GEM.JASPER.TOOLTIP,,"En uren variant af silica, som kan forekomme i flere farver, men mest almindeligt rød. Jaspis er foretrukken som dekorationsmateriale af orker på grund af sine mange varianter."
+GEM.LABRADORITE.ADJECTIVE,,Labradorit
+GEM.LABRADORITE.NOUN,,Labradorit
+GEM.LABRADORITE.TOOLTIP,,"En sten, der typisk skinner med en lyseblå iriscens. Sjældnere udgaver kan reflektere en bred vifte af farver."
+GEM.LAPIS.ADJECTIVE,,Lapis Lazuli
+GEM.LAPIS.NOUN,,Lapis Lazuli
+GEM.LAPIS.TOOLTIP,,"En sten med en strålende dyb blå nuance, der bruges som en ædelsten."
+GEM.MAGNESITE.ADJECTIVE,,Magnesit
+GEM.MAGNESITE.NOUN,,Magnesit
+GEM.MAGNESITE.TOOLTIP,,"Et mineral, der kan poleres til perler til brug i smykker. Disse perler kan farves i mange forskellige farver."
+GEM.MOONSTONE.ADJECTIVE,,Månesten
+GEM.MOONSTONE.NOUN,,Månesten
+GEM.MOONSTONE.TOOLTIP,,"Disse menes at være dannet af måneskin fanget i sten, hvilket gør denne ædelsten til en favorit hos elverne."
+GEM.MORGANITE.ADJECTIVE,,Morganit
+GEM.MORGANITE.NOUN,,Morganit
+GEM.MORGANITE.TOOLTIP,,En rosa udgave af beryl. Den blev navngivet således efter at være blevet gjort populær af en særdeles velhavende købmand i myternes tidsalder.
+GEM.OPAL.ADJECTIVE,,Opal
+GEM.OPAL.NOUN,,Opal
+GEM.OPAL.TOOLTIP,,"En form for silica infunderet med havenes magi, hvilket gør dette til en favorit for sømænd og fiskere."
+GEM.PAINITE.ADJECTIVE,,Painit
+GEM.PAINITE.NOUN,,Painit
+GEM.PAINITE.TOOLTIP,,"En meget sjælden ædelsten, der ofte bliver identificeret som en fejlfarvet safir. Krystallerne er naturligt sekskantede i form og en favorit hos taktikere."
+GEM.RHODOCHROSITE.ADJECTIVE,,Rhodochrosit
+GEM.RHODOCHROSITE.NOUN,,Rhodochrosit
+GEM.RHODOCHROSITE.TOOLTIP,,"Fundet i varierende nuancer fra rød til pink. Den er ikke så hård, som de fleste ædelstene, hvilket gør den til et dårligt valg for ringe og andre smykker med stor effekt."
+GEM.ROCK_CRYSTAL.ADJECTIVE,,Stenkrystal
+GEM.ROCK_CRYSTAL.NOUN,,Stenkrystal
+GEM.ROCK_CRYSTAL.TOOLTIP,,"Den reneste form for kvarts. Stenkrystaller optræder ofte i magiske artefakter, da de er en kondenseret form af iselementet."
+GEM.RUBY.ADJECTIVE,,Rubin
+GEM.RUBY.NOUN,,Rubin
+GEM.RUBY.TOOLTIP,,"Som en af de syv himmelske sten, er rubiner ildelementet sammenpresset til fast form."
+GEM.SAPPHIRE.ADJECTIVE,,Safir
+GEM.SAPPHIRE.NOUN,,Safir
+GEM.SAPPHIRE.TOOLTIP,,"Ofte opfattet som beskyttende for bæreren mod dæmoners opmærksomhed, er safirer meget eftertragtede af magikere til brug i himmel- og luft-baseret magi."
+GEM.SPINEL.ADJECTIVE,,Spinel
+GEM.SPINEL.NOUN,,Spinel
+GEM.SPINEL.TOOLTIP,,"Ofte forvekslet med himmelske sten såsom ægte rubiner og safirer, er spineller en mindre form for magisk-infunderet ædelsten, som kan forbindes med et hvilket som helst af elementerne, afhængig af farve."
+GEM.TANZANITE.ADJECTIVE,,Tanzanit
+GEM.TANZANITE.NOUN,,Tanzanit
+GEM.TANZANITE.TOOLTIP,,"En sjælden ædelsten, der kan fåes i både blå og violet. De menes at være dannet af en død guds fysiske legeme."
+GEM.TOPAZ.ADJECTIVE,,Topas
+GEM.TOPAZ.NOUN,,Topas
+GEM.TOPAZ.TOOLTIP,,"Nogle gange forvekslet med den mere almindelige {{GEM.CITRINE.NOUN}} ædelsten, findes topas i flere farver, men oftest en gulbrun. Det blev først opdaget på en ø, der ikke længere eksisterer."
+GEM.TOURMALINE.ADJECTIVE,,Turmalin
+GEM.TOURMALINE.NOUN,,Turmalin
+GEM.TOURMALINE.TOOLTIP,,Ofte fundet sammen med {{ORE.CASSITERITE.ADJECTIVE}}malm. Det bliver nogen gange associeret med jordmagi.
+GEM.TURQUOISE.ADJECTIVE,,Turkis
+GEM.TURQUOISE.NOUN,,Turkis
+GEM.TURQUOISE.TOOLTIP,,"Et blågrønt mineral, der ofte bruges i udsmykninger. Det menes at bringe held og lykke til bæreren. Det er ofte infunderet med jordelement."
+GOAL.ABANDON_JOB.DESCRIPTION,,Forlader opgave
+GOAL.ADD_TO_INVENTORY.DESCRIPTION,,Indsamler {{targetDescription}}
+GOAL.COMBAT.DESCRIPTION,,Angriber {{targetDescription}}
+GOAL.DRINK.DESCRIPTION,,Drikker {{targetDescription}}
+GOAL.DUMP_LIQUID.DESCRIPTION,,Tømmer indhold af {{targetDescription}}
+GOAL.EAT.DESCRIPTION,,Spiser {{targetDescription}}
+GOAL.EXTINGUISH_FIRE.DESCRIPTION,,Slukker ildebrand
+GOAL.FLEE_FROM_AGGRESSOR.DESCRIPTION,,Flygter fra {{targetDescription}}
+GOAL.HAULING.DESCRIPTION,,Fragter {{targetDescription}}
+GOAL.IDLE.DESCRIPTION,,Inaktiv
+GOAL.INVADER.CREATE_CAMP.DESCRIPTION,,Slår lejr
+GOAL.INVADER.RETREAT.DESCRIPTION,,Trækker sig ud af kortet
+GOAL.INVADER.STEAL_RESOURCES.DESCRIPTION,,Plyndrer lagre
+GOAL.MILITARY.ATTACK_TARGET.DESCRIPTION,,Går ind i kamp
+GOAL.MILITARY.STAND_IN_FORMATION.DESCRIPTION,,Bevogter en position
+GOAL.MILITARY.TRAINING.DESCRIPTION,,Våbentræning
+GOAL.ON_FIRE.DESCRIPTION,,Brænder!
+GOAL.REFILL_WATERSKIN.DESCRIPTION,,Fylder drikkeskind
+GOAL.SLEEP.DESCRIPTION,,Går i seng
+GOAL.TRANSFER_LIQUID.DESCRIPTION,,Overfører {{targetZoneMaterial}}
+GUI.ADD_REMOVE_TILES,,Tilføj/fjern felter
+GUI.ADD_TILES,,Tilføj felter
+GUI.AMBIENT_EFFECT_VOLUME,,Omgivende atmosfære
+GUI.AVAILABLE_PROGRESS_BAR,,{{item}} tilgængelig:
+GUI.BACK_LABEL,,Tilbage
+GUI.BUILD.BRIDGE,,Bro
+GUI.BUILD.DOORS,,Dør
+GUI.BUILD.FLOOR,,Gulv
+GUI.BUILD.PILLARS,,Søjler
+GUI.BUILD.PIPING,,Rør
+GUI.BUILD.POWER,,Kraft
+GUI.BUILD.ROOFING,,Tagdækning
+GUI.BUILD.WALLS,,Mure
+GUI.BUILD_FURNITURE,,Møbler
+GUI.BUILD_LABEL,,Byg
+GUI.CANCEL_LABEL,,Annuller
+GUI.CHANGE_PROFESSION_LABEL,,Vælg nyt erhverv
+GUI.CHANGE_WEAPON_LABEL,,Vælg våben
+GUI.COMBAT_LABEL,,Kamp
+GUI.CONSTRUCTION_LABEL,,Konstruktion
+GUI.CRAFTING_MANAGEMENT.MAINTAINING_TEXT,,Vedligeholde
+GUI.CRAFTING_MANAGEMENT.SUBTITLE,,{{craftingType}} ({{profession}})
+GUI.CRAFTING_MANAGEMENT.TABLE.CRAFTED_WITH,,Lavet med
+GUI.CRAFTING_MANAGEMENT.TABLE.ITEM,,Objekt
+GUI.CRAFTING_MANAGEMENT.TABLE.MANAGEMENT,,Administration
+GUI.CRAFTING_MANAGEMENT.TABLE.MANAGEMENT.LIMIT,,Begrænsning
+GUI.CRAFTING_MANAGEMENT.TABLE.MANAGEMENT.QUANTITY,,Mængde
+GUI.CRAFTING_MANAGEMENT.TABLE.MANAGEMENT.QUANTITY.DECREMENT,,Fald
+GUI.CRAFTING_MANAGEMENT.TABLE.MANAGEMENT.QUANTITY.INCREMENT,,Stigning
+GUI.CRAFTING_MANAGEMENT.TITLE,,Skabe
+GUI.CRAFTING_MANAGEMENT.TOTAL_QUANTITY_ACTUAL,,Nuværende mængde: {{quantity}}
+GUI.CRAFTING_MANAGEMENT.TOTAL_QUANTITY_HINT,,({{quantity}} mængde)
+GUI.CREDITS.AND_YOU_TITLE,,Og dig! Tak fordi du spiller spillet!
+GUI.CREDITS.DEVELOPERS.CHARACTER_ART,,Karaktérkunstnere
+GUI.CREDITS.DEVELOPERS.CONCEPT_ART,,Konceptkunst
+GUI.CREDITS.DEVELOPERS.ENVIRONMENT_ART,,Landskabskunstnere
+GUI.CREDITS.DEVELOPERS.LEAD_DESIGN,,Ledende design & Programmering
+GUI.CREDITS.DEVELOPERS.LEAD_UI,,Ledende 2D & UI-kunstner
+GUI.CREDITS.DEVELOPERS.MUSIC,,Musik og Lydeffekter
+GUI.CREDITS.DEVELOPERS.MUSIC_ADDITIONAL,,Yderligere Musiknumre
+GUI.CREDITS.DEVELOPERS.PROGRAMMING,,Programmering
+GUI.CREDITS.DEVELOPERS.SPECIAL_THANKS,,Speciel tak til
+GUI.CREDITS.FOUNDING_BACKERS_TITLE,,Speciel tak til vores stiftende støtter
+GUI.CREDITS.PATREON_KICKSTARTER_TITLE,,Yderligere tak til vores Patreon og Kickstarter støtter
+GUI.CREDITS.TRANSLATORS_TITLE,,
+GUI.CROP_SELECTION,,Afgrøde:
+GUI.CROP_SELECTION.DESCRIPTION,,{{plantDescription}} - {{planting}} - {{usage}}
+GUI.CROP_SELECTION.PLANTING_HINT.SEASONS_0,,Kan ikke plantes
+GUI.CROP_SELECTION.PLANTING_HINT.SEASONS_1,,Plant i {{season1}}
+GUI.CROP_SELECTION.PLANTING_HINT.SEASONS_2,,Plant i {{season1}} eller i {{season2}}
+GUI.CROP_SELECTION.PLANTING_HINT.SEASONS_3,,"Plant i {{season1}}, {{season2}} eller om {{season3}}"
+GUI.CROP_SELECTION.PLANTING_HINT.SEASONS_4,,Plantet hele året rundt
+GUI.DATE_TIME_YEAR_LABEL,,"{{timeOfDay}}, Dag {{dayNumber}}, År {{year}}"
+GUI.DAY_LABEL,,Dag {{dayNumber}}
+GUI.DECONSTRUCT_LABEL,,Nedriv
+GUI.DIALOG.CANCEL_BUTTON,,Anuller
+GUI.DIALOG.CONFIRM,,Bekræft
+GUI.DIALOG.CONFIRM_DELETE_SAVE,,"Er du sikker på, du vil slette {{name}}?"
+GUI.DIALOG.DISMISS,,Afvis
+GUI.DIALOG.ERROR_ROOM_NAME_ALREADY_EXISTS,,Der findes allerede et rum med det navn.
+GUI.DIALOG.ERROR_SAVE_INCOMPATIBLE,,"Det gemte spil kunne ikke indlæses, da det er inkompatibelt med denne version af spillet."
+GUI.DIALOG.ERROR_TITLE,,Der er opstået en fejl
+GUI.DIALOG.ERROR_WHILE_LOADING,,Der opstod en uventet fejl under indlæsning af spillet.
+GUI.DIALOG.ERROR_WHILE_SAVING,,Der opstod en uventet fejl under lagring af spillet.
+GUI.DIALOG.HIDE_FURTHER_NOTIFICATIONS,,Skjul disse beskeder
+GUI.DIALOG.INFO_TITLE,,Information
+GUI.DIALOG.JUMP_TO,,Gå til placering
+GUI.DIALOG.LANGUAGE_TRANSLATION_INCOMPLETE,,Den valgte sprogoversættelse er i øjeblikket ufuldstændig og mangler tekst. Skifter tilbage til et andet sprog.
+GUI.DIALOG.MOD_CHANGES_OUTSTANDING,,"Du har valgt et andet sæt modifikationer til spillet. Disse vil blive anvendt, efter en genstart af spillet."
+GUI.DIALOG.MOD_INCOMPATIBLE,,En eller flere modifikationer er inkompatible med denne version af spillet og er blevet deaktiveret. Du kan søge efter opdateringer i modifikationsmenuen.
+GUI.DIALOG.OK_BUTTON,,OK
+GUI.DIALOG.RENAME_ROOM_TITLE,,Omdøb rum
+GUI.DIALOG.RENAME_SETTLER_TITLE,,Omdøb bosætter
+GUI.DIALOG.RESTART_REQUIRED,,"Du skal genstarte spillet, før denne ændring træder i kraft"
+GUI.DIALOG.SETTLEMENT_NAME_ALREADY_IN_USE,,"Du har allerede et gemt spil med bosættelsen {{name}}. Hvis du starter et nyt spil, vil dette overskrive det eksisterende gemte spil. Er du sikker på at du vil fortsætte?"
+GUI.DIALOG.SETTLEMENT_NAME_NOT_SPECIFIED,,Du skal specificere et navn til din bosættelse.
+GUI.DIALOG.STOCKPILE_MANAGEMENT.TITLE,,Lagerindstillinger
+GUI.EMBARK.DISCORD_LINK,,Klik her for at tilslutte dig vores Discord-gruppe.
+GUI.EMBARK.MAP_SEED,,Tilfældigt kortfrø
+GUI.EMBARK.MAP_SIZE,,Kortstørrelse
+GUI.EMBARK.MAP_SIZE.LARGE,,Stor
+GUI.EMBARK.MAP_SIZE.MEDIUM,,Middel
+GUI.EMBARK.MAP_SIZE.SMALL,,Lille
+GUI.EMBARK.PEACEFUL_MODE,,Fredelig tilstand
+GUI.EMBARK.SETTLEMENT_NAME,,Navn
+GUI.EMBARK.START,,Begynd!
+GUI.EMBARK.TITLE,,Vælg kongerige
+GUI.EMPTY_CONTAINER_LABEL,,Tom
+GUI.EMPTY_CONTAINER_LABEL.BEING_ACTIONED,,Indhold bliver tømt.
+GUI.EMPTY_CONTAINER_LABEL.HINT,,Smid indholdet af denne beholder på jorden.
+GUI.FURNITURE_ASSIGNED_TO,,Tildelt til {{name}}
+GUI.FURNITURE_BEING_REMOVED,,Er i øjeblikket ved at blive fjernet
+GUI.FURNITURE_REQUIREMENT.ALL_MATERIALS,,{{amount}} tilgængelig
+GUI.FURNITURE_REQUIREMENT.SPECIFIED_MATERIALS,,{{amount}} {{material}} tilgængelig
+GUI.GRAPHICS.FULLSCREEN,,Fuldskærm
+GUI.GRAPHICS.RESOLUTION,,Opløsning
+GUI.INVASION_LABEL,,Invasion
+GUI.ITEM.WEAPON_ARMOR_NEGATION_DESCRIPTION,,
+GUI.ITEM.WEAPON_ATTACK_DESCRIPTION,,
+GUI.KEY_BINDING.DEBUG_FRAME_BUFFER_0,,Debug frame buffer 0
+GUI.KEY_BINDING.DEBUG_FRAME_BUFFER_1,,Debug frame buffer 1
+GUI.KEY_BINDING.DEBUG_FRAME_BUFFER_2,,Debug frame buffer 2
+GUI.KEY_BINDING.DEBUG_FRAME_BUFFER_3,,Debug frame buffer 3
+GUI.KEY_BINDING.DEBUG_FRAME_BUFFER_4,,Debug frame buffer 4
+GUI.KEY_BINDING.DEBUG_FRAME_BUFFER_5,,Debug frame buffer 5
+GUI.KEY_BINDING.DEBUG_FRAME_BUFFER_6,,Debug frame buffer 6
+GUI.KEY_BINDING.DEBUG_FRAME_BUFFER_7,,Debug frame buffer 7
+GUI.KEY_BINDING.DEBUG_FRAME_BUFFER_8,,Debug frame buffer 8
+GUI.KEY_BINDING.DEBUG_FRAME_BUFFER_9,,Debug frame buffer 9
+GUI.KEY_BINDING.DEBUG_GAME_SPEED_SLOW,,Debug game speed slow
+GUI.KEY_BINDING.DEBUG_GAME_SPEED_ULTRA_FAST,,Debug game speed ultra fast
+GUI.KEY_BINDING.DEBUG_HIDE_GUI,,Debug hide gui
+GUI.KEY_BINDING.DEBUG_SHOW_INDIVIDUAL_LIGHTING_BUFFERS,,Debug show individual lighting buffers
+GUI.KEY_BINDING.DEBUG_SHOW_JOB_STATUS,,Debug show job status
+GUI.KEY_BINDING.DEBUG_SHOW_LIQUID_FLOW,,Debug show liquid flow
+GUI.KEY_BINDING.DEBUG_SHOW_MENU,,Debug show menu
+GUI.KEY_BINDING.DEBUG_SHOW_PATHFINDING_NODES,,Debug show pathfinding nodes
+GUI.KEY_BINDING.DEBUG_SHOW_ZONES,,Debug show zones
+GUI.KEY_BINDING.DEBUG_TOGGLE_FLOOR_OVERLAP_RENDERING,,Debug toggle floor overlap rendering
+GUI.KEY_BINDING.FAST_PAN,,Hurtig panorering
+GUI.KEY_BINDING.GAME_SPEED_FAST,,Hurtig spilhastighed
+GUI.KEY_BINDING.GAME_SPEED_FASTER,,Hurtigere spilhastighed
+GUI.KEY_BINDING.GAME_SPEED_FASTEST,,Hurtigste spilhastighed
+GUI.KEY_BINDING.GAME_SPEED_NORMAL,,Normal spilhastighed
+GUI.KEY_BINDING.PAN_CAMERA_DOWN,,Panorér kamera ned
+GUI.KEY_BINDING.PAN_CAMERA_LEFT,,Panorér kamera til venstre
+GUI.KEY_BINDING.PAN_CAMERA_RIGHT,,Panorér kamera til højre
+GUI.KEY_BINDING.PAN_CAMERA_UP,,Panorér kamera op
+GUI.KEY_BINDING.PAUSE,,Pause
+GUI.KEY_BINDING.QUICKLOAD,,Hurtig indlæsning af gemt spil
+GUI.KEY_BINDING.QUICKSAVE,,Hurtig lagring af spil
+GUI.KEY_BINDING.ROTATE,,Rotér
+GUI.KEY_BINDING.ZOOM_IN,,Zoom ind
+GUI.KEY_BINDING.ZOOM_OUT,,Zoom ud
+GUI.LEAVE_CROP_FALLOW,,Ingen afgrød er blevet valgt til plantning på nuværende tidspunkt
+GUI.LOAD_GAME.TABLE.COPY_SEED,,
+GUI.LOAD_GAME.TABLE.DATE_TIME,,Sidst ændret
+GUI.LOAD_GAME.TABLE.DELETE,,Slet
+GUI.LOAD_GAME.TABLE.GAME_TIME,,Alder på verden
+GUI.LOAD_GAME.TABLE.PLAY,,Spil
+GUI.LOAD_GAME.TABLE.SETTLEMENT_NAME,,Navn
+GUI.LOAD_GAME.TABLE.VERSION,,Version
+GUI.LOAD_GAME.TITLE,,Indlæs spil
+GUI.MAP_SEED.COPY_TO_CLIPBOARD,,Kopiér til udklipsholder
+GUI.MAP_SEED_DISPLAY,,Nuværende kortfrø:
+GUI.MECHANISM.SHAFT.HORIZONTAL,,Horisontal
+GUI.MECHANISM.SHAFT.VERTICAL,,Vertikal
+GUI.MILITARY.DIALOG.ADD_SQUAD,,Navngiv ny trup
+GUI.MILITARY.DIALOG.CHOOSE_EMBLEM,,Vælg emblem til {{squadName}}
+GUI.MILITARY.DIALOG.RENAME_SQUAD,,Omdøb trup
+GUI.MILITARY.DIALOG.SELECT_SQUAD,,Tildel til ny trup
+GUI.MILITARY.NEW_SQUAD,,Ny trup
+GUI.MILITARY.ORDERS,,Ordrer
+GUI.MILITARY.ORDERS.ATTACK,,Angrib
+GUI.MILITARY.ORDERS.CANCEL_ATTACK,,Afbryd angreb
+GUI.MILITARY.ORDERS.GUARD,,Bevogt
+GUI.MILITARY.ORDERS.RETREAT,,Tilbagetræk
+GUI.MILITARY.ORDERS.TRAIN,,Træn
+GUI.MILITARY.REMOVE_SQUAD,,Fjern trup
+GUI.MILITARY.REMOVE_SQUAD.DIALOG,,"Er du sikker på, du vil fjerne denne trup?"
+GUI.MILITARY.SET_FORMATION,,Sæt formation
+GUI.MILITARY.SET_ORDERS,,Sæt ordrer
+GUI.MILITARY.TAB.DWARVES,,Militærdværge
+GUI.MILITARY.TAB.SQUADS,,Militærtrupper
+GUI.MILITARY.TAB.TRAINED_CIVILIANS,,Trænede civile
+GUI.MINIMAP.LABEL,,Minikort
+GUI.MUSIC_VOLUME,,Musik
+GUI.NEXT_LABEL,,Næste
+GUI.NON_ROTATABLE_FURNITURE.HINT,,Dette møbel kan ikke drejes i denne version af spillet
+GUI.OK_LABEL,,OK
+GUI.OPTIONS.AUDIO.TITLE,,Lydindstillinger
+GUI.OPTIONS.GAMEPLAY.HIDE_TREES_OBSCURING_SETTLERS,,"Gør træer gennemsigtige, når de tilslører bosættere"
+GUI.OPTIONS.GAMEPLAY.TITLE,,Gameplay-indstillinger
+GUI.OPTIONS.GAMEPLAY.USE_EDGE_SCROLLING,,"Panorér, når musmarkøren er ved kanten af skærmen"
+GUI.OPTIONS.GAMEPLAY.ZOOM_TO_CURSOR,,Zoom til musmarkør
+GUI.OPTIONS.GRAPHICS.FULLSCREENMODE.BORDERLESS_FULLSCREEN,,Kantløs fuldskærm
+GUI.OPTIONS.GRAPHICS.FULLSCREENMODE.EXCLUSIVE_FULLSCREEN,,Eksklusiv fuldskærm
+GUI.OPTIONS.GRAPHICS.FULLSCREENMODE.WINDOWED,,Vindue
+GUI.OPTIONS.GRAPHICS.TITLE,,Grafikindstillinger
+GUI.OPTIONS.GRAPHICS.WEATHER_EFFECTS,,Vejreffekter
+GUI.OPTIONS.GRAPHICS.WEATHER_EFFECTS_TOOLTIP,,Vis vejreffekter såsom sne på møbler
+GUI.OPTIONS.KEY_BINDINGS,,Tasteindstillinger
+GUI.OPTIONS.MISC.CRASH_REPORTING_ENABLED,,Tilvælg crash-rapporter
+GUI.OPTIONS.MISC.TITLE,,Diverse
+GUI.OPTIONS.MISC.TUTORIAL_ENABLED,,Start spil med træning
+GUI.OPTIONS.RESET,,Nulstil
+GUI.OPTIONS.TAB.AUDIO,,Lyd
+GUI.OPTIONS.TAB.GAMEPLAY,,Gameplay
+GUI.OPTIONS.TAB.GRAPHICS,,Grafik
+GUI.OPTIONS.TAB.MISC,,Andet
+GUI.OPTIONS.TAB.TWITCH,,Twitch
+GUI.OPTIONS.TWITCH.ACCOUNT_LABEL,,Twitch-konto
+GUI.OPTIONS.TWITCH.CODE_LABEL,,Kode
+GUI.OPTIONS.TWITCH.CONNECTED_LABEL,,Forbundet til Twitch-konto
+GUI.OPTIONS.TWITCH.DISCONNECT,,Afbryd forbindelse
+GUI.OPTIONS.TWITCH.DISCONNECTED_LABEL,,Forbindelse til Twitch-konto afbrudt
+GUI.OPTIONS.TWITCH.ENABLED,,Twitch-integration slået til
+GUI.OPTIONS.TWITCH.GENERAL_ERROR,,En fejl opstod under kommunikationen med Twitch
+GUI.OPTIONS.TWITCH.LINK_ACCOUNT_BUTTON,,Link Twitch-konto
+GUI.OPTIONS.TWITCH.PRIORITISE_SUBSCRIBERS,,Giv prioritet til abonnenter
+GUI.OPTIONS.TWITCH.SUBMIT_BUTTON,,Indsend
+GUI.OPTIONS.TWITCH.TITLE,,Twitch-integration
+GUI.OPTIONS.TWITCH.VIEWERS_AS_SETTLERS,,Brug seeres navne til bosættere
+GUI.OPTIONS.TWITCH.VIEWERS_LABEL,,{{numViewers}} seere
+GUI.ORDERS.CHOP_WOOD,,Hug
+GUI.ORDERS.CLEAR_GROUND,,Ryd
+GUI.ORDERS.DIG_CHANNELS,,Vandingskanal
+GUI.ORDERS.DIG_CHANNELS.TOOLTIP,,Denne ordre bruges til at grave kanaler i jorden.
+GUI.ORDERS.EXTINGUISH_FLAMES,,Sluk brand
+GUI.ORDERS.EXTINGUISH_FLAMES.TOOLTIP,,"Denne ordre bruges til at slukke brande, der brænder i øjeblikket."
+GUI.ORDERS.HARVEST_PLANTS,,Høst
+GUI.ORDERS.HUNT,,Jag
+GUI.ORDERS.HUNT.TOOLTIP,,"Denne ordre bruges til at vælge bytte, der skal jages."
+GUI.ORDERS.MINE,,Udgrav
+GUI.ORDERS_LABEL,,Ordrer
+GUI.PLACE_BRIDGE.HINT,,En bro skal dække begge sider af floden og skal fylde mindst 3x3 felter
+GUI.POWER_LABEL,,Kraft & Vand
+GUI.POWER_WATER_INFO,,{FURNITURE.WINDMILL.PLURAL}} {{drawable|tooltip_icon_windmill}} og {{FURNITURE.WATERWHEEL.PLURAL}} {{drawable|tooltip_icon_waterwheel}} forbindes til kraftledninger {{drawable|tooltip_icon_power}}{{\n}}Kraftledninger {{drawable|tooltip_icon_power}} kraft {{FURNITURE.WATER_PUMP.PLURAL}} {{drawable|tooltip_icon_pump}} og andet kraftdrevet udstyr {{\n}}{{FURNITURE.WATER_PUMP.PLURAL}} {{drawable|tooltip_icon_pump}} og vandingskanaler {{drawable|tooltip_icon_irrigation}} forbindes til {{PRODUCT.STONE.PIPE.PLURAL}} {{drawable|tooltip_icon_pipes}}
+GUI.PRIORITY_LABEL,,Prioritet
+GUI.PRODUCTION_EXPORT.CHOOSE_ITEM_TYPE,,Vælg ting der skal eksporteres
+GUI.PRODUCTION_EXPORT.LIMIT.REACHED,,
+GUI.PRODUCTION_IMPORT.CHOOSE_ITEM_TYPE,,Vælg ting der skal importeres
+GUI.REMOVE_LABEL,,Fjern
+GUI.REMOVE_TILES,,Fjern felter
+GUI.RESOURCE_MANAGEMENT.ALL_OF,,Alle {{item}}
+GUI.RESOURCE_MANAGEMENT.AVAILABLE,,Tilgængelig
+GUI.RESOURCE_MANAGEMENT.AVAILABLE_OF_TOTAL,,{{available}} / {{total}} tilgængelig
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.CONTENTS_TO_BE_DUMPED,,{{item}} er ved at få sit indhold tømt af
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.CONTENTS_TO_BE_DUMPED.PLURAL,,{{item}} er ved at få deres indhold tømt af
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.DUE_TO_BE_HAULED,,{{item}} er planlagt til fragt
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.DUE_TO_BE_HAULED.PLURAL,,{{item}} er planlagt til fragt
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.EQUIPPED,,{{item}} er udstyret af
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.EQUIPPED.PLURAL,,{{item}} er udstyret af
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.FOOD_ALLOCATION,,{{item}} er reserveret til
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.FOOD_ALLOCATION.PLURAL,,{{item}} er reserveret til
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.HAULING,,{{item}} er ved at blive fragtet af
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.HAULING.PLURAL,,{{item}} er ved at blive fragtet af
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.HELD_IN_INVENTORY,,{{item}} er i beholdningen hos
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.HELD_IN_INVENTORY.PLURAL,,{{item}} er i beholdningen hos
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.ON_FIRE,,{{item}} er gået i brand
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.ON_FIRE.PLURAL,,{{item}} er gået i brand
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.PLACED_FOR_CONSTRUCTION,,{{item}} er ved at blive placeret til konstruktion
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.PLACED_FOR_CONSTRUCTION.PLURAL,,{{item}} er ved at blive placeret til konstruktion
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.PRODUCTION_IMPORT,,{{item}} er på en importpalle
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.PRODUCTION_IMPORT.PLURAL,,{{item}} er på en importpalle
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.PRODUCTION_OUTPUT,,
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.PRODUCTION_OUTPUT.PLURAL,,
+GUI.RESOURCE_MANAGEMENT.QUANTIFIED_ITEM,,{{quantity}} {{item}}
+GUI.RESOURCE_MANAGEMENT.SEARCH,,Søg
+GUI.RESOURCE_MANAGEMENT.SORT_BY,,Sort efter
+GUI.RESOURCE_MANAGEMENT.TITLE,,Ressourcer
+GUI.RESOURCE_MANAGEMENT.TOTAL,,Total
+GUI.RESOURCE_MANAGEMENT.UNALLOCATED_LABEL,,Tilgængelig: {{count}
+GUI.ROOFING.ADD,,Tilføj
+GUI.ROOMS_LABEL,,Rum
+GUI.ROTATE_FURNITURE.HINT,,Tryk (R) for at rotere møbler
+GUI.SAVING_PROMPT,,Gemmer...
+GUI.SELECT_WEAPON.LABEL,,Udvælg våben
+GUI.SETTINGS.LABEL,,Indstillinger
+GUI.SETTLER_MANAGEMENT.CHOOSE_ARMOUR,,Vælg rustning
+GUI.SETTLER_MANAGEMENT.CHOOSE_SHIELD,,Vælg skjold
+GUI.SETTLER_MANAGEMENT.CHOOSE_WEAPON,,Vælg våben
+GUI.SETTLER_MANAGEMENT.HAPPINESS,,Lykke {{happinessValue}}
+GUI.SETTLER_MANAGEMENT.IMMIGRATION,,Immigration
+GUI.SETTLER_MANAGEMENT.MAIN_HAND.STATUS,,Den dominerende hånd kan ikke bruges. {{status}}
+GUI.SETTLER_MANAGEMENT.OFF_HAND.STATUS,,Den ikke-dominerende hånd kan ikke bruges. {{status}}
+GUI.SETTLER_MANAGEMENT.OFF_HAND.TWO_HANDED_WEAPON,,{{weaponName}} kræver to hænder
+GUI.SETTLER_MANAGEMENT.POPULATION_STATISTICS,,Civilbefolkning {{civilianCount}} (Civiles senge {{civilianBedCount}}) - Militærbefolkning {{militaryCount}} (Militærets senge {{militaryBedCount}}) - Total folkemængde {{populationCount}}
+GUI.SETTLER_MANAGEMENT.PROFESSION.CIVILIAN,,Civil
+GUI.SETTLER_MANAGEMENT.PROFESSION.MILITARY,,Militær
+GUI.SETTLER_MANAGEMENT.PROFESSION.VILLAGER,,Byboer
+GUI.SETTLER_MANAGEMENT.SEARCH,,Søg
+GUI.SETTLER_MANAGEMENT.SORT.HAPPINESS,,Lykke
+GUI.SETTLER_MANAGEMENT.SORT.MILITARY_CIVILIAN,,Militær/Civil
+GUI.SETTLER_MANAGEMENT.SORT.NAME,,Navn
+GUI.SETTLER_MANAGEMENT.SORT.SKILL_LEVEL,,Færdighedsniveau
+GUI.SETTLER_MANAGEMENT.SORT_BY,,Sortér efter
+GUI.SETTLER_MANAGEMENT.TITLE,,Bosættere
+GUI.SOUND_EFFECT_VOLUME,,Lydeffekter
+GUI.UI_SCALE,,Brugerfladeskala
+GUI.VIEW_MODE.DEFAULT,,Standardvisning
+GUI.VIEW_MODE.JOB_PRIORITY,,Prioritetsvisning
+GUI.VIEW_MODE.MECHANISMS,,Kraftvisning
+GUI.VIEW_MODE.PIPING,,Rørvisning
+GUI.VIEW_MODE.ROOFING_INFO,,Tagvisning
+GUI.VIEW_ROADMAP,,Se spillets udviklingssti
+GUI.YEAR_LABEL,,År {{year}}
+HAPPINESS_MODIFIER.ALCOHOL_WITHDRAWAL,,Er ved at blive ædru
+HAPPINESS_MODIFIER.ATE_NICELY_PREPARED_FOOD,,Spiste et godt  tilberedt måltid
+HAPPINESS_MODIFIER.BLEEDING,,Bløder voldsomt
+HAPPINESS_MODIFIER.CARRIED_DEAD_BODY,,Bar et lig
+HAPPINESS_MODIFIER.CAUGHT_IN_RAIN,,Fanget udenfor i regnen
+HAPPINESS_MODIFIER.DRANK_ALCOHOL,,Påvirket af alkohol
+HAPPINESS_MODIFIER.DRANK_FROM_RIVER,,Drak vand fra flod
+HAPPINESS_MODIFIER.DYING_OF_HUNGER,,Sulter
+HAPPINESS_MODIFIER.DYING_OF_THIRST,,Kritisk dehydreret
+HAPPINESS_MODIFIER.HAD_A_TANTRUM,,Havde et raserianfald
+HAPPINESS_MODIFIER.NEW_SETTLEMENT_OPTIMISM,,Optimistisk omkring den nye bosættelse
+HAPPINESS_MODIFIER.ON_FIRE,,Blev voldsomt forbrændt
+HAPPINESS_MODIFIER.POISONED,,Forgiftet
+HAPPINESS_MODIFIER.SAW_DEAD_BODY,,Så et lig
+HAPPINESS_MODIFIER.SLEEPING_IN_RAIN,,Sov i regnen
+HAPPINESS_MODIFIER.SLEEPING_IN_SNOW,,Sov i sneen
+HAPPINESS_MODIFIER.SLEPT_IN_BED,,Sov i en komfortabel seng
+HAPPINESS_MODIFIER.SLEPT_ON_GROUND,,Sovet på hårdt underlag
+HAPPINESS_MODIFIER.SLEPT_OUTSIDE,,Sov under stjernerne
+HAPPINESS_MODIFIER.TITLE,,Lykke:
+HAPPINESS_MODIFIER.VERY_HUNGRY,,Meget sulten
+HAPPINESS_MODIFIER.VERY_THIRSTY,,Meget tørstig
+HAPPINESS_MODIFIER.VERY_TIRED,,Ekstremt træt
+HAPPINESS_MODIFIER.WORKED_IN_ENCLOSED_ROOM,,Arbejdede i et lukket rum
+HAPPINESS_MODIFIER.WORKED_IN_RAIN,,Arbejder i regnen
+HAULING.ASSIGNMENT.DESCRIPTION,,{{quantity}} tildelt {{targetDescription}
+HINT.BUILD_PIPES.1,,Du kan bruge denne visning til at ligger vandrør mellem indgange og udgange såvel som vandingskanaler.
+HINT.BUILD_PIPES.2,,"Disse er placeret under jorden, så sørg for dine bosættere har adgang til hvert felts sider."
+HINT.BUILD_PIPES.3,,"Møbler med en væske-indgang eller -udgang viser et blåt eller grønt ikon, der indikerer om der er en indgang eller udgang til netværket."
+HINT.BUILD_POWER.1,,Brug denne visning til at forbinde konstruktioner der kræver kraft fra mekanismer lavet af {{PRODUCT.STONE.GEAR.PLURAL}} og aksler.
+HINT.BUILD_POWER.2,,"Disse er placeret under jorden, så sørg for dine bosættere har adgang til hvert felts sider."
+HINT.BUILD_POWER.3,,"Konstruktioner, der kræver eller producerer kraft, viser et rødt eller grønt ikon, der indikerer om de har en indgang eller udgang til netværket."
+HINT.BUILD_ROOFING.1,,"Denne visning tillader dig at se, hvilke felter der er udenfor uden noget tag over (lyseblå) og de felter, der har et tag over sig (mørkebrun)."
+HINT.BUILD_ROOFING.2,,"Du kan bruge {{GUI.ROOFING.ADD}} og {{GUI.CANCEL_LABEL}} indstillingerne til at sætte tagkonstruktion i kø, og {{GUI.DECONSTRUCT_LABEL}} til at fjerne eksisterende tagfelter."
+HINT.BUILD_ROOFING.3,,Et tag kan kun konstrueres indenfor 3 felter af en mur eller {{FURNITURE.PILLAR}}.
+HINT.BUTTON.BEGIN_TUTORIAL,,Påbegynd træning
+HINT.BUTTON.DISABLE_ALL,,Deaktiver alle tips
+HINT.BUTTON.DISMISS,,Afvis
+HINT.BUTTON.HINTS_ONLY,,Kun tips
+HINT.BUTTON.NEXT,,Næste
+HINT.OPEN_PRIORITY_MENU.1,,"Du kan bruge denne menu til at ændre prioriteten af jobs og opgaver, så jobs med højere prioritet vil blive tildelt før jobs med lavere prioritet."
+HINT.OPEN_PRIORITY_MENU.2,,"Imens prioritetsmenuen er åben, bliver prioritetsikonerne vist i spilverdenen, der hvor der er et job eller en opgave, der skal udføres, eller hvor et rum eller et møbel kan give jobs i fremtiden."
+HINT.TOOL_DEPLETED.AXE1,,Din bosættelse har ikke længere en {{TOOL.AXE}} tilgængelig. Du kan ikke længere fælde træer.
+HINT.TOOL_DEPLETED.AXE2,,"Der kan laves flere økser ved {{FURNITURE.FORGE}}. Hvis du ikke har en fungerende {{FURNITURE.FORGE}}, skal du måske fjerne en {{FURNITURE.WOODCUTTERS_BENCH}}."
+HINT.TOOL_DEPLETED.CHISEL1,,Din bosættelse har ikke længere en {{TOOL.CHISEL}} tilgængelig. Denne er krævet til konstruktion af stenmøbler.
+HINT.TOOL_DEPLETED.CHISEL2,,"Flere mejsler kan laves ved {{FURNITURE.FORGE}}. Hvis du ikke har en fungerende {{FURNITURE.FORGE}}, skal du måske fjerne en {{FURNITURE.STONEMASON_BENCH}}."
+HINT.TOOL_DEPLETED.PLANE1,,Din bosættelse har ikke længere en {{TOOL.PLANE}} tilgængelig. Denne er krævet til konstruktion af træmøbler.
+HINT.TOOL_DEPLETED.PLANE2,,Flere høvle kan laves ved {{FURNITURE.CARPENTRY_WORKBENCH}} af en {{RESOURCE.PLANKS.NOUN}}.
+HINT.TOOL_DEPLETED.SAW1,,"Din bosættelse har ikke længere en {{TOOL.SAW}} tilgængelig. Denne er krævet, før du kan bygge en {{FURNITURE.WOODCUTTERS_BENCH}} eller en {{FURNITURE.CARPENTRY_WORKBENCH}}."
+HINT.TOOL_DEPLETED.SAW2,,"Flere save kan laves ved {{FURNITURE.FORGE}}. Hvis du ikke har en fungerende {{FURNITURE.FORGE}}, skal du måske fjerne en {{FURNITURE.WOODCUTTERS_BENCH}} eller en {{FURNITURE.CARPENTRY_WORKBENCH}}."
+HINT.WEAPON_SELECTION.1,,"Brug denne visning til at vælge en type våben, som din bosætter vil beholde i sin beholdning i tilfælde af kamp."
+HINT.WEAPON_SELECTION.2,,Det er kraftigt anbefalet at du tildeler et fjernkampsvåben såsom en {{WEAPON.BOW}} eller en {{WEAPON.CROSSBOW}} til de bosættere tildelt job som {{PROFESSION.HUNTER}}.
+HINT.WEAPON_SELECTION.3,,"Våben, du ikke har tilgængelige, bliver vist med rød."
+HINT.WELCOME.NEXT_STEPS,,"Klik på ""Træning"" for at blive ledt igennem det basale, ""Kun tips"" for at springe over vejledningen men blive vejledt mens du spiller, eller ""Deaktiver alle tips"" for ikke at vise disse beskeder."
+HINT.WELCOME.PRE_SPAWN,,Start spillet ved at vælge et sted på kortet med åbent område nær en flod og klik på '{{GUI.EMBARK.START}}'-knappen.
+HUMANOID.BROKEN.DESCRIPTION,,"{{name}}, {{madness.adjective}} {{race.noun}}"
+HUMANOID.DESCRIPTION,,"{{name}}, {{race.adjective}} {{skillLevelDescription.adjective}} {{profession.noun}}"
+INGREDIENT.DOUGH,,Dej
+INGREDIENT.FLOUR,,Mel
+INGREDIENT.LOAF,,Brød
+INGREDIENT.LOAF.PLURAL,,Brød
+INGREDIENT.MALT.SACK.NOUN,,Malt
+INGREDIENT.MALT.SACK.TOOLTIP,,"Dette skal først males, før det kan bruges til brygning."
+INGREDIENT.MILLED.MALT.SACK.NOUN,,Malet malt
+INGREDIENT.MILLED.MALT.SACK.TOOLTIP,,Dette bliver kombineret med vand i et {{FURNITURE.MASH_TUN}} for at lave {{LIQUID.WORT}}.
+INGREDIENT.MUSHROOM.SPAWN.NOUN,,Svampespore
+INGREDIENT.MUSHROOM.SPAWN.PLURAL,,Svampesporer
+INGREDIENT.MUSHROOM.SPAWN.TOOLTIP,,"Også kendt som mycelium, kan dette betragtes som frø, med hvilke der kan dyrkes svampe i en {{ROOMS.MUSHROOM_FARM}}."
+INGREDIENT.SEEDS.NOUN,,Frø
+INGREDIENT.SEEDS.PLURAL,,Frø
+INGREDIENT.SEEDS.TOOLTIP,,Frø af den rigtige type er påkrævet til plantning i en {{ROOMS.FARM}}. De skal også være tilgængelige i et {{STOCKPILE.GRANARY}} lager.
+INGREDIENT.VEGETABLE.CRATE.NOUN,,Grøntsag (kasse)
+INGREDIENT.VEGETABLE.CRATE.PLURAL,,Grøntsager (kasse)
+INGREDIENT.VEGETABLE.SACK.NOUN,,Grøntsag (sæk)
+INGREDIENT.VEGETABLE.SACK.PLURAL,,Grøntsager (sæk)
+INVENTORY.CONTAINS.LABEL,,Beholdning:
+ITEM.AVAILABILITY.DESCRIPTION,,{{quantity}} {{materialType.adjective}} {{itemType.noun_or_plural}} tilgængelig(e)
+ITEM.DESCRIPTION,,{{quantity_if_multiple}} {{quality.adjective}} {{materialType.adjective}} {{itemType.noun_or_plural}}
+ITEM.INGREDIENT.DESCRIPTION,,{{quantity_if_multiple}} {{materialType.noun_or_plural}}
+ITEM.NONE_SELECTED,,Intet valgt
+ITEM.QUALITY.PREFIX.AWFUL.ADJECTIVE,,Forfærdelig
+ITEM.QUALITY.PREFIX.AWFUL.TOOLTIP,,"Denne ting er forfærdeligt lavet, svær at bruge, og vil ikke være noget værd"
+ITEM.QUALITY.PREFIX.MASTERWORK.ADJECTIVE,,Mesterværk
+ITEM.QUALITY.PREFIX.MASTERWORK.TOOLTIP,,"Denne ting er tydeligvis blevet lavet af en mester i sit fag, den er idéel på alle måder"
+ITEM.QUALITY.PREFIX.POOR.ADJECTIVE,,Dårlig
+ITEM.QUALITY.PREFIX.POOR.TOOLTIP,,"Denne ting er dårligt lavet og vil hindre enhver, der bruger den, en smule"
+ITEM.QUALITY.PREFIX.SUPERIOR.ADJECTIVE,,Overlegen
+ITEM.QUALITY.PREFIX.SUPERIOR.TOOLTIP,,"Denne ting er blevet lavet med stor dygtighed, hvilket gør den mere værdifuld og nemmere at bruge"
+ITEM_GROUP.FUEL.PLURAL,,Brændstof
+ITEM_GROUP.PRODUCT.PLURAL,,Produkter
+ITEM_GROUP.RESOURCE.PLURAL,,Ressourcer
+ITEM_GROUP.TOOL.PLURAL,,Værktøjer
+LANGUAGE.LABEL,,Sprog
+LIQUID.BEER.NOUN,,Øl
+LIQUID.BEER.TOOLTIP,,"Det er elsket af dværge og vil give en substantiel bonus i et stykke tid. Det eneste problem er, at de med tiden vil kræve det, for at komme igennem arbejdsdagen."
+LIQUID.HOPPED_WORT.NOUN,,Siet urt
+LIQUID.HOPPED_WORT.TOOLTIP,,"Dette er det sidste trin for ugæret øl, før det bliver hældt i en {{FERMENTATION_TANK}}, hvor det bliver til drikkeklar øl."
+LIQUID.WATER.NOUN,,Vand
+LIQUID.WORT.NOUN,,Urt
+LIQUID.WORT.TOOLTIP,,Dette er ugæret øl. For smag kræver det tilføjelse af {{VEGETABLE.HOPS}} i en {{FURNITURE.BREW_KETTLE}} før det kan gæres.
+MADNESS.BROKEN.ADJECTIVE,,Brækket
+MADNESS.BROKEN.TOOLTIP,,"Denne bosætter var så ulykkelig, at vedkommende er blevet skubbet forbi bristepunktet og ikke længere vil arbejde eller endog spise!"
+MATERIAL,,Materiale
+MATERIAL_TYPE,,Type
+MATERIAL_TYPE.ANY,,Enhver
+MATERIAL_TYPE.CLOTH.ADJECTIVE,,Stof
+MATERIAL_TYPE.CLOTH.NOUN,,Stof
+MATERIAL_TYPE.EARTH.ADJECTIVE,,Jordens
+MATERIAL_TYPE.EARTH.NOUN,,Jorden
+MATERIAL_TYPE.FOODSTUFF.NOUN,,Mad
+MATERIAL_TYPE.GEM.NOUN,,Ædelsten
+MATERIAL_TYPE.METAL.ADJECTIVE,,Metallisk
+MATERIAL_TYPE.METAL.NOUN,,Metal
+MATERIAL_TYPE.ORE.NOUN,,Malm
+MATERIAL_TYPE.OTHER.NOUN,,Andre
+MATERIAL_TYPE.ROPE.ADJECTIVE,,Reb
+MATERIAL_TYPE.ROPE.NOUN,,Reb
+MATERIAL_TYPE.SEED.NOUN,,Frø
+MATERIAL_TYPE.SKIN.ADJECTIVE,,Skind
+MATERIAL_TYPE.SKIN.NOUN,,Skind
+MATERIAL_TYPE.STONE.ADJECTIVE,,Sten
+MATERIAL_TYPE.STONE.NOUN,,Sten
+MATERIAL_TYPE.VEGETABLE.NOUN,,Grøntsag
+MATERIAL_TYPE.VITRIOL.ADJECTIVE,,Vitriol af
+MATERIAL_TYPE.VITRIOL.NOUN,,Vitriol
+MATERIAL_TYPE.WOOD.ADJECTIVE,,Træ
+MATERIAL_TYPE.WOOD.NOUN,,Træ
+MEAT.BOAR_MEAT,,Vildsvin
+MEAT.CARP_MEAT.NOUN,,Karpe
+MEAT.CARP_MEAT.PLURAL,,Karper
+MEAT.DEER_MEAT,,Dådyr
+MEAT.DWARF_FLESH,,Dværgkød
+MEAT.ELEPHANT_MEAT,,Elefant
+MEAT.FOX_MEAT,,Ræv
+MEAT.HORSE_MEAT,,
+MEAT.PERCH_MEAT.NOUN,,Aborre
+MEAT.PERCH_MEAT.PLURAL,,Aborrer
+MEAT.PIKE_MEAT.NOUN,,Gedde
+MEAT.PIKE_MEAT.PLURAL,,Gedder
+MECHANISM.FURNITURE.CONSUMING_POWER,,Er i gang - bruger {{power}} kraft
+MECHANISM.FURNITURE.CRAFTING_STATION_REQUIRES_POWER,,Er langsomt i gang - ikke nok kraft
+MECHANISM.FURNITURE.CRAFTING_STATION_REQUIRES_POWER.TOOLTIP,,Dette møbel kræver en kraftforbindelse underneden til en kraftproducent såsom en {{FURNITURE.WINDMILL}} eller et {{FURNITURE.WATERWHEEL}}.
+MECHANISM.FURNITURE.PRODUCING_POWER,,Er i gang - producerer {{power}} power
+MECHANISM.FURNITURE.REQUIRES_OUTSIDE_PLACEMENT,,"Denne skal være udenfor, før den kan fungere ordentligt"
+MECHANISM.FURNITURE.REQUIRES_POWER,,Slukket - ikke nok kraft
+MECHANISM.FURNITURE.REQUIRES_POWER.TOOLTIP,,Dette møbel kræver en kraftforbindelse underneden til en kraftproducent såsom en {{FURNITURE.WINDMILL}} eller et {{FURNITURE.WATERWHEEL}}.
+MECHANISM.FURNITURE.REQUIRES_POWER_GRID,,Slukket - forbind til en kraftforbindelse underneden
+MECHANISM.FURNITURE.REQUIRES_POWER_GRID.TOOLTIP,,Dette møbel kræver en kraftforbindelse underneden - se {{GUI.BUILD.POWER}}-indstillingen i {{GUI.BUILD_LABEL}}-menuen.
+MECHANISM.STONE.GEAR.NOUN,,Tandhjulssamling
+MECHANISM.STONE.GEAR.TOOLTIP,,Denne himstregims forbinder mekanisk kraft i alle 4 retninger.
+MECHANISM.WOODEN.SHAFT.NOUN,,Aksel
+MECHANISM.WOODEN.SHAFT.TOOLTIP,,En træaksel der forbinder mekanisk kraft i 2 retninger.
+MENU.CONTINUE_GAME,,Fortsæt spil
+MENU.CREDITS,,Credits
+MENU.JOIN_DISCORD,,Slut dig til Discord
+MENU.LINK_TWITCH_ACCOUNT,,Forbind til Twitch
+MENU.LOAD_GAME,,Indlæs
+MENU.MODS,,Modifikationer
+MENU.NEW_GAME,,Start nyt spil
+MENU.OPTIONS,,Valgmuligheder
+MENU.QUIT,,Forlad
+MENU.SAVE_AND_QUIT,,Gem & Forlad
+MENU.SOURCE_CODE,,
+MENU.TOGGLE_FULLSCREEN,,Slå fuldskærm til/fra
+METAL.BRONZE.ADJECTIVE,,Bronze
+METAL.BRONZE.NOUN,,Bronze
+METAL.BRONZE.TOOLTIP,,Bronze er en legering af kobber og tin. Det er hårdere og meget mere holdbart end kobber alene. (Legeringer er endnu ikke blevet implementeret)
+METAL.COPPER.ADJECTIVE,,Kobber
+METAL.COPPER.NOUN,,Kobber
+METAL.COPPER.TOOLTIP,,"Ud over at forekomme naturligt som {{ORE.NATIVE_COPPER.NOUN}}, er det også let at udvinde fra {{ORE.MALACHITE.NOUN}}malm. Kobber har mange anvendelsesmuligheder, især i møntværker, selv om det ikke er hårdt nok til at skabe effektive våben."
+METAL.COPPER_PATINA.ADJECTIVE,,Kobber
+METAL.COPPER_PATINA.NOUN,,Kobber (Patina)
+METAL.COPPER_PATINA.TOOLTIP,,{{METAL.COPPER.TOOLTIP}}
+METAL.DURALUMINIUM.ADJECTIVE,,
+METAL.DURALUMINIUM.NOUN,,
+METAL.DURALUMINIUM.TOOLTIP,,
+METAL.GOLD.ADJECTIVE,,Gyldne
+METAL.GOLD.NOUN,,Guld
+METAL.GOLD.TOOLTIP,,"Kongen af metaller. Selvom det ikke er det sjældneste eller mest værdifulde, er guld det mest eftertragtede metal for de fleste racer - især dværge."
+METAL.IRON.ADJECTIVE,,Jern
+METAL.IRON.NOUN,,Jern
+METAL.IRON.TOOLTIP,,"Det er et fattigt militær, som ikke har adgang til jern. Dværgmetalsmede kender hemmelighederne til at forvandle dette til {{METAL.STEEL.NOUN}}."
+METAL.PLATINUM.ADJECTIVE,,Platin
+METAL.PLATINUM.NOUN,,Platin
+METAL.PLATINUM.TOOLTIP,,"Et sølvhvidt metal, der er meget modstandsdygtigt over for korrosion. Platin er sjældnere og derfor mere værdifuldt end {{METAL.GOLD.NOUN}}."
+METAL.RUSTED_IRON.ADJECTIVE,,Rusten jern
+METAL.RUSTED_IRON.NOUN,,Rust
+METAL.RUSTED_IRON.TOOLTIP,,"Jern bliver til rust, når det bliver udsat for regn over en lang periode. Med tiden vil det helt henfalde."
+METAL.SILVER.ADJECTIVE,,Sølv
+METAL.SILVER.NOUN,,Sølv
+METAL.SILVER.TOOLTIP,,Som {{METAL.GOLD.NOUN}} bruges sølv ofte til møntværker og som solide guldbarrer til velstandshandel.
+METAL.STEEL.ADJECTIVE,,Stål
+METAL.STEEL.NOUN,,Stål
+METAL.STEEL.TOOLTIP,,"Langt stærkere end {{METAL.IRON.NOUN}}, giver overlegne våben og værktøjer, kun dværgene kender hemmeligheden bag skabelsen af stål."
+METAL.TIN.ADJECTIVE,,Tin
+METAL.TIN.NOUN,,Tin
+METAL.TIN.TOOLTIP,,Tin kan udvindes af {{ORE.CASSITERITE.NOUN}} og legeres med {{METAL.COPPER.NOUN}} for at producere {{METAL.BRONZE.NOUN}}. (Legeringer er endnu ikke blevet implementeret)
+MILITARY.FORMATION.COLUMN,,Kolonne - Smal
+MILITARY.FORMATION.COLUMN_DOUBLE,,Kolonne - Bred
+MILITARY.FORMATION.COLUMN_SINGLE,,Kolonne
+MILITARY.FORMATION.GRID,,Gitter - Smal
+MILITARY.FORMATION.GRID_DOUBLE,,Gitter - Bred
+MILITARY.FORMATION.GRID_SINGLE,,Gitter
+MILITARY.FORMATION.LINE,,Linje - Smal
+MILITARY.FORMATION.LINE_DOUBLE,,Linje - Bred
+MILITARY.FORMATION.LINE_SINGLE,,Linje
+MILITARY.SQUAD.DEFAULT_NAME,,Trup
+MILITARY.SQUAD.ORDER_DESCRIPTION.COMBAT,,I kamp
+MILITARY.SQUAD.ORDER_DESCRIPTION.GUARDING,,Bevogter
+MILITARY.SQUAD.ORDER_DESCRIPTION.OFF_DUTY,,Har fri
+MILITARY.SQUAD.ORDER_DESCRIPTION.RETREATING,,Trækker sig tilbage
+MILITARY.SQUAD.ORDER_DESCRIPTION.TRAINING,,Træner
+MILITARY.SQUAD.SHIFT.DAYTIME,,Daghold
+MILITARY.SQUAD.SHIFT.NIGHTTIME,,Nattehold
+MODS.APPLY,,Ansøg
+MODS.BUTTON.BROWSE,,Se efter modifikationer
+MODS.BUTTON.REFRESH,,Genopfrisk
+MODS.COMPATIBILITY.COMPATIBLE,,Ja
+MODS.COMPATIBILITY.INCOMPATIBLE,,Nej
+MODS.COMPATIBILITY.UNKNOWN,,Ukendt
+MODS.EMAIL_LOGIN.CHECK_EMAIL,,"Kig i din mail efter autorisationskoden. Hvis du ikke har modtaget en mail, kig venligst i mappen til uønsket post."
+MODS.EMAIL_LOGIN.CODE_LABEL,,6-cifrede kode:
+MODS.EMAIL_LOGIN.EMAIL,,Skriv din email-adresse for at modtage en autorisationskode.
+MODS.EMAIL_LOGIN.EMAIL_LABEL,,Email:
+MODS.EMAIL_LOGIN.ERROR,,"Der er opstået en fejl under kommunikationen med serveren. Enten har serveren mistet forbindelsen, din email-adresse er forkert, eller også er du ikke forbundet til internettet."
+MODS.EMAIL_LOGIN.INFO,,"For at hente og opdatere modifikationer, skal du være forbundet til Mod.io-platformen."
+MODS.EMAIL_LOGIN.REQUEST_CODE,,Anmod om kode
+MODS.EMAIL_LOGIN.SUBMIT_CODE,,Indsend
+MODS.INCOMPATIBLE_VERSION_DESCRIPTION,,Denne modifikations spilversion ({{modGameVersion}}) er inkompatibel med spillets nuværende version ({{gameVersion}})
+MODS.MISSING_HOMEPAGE_URL,,Ophavsmanden af denne modifikation har ikke inkluderet en hjemmeside
+MODS.MISSING_MODS_DIALOG_TEXT,,"Denne gemte fil blev sidst brugt mens følgende modifikationer var aktive. Disse modifikationer mangler nu eller er deaktiveret, så det gemte spil indlæses muligvis ikke korrekt."
+MODS.MISSING_MODS_SAVE_EXCEPTION_DIALOG_TEXT,,"Denne gemte fil kunne ikke indlæses, da den enten er uforenelig med denne version af spillet, eller fordi nogle modifikationer er blevet deaktiveret eller fjernet, siden dette spil sidst blev indlæst. Følgende modifikationer blev forventet, men er ikke længere aktive:"
+MODS.SYNC_IN_PROGRESS,,Vent venligst imens listen over modifikationer bliver opdateret.
+MODS.TABLE.COMPATIBILITY,,Kompatibel
+MODS.TABLE.ENABLED,,Slå til
+MODS.TABLE.NAME,,Navn
+MODS.TABLE.ORDERING,,Genbestil
+MODS.TABLE.VERSION,,Version
+MUSHROOM.DESCRIPTION,,{{materialType.noun}}
+NEEDS.DRINK,,Drik
+NEEDS.FOOD,,Mad
+NEEDS.SLEEP,,Sove
+NOTIFICATION.AREA_REVEALED.DESCRIPTION,,Dine minearbejdere har opdaget et nyt område!
+NOTIFICATION.AREA_REVEALED.TITLE,,Udforskning
+NOTIFICATION.DEATH.DESCRIPTION,,"{{character}}, er død på grund af {{reason}}."
+NOTIFICATION.DEATH.KILLED_BY_DESCRIPTION,,Slået ihjel af {{killer}}
+NOTIFICATION.DEATH.SHORT_DESCRIPTION,,Død på grund af {{reason}}
+NOTIFICATION.DEATH.TITLE,,Bosætter død
+NOTIFICATION.FIRE_STARTED.DESCRIPTION,,Der er udbrudt brand i din bosættelse!
+NOTIFICATION.FIRE_STARTED.TITLE,,Brand!
+NOTIFICATION.FISH_EXHAUSTED.DESCRIPTION,,"Du har overfisket floden til sådan en grænse, at der ikke er flere fisk tilbage. Fiskene vender ikke tilbage før næste gydesæson næste forår."
+NOTIFICATION.FISH_EXHAUSTED.TITLE,,Overfisket
+NOTIFICATION.GAME_OVER.DESCRIPTION,,Alting har en ende. Din bosættelse er forladt.
+NOTIFICATION.GAME_OVER.TITLE,,Spil Ovre
+NOTIFICATION.IMMIGRANTS_ARRIVED.DESCRIPTION,,Velstanden i jeres bosættelse har tiltrukket en omgang nye migranter til at øge jeres befolkning.
+NOTIFICATION.IMMIGRANTS_ARRIVED.TITLE,,Indvandring
+NOTIFICATION.INVASION.DESCRIPTION,,"En invaderende styrke af orker er ankommet. Forbered jer! De angriber, når de har forberedt sig til det efter et stykke tid."
+NOTIFICATION.INVASION.TITLE,,Du bliver invaderet!
+NOTIFICATION.MINING_COLLAPSE.DESCRIPTION,,Et område er styrtet sammen grundet manglende søjler og støtter.
+NOTIFICATION.MINING_COLLAPSE.TITLE,,Minekollaps
+NOTIFICATION.OXIDISATION_DESTRUCTION.DESCRIPTION,,En ting eller et møbel er blevet ødelagt grundet længere udsættelse for regn.\nNogle materialer såsom jern og stål bør ikke efterlades udenfor i en længere periode.
+NOTIFICATION.OXIDISATION_DESTRUCTION.TITLE,,Rustet væk
+NOTIFICATION.PIRATE_INVASION.DESCRIPTION,,
+NOTIFICATION.PIRATE_INVASION.TITLE,,
+NOTIFICATION.ROOFING_COLLAPSE.DESCRIPTION,,Et tag er kollapset grundet manglende søjler og støtter.
+NOTIFICATION.ROOFING_COLLAPSE.TITLE,,Tag kollapset
+NOTIFICATION.SETTLER_MENTAL_BREAK.DESCRIPTION,,De hårde tider har vist sig at være for meget for {{character}}.
+NOTIFICATION.SETTLER_MENTAL_BREAK.TITLE,,Mentalt knæk
+NOTIFICATION.SETTLER_STUCK.DESCRIPTION,,
+NOTIFICATION.SETTLER_STUCK.TITLE,,
+NOTIFICATION.SETTLER_TANTRUM.DESCRIPTION,,"{{character}} er blevet så ulykkelig, at vedkommende har fået et raserianfald!"
+NOTIFICATION.SETTLER_TANTRUM.TITLE,,Raserianfald!
+NOTIFICATION.TRADER_ARRIVED.DESCRIPTION,,De er på vej til dit handelsdepot for at købe og sælge varer.
+NOTIFICATION.TRADER_ARRIVED.TITLE,,Handelsmænd er ankommet!
+NOTIFICATION.TRADER_ARRIVED_NO_DEPOT.DESCRIPTION,,"Du bliver nød til at lave et handelsdepot, før du kan købe og sælge varer."
+NOTIFICATION.TRADER_ARRIVED_NO_DEPOT.TITLE,,Handelsmænd er ankommet!
+ORE.BAUXITE.ADJECTIVE,,Bauxit
+ORE.BAUXITE.NOUN,,Bauxit
+ORE.BAUXITE.TOOLTIP,,Bauxit er den primære aluminiumsmalm. Desværre er metoden til aluminiumsproduktion ikke blevet opdaget endnu.
+ORE.BITUMINOUS_COAL.ADJECTIVE,,Bituminøst kul
+ORE.BITUMINOUS_COAL.NOUN,,Bituminøst kul
+ORE.BITUMINOUS_COAL.TOOLTIP,,Dette kan konverteres til {{ORE.COKE.NOUN}} ved at bruge en {{FURNITURE.COKE_OVEN}}.
+ORE.CASSITERITE.ADJECTIVE,,Cassiterit
+ORE.CASSITERITE.NOUN,,Cassiterit
+ORE.CASSITERITE.TOOLTIP,,"En malm, hvorfra {{METAL.TIN.NOUN}} kan udvindes."
+ORE.CHARCOAL.ADJECTIVE,,Trækul
+ORE.CHARCOAL.NOUN,,Trækul
+ORE.CHARCOAL.TOOLTIP,,{{FUEL.SACK}} fremstillet af træ {{RESOURCE.LOGS.PLURAL}}.
+ORE.CHRYSOCOLLA.ADJECTIVE,,Chrysocolla
+ORE.CHRYSOCOLLA.NOUN,,Chrysocolla
+ORE.CHRYSOCOLLA.TOOLTIP,,"Ofte forvekslet med turkis, men er faktisk en {{METAL.COPPER}}malm."
+ORE.COKE.ADJECTIVE,,Coke
+ORE.COKE.NOUN,,Coke
+ORE.COKE.TOOLTIP,,En raffineret form for {{ORE.BITUMINOUS_COAL}} der kan bruges som {{FUEL.SACK}}.
+ORE.GALENA.ADJECTIVE,,Galena
+ORE.GALENA.NOUN,,Galena
+ORE.GALENA.TOOLTIP,,En malm hvorfra {{METAL.SILVER}} kan udvindes.
+ORE.HEMATITE.ADJECTIVE,,Hæmatit
+ORE.HEMATITE.NOUN,,Hæmatit
+ORE.HEMATITE.TOOLTIP,,En malm hvorfra {{METAL.IRON}} kan udvindes.
+ORE.ILMENITE.ADJECTIVE,,Ilmenit
+ORE.ILMENITE.NOUN,,Ilmenit
+ORE.ILMENITE.TOOLTIP,,Ilmenit er den primære malm hvorfra titanium kan udvindes. Desværre er metoden til titaniumproduktion ikke blevet opdaget endnu.
+ORE.MALACHITE.ADJECTIVE,,Malakit
+ORE.MALACHITE.NOUN,,Malakit
+ORE.MALACHITE.TOOLTIP,,En malm hvorfra {{METAL.COPPER}} kan udvindes.
+ORE.NATIVE_COPPER.ADJECTIVE,,Naturligt kobber
+ORE.NATIVE_COPPER.NOUN,,Naturligt kobber
+ORE.NATIVE_COPPER.TOOLTIP,,"Naturligt forekommende {{METAL.COPPER}} som skal smeltes, før det kan bruges."
+ORE.NATIVE_GOLD.ADJECTIVE,,Naturligt guld
+ORE.NATIVE_GOLD.NOUN,,Naturligt guld
+ORE.NATIVE_GOLD.TOOLTIP,,"Naturligt forekommende {{METAL.GOLD}} som skal smeltes, før det kan bruges."
+ORE.NATIVE_PLATINUM.ADJECTIVE,,Naturligt platin
+ORE.NATIVE_PLATINUM.NOUN,,Naturligt platin
+ORE.NATIVE_PLATINUM.TOOLTIP,,"Naturligt forekommende {{METAL.PLATINUM}} som skal smeltes, før det kan bruges."
+ORE.NATIVE_SILVER.ADJECTIVE,,Naturligt sølv
+ORE.NATIVE_SILVER.NOUN,,Naturligt sølv
+ORE.NATIVE_SILVER.TOOLTIP,,"Naturligt forekommende {{METAL.SILVER}} som skal smeltes, før det kan bruges."
+ORE.POLLUCITE.ADJECTIVE,,Pollucit
+ORE.POLLUCITE.NOUN,,Pollucit
+ORE.POLLUCITE.TOOLTIP,,"Pollucit er en cæsiummalm, som i øjeblikket er for farlig at producere. Særligt vanvittige dværgmetalsmede forsøger i øjeblikket at finde en pålidelig produktionsmetode."
+ORE.PYRITE.ADJECTIVE,,Svovlkis
+ORE.PYRITE.NOUN,,Svovlkis
+ORE.PYRITE.TOOLTIP,,"Også kendt som pyrit, får dets lysegule udseende nogle til at forveksle det med guld. Det har flere anvendelsesmuligheder, når det knuses, men der skal udvises forsigtighed, da det gnister, når det rammes."
+ORE.THORIUM.ADJECTIVE,,Thorium
+ORE.THORIUM.NOUN,,Thorium
+ORE.THORIUM.TOOLTIP,,"En sølvfarvet metalmalm, der bliver sort, når den udsættes for luft. Det er på mærkelig vis varmt at røre ved."
+ORE.WOLFRAMITE.ADJECTIVE,,Wolframit
+ORE.WOLFRAMITE.NOUN,,Wolframit
+ORE.WOLFRAMITE.TOOLTIP,,"En metallisk malm, der komplicerer udvindingen af tin. Det har for højt et smeltepunkt, til det kan smelte ved normale processer."
+OTHER.ASH,,Forkullet
+OTHER.BRICK.NOUN,,Mursten
+OTHER.CLAY_SOIL.NOUN,,Lerjord
+OTHER.GRASS.NOUN,,Græs
+PRIORITY.DISABLED,,Slået fra
+PRIORITY.HIGHER,,Højere prioritet
+PRIORITY.HIGHEST,,Højeste prioritet
+PRIORITY.LOWER,,Lavere prioritet
+PRIORITY.LOWEST,,Laveste prioritet
+PRIORITY.NORMAL,,Normal prioritet
+PRIVACY.OPT_IN.ACCEPT_BUTTON,,Jeg accepterer
+PRIVACY.OPT_IN.DATA_POINT.1,,•Spilklientens version
+PRIVACY.OPT_IN.DATA_POINT.2,,•Dine indstillinger i spillet
+PRIVACY.OPT_IN.DATA_POINT.3,,•Spillets tilstand på fejl-tidspunktet
+PRIVACY.OPT_IN.DESCRIPTION,,"Mountaincore er i aktiv udvikling. For at hjælpe med at diagnosticere og reparere fejl, vær venlig at trykke på ""Jeg accepterer"" nedenfor for at sende anonyme fejlrapporter automatisk. \n\nDe består kun af følgende data:"
+PRIVACY.OPT_IN.DO_NOT_ACCEPT_BUTTON,,Deaktiver rapportering
+PRODUCT.ANVIL,,Ambolt
+PRODUCT.ANVIL.PLURAL,,Ambolte
+PRODUCT.ANVIL.TOOLTIP,,"En stor blok af metal der bruges til at hamre på og udforme opvarmet metal. Dette kræves, for at kunne konstruere en {{FURNITURE.FORGE}}."
+PRODUCT.BARREL.HOOPS,,Tøndebånd
+PRODUCT.BARREL.HOOPS.TOOLTIP,,Tøndebånd bruges til at konstruere en {{PRODUCT.BARREL.NOUN}}. Anvendes også i noget maskineri.
+PRODUCT.BARREL.NOUN,,Tønde
+PRODUCT.BARREL.PLURAL,,Tønder
+PRODUCT.BARREL.STAVES,,Tøndestave
+PRODUCT.BARREL.STAVES.TOOLTIP,,Buede træplanker der bruges til at konstruere en {{PRODUCT.BARREL.NOUN}}.
+PRODUCT.BARREL.TOOLTIP,,En cylindrisk beholder til væsker. Den buede form gør den lettere at rulle rundt.
+PRODUCT.BOWL,,Skål
+PRODUCT.BOWL.DESCRIPTION,,Skål med {{cooking.soup.description}}
+PRODUCT.BOWL.PLURAL,,Skåle
+PRODUCT.BREAD.DOUGH.NOUN,,Dej
+PRODUCT.BREAD.DOUGH.PLURAL,,Deje
+PRODUCT.BREAD.DOUGH.TOOLTIP,,En blanding af ingredienser der kan bages i {{PRODUCT.BREAD.LOAF.PLURAL}} ved hjælp af en {{FURNITURE.BAKING_OVEN}}.
+PRODUCT.BREAD.LOAF.NOUN,,En del af et brød
+PRODUCT.BREAD.LOAF.PLURAL,,Flere dele af et brød
+PRODUCT.BREAD.LOAF.TOOLTIP,,"Tilberedt brød, klar til at spise!"
+PRODUCT.BUCKET.NOUN,,Spand
+PRODUCT.BUCKET.PLURAL,,Spande
+PRODUCT.BUCKET.TOOLTIP,,En lille beholder beregnet til at flytte væsker rundt med.
+PRODUCT.CAULDRON,,Kedel
+PRODUCT.CAULDRON.PLURAL,,Kedler
+PRODUCT.CAULDRON.TOOLTIP,,"Bruges af en {{PROFESSION.CHEF}} til at tilberede suppe i et {{ROOMS.KITCHEN}}, hvor den derefter flyttes til en {{ROOMS.FEASTING_HALL}}."
+PRODUCT.CHEST.NOUN,,Kiste
+PRODUCT.CHEST.PLURAL,,Kister
+PRODUCT.CHEST.TOOLTIP,,Brugt til at lagre mønter til handel.
+PRODUCT.LEATHER.NOUN,,Læder
+PRODUCT.LEATHER.PLURAL,,Flere stykker læder
+PRODUCT.LINEN.NOUN,,Linned
+PRODUCT.LINEN.PLURAL,,Flere stykker linned
+PRODUCT.LINEN.TOOLTIP,,En rulle af stof der primært bruges til sengetøj
+PRODUCT.LIQUID.TANK,,Tank
+PRODUCT.LIQUID.TANK.PLURAL,,Tanke
+PRODUCT.LIQUID.TANK.TOOLTIP,,"Dette er en beholder af metal, som bruges til at lagre væsker, der skal laves ved {{FURNITURE.FORGE}}."
+PRODUCT.MILLSTONE,,Møllesten
+PRODUCT.MILLSTONE.PLURAL,,Møllesten
+PRODUCT.MILLSTONE.TOOLTIP,,To store stenskiver der bliver gnedet sammen for at male høstede afgrøder. Bruges til at konstruere en {{FURNITURE.FLOUR_MILL}}.
+PRODUCT.RATION.DOUGH.NOUN,,Klar dej
+PRODUCT.RATION.DOUGH.PLURAL,,Klare deje
+PRODUCT.RATION.DOUGH.TOOLTIP,,En blanding af ingredienser der kan laves til {{PRODUCT.RATION.LOAF.PLURAL}} ved at bruge en {{FURNITURE.BAKING_OVEN}}.
+PRODUCT.RATION.NOUN,,Ration
+PRODUCT.RATION.PLURAL,,Rationer
+PRODUCT.RATION.TOOLTIP,,"Disse kan mætte dine bosættere i lang tid, men du bliver nød til at prioritere andre kilder til mad."
+PRODUCT.ROPE.NOUN,,Reb
+PRODUCT.ROPE.PLURAL,,Reb
+PRODUCT.STONE.GEAR.NOUN,,Tandhjul
+PRODUCT.STONE.GEAR.PLURAL,,Tandhjul
+PRODUCT.STONE.GEAR.TOOLTIP,,Bruges til at konstruere mekanismer.
+PRODUCT.STONE.PIPE.NOUN,,Rør
+PRODUCT.STONE.PIPE.PLURAL,,Rør
+PRODUCT.STONE.PIPE.TOOLTIP,,Bruges til at sende væsker imellem felter under jorden.
+PRODUCT.WATERSKIN.NOUN,,Drikkeskind
+PRODUCT.WATERSKIN.PLURAL,,Drikkeskind
+PRODUCT.WOODEN.SHAFT.HORIZONTAL.NOUN,,Horisontal aksel
+PRODUCT.WOODEN.SHAFT.HORIZONTAL.PLURAL,,Horisontale aksler
+PRODUCT.WOODEN.SHAFT.HORIZONTAL.TOOLTIP,,"Bruges til at forbinde mekanismer, der producerer eller kræver strøm."
+PRODUCT.WOODEN.SHAFT.VERTICAL.NOUN,,Vertikal aksel
+PRODUCT.WOODEN.SHAFT.VERTICAL.PLURAL,,Vertikale aksler
+PRODUCT.WOODEN.SHAFT.VERTICAL.TOOLTIP,,"Bruges til at forbinde mekanismer, der producerer eller kræver strøm."
+PROFESSION.ARTISAN.FEMALE_NOUN,,Håndværker
+PROFESSION.ARTISAN.MALE_NOUN,,Håndværker
+PROFESSION.ARTISAN.PLURAL,,Håndværkere
+PROFESSION.ARTISAN.VERB,,Fabrikerer
+PROFESSION.BAKER.VERB,,Bager
+PROFESSION.BLACKSMITH.FEMALE_NOUN,,Smed
+PROFESSION.BLACKSMITH.MALE_NOUN,,Smed
+PROFESSION.BLACKSMITH.PLURAL,,Smede
+PROFESSION.BLACKSMITH.TOOLTIP,,Laver genstande af metal og udvinder også metal fra malm.
+PROFESSION.BLACKSMITH.VERB,,Smeder
+PROFESSION.BREWER.FEMALE_NOUN,,Brygger
+PROFESSION.BREWER.MALE_NOUN,,Brygger
+PROFESSION.BREWER.PLURAL,,Bryggere
+PROFESSION.BREWER.TOOLTIP,,Producerer øl i et {{ROOMS.BREWERY}}.
+PROFESSION.BREWER.VERB,,Brygger
+PROFESSION.CARPENTER.FEMALE_NOUN,,Tømrer
+PROFESSION.CARPENTER.MALE_NOUN,,Tømrer
+PROFESSION.CARPENTER.PLURAL,,Tømrere
+PROFESSION.CARPENTER.TOOLTIP,,Laver træmøbler og genstande.
+PROFESSION.CARPENTER.VERB,,Udfører håndværk
+PROFESSION.CHEF.FEMALE_NOUN,,Kok
+PROFESSION.CHEF.MALE_NOUN,,Kok
+PROFESSION.CHEF.PLURAL,,Kokke
+PROFESSION.CHEF.TOOLTIP,,"Tilbereder al den mad, der bliver indtaget af dine bosættere."
+PROFESSION.CHEF.VERB,,Kokkererer
+PROFESSION.DESCRIPTION,,{{skillLevelDescription.adjective}} {{profession.noun}}
+PROFESSION.FARMER.FEMALE_NOUN,,Landmand
+PROFESSION.FARMER.MALE_NOUN,,Landmand
+PROFESSION.FARMER.PLURAL,,Landmænd
+PROFESSION.FARMER.TOOLTIP,,"Planter, ser til og høster afgrøder."
+PROFESSION.FARMER.VERB,,Landbrug
+PROFESSION.FISHER.FEMALE_NOUN,,Fisker
+PROFESSION.FISHER.MALE_NOUN,,Fisker
+PROFESSION.FISHER.TOOLTIP,,Fanger fisk fra vandområder til brug som fødevarer og ressourcer.
+PROFESSION.FISHER.VERB,,Fisker
+PROFESSION.HUNTER.FEMALE_NOUN,,Jæger
+PROFESSION.HUNTER.MALE_NOUN,,Jæger
+PROFESSION.HUNTER.TOOLTIP,,Sporer og dræber vilde dyr for deres kød og skind.
+PROFESSION.HUNTER.VERB,,Jager
+PROFESSION.LEATHERWORKER.FEMALE_NOUN,,Læderarbejder
+PROFESSION.LEATHERWORKER.MALE_NOUN,,Læderarbejder
+PROFESSION.LEATHERWORKER.PLURAL,,Læderarbejdere
+PROFESSION.LEATHERWORKER.TOOLTIP,,Behandler dyrs huder for at producere genstande af læder.
+PROFESSION.LEATHERWORKER.VERB,,Læderarbejde
+PROFESSION.MAYOR.FEMALE_NOUN,,Borgmester
+PROFESSION.MAYOR.MALE_NOUN,,Borgmester
+PROFESSION.MAYOR.VERB,,Styrer
+PROFESSION.MERCHANT.FEMALE_NOUN,,Købmand
+PROFESSION.MERCHANT.MALE_NOUN,,Købmand
+PROFESSION.MERCHANT.VERB,,Handler
+PROFESSION.MILLER.VERB,,Maler
+PROFESSION.MINER.FEMALE_NOUN,,Minearbejder
+PROFESSION.MINER.MALE_NOUN,,Minearbejder
+PROFESSION.MINER.PLURAL,,Minearbejdere
+PROFESSION.MINER.TOOLTIP,,Udgraver nye områder ved hjælp af en {{TOOL.PICKAXE}}.
+PROFESSION.MINER.VERB,,Minedrifter
+PROFESSION.NOBLE.FEMALE_NOUN,,Adelskvinde
+PROFESSION.NOBLE.MALE_NOUN,,Adelsmand
+PROFESSION.NOBLE.TOOLTIP,,"Adlen opfylder ikke jobs på samme måde som almindelige bosættere, men bringer berømmelse og prestige til din bosættelse."
+PROFESSION.NOBLE.VERB,,Regerer
+PROFESSION.PIRATE.FEMALE_NOUN,,
+PROFESSION.PIRATE.MALE_NOUN,,
+PROFESSION.PIRATE.VERB,,
+PROFESSION.RUNESMITH.FEMALE_NOUN,,Runesmed
+PROFESSION.RUNESMITH.MALE_NOUN,,Runesmed
+PROFESSION.RUNESMITH.TOOLTIP,,"Fortryller våben, rustninger og genstande med magiske runer, for at øge deres evner."
+PROFESSION.RUNESMITH.VERB,,Fortryller
+PROFESSION.SKILL_LEVEL.1,,Neofyt
+PROFESSION.SKILL_LEVEL.1.TOOLTIP,,Så absolut en begynder med meget lidt erfaring.
+PROFESSION.SKILL_LEVEL.2,,Nybegynder
+PROFESSION.SKILL_LEVEL.2.TOOLTIP,,De forstår kun det basale i deres fag.
+PROFESSION.SKILL_LEVEL.3,,Lærling
+PROFESSION.SKILL_LEVEL.3.TOOLTIP,,"De er ved at være god til faget, men der er stadig meget at lære."
+PROFESSION.SKILL_LEVEL.4,,Svend
+PROFESSION.SKILL_LEVEL.4.TOOLTIP,,De er ikke længere lærling og har rimelige færdigheder i deres fag.
+PROFESSION.SKILL_LEVEL.5,,Dygtig
+PROFESSION.SKILL_LEVEL.5.TOOLTIP,,"De er godt øvet, men har stadig mere at lære."
+PROFESSION.SKILL_LEVEL.6,,Ret dygtig
+PROFESSION.SKILL_LEVEL.6.TOOLTIP,,Meget dygtig til deres fag og kan betragtes som mere end kompetent.
+PROFESSION.SKILL_LEVEL.7,,Ekspert
+PROFESSION.SKILL_LEVEL.7.TOOLTIP,,"Der er lidt, denne ekspert ikke ved om deres respektive fag."
+PROFESSION.SKILL_LEVEL.8,,Mester
+PROFESSION.SKILL_LEVEL.8.TOOLTIP,,Selv bedre end en ekspert er de i sandhed en mester til deres fag.
+PROFESSION.SKILL_LEVEL.9,,Stormester
+PROFESSION.SKILL_LEVEL.9.TOOLTIP,,Der er ingen dygtigere til deres fag end en stormester.
+PROFESSION.STONEMASON.FEMALE_NOUN,,Stenhugger
+PROFESSION.STONEMASON.MALE_NOUN,,Stenhugger
+PROFESSION.STONEMASON.PLURAL,,Stenhuggere
+PROFESSION.STONEMASON.TOOLTIP,,Laver møbler og genstande af sten.
+PROFESSION.STONEMASON.VERB,,Modellerer
+PROFESSION.VILLAGER.FEMALE_NOUN,,Landsbyboer
+PROFESSION.VILLAGER.MALE_NOUN,,Landsbyboer
+PROFESSION.VILLAGER.TOOLTIP,,Denne bosætter har ingen specifikke hverv og vil udføre en hvilken som helst opgave såsom at fragte genstande.
+PROFESSION.VILLAGER.VERB,,Arbejder
+PROFESSION.WEAVER.FEMALE_NOUN,,Væver
+PROFESSION.WEAVER.MALE_NOUN,,Væver
+PROFESSION.WEAVER.PLURAL,,Vævere
+PROFESSION.WEAVER.TOOLTIP,,Laver materialer om til tøj og andre stoffer.
+PROFESSION.WEAVER.VERB,,Vævning
+PROFESSION.WOODCUTTER.FEMALE_NOUN,,Skovhugger
+PROFESSION.WOODCUTTER.MALE_NOUN,,Skovhugger
+PROFESSION.WOODCUTTER.PLURAL,,Skovhuggere
+PROFESSION.WOODCUTTER.TOOLTIP,,"Fælder træer som tømmer, der kan bruges i en {{ROOMS.SAWMILL}}."
+PROFESSION.WOODCUTTER.VERB,,Hugger
+QUOTA.FIXED_AMOUNT,,total
+QUOTA.PER_SETTLER,,per bosætter
+RACE.BOAR.NOUN,,Vildt vildsvin
+RACE.CARP.NOUN,,Karpe
+RACE.DEER.FEMALE_NOUN,,Dådyr
+RACE.DEER.MALE_NOUN,,Hjort
+RACE.DEER.TOOLTIP,,"Et dådyr er en fredelige planteæder, som flygter ved ethvert tegn på fare."
+RACE.DWARF.FEMALE_ADJECTIVE,,Dværg
+RACE.DWARF.FEMALE_NOUN,,Dværg
+RACE.DWARF.FEMALE_PLURAL,,Dværge
+RACE.DWARF.MALE_ADJECTIVE,,Dværg
+RACE.DWARF.MALE_NOUN,,Dværg
+RACE.DWARF.MALE_PLURAL,,Dværge
+RACE.DWARF.TOOLTIP,,Dværge er korte og 'tætte' humanoider. De er mestre i at arbejde med sten og metal. De fleste dværge nærer mistillid til himlen og foretrækker at blive under jorden.
+RACE.ELEPHANT.NOUN,,Elefant
+RACE.FOX.FEMALE_NOUN,,Ræv
+RACE.FOX.MALE_NOUN,,Ræv
+RACE.FUNGOLEM,,Fungolem
+RACE.HORSE.NOUN,,Hest
+RACE.ORC.MALE_ADJECTIVE,,Ork-lignende
+RACE.ORC.MALE_NOUN,,Ork
+RACE.PERCH.NOUN,,Aborre
+RACE.PIKE.NOUN,,Gedde
+RACE.SPIDER,,Edderkop
+RACE.UNDEAD_DWARF,,Udød dværg
+RACE.WURM,,Orm
+RESOURCE.BONE.LARGE.NOUN,,Stor knogle
+RESOURCE.BONE.LARGE.PLURAL,,Store knogler
+RESOURCE.BONE.MEDIUM.NOUN,,Medium knogle
+RESOURCE.BONE.MEDIUM.PLURAL,,Medium knogler
+RESOURCE.BONE.SMALL.NOUN,,Lille knogle
+RESOURCE.BONE.SMALL.PLURAL,,Små knogler
+RESOURCE.FLOUR.SACK.NOUN,,Mel
+RESOURCE.FLOUR.SACK.PLURAL,,Mel
+RESOURCE.FLOUR.SACK.TOOLTIP,,"Korn, der er formalet til et fint pulver og klar til brug som ingrediens i fremstillingen af fødevarer."
+RESOURCE.GEMS.UNREFINED.NOUN,,Utilskåret ædelsten
+RESOURCE.GEMS.UNREFINED.PLURAL,,Uskårne ædelstene
+RESOURCE.GEMS.UNREFINED.TOOLTIP,,En klump af sten indeholdende ædelstene klar til at blive skåret og poleret.
+RESOURCE.GRAIN.SACK.NOUN,,Korn (sæk)
+RESOURCE.GRAIN.SACK.PLURAL,,Korn (sække)
+RESOURCE.HEMP.BUNDLE.NOUN,,Hampbundt
+RESOURCE.HEMP.BUNDLE.PLURAL,,Hampbundter
+RESOURCE.HEMP.FIBRE.BUNDLE.NOUN,,Hampfibrebundt
+RESOURCE.HEMP.FIBRE.BUNDLE.PLURAL,,Hampfibrebundter
+RESOURCE.LOGS.NOUN,,Træstamme
+RESOURCE.LOGS.PLURAL,,Træstammer
+RESOURCE.LOGS.TOOLTIP,,"Del af et træ, der oftest behandles i {{RESOURCE.PLANKS.PLURAL}}, men som også har andre anvendelsesformål."
+RESOURCE.METAL.BLOOM.NOUN,,Støbejern
+RESOURCE.METAL.BLOOM.PLURAL,,Støbejern
+RESOURCE.METAL.BLOOM.TOOLTIP,,"En metalklump blandet med slagge, der skal hamres til brugbar form."
+RESOURCE.METAL.INGOT.NOUN,,Bar
+RESOURCE.METAL.INGOT.PLURAL,,Barrer
+RESOURCE.METAL.INGOT.TOOLTIP,,"Forædlede metalblokke, klar til brug som ingrediens i håndværk."
+RESOURCE.METAL.PLATE.NOUN,,Plade
+RESOURCE.METAL.PLATE.PLURAL,,Plader
+RESOURCE.METAL.PLATE.TOOLTIP,,"Store, flade plader, der bruges i noget af det større maskineri."
+RESOURCE.MUSHROOM.LOG.NOUN,,Træstamme med svampe
+RESOURCE.MUSHROOM.LOG.PLURAL,,Træstammer med svampe
+RESOURCE.MUSHROOM.LOG.TOOLTIP,,"En træstamme, der er blevet infunderet med {{INGREDIENT.MUSHROOM.SPAWN.NOUN}}. Selve træstammen er, hvor svampene trækker næringsstoffer fra. Den kræver dypning i en {{FURNITURE.MUSHROOM_SHOCK_TANK}} efter komplet podning."
+RESOURCE.MUSHROOM.LUMBER.NOUN,,Træstamme med svampe
+RESOURCE.MUSHROOM.LUMBER.PLURAL,,Træstammer med svampe
+RESOURCE.MUSHROOM.LUMBER.TOOLTIP,,"Dele af en kæmpe svamp, der kan bruges på samme måde som {{RESOURCE.LOGS.PLURAL}}."
+RESOURCE.ORE.CRUSHED.NOUN,,Knust malm
+RESOURCE.ORE.CRUSHED.PLURAL,,Knust malm
+RESOURCE.ORE.CRUSHED.TOOLTIP,,"Et metallisk sand skabt ved at nedbryde rå metalmalm, klar til brug i en {{FURNITURE.BLOOMERY_FURNACE}}."
+RESOURCE.ORE.UNREFINED.NOUN,,Malm
+RESOURCE.ORE.UNREFINED.PLURAL,,Malm
+RESOURCE.ORE.UNREFINED.TOOLTIP,,"Sten, der indeholder metalmalme, som kan bearbejdes til brugbart metal."
+RESOURCE.PLANKS.NOUN,,Planke
+RESOURCE.PLANKS.PLURAL,,Planker
+RESOURCE.PLANKS.TOOLTIP,,Dele af træ af fast størrelse så de let kan bruges i konstruktioner og håndværk.
+RESOURCE.SHOCKED.MUSHROOM.LOG.NOUN,,Træstamme med svampe
+RESOURCE.SHOCKED.MUSHROOM.LOG.PLURAL,,Træstammer med svampe
+RESOURCE.SHOCKED.MUSHROOM.LOG.TOOLTIP,,Denne svampe-infunderede træstamme er blevet dyppet i vand for at tilskynde svampene til at udvikle sig og bør snart have en høst klar.
+RESOURCE.STONE.BLOCK.NOUN,,Blok
+RESOURCE.STONE.BLOCK.PLURAL,,Blokke
+RESOURCE.STONE.BLOCK.TOOLTIP,,"Sten, der er blevet formet til en kube, så den er let at bruge i konstruktion eller håndværk."
+RESOURCE.STONE.UNREFINED.NOUN,,Grov kampesten
+RESOURCE.STONE.UNREFINED.PLURAL,,Grove kampesten
+RESOURCE.STONE.UNREFINED.TOOLTIP,,"Et stort stykke sten, der skal mejsles til en mere brugbar form af en {{PROFESSION.STONEMASON}}."
+RESOURCE.WHEAT.SACK.NOUN,,Hvede (sæk)
+RESOURCE.WHEAT.SACK.PLURAL,,Hvede (sække)
+RESOURCE.WHEAT.SACK.TOOLTIP,,Sække med hvede høstet fra marker tilsået med hvedefrø.
+ROOMS.ARMOURY,,Våbenkammer
+ROOMS.ARMOURY.TOOLTIP,,Her bliver der lavet våben og rustninger.
+ROOMS.ARTISAN_WORKSHOP,,Håndværkerværksted
+ROOMS.ARTISAN_WORKSHOP.TOOLTIP,,Her bliver der lavet indviklede genstande.
+ROOMS.BAKERY,,Bageri
+ROOMS.BAKERY.TOOLTIP,,"Her bliver der lavet dej, der derefter bliver bagt til brød."
+ROOMS.BARRACKS,,Kaserne
+ROOMS.BARRACKS.TOOLTIP,,Et sted til medlemmer af militæret hvor de sover og træner.
+ROOMS.BEDROOM,,Soveværelse
+ROOMS.BEDROOM.TOOLTIP,,Et sted hvor dine bosættere kan sove.
+ROOMS.BREWERY,,Bryggeri
+ROOMS.BREWERY.TOOLTIP,,"Brygger øl, som alle dine bosættere kan nyde!"
+ROOMS.BRIDGE,,Bro
+ROOMS.BRIDGE.TOOLTIP,,Placeret på tværs af floden for at give adgang til den anden side.
+ROOMS.CARPENTRY_WORKSHOP,,Tømrerværksted
+ROOMS.CARPENTRY_WORKSHOP.TOOLTIP,,Dette værksted producerer de fleste træværktøjer og genstande.
+ROOMS.COMPONENT.STOCKPILE.DESCRIPTION,,{{allocated}} af {{total}} pladser i øjeblikket i brug
+ROOMS.FARM,,Bondegårdsareal
+ROOMS.FARM.PLURAL,,Bondegårdsarealer
+ROOMS.FARM.TOOLTIP,,Dyrker afgrøder ved hjælp af {{INGREDIENT.SEEDS.PLURAL}}. Skal placeres på {{MATERIAL_TYPE.EARTH.NOUN}}.
+ROOMS.FEASTING_HALL,,Festsal
+ROOMS.FEASTING_HALL.TOOLTIP,,"Et sted til bosættere hvor de samles for at spise, drikke og være glade!"
+ROOMS.FUEL_REFINERY,,Brændstofraffinaderi
+ROOMS.FUEL_REFINERY.TOOLTIP,,Producerer brændstof af {{RESOURCE.LOGS.PLURAL}} eller {{ORE.BITUMINOUS_COAL.NOUN}}.
+ROOMS.GRAVEYARD,,Kirkegård
+ROOMS.GRAVEYARD.TOOLTIP,,Afdøde bosættere bliver her lagt til hvile.
+ROOMS.ITERATIVE_NAMED_ROOM,,{{roomName}} #{{number}}
+ROOMS.KITCHEN,,Køkken
+ROOMS.KITCHEN.TOOLTIP,,"Det meste mad tilberedes her, før det serveres i en {{ROOMS.FEASTING_HALL}}."
+ROOMS.LEATHER_WORKSHOP,,Læderværksted
+ROOMS.LEATHER_WORKSHOP.TOOLTIP,,Laver genstande ud af dyrehuder.
+ROOMS.MASONRY_WORKSHOP,,Murerværksted
+ROOMS.MASONRY_WORKSHOP.TOOLTIP,,Dette værksted producerer de fleste genstande lavet af sten.
+ROOMS.MUSHROOM_FARM,,Svampemark
+ROOMS.MUSHROOM_FARM.TOOLTIP,,Svampe kan dyrkes ved hjælp af {{INGREDIENT.MUSHROOM.SPAWN.NOUN}} og {{RESOURCE.LOGS.PLURAL}}.
+ROOMS.SAWMILL,,Savværk
+ROOMS.SAWMILL.TOOLTIP,,{{RESOURCE.LOGS.PLURAL}} bliver lavet om til {{RESOURCE.PLANKS.PLURAL}} her.
+ROOMS.SMELTERY,,Smelteværk
+ROOMS.SMELTERY.TOOLTIP,,Her bliver metalmalm lavet om til brugbare barrer.
+ROOMS.SMITHY,,Smedje
+ROOMS.SMITHY.TOOLTIP,,Bruges til at lave metalværktøj.
+ROOMS.STOCKPILE,,Lager
+ROOMS.STOCKPILE.TOOLTIP,,Dette område lagrer forskellige genstande afhængig af indstillingerne.
+ROOMS.STOCKPILES,,Lagre
+ROOMS.STOCKPILES.TOOLTIP,,Ubrugte genstande placeres i lagre for nem adgang.
+ROOMS.STOCKPILE_WITH_GROUP_NAME,,{{stockpileGroupName}} {{roomTypeName}}
+ROOMS.TEXTILE_WORKSHOP,,Tekstilværksted
+ROOMS.TEXTILE_WORKSHOP.TOOLTIP,,Laver {{SEED.HEMP_SEED}} om til tekstiler til forskellig brug.
+ROOMS.TRADING_DEPOT,,Handelsdepot
+ROOMS.TRADING_DEPOT.TOOLTIP,,Køb og sælg genstande hos besøgende handelsmænd.
+ROPE.AGED_ROPE,,Aldret
+ROPE.BRONZED_ROPE,,Bronzet
+ROPE.GRAY_ROPE,,Grå
+ROPE.HEMP-ROPE,,Hamp
+ROPE.TOBACCO_ROPE,,Lys
+RUSTED_SCRAP.NOUN,,Skrot
+RUSTED_SCRAP.TOOLTIP,,"Dette er hvad der tilbage af en genstand, der er fuldstændig korroderet grundet rust."
+SEASON.AUTUMN,,I efteråret
+SEASON.SPRING,,i foråret
+SEASON.SUMMER,,om sommeren
+SEASON.WINTER,,om vinteren
+SEED.BARLEY_SEED,,Byg
+SEED.BARLEY_SEED.TOOLTIP,,"Et korn, der kun anvendes til fremstilling af øl. Kan plantes {{SEASON.SPRING}}, {{SEASON.SUMMER}} eller {{SEASON.AUTUMN}}."
+SEED.BERSERKER_MUSHROOM_SPAWN,,Bersærker
+SEED.BERSERKER_MUSHROOM_SPAWN.TOOLTIP,,"En svamp med en pink-rød hætte med hvide prikker. Den har hallucinogene egenskaber, som krigere sommetider bruger i forberedelse til kamp."
+SEED.CARROT_SEED,,Gulerod
+SEED.CARROT_SEED.TOOLTIP,,"En hårdfør rodfrugt, der kan overleve frosten {{SEASON.WINTER}}. Gulerødder vokser hurtigt, men producerer kun en lille afgrøde. Kan plantes {{SEASON.SPRING}}, {{SEASON.SUMMER}} eller {{SEASON.AUTUMN}}."
+SEED.CORN_SEED,,Majs
+SEED.CORN_SEED.TOOLTIP,,"En kornsort også kendt som majs. Den producerer en overdådig afgrøde, men er omkring 2 sæsoner om at vokse og kan ikke overleve {{SEASON.WINTER}}, så den kræver plantning tidligt {{SEASON.SPRING}}."
+SEED.DEATH_CAP_SPAWN,,Dødsdæksel
+SEED.DEATH_CAP_SPAWN.TOOLTIP,,"En meget giftig svamp med en bred, flad hætte. At spise selv en lille mængde vil næsten helt sikkert forårsage forgiftning, som kan føre til døden."
+SEED.ELFSBANE_SPAWN,,Elfsbane
+SEED.ELFSBANE_SPAWN.TOOLTIP,,"Denne svamp har en enkel, smagløs smag for de fleste humanoider. Mærkeligt nok smager den helt modbydeligt for alfer, der ofte reagerer med eksplosiv opkastning ved indtagelse eller i ekstreme tilfælde hjerteanfald."
+SEED.FIST_SPAWN,,Knytnæve
+SEED.FIST_SPAWN.TOOLTIP,,En sort-blå svamp med en metallisk smag. Den er opkaldt efter en gruppe barder fra den mørke tidsalder.
+SEED.GLOW_SPAWN,,Glød
+SEED.GLOW_SPAWN.TOOLTIP,,"En magisk-infunderet svamp, der afgiver lys og skifter farve med årstiderne."
+SEED.HEMP_SEED,,Hamp
+SEED.HEMP_SEED.TOOLTIP,,Bruges til at lave reb og stof efter det er blevet bearbejdet.
+SEED.HOPS_SEED,,Humle
+SEED.HOPS_SEED.TOOLTIP,,"En blomst, der anvendes til aromastoffer i øl. Skal plantes {{SEASON.SPRING}}."
+SEED.MILTONIA_SPAWN,,Miltonia
+SEED.MILTONIA_SPAWN.TOOLTIP,,"Engang troede man at disse kun eksisterede i Hudds-regionen, men de er nu fundet over hele verden."
+SEED.POTATO_SEED,,Kartoffel
+SEED.POTATO_SEED.TOOLTIP,,"En stivelsesholdig rodfrugt som kan overleve {{SEASON.WINTER}} og gør den til et godt valg for de fleste bosættelser. Kan plantes {{SEASON.SPRING}}, {{SEASON.SUMMER}} eller {{SEASON.AUTUMN}}."
+SEED.PURPLE_HELMET_SPAWN,,Lillahjelm
+SEED.PURPLE_HELMET_SPAWN.TOOLTIP,,"'Fed Hat', 'Tyk Turban', 'Puffet Hjelm'; Denne sagnomspundne svamp har mange navne. Legenden siger, at der for længe siden, eksisterede mange samfund af dværge, som levede udelukkende på en domesticeret udgave af denne svamp."
+SEED.ROCIOMYCOTA_MUSHROOM_SPAWN,,Rociomycota
+SEED.ROCIOMYCOTA_MUSHROOM_SPAWN.TOOLTIP,,"En hvid og sort plettet svamp. Den er kendt for at påvirke udseendet af dem, der indtager den."
+SEED.SUNGLOW_SPAWN,,Solglød
+SEED.SUNGLOW_SPAWN.TOOLTIP,,"En lys gul svamp, der lyser med udseendet af sollys. Den mister denne glød, lige så snart den bliver høstet."
+SEED.SYRUP_POWDER_SPAWN,,Siruppulver
+SEED.SYRUP_POWDER_SPAWN.TOOLTIP,,"En rund orange/gul svamp med en hvid underside. Den siges at have været brugt af magikere for længe siden, men ingen ved til hvilket formål."
+SEED.TOMATO_SEED,,Tomat
+SEED.TOMATO_SEED.TOOLTIP,,"En plante, hvorpå der vokser store røde bær, der ofte bruges som grøntsager. Kan kun plantes {{SEASON.SPRING}}."
+SEED.WHEAT_SEED,,Hvede
+SEED.WHEAT_SEED.TOOLTIP,,"En kornsort der almindeligvis anvendes til fremstilling af brød. Den kan overleve {{SEASON.WINTER}}, men den er et stykke tid om at vokse, så den bliver enten plantet {{SEASON.SPRING}} eller {{SEASON.AUTUMN}}."
+SHRUB.DESCRIPTION,,Buskads
+SKILL.ARCHERY.FEMALE_NOUN,,Bueskytte
+SKILL.ARCHERY.MALE_NOUN,,Bueskytte
+SKILL.ARCHERY.TOOLTIP,,Øvet med buer
+SKILL.AXES.FEMALE_NOUN,,Øksekvinde
+SKILL.AXES.MALE_NOUN,,Øksemand
+SKILL.AXES.TOOLTIP,,Øvet med økser
+SKILL.CROSSBOWS.FEMALE_NOUN,,Armbrøstkvinde
+SKILL.CROSSBOWS.MALE_NOUN,,Armbrøstmand
+SKILL.CROSSBOWS.TOOLTIP,,Øvet med armbrøster
+SKILL.MACES.FEMALE_NOUN,,Hammerkvinde
+SKILL.MACES.MALE_NOUN,,Hammermand
+SKILL.MACES.TOOLTIP,,Øvet med hamre og morgenstjerner
+SKILL.SWORDSMANSHIP.FEMALE_NOUN,,Sværdkvinde
+SKILL.SWORDSMANSHIP.MALE_NOUN,,Sværdmand
+SKILL.SWORDSMANSHIP.TOOLTIP,,Øvet med sværd
+SKILL.UNARMED_COMBAT.FEMALE_NOUN,,Slagsbror
+SKILL.UNARMED_COMBAT.MALE_NOUN,,Slagsbror
+SKILL.UNARMED_COMBAT.TOOLTIP,,Øvet i ubevæbnet kamp
+SKIN.BOAR_HIDE,,Vildsvin
+SKIN.DEER_HIDE,,Dådyr
+SKIN.DWARF_HIDE,,Dværg
+SKIN.ELEPHANT_HIDE,,Elefant
+SKIN.HORSE_HIDE,,Hest
+STATUS.ALCOHOL_WITHDRAWL,,Alkoholabstinenser
+STATUS.BLEEDING,,Bløder
+STATUS.BLINDED,,Blind
+STATUS.DEATH,,Død
+STATUS.DRUNK,,Fuld
+STATUS.DYING_OF_HUNGER,,Dør af sult
+STATUS.DYING_OF_THIRST,,Dør af tørst
+STATUS.EXHAUSTED,,Udmattet
+STATUS.INTERNAL_BLEEDING,,Indre blødning
+STATUS.KNOCKED_UNCONSCIOUS,,Bevidstløs
+STATUS.LOSS_MAIN_HAND,,Tab af dominerende hånd
+STATUS.LOSS_OFF_HAND,,Tab af ikke-dominerende hånd
+STATUS.MOVEMENT_IMPAIRED,,Nedsat bevægelighed
+STATUS.ON_FIRE,,I brand
+STATUS.POISONED,,Forgiftet
+STATUS.TEMPORARILY_BLINDED,,Midlertidigt blændet
+STATUS.VERY_HUNGRY,,Meget sulten
+STATUS.VERY_THIRSTY,,Meget tørstig
+STOCKPILE.GROUP.FOOD,,Fødevarer
+STOCKPILE.GROUP.FOOD.TOOLTIP,,"Lagrer høstet frugt og høstede grøntsager, der kan udløbe"
+STOCKPILE.GROUP.FUEL,,Brændstof
+STOCKPILE.GROUP.GRANARY,,Kornmagasin
+STOCKPILE.GROUP.GRANARY.TOOLTIP,,"Lagrer korn og frø, der ikke udløber"
+STOCKPILE.GROUP.PRODUCTS,,Produkter
+STOCKPILE.GROUP.RAW_MATERIALS,,Råmaterialer
+STOCKPILE.GROUP.SEEDS,,Frø
+STOCKPILE.GROUP.TOOLS,,Værktøjer
+STOCKPILE.GROUP.TOOLS.TOOLTIP,,Lagrer værktøjer nødvendige til at udføre jobs.
+STOCKPILE.GROUP.TREASURE,,Skatte
+STOCKPILE.GROUP.WEAPONS,,Våben
+STOCKPILE.GROUP.WEAPONS.TOOLTIP,,Lagrer våben til brug i kamp.
+STONE.BASALT.ADJECTIVE,,Basalt
+STONE.BASALT.NOUN,,Basalt
+STONE.BASALT.TOOLTIP,,En magmatisk sten dannet ved hurtig afkøling af lava. Næsten alle vulkanske sten i verden er basalt.
+STONE.DOLOSTONE.ADJECTIVE,,Dolostone
+STONE.DOLOSTONE.NOUN,,Dolostone
+STONE.DOLOSTONE.TOOLTIP,,"En sedimentær sten der hovedsagelig består af mineralet dolomit, så det er også kendt som dolomitsten."
+STONE.FRONITE.ADJECTIVE,,Fronit
+STONE.FRONITE.NOUN,,Fronit
+STONE.FRONITE.TOOLTIP,,En blånuanceret sten mest fundet på en iskold ø mod nord. Den har et højt jernindhold.
+STONE.GRANITE.ADJECTIVE,,Granit
+STONE.GRANITE.NOUN,,Granit
+STONE.GRANITE.TOOLTIP,,"En almindelig type magmatisk sten. Den har en stor del kvarts, hvilket gør den god til at lokalisere visse ædelstene."
+STONE.LIMESTONE.ADJECTIVE,,Kalksten
+STONE.LIMESTONE.NOUN,,Kalksten
+STONE.LIMESTONE.TOOLTIP,,"En lysfarvet sedimentbjergart, som udgør et godt byggemateriale. Det bruges også som flussmiddel i produktionen af {{METAL.STEEL.NOUN}}."
+STONE.MARBLE.ADJECTIVE,,Marmor
+STONE.MARBLE.NOUN,,Marmor
+STONE.MARBLE.TOOLTIP,,En metamorf sten der bruges som et materiale af høj kvalitet til skulptur og murværk på grund af sit strålende udseende.
+STONE.SANDSTONE.ADJECTIVE,,Sandsten
+STONE.SANDSTONE.NOUN,,Sandsten
+STONE.SANDSTONE.TOOLTIP,,En sedimentær sten bestående af sandlignende fragmenter.
+STONE.SHALE.ADJECTIVE,,Skiferler
+STONE.SHALE.NOUN,,Skiferler
+STONE.SHALE.TOOLTIP,,En finkornet sedimentær sten bestående af trykmudder. Det kan let brydes i tynde lag.
+STONE.SLATE.ADJECTIVE,,Skifer
+STONE.SLATE.NOUN,,Skifer
+STONE.SLATE.TOOLTIP,,"En metamorf sten, der normalt dannes ud af {{STONE.SHALE.NOUN}}. Det bliver ofte lavet til fliser til tagdækning eller skrivning."
+TOOL.AXE.NOUN,,Økse
+TOOL.AXE.PLURAL,,Økser
+TOOL.AXE.TOOLTIP,,Bruges til at fælde træer. Det primære værktøj for en {{PROFESSION.WOODCUTTER}}.
+TOOL.CHISEL.NOUN,,Mejsel
+TOOL.CHISEL.PLURAL,,Mejsler
+TOOL.CHISEL.TOOLTIP,,"Bruges til at udforme sten. Et af de værktøjer, der bruges af en {{PROFESSION.STONEMASON}}."
+TOOL.FISHING.ROD.NOUN,,Fiskestang
+TOOL.FISHING.ROD.PLURAL,,Fiskestænger
+TOOL.FISHING.ROD.TOOLTIP,,Bruges til at fange fisk fra en vandmasse. Det primære værktøj for en {{PROFESSION.FISHER}}.
+TOOL.KITCHEN.KNIFE.NOUN,,Køkkenkniv
+TOOL.KITCHEN.KNIFE.PLURAL,,Køkkenknive
+TOOL.KITCHEN.KNIFE.TOOLTIP,,"Bruges til at forberede mad, især kød."
+TOOL.LARGE.HAMMER.NOUN,,Stor hammer
+TOOL.LARGE.HAMMER.PLURAL,,Store hamre
+TOOL.LARGE.HAMMER.TOOLTIP,,Bruges til at udforme store genstande af sten og metal. Det primære værktøj af en {{PROFESSION.BLACKSMITH}}.
+TOOL.PICKAXE.NOUN,,Hakke
+TOOL.PICKAXE.PLURAL,,Hakker
+TOOL.PICKAXE.TOOLTIP,,Bruges til at bryde sten i mindre stykker. Det primære værktøj for en {{PROFESSION.MiNER}}.
+TOOL.PLANE.NOUN,,Høvl
+TOOL.PLANE.PLURAL,,Høvle
+TOOL.PLANE.TOOLTIP,,Bruges til at høvle træmøbler og genstande. Det primære værktøj for en {{PROFESSION.CARPENTER}}.
+TOOL.ROLLING.PIN.NOUN,,Kagerulle
+TOOL.ROLLING.PIN.PLURAL,,Kageruller
+TOOL.ROLLING.PIN.TOOLTIP,,"Bruges til at forberede dej. Et af de værktøjer, der bruges af en {{PROFESSION.CHEF}}."
+TOOL.SAW.NOUN,,Sav
+TOOL.SAW.PLURAL,,Save
+TOOL.SAW.TOOLTIP,,Bruges til at skære træ i form. Kræves for at kunne skære tømmer i {{ROOMS.SAWMILL}}.
+TOOL.SMALL.HAMMER.NOUN,,Hammer
+TOOL.SMALL.HAMMER.PLURAL,,Hamre
+TOOL.SMALL.HAMMER.TOOLTIP,,Bruges til at udforme små genstande af sten og metal. Det primære værktøj for en {{PROFESSION.BLACKSMITH}}.
+TOOL.TONGS.NOUN,,Tang
+TOOL.TONGS.PLURAL,,Tænger
+TOOL.TONGS.TOOLTIP,,Bruges til at holde ekstremt varme metalgenstande. Anvendes til smeltning af metalmalm.
+TREASURE.COIN.NOUN,,Mønt
+TREASURE.COIN.PLURAL,,Mønter
+TREASURE.COIN.TOOLTIP,,"Udmøntede mønter bruges, som en form for møntenhed til handel."
+TREASURE.GEM.NOUN,,Ædelsten
+TREASURE.GEM.PLURAL,,Ædelstene
+TREASURE.GEM.TOOLTIP,,Ædelstene der er blevet skåret og poleret for at fremme deres skønhed. Mest brugt som udsmykning.
+TREE.DESCRIPTION,,{{materialType.noun}} træ
+TUTORIAL.COMPLETED.A,,Dette dækker den basale del af træningen.
+TUTORIAL.COMPLETED.B,,"Du burde sigte efter at opsætte en fungerende {{ROOMS.SMITHY}} med en {{FURNITURE.FORGE}} tildelt brændstof og forædlet metalmalm, for at producere metalgenstande."
+TUTORIAL.COMPLETED.C,,Du burde også flytte din bosættelse ned under jorden eller i det mindste bygge et tag for at beskytte dine bosættere og jerngenstande mod vejret.
+TUTORIAL.COMPLETED.D,,Held og lykke!
+TUTORIAL.CRAFTING.A,,"Rum med møbler, der producerer genstande, bliver styret med import- og eksport-paller."
+TUTORIAL.CRAFTING.B,,Placér mindst én import- og eksport-palle i både savmøllen og stenhuggerværkstedet.
+TUTORIAL.CRAFTING.C,,"Placér også et produktlager, der indeholder alle de ting, der bliver produceret."
+TUTORIAL.CRAFTING_SELECTION.A,,"Vælg hver import- og eksport-palle og vælg de genstande, der skal importeres og eksporteres fra rummet."
+TUTORIAL.CRAFTING_SELECTION.B,,I savmøllen importér og eksportér planker.
+TUTORIAL.CRAFTING_SELECTION.C,,I stenhuggerværkstedet importér grove kampesten og eksportér blokke.
+TUTORIAL.DISMISS_DIALOG.CONFIRM_TEXT,,Afvis træning
+TUTORIAL.DISMISS_DIALOG.DESCRIPTION,,Er du sikker på at du vil afslutte træningen?
+TUTORIAL.DISMISS_DIALOG.TITLE,,Afslut træningen?
+TUTORIAL.FARMING.A,,Klik på {{GUI.ROOMS_LABEL}} og vælg {{ROOMS.FARM}}.
+TUTORIAL.FARMING.B,,Udvælg 4 forskellige {{ROOMS.FARM}} i et græsområde.
+TUTORIAL.FARMING_2.A,,"Klik på hvert {{ROOMS.FARM}} og vælg en afgrøde, der skal plantes."
+TUTORIAL.FARMING_2.A.STEAMDECK,,"Tryk R2 på hvert {{ROOMS.FARM}} og vælg en afgrøde, der skal plantes."
+TUTORIAL.FARMING_2.B,,"Spring over hamp, byg og humle for nu da disse skal bruges til tekstiler og brygning."
+TUTORIAL.FEASTING_HALL.A,,Bosættere spiser i festsalen.
+TUTORIAL.FEASTING_HALL.B,,Kedelmøbelet til festsalen bliver først færdiggjort når en kedel med suppe er tilgængelig.
+TUTORIAL.FEASTING_HALL.C,,Vælg {{GUI.ROOMS_LABEL}} og placér en {{ROOMS.FEASTING_HALL}} Markér en kedel der senere skal placeres i festsalen.
+TUTORIAL.FOOD_COMPLETE.A,,"Denne simple opstilling vil sikre at dine bosættere har mad, så snart afgrøderne er høstet senere på året."
+TUTORIAL.FOOD_COMPLETE.B,,"Du kan også fiske i floden eller jage dyr, når du engang har dannet et militær, for at forsyne mere mad."
+TUTORIAL.KITCHEN.A,,Afgrøder bliver høstet {{SEASON.AUTUMN}} og burde blive lagret i fødevarelageret.
+TUTORIAL.KITCHEN.B,,"For at få det meste ud af dine afgrøder, er det bedst at lave suppe ud af grøntsager eller lave brød ud af korn."
+TUTORIAL.KITCHEN.C,,"Vælg {{GUI.ROOMS_LABEL}} og placér et {{ROOMS.KITCHEN}}. Ulig bondegårdsarealer skal de fleste rum bruge møbler, før de kan fungere."
+TUTORIAL.MAIN_VIEW.A,,Kontrollerne i nederste venstre hjørne af skærmen er den primære måde at interagere med spillet på.
+TUTORIAL.MAIN_VIEW.B,,"Du kan tildele ordrer, sætte rum og møbler i kø til at blive lavet og også justere prioriteten af opgaver."
+TUTORIAL.MAIN_VIEW.C,,Du kan højreklikke for at gå tilbage til den tidligere menu eller annullere det nuværende valg.
+TUTORIAL.MAIN_VIEW.C.STEAMDECK,,Du kan trykke på L2 for at gå tilbage til den tidligere menu eller annullere det nuværende valg.
+TUTORIAL.MANAGEMENT_BUTTONS.DESCRIPTION,,Ikonerne til venstre for tiden og datoen er forskellige styrings- og overbliks-skærme.
+TUTORIAL.MANAGEMENT_BUTTONS.RESOURCE_MANAGEMENT,,Se på resourcestyringsskærmen
+TUTORIAL.MANAGEMENT_BUTTONS.SETTLER_MANAGEMENT,,Se på bosætterstyringsskærmen
+TUTORIAL.MINIMAP.DESCRIPTION,,Dette er en lille udgave af kortet.
+TUTORIAL.MINIMAP.PROGRESS,,Klik på den lille udgave af kortet for at gå til en lokation.
+TUTORIAL.MINIMAP.PROGRESS.STEAMDECK,,Tryk på R2 med markøren på den lille udgave af kortet for at gå til en lokation.
+TUTORIAL.NEEDS.A,,"Bosættere har brug for mad, drikkelse og søvn."
+TUTORIAL.NEEDS.B,,De kan drikke fra floden og sove på jorden for nu.
+TUTORIAL.NEEDS.C,,For at spise skal de dyrke afgrøder.
+TUTORIAL.PROFESSIONS.A,,"Hver bosætter kan have tildelt op til 3 erhverv, der afgør hvad jobs de laver."
+TUTORIAL.PROFESSIONS.B,,Du kan vælge en bosætter du vil se og ændre deres erhverv. Dette kan også gøres fra bosætterstyringsmenuen.
+TUTORIAL.PROFESSIONS.C,,"Tildel mindst 4 bosættere landbrugserhvervet. Vær sikker på at nogle også er tildelt hvervet som fragter, da de er ansvarlige for at flytte ting rundt."
+TUTORIAL.PROGRESS_DESCRIPTION.FARM_PLOT_SELECTIONS,,{{ROOMS.FARM.PLURAL}} med en afgrøde tildelt
+TUTORIAL.PROGRESS_DESCRIPTION.PROFESSIONS_ASSIGNED,,{{professionPlural}} tildelt
+TUTORIAL.PROGRESS_DESCRIPTION.TEXT,,{{currentQuantity}} af {{requiredQuantity}} {{targetDescription}}
+TUTORIAL.PROGRESS_DESCRIPTION.TILES,,{{roomName}} felter
+TUTORIAL.RESOURCES.A,,Mange ting bliver lavet ud af træplanker og stenblokke. Det er vigtigt at opretholde en stabil forsyning af disse.
+TUTORIAL.RESOURCES.B,,Vælg Ordrer > Udgrav og vælg et bjergområde til dine minearbejdere for at starte minedrift.
+TUTORIAL.RESOURCES.C,,Vælg også {{GUI.ORDERS_LABEL}} > {{GUI.ORDERS.CHOP_WOOD}} og vælg et skovområde til dine skovhuggere for at starte med at fælde træer.
+TUTORIAL.RESOURCE_COLLECTION.A,,"Med alt dette på plads, vil dine værksteder snart producere planker og stenblokke."
+TUTORIAL.RESOURCE_COLLECTION.B,,Fortsæt indtil du har en rimelig forsyning af planker og blokke.
+TUTORIAL.SAVING.A,,Fremskridt bliver automatisk gemt ved midnat eller når du går ud af spillet.
+TUTORIAL.SAVING.A.STEAMDECK,,Fremskridt bliver automatisk gemt ved midnat hver dag.
+TUTORIAL.SAVING.B,,Du kan også trykke på F5 for at gemme hurtigt.
+TUTORIAL.SAVING.B.STEAMDECK,,"Spillet bliver også gemt, når du går ud af spillet fra hovedmenuen."
+TUTORIAL.SAVING.C,,Tryk på F5 for at gemme nu
+TUTORIAL.SHOW_LABEL,,Vis træning
+TUTORIAL.START.CAMERA_CONTROLS_1,,Tryk på WASD-tasterne for at flytte kameraet rundt
+TUTORIAL.START.CAMERA_CONTROLS_1.STEAMDECK,,Brug det venstre joystick eller D-pad for at flytte kameraet rundt
+TUTORIAL.START.CAMERA_CONTROLS_2,,Tryk på Q & E eller rul på musehjulet for at zoome
+TUTORIAL.START.CAMERA_CONTROLS_2.STEAMDECK,,Tryk på L1 eller R1 for at zoome ind og ud
+TUTORIAL.START.INTRO_1,,"Velkommen til Mountaincore! Dette er en ""Early Access""-udgave, hvor gameplay og funktioner stadig er under udvikling."
+TUTORIAL.START.INTRO_2,,Din uforfærdede gruppe af dværgbosættere har valgt dette område som fundament til deres kongedømmes nye koloni.
+TUTORIAL.STOCKPILES.A,,Det er en god idé at placere lagre som dine bosættere kan bruge til at placere og dele genstande.
+TUTORIAL.STOCKPILES.B,,Vælg {{GUI.ROOMS_LABEL}} > {{ROOMS.STOCKPILE}} og derefter {{STOCKPILE.GROUP.TOOLS}}. Vælg så en central lokation til værktøjslageret.
+TUTORIAL.TIME_AND_DATE.DESCRIPTION,,"Du kan se den nuværende tid, dato og det nuværende vejr og styre spillets hastighed her."
+TUTORIAL.TIME_AND_DATE.FAST_SPEED_STEP,,"Klik på ikonerne og tryk på tast 2, 3 og 4 for stadig højere hastigheder."
+TUTORIAL.TIME_AND_DATE.FAST_SPEED_STEP.STEAMDECK,,Tryk på R2 på ikonerne for stadig højere hastigheder.
+TUTORIAL.TIME_AND_DATE.NORMAL_SPEED_STEP,,Klik på ikonet eller tryk 1 for normal hastighed
+TUTORIAL.TIME_AND_DATE.NORMAL_SPEED_STEP.STEAMDECK,,Tryk på R2 over ikonet for normal hastighed
+TUTORIAL.TIME_AND_DATE.PAUSE_STEP,,Tryk på mellemrum for at slå pause af spillet til og fra.
+TUTORIAL.TIME_AND_DATE.PAUSE_STEP.STEAMDECK,,Tryk på A-knappen for at slå pause af spillet til og fra.
+TUTORIAL.VIEW_MODES.DEFAULT_STEP,,Klik på knappen længest til venstre for at gå til standardvisningen.
+TUTORIAL.VIEW_MODES.DEFAULT_STEP.STEAMDECK,,Tryk på R2 på ikonet længest til venstre for at gå til standardvisningen.
+TUTORIAL.VIEW_MODES.DESCRIPTION,,Under tid og dato er der knapper til at skifte imellem forskellige visninger på spilverdenen.
+TUTORIAL.VIEW_MODES.OTHER_STEP,,Klik på en af de andre visningsknapper.
+TUTORIAL.VIEW_MODES.OTHER_STEP.STEAMDECK,,Tryk på R2 over en af de andre visningsknapper
+TUTORIAL.WORKSHOPS.A,,Træplanker bliver produceret i en savmølle af en træhugger. Stenblokke bliver lavet i et {{ROOMS.MASONRY_WORKSHOP}} af en stenhugger.
+TUTORIAL.WORKSHOPS.B,,Vælg {{GUI.ROOMS_LABEL}} og placér et {{ROOMS.SAWMILL}} og et {{ROOMS.MASONRY_WORKSHOP}}.
+TUTORIAL.WORKSHOPS.C,,Du kan trykke på R-tasten for at rotere de fleste møbler.
+TUTORIAL.WORKSHOPS.C.STEAMDECK,,Du kan trykke på X-knappen for at rotere de fleste møbler.
+TUTORIAL.WORKSHOPS.D,,"Arbejdsstationer har en arbejdsknap, der viser, hvad der kan produceres."
+VEGETABLE.BARLEY,,Byg
+VEGETABLE.BARLEY.PLURAL,,Byg
+VEGETABLE.BARLEY.TOOLTIP,,"En kornsort, der kun anvendes til fremstilling af øl. Kan plantes {{SEASON.SPRING}}, {{SEASON.SUMMER}} eller {{SEASON.AUTUMN}}."
+VEGETABLE.BERSERKER_MUSHROOM,,Berserkersvamp
+VEGETABLE.BERSERKER_MUSHROOM.PLURAL,,Berserkersvampe
+VEGETABLE.BERSERKER_MUSHROOM.TOOLTIP,,"En svamp med en pink-rød hætte med hvide pletter. Den har hallucinogene egenskaber, som krigere sommetider bruger i forberedelse til kamp."
+VEGETABLE.CARROT,,Gulerod
+VEGETABLE.CARROT.PLURAL,,Gulerødder
+VEGETABLE.CARROT.TOOLTIP,,"En hårdfør rodfrugt, der overlever frosten {{SEASON.WINTER}}. Gulerødder vokser hurtigt, men producerer kun en lille afgrøde. Kan plantes {{SEASON.SPRING}}, {{SEASON.SUMMER}} eller {{SEASON.AUTUMN}}."
+VEGETABLE.CORN,,Sukkermajs
+VEGETABLE.CORN.PLURAL,,Sukkermajs
+VEGETABLE.CORN.TOOLTIP,,"En kornsort også kendt som majs. Den producerer en overdådig afgrøde, men er omkring 2 sæsoner at vokse og kan ikke overleve {{SEASON.WINTER}}, så den kræver plantning tidligt {{SEASON.SPRING}}."
+VEGETABLE.DEATH_CAP_MUSHROOM,,Grøn fluesvamp
+VEGETABLE.DEATH_CAP_MUSHROOM.PLURAL,,Grønne fluesvampe
+VEGETABLE.DEATH_CAP_MUSHROOM.TOOLTIP,,"En meget giftig svamp med en bred, flad hætte. At spise selv en lille mængde vil næsten helt sikkert forårsage forgiftning, som kan føre til døden."
+VEGETABLE.DRAGONFRUIT,,Dragefrugt
+VEGETABLE.DRAGONFRUIT.PLURAL,,Dragefrugter
+VEGETABLE.ELFSBANE_MUSHROOM,,Elfsbane svamp
+VEGETABLE.ELFSBANE_MUSHROOM.PLURAL,,Elfsbane svampe
+VEGETABLE.ELFSBANE_MUSHROOM.TOOLTIP,,"Denne svamp har en enkel, smagløs smag for de fleste humanoider. Mærkeligt smager det helt modbydeligt for alfer, der ofte reagerer med eksplosiv opkastning ved indtagelse eller i ekstreme tilfælde hjerteanfald."
+VEGETABLE.FIST_MUSHROOM,,Nævesvamp
+VEGETABLE.FIST_MUSHROOM.PLURAL,,Nævesvampe
+VEGETABLE.FIST_MUSHROOM.TOOLTIP,,En sort-blå svamp med en metallisk smag. Den er opkaldt efter en gruppe barder fra den mørke tidsalder.
+VEGETABLE.FOR_BEER.USAGE,,brugt i brygningen af {{LIQUID.BEER}}
+VEGETABLE.FUNGOLEM_MUSHROOM,,
+VEGETABLE.FUNGOLEM_MUSHROOM.PLURAL,,
+VEGETABLE.FUNGOLEM_MUSHROOM.TOOLTIP,,
+VEGETABLE.GLOW_MUSHROOM,,Glødesvamp
+VEGETABLE.GLOW_MUSHROOM.PLURAL,,Glødesvampe
+VEGETABLE.GLOW_MUSHROOM.TOOLTIP,,"En magisk-infunderet svamp, der afgiver lys og skifter farve med årstiderne."
+VEGETABLE.HEMP,,Hamp
+VEGETABLE.HEMP.PLURAL,,Hamp
+VEGETABLE.HEMP.TOOLTIP,,Dette bliver lavet om til et brugbart materiale ved {{ROOMS.TEXTILE_WORKSHOP}}.
+VEGETABLE.HEMP.USAGE,,"et materiale, der er krævet for at kunne producere {{PRODUCT.LINEN}} i et {{ROOMS.TEXTILE_WORKSHOP}}"
+VEGETABLE.HEMP_FIBRE,,Hampfiber
+VEGETABLE.HEMP_FIBRE.PLURAL,,Hampfibre
+VEGETABLE.HOPS,,Humle
+VEGETABLE.HOPS.PLURAL,,Humle
+VEGETABLE.HOPS.TOOLTIP,,"En blomst, der anvendes til aromastoffer i øl. Skal plantes {{SEASON.SPRING}}."
+VEGETABLE.INGREDIENT.USAGE,,bruges enten i tilberedelsen af suppe eller spises råt.
+VEGETABLE.LOQUAT,,Mispel
+VEGETABLE.LOQUAT.PLURAL,,Mispeler
+VEGETABLE.MILTONIA_MUSHROOM,,Miltoniasvamp
+VEGETABLE.MILTONIA_MUSHROOM.PLURAL,,Miltoniasvampe
+VEGETABLE.MILTONIA_MUSHROOM.TOOLTIP,,"Engang troede man at disse kun eksisterede i Hudds-regionen, men de er nu fundet over hele verden."
+VEGETABLE.POTATO,,Kartoffel
+VEGETABLE.POTATO.PLURAL,,Kartofler
+VEGETABLE.POTATO.TOOLTIP,,"En stivelsesholdig rodfrugt som kan overleve {{SEASON.WINTER}} og gør den til et godt valg for de fleste bosættelser. Kan plantes {{SEASON.SPRING}}, {{SEASON.SUMMER}} eller {{SEASON.AUTUMN}}."
+VEGETABLE.PURPLE_HELMET_MUSHROOM,,Lillahjelmsvamp
+VEGETABLE.PURPLE_HELMET_MUSHROOM.PLURAL,,Lillahjelmsvampe
+VEGETABLE.PURPLE_HELMET_MUSHROOM.TOOLTIP,,"'Fed Hat', 'Tyk Turban', 'Puffet Hjelm'; Denne sagnomspundne svamp har mange navne. Legenden siger, at der for længe siden, eksisterede mange samfund af dværge, som levede udelukkende på en domesticeret udgave af denne svamp."
+VEGETABLE.ROCIOMYCOTA_MUSHROOM,,Rociomycota-svamp
+VEGETABLE.ROCIOMYCOTA_MUSHROOM.PLURAL,,Rociomycota-svampe
+VEGETABLE.ROCIOMYCOTA_MUSHROOM.TOOLTIP,,"En hvid og sort plettet svamp. Den er kendt for at påvirke udseendet af dem, der indtager den."
+VEGETABLE.SUNGLOW_MUSHROOM,,Solglødsvamp
+VEGETABLE.SUNGLOW_MUSHROOM.PLURAL,,Solglødsvampe
+VEGETABLE.SUNGLOW_MUSHROOM.TOOLTIP,,"En lys gul svamp, der lyser med udseendet af sollys. Den mister denne glød, lige så snart den bliver høstet."
+VEGETABLE.SYRUP_POWDER_MUSHROOM,,Siruppulversvamp
+VEGETABLE.SYRUP_POWDER_MUSHROOM.PLURAL,,Siruppulversvampe
+VEGETABLE.SYRUP_POWDER_MUSHROOM.TOOLTIP,,"En rund orange/gul svamp med en hvid underside. Den siges at have været brugt af magikere for længe siden, men ingen ved til hvilket formål."
+VEGETABLE.TAMARILLO,,Trætomat
+VEGETABLE.TAMARILLO.PLURAL,,Trætomater
+VEGETABLE.THIMBLEBERRY,,Hindbær
+VEGETABLE.THIMBLEBERRY.PLURAL,,Hindbær
+VEGETABLE.TOMATO,,Tomat
+VEGETABLE.TOMATO.PLURAL,,Tomater
+VEGETABLE.TOMATO.TOOLTIP,,"En plante, hvorpå der vokser store røde bær, der ofte bruges som grøntsager. Kan kun plantes {{SEASON.SPRING}}."
+VEGETABLE.WHEAT,,Hvede
+VEGETABLE.WHEAT.PLURAL,,Hvede
+VEGETABLE.WHEAT.TOOLTIP,,"En kornsort der almindeligvis anvendes til fremstilling af brød. Den kan overleve {{SEASON.WINTER}}, men den er et stykke tid om at vokse, så den bliver enten plantet {{SEASON.SPRING}} eller {{SEASON.AUTUMN}}."
+VEGETABLE.WHEAT.USAGE,,bruges til at bage brød
+VEHICLE.DESCRIPTION,,{{materialType.adjective}} {{vehicleType.noun}}
+WALL.DESCRIPTION,,{{materialType.adjective}} {{wallType.noun}}
+WALL.GEMS.NOUN,,Ædelstene
+WALL.ORE.NOUN,,Malm
+WALL.ROUGH_STONE.NOUN,,Stenvæg
+WALL.STONE_BLOCK.NOUN,,Glat stenvæg
+WALL.WOODEN.NOUN,,Trævæg
+WEAPON.BATTLE.AXE,,Kampøkse
+WEAPON.BATTLE.HAMMER,,Kamphammer
+WEAPON.BONE.ARROW.HEADS.NOUN,,Knoglepilehoved
+WEAPON.BONE.ARROW.HEADS.PLURAL,,Knoglepilehoveder
+WEAPON.BONE.ARROWS.NOUN,,Knoglepil
+WEAPON.BONE.ARROWS.PLURAL,,Knoglepile
+WEAPON.BOW,,Bue
+WEAPON.CROSSBOW,,Armbrøst
+WEAPON.METAL.ARROW.HEADS.NOUN,,Metalpilehoved
+WEAPON.METAL.ARROW.HEADS.PLURAL,,Metalpilehoveder
+WEAPON.METAL.ARROWS.NOUN,,Metalpil
+WEAPON.METAL.ARROWS.PLURAL,,Metalpile
+WEAPON.METAL.BOLTS.NOUN,,Armbrøstmetalpil
+WEAPON.METAL.BOLTS.PLURAL,,Armbrøstmetalpile
+WEAPON.METAL.SHIELD,,Metalskjold
+WEAPON.NONE,,Intet
+WEAPON.NO_ARMOUR,,Ingen rustning
+WEAPON.NO_SHIELD,,Intet skjold
+WEAPON.SWORD,,Sværd
+WEAPON.UNARMED,,Ubevæbnet
+WEAPON.WOODEN.SHIELD,,Træskjold
+WEATHER.TYPE.CLOUDY,,Skyet og gråt
+WEATHER.TYPE.COLD_WINDS,,Kolde vinde
+WEATHER.TYPE.PERFECT,,Perfekt vejr
+WEATHER.TYPE.RAIN,,Øsende regnvejr
+WEATHER.TYPE.SNOW,,Snebyger
+WEATHER.TYPE.THUNDERSTORM,,Lyn og torden
+WOOD.ASPEN.ADJECTIVE,,Asp
+WOOD.ASPEN.NOUN,,Asp
+WOOD.BAOBAB.ADJECTIVE,,Baobab
+WOOD.BAOBAB.NOUN,,Baobab
+WOOD.BARKSHROOM.ADJECTIVE,,Barksvamp
+WOOD.BARKSHROOM.NOUN,,Barksvamp
+WOOD.BEECH.ADJECTIVE,,Bøg
+WOOD.BEECH.NOUN,,Bøg
+WOOD.BIRCH.ADJECTIVE,,Birk
+WOOD.BIRCH.NOUN,,Birk
+WOOD.EBONY.ADJECTIVE,,Ibenholt
+WOOD.EBONY.NOUN,,Ibenholt
+WOOD.FIR.ADJECTIVE,,Gran
+WOOD.FIR.NOUN,,Gran
+WOOD.FUNGIWOOD.ADJECTIVE,,Svampetræ
+WOOD.FUNGIWOOD.NOUN,,Svampetræ
+WOOD.IRONWOOD.ADJECTIVE,,Jerntræ
+WOOD.IRONWOOD.NOUN,,Jerntræ
+WOOD.MAPLE.ADJECTIVE,,Ahorn
+WOOD.MAPLE.NOUN,,Ahorn
+WOOD.NUYTSIA.ADJECTIVE,,Nuytsia
+WOOD.NUYTSIA.NOUN,,Nuytsia
+WOOD.OAK.ADJECTIVE,,Eg
+WOOD.OAK.NOUN,,Eg
+WOOD.PECAN.ADJECTIVE,,Pekan
+WOOD.PECAN.NOUN,,Pekan
+WOOD.PINE.ADJECTIVE,,Fyrretræ
+WOOD.PINE.NOUN,,Fyrretræ
+WOOD.RED_CEDAR.ADJECTIVE,,Rød cedertræ
+WOOD.RED_CEDAR.NOUN,,Rød cedertræ
+WOOD.RED_EMPEROR.ADJECTIVE,,Rød ahorn
+WOOD.RED_EMPEROR.NOUN,,Rød ahorn
+WOOD.ROSEWOOD.ADJECTIVE,,Palisander
+WOOD.ROSEWOOD.NOUN,,Palisander
+WOOD.SPRUCE.ADJECTIVE,,Gran
+WOOD.SPRUCE.NOUN,,Gran
+WOOD.STAR_PINE.ADJECTIVE,,Stjernefyr
+WOOD.STAR_PINE.NOUN,,Stjernefyr
+WOOD.SYCAMORE.ADJECTIVE,,Morbærfigen
+WOOD.SYCAMORE.NOUN,,Morbærfigen

@@ -1,0 +1,1767 @@
+KEY,NOTES,FRENCH
+ACTION.DRINK_FROM_RIVER,,à la rivière
+ACTION.JOB.BUTCHER_CREATURE,,Découpe
+ACTION.JOB.CLEAR_GROUND,,Arrache {{plantDescription}}
+ACTION.JOB.CONSTRUCT_FLOORING,,Aménagement du sol
+ACTION.JOB.CONSTRUCT_FURNITURE,,{{profession.verb}} {{targetDescription}}
+ACTION.JOB.CONSTRUCT_MECHANISM,,Place un mécanisme
+ACTION.JOB.CONSTRUCT_PIPING,,Place un tuyau
+ACTION.JOB.CONSTRUCT_ROOFING,,Construit un toit
+ACTION.JOB.CREATE_GENERIC,,Produit {{targetDescription}}
+ACTION.JOB.DECONSTRUCT,,Retire {{targetDescription}}
+ACTION.JOB.DECONSTRUCT_MECHANISM,,Retire un mécanisme
+ACTION.JOB.DECONSTRUCT_PIPING,,Retire un tuyau
+ACTION.JOB.DECONSTRUCT_ROOFING,,Démonte un toit
+ACTION.JOB.DIGGING,,Creuse {{targetDescription}}
+ACTION.JOB.DUMP_LIQUID_FROM_CONTAINER,,Vide le contenu de {{targetDescription}}
+ACTION.JOB.EXTINGUISH_FLAMES,,Eteind le feu
+ACTION.JOB.FILL_GRAVE,,Rempli {{targetDescription}}
+ACTION.JOB.FISHING,,Pêche
+ACTION.JOB.GENERIC,,{{profession.verb}} {{targetDescription}}
+ACTION.JOB.HARVESTING,,Récolte {{targetPlant}}
+ACTION.JOB.INNOCULATE_MUSHROOM_LOG,,Plantation de la champignonnière
+ACTION.JOB.LOGGING,,{{profession.verb}}: {{targetPlant}}
+ACTION.JOB.PLANTING,,Plante {{requiredItem}}
+ACTION.JOB.REMOVE_PESTS_FROM_CROP,,Désinsectise {{targetPlant}}
+ACTION.JOB.SHOVELLING,,Pelle {{targetDescription}}
+ACTION.JOB.TILLING,,Laboure la terre
+ACTION.JOB.TRANSFER_LIQUID,,Rempli {{targetDescription}}
+ACTION.KNOCKED_UNCONSCIOUS,,Mis inconscient
+ACTION.MALTING.VERB,,Brasse
+ACTION.PREPARATION.VERB,,Prépare
+ACTION.SELECT_JOB.DESCRIPTION,,Cherche quoi faire
+ACTION.SLEEP_ON_FLOOR.DESCRIPTION,,Dors sur {{tileDescription}}
+ACTION.STUNNED,,Assomé
+ARMOUR.LEATHER,,Armure de cuir
+ARMOUR.LEATHER.TOOLTIP,,Une armure de cuir légère pour vous protéger au combat
+ARMOUR.ORC.HEAVY,,Armure d'orc
+ARMOUR.ORC.LIGHT,,Armure d'orc en cuir
+ARMOUR.PLATE,,Armure de plaque
+ARMOUR.PLATE.TOOLTIP,,Une armure épaisse et résistante qui offre une grande protection au combat
+ASHES.NOUN,,Cendre
+BODY_STRUCTURE.ABDOMEN,,Abdomen
+BODY_STRUCTURE.ARM,,Bras
+BODY_STRUCTURE.CEPHALOTHORAX,,Cephalothorax
+BODY_STRUCTURE.DAMAGE.BLEEDING,,Saignement
+BODY_STRUCTURE.DAMAGE.BROKENBONES,,Cassé
+BODY_STRUCTURE.DAMAGE.BRUISED,,Meurtrie
+BODY_STRUCTURE.DAMAGE.DESTROYED,,Détruit
+BODY_STRUCTURE.DAMAGE.NOT_INJURED,,Sain
+BODY_STRUCTURE.DISCRIMINATOR.BACKLEFT,,Arrière gauche
+BODY_STRUCTURE.DISCRIMINATOR.BACKRIGHT,,Arrière droit
+BODY_STRUCTURE.DISCRIMINATOR.FIRSTLEFT,,Première gauche
+BODY_STRUCTURE.DISCRIMINATOR.FIRSTRIGHT,,Première droite
+BODY_STRUCTURE.DISCRIMINATOR.FOURTHLEFT,,Quatrième gauche
+BODY_STRUCTURE.DISCRIMINATOR.FOURTHRIGHT,,Quatrième droite
+BODY_STRUCTURE.DISCRIMINATOR.FRONTLEFT,,Avant gauche
+BODY_STRUCTURE.DISCRIMINATOR.FRONTRIGHT,,Avant droite
+BODY_STRUCTURE.DISCRIMINATOR.LEFT,,Gauche
+BODY_STRUCTURE.DISCRIMINATOR.RIGHT,,Droite
+BODY_STRUCTURE.DISCRIMINATOR.SECONDLEFT,,Seconde gauche
+BODY_STRUCTURE.DISCRIMINATOR.SECONDRIGHT,,Seconde droite
+BODY_STRUCTURE.DISCRIMINATOR.THIRDLEFT,,Troisième gauche
+BODY_STRUCTURE.DISCRIMINATOR.THIRDRIGHT,,Troisième droite
+BODY_STRUCTURE.FOOT,,Pied
+BODY_STRUCTURE.HAND,,Main
+BODY_STRUCTURE.HEAD,,Tête
+BODY_STRUCTURE.HOOF,,Sabot
+BODY_STRUCTURE.LEFT-ARM,,Bras gauche
+BODY_STRUCTURE.LEFT-HAND,,Main gauche
+BODY_STRUCTURE.LEG,,Jambe
+BODY_STRUCTURE.ORGAN.BRAIN,,Cerveau
+BODY_STRUCTURE.ORGAN.EYE,,Oeil
+BODY_STRUCTURE.ORGAN.HEART,,Coeur
+BODY_STRUCTURE.ORGAN.INTESTINES,,Intestin
+BODY_STRUCTURE.ORGAN.KIDNEY,,Rein
+BODY_STRUCTURE.ORGAN.LUNG,,Poumon
+BODY_STRUCTURE.ORGAN_DAMAGE.DESTROYED,,Détruit
+BODY_STRUCTURE.ORGAN_DAMAGE.HEAVY,,Lourdement abimé
+BODY_STRUCTURE.ORGAN_DAMAGE.LIGHT,,Légèrement abimé
+BODY_STRUCTURE.PAW,,Patte
+BODY_STRUCTURE.RIGHT-ARM,,Bras droit
+BODY_STRUCTURE.RIGHT-HAND,,Main droite
+BODY_STRUCTURE.TORSO,,Torse
+BODY_STRUCTURE.TRUNK,,Tronc
+BONE.BONE,,Os
+CARCASS.CARP.PREPARED.NOUN,,Filet de carpe
+CARCASS.CARP.PREPARED.PLURAL,,Filets de carpe
+CARCASS.GROUP,,Cadavres
+CARCASS.HIDE.NOUN,,Peau
+CARCASS.HIDE.PLURAL,,Peaux
+CARCASS.MEAT.LARGE,,Viande (Gros)
+CARCASS.MEAT.MEDIUM,,Viande (Moyen)
+CARCASS.MEAT.SMALL,,Viande (Petit)
+CARCASS.PERCH.PREPARED.NOUN,,Filet de perche
+CARCASS.PERCH.PREPARED.PLURAL,,Filets de perche
+CARCASS.PIKE.PREPARED.NOUN,,Filet de brochet
+CARCASS.PIKE.PREPARED.PLURAL,,Filets de brochet
+CLOTH.BRONZED_HEMP,,Chanvre
+CLOTH.HEMP-LINEN,,Chanvre
+CLOTH.LIGHT_HEMP,,Chanvre
+CLOTH.TOBACCO_CLOTH,,Toile de tabac
+COMBAT.DAMAGE_TYPE.CRUSHING,,
+COMBAT.DAMAGE_TYPE.SLASHING,,
+COMBAT.DAMAGE_TYPE.STABBING,,
+COMBAT.DESCRIPTION.FLEEING,,Fuis le combat
+COMBAT.DESCRIPTION.GENERIC,,En combat
+COMBAT.DESCRIPTION.VERSUS_OPPONENT,,En combat contre {{targetDescription}}
+CONSTRUCTION.DESCRIPTION,,Construction: {{furnitureType.noun}} {{materialType.adjective}}
+CONSTRUCTION.REQUIREMENT_ALLOCATION,,{{numRequired}} requis{{\n}}{{numAvailable}} disponible{{\n}}{{numAssigned}} réservé
+CONSTRUCTION.REQUIREMENT_RECIPE_MULTIPLE,,{{outputItemType}} sont fait de {{inputItemTypes}} et {{lastInputItemType}} à/au {{furnitureType}} par {{profession}}.
+CONSTRUCTION.REQUIREMENT_RECIPE_SINGULAR,,{{outputItemType}} est fait de {{lastInputItemType}} à {{furnitureType}} par le {{profession}}.
+CONSTRUCTION.STATUS.CLEARING_WORK_SITE,,Envèle les autres objets
+CONSTRUCTION.STATUS.CLEARING_WORK_SITE.TOOLTIP,,Il y a des éléments qui doivent être retirés de la zone de construction de ce meuble avant qu'il ne puisse être construit.
+CONSTRUCTION.STATUS.SELECTING_MATERIALS,,En attente de plus de {{itemDescription.plural}} en {{materialType}} disponibles
+CONSTRUCTION.STATUS.WAITING_FOR_COMPLETION,,En construction
+CONSTRUCTION.STATUS.WAITING_FOR_RESOURCES,,En attente de l'arrivée de ressources
+COOKING.BREAD.DESCRIPTION,,Pain de {{materialDescription}}
+COOKING.DUAL_INGREDIENT.DESCRIPTION,,{{materialOne}} et {{materialTwo}}
+COOKING.RATION.DESCRIPTION,,Ration de {{materialDescription}}
+COOKING.SOUP.DESCRIPTION,,Soupe de {{materialDescription}}
+COOKING.TRIPLE_INGREDIENT.DESCRIPTION,,"{{materialOne}}, {{materialTwo}} et {{materialThree}}"
+CRAFTING_TYPE.BAKING,,Pétri
+CRAFTING_TYPE.BLACKSMITHING,,Forge
+CRAFTING_TYPE.BONE_CRAFTING,,Fabrique avec des os
+CRAFTING_TYPE.CARPENTRY,,Menuise
+CRAFTING_TYPE.CARVING_VERB,,Sculpte
+CRAFTING_TYPE.COKE_OVEN_BAKING,,Cuit au four
+CRAFTING_TYPE.FERMENTING,,Fermente
+CRAFTING_TYPE.FINE_DETAIL_CRAFTING,,Fait des détails
+CRAFTING_TYPE.FLETCHING,,Fait des flèches
+CRAFTING_TYPE.LEATHERWORKING,,Travaille le cuir
+CRAFTING_TYPE.MALTING,,Brasse
+CRAFTING_TYPE.MALT_MASHING,,Ecrase le malt
+CRAFTING_TYPE.MILLING,,Moud
+CRAFTING_TYPE.MINTING,,Frappe des pièces
+CRAFTING_TYPE.ORE_CRUSHING,,Broie le minerai
+CRAFTING_TYPE.SMELTING,,Fondre
+CRAFTING_TYPE.STONEMASONRY,,Taille la pierre
+CRAFTING_TYPE.TANNING_HIDE,,Tanne la peau
+CRAFTING_TYPE.WEAPONSMITHING,,Forge une arme
+CRAFTING_TYPE.WEAVING,,Tisse
+CRAFTING_TYPE.WOODCUTTING,,Coupe du bois
+CRAFTING_TYPE.WORT_BREWING,,Brasse
+CREATURE.DAMAGE.DESCRIPTION_A,,{{damageType}} {{bodyPart}}
+CREATURE.DAMAGE.DESCRIPTION_B,,{{damageType}} {{discriminator}} {{bodyPart}}
+CREATURE.DESCRIPTION,,{{gender.adjective}} {{race.noun}}
+CREATURE.STATUS.BLINDED,,Aveuglé
+CREATURE.STATUS.DEAD,,Mort
+CROP.AFFLICTED_BY_PESTS,,Infesté de nuisibles
+CROP.AFFLICTED_BY_PESTS.TOOLTIP,,Cette culture a été contaminée par un nombre excessif de pucerons et autres insectes qui doivent être enlevés par un {{PROFESSIONN.FARMER}} avant de pouvoir prospérer à nouveau. Ne pas enlever les nuisibles à temps pourrait signifier que cette récolte va mourir!
+CROP.DESCRIPTION,,Plante {{materialType.noun}}
+CROP.HARVEST_PROGRESS,,Progression jusqu'à récolte: ({{progress}}%):
+CROP.MOISTURE_STATE.DROUGHTED,,Cette plante n'a pas eu accès à l'eau depuis longtemps et a arrêté de pousser.
+CROP.MOISTURE_STATE.NEEDS_WATERING,,Cette plante n'a pas été arrosée et pousse lentement.
+CROP.MOISTURE_STATE.NEEDS_WATERING.TOOLTIP,,Vous pouvez irriguer vos plantations avec un canal contenant de l'eau sur 2 cases.
+CROP.MOISTURE_STATE.WATERED,,Cette plante a été arrosée récemment et pousse rapidement.
+DEATH_REASON.BURNING,,Brulé
+DEATH_REASON.CRITICAL_ORGAN_DAMAGE,,Dommage critique à l'organe
+DEATH_REASON.CRUSHED_BY_FALLING_DEBRIS,,Débris tombant
+DEATH_REASON.DEHYDRATION,,Déshydratation
+DEATH_REASON.EXHAUSTION,,Épuisement
+DEATH_REASON.EXTENSIVE_INJURIES,,Blessures graves
+DEATH_REASON.FOOD_POISONING,,Intoxication alimentaire
+DEATH_REASON.FROZEN,,Exposition au froid
+DEATH_REASON.GIVEN_UP_ON_LIFE,,Renoncé à la vie
+DEATH_REASON.INTERNAL_BLEEDING,,Hémorragie interne
+DEATH_REASON.KILLED_BY_ENTITY,,Blessures affligées au combat
+DEATH_REASON.MURDERED.UNKNOWN_KILLER,,Quelqu'un
+DEATH_REASON.STARVATION,,Famine
+DEATH_REASON.SUFFOCATION,,Asphyxie
+DEATH_REASON.UNKNOWN,,Circonstances mystérieuses
+EARTH.DIRT,,Terre
+EARTH.GRASS,,Herbe
+EFFECT.FIRE,,Feu
+ENTITY.DESTRUCTION_DESCRIPTION.BURNED,,Détruit par le feu
+ENTITY.DESTRUCTION_DESCRIPTION.COMBAT_DAMAGE,,Détruit pendant le combat
+ENTITY.DESTRUCTION_DESCRIPTION.OXIDISED,,Détruit suite à une exposition prolongée à la pluie
+FACTION.HOSTILE_INVASION,,Envahisseur hostile
+FACTION.MERCHANTS,,Marchand
+FACTION.MONSTERS,,Monstre
+FACTION.PIRATES,,
+FACTION.SETTLEMENT,,Colon
+FACTION.SETTLEMENT.ANIMAL,,Animal domestique
+FACTION.WILD_ANIMALS,,Animal sauvage
+FLOOR.CHANNEL.DESCRIPTION,,Canal d'irrigation ({{state}})
+FLOOR.CHANNEL.DESCRIPTION.TOOLTIP,,"Un canal d'irrigation fournit de l'eau aux plantations sur une distance de 2 cases. Construisez une pompe à eau et connectez là au canal via des tuyaux pour l'alimenter,"
+FLOOR.CHANNEL.STATE.EMPTY,,Vide
+FLOOR.CHANNEL.STATE.FULL,,Rempli
+FLOOR.CHANNEL.STATE.PARTIALLY_FILLED,,Partiellement rempli
+FLOOR.COBBLESTONE,,Pavé
+FLOOR.DESCRIPTION,,{{floorType.noun}}
+FLOOR.DIRT,,Terre
+FLOOR.GRASS,,Herbe
+FLOOR.GRAVEL,,Gravier
+FLOOR.PIPE.DESCRIPTION,,tuyau de {{material}} ({{state}})
+FLOOR.POWER.DESCRIPTION,,{{entity}} - Puissance disponible: {{powerAmount}}
+FLOOR.RIVER,,Rivière
+FLOOR.ROUGH_STONE,,Rocher brut
+FLOOR.SNOW,,Neige
+FLOOR.STONE_PAVING,,Pavé en pierre
+FLOOR.STONE_SLAB,,Dalle
+FLOOR.TILLED_EARTH,,Terre labourée
+FLOOR.UNEXPLORED,,Inexploré
+FLOOR.WOODEN,,Parquet
+FOODSTUFF.ROCKBREAD,,Pain de roche
+FOODSTUFF.ROCKBREAD.TOOLTIP,,"C'est un pain infamamment dur qui est si dur et pratiquement non comestible qu'il lui faut beaucoup de temps pour devenir moisi. L'explorateur humain J. A. Moffatt a décrit un jour la consommation comme «semblable à du gravier à mâcher qui a été dragué dans un marais». Heureusement, la plupart des nains ne semblent pas dérangés."
+FOODSTUFF.WHEAT-BREAD,,Blé
+FUEL.SACK,,Carburant
+FUEL.SACK.TOOLTIP,,"Un carburant est nécessaire pour la production de métal, à la fois par {{FURNITURE.BLOOMERY_FURNACE}} et par {{FURNITURE.FORGE}}."
+FURNITURE.ARCHERY_TARGET,,Cible d'archerie
+FURNITURE.ARCHERY_TARGET.TOOLTIP,,Les colons militaire pratiqueront leur compétence de combat à distance dessus jusqu'au niveau 50.
+FURNITURE.ARMOUR_STAND,,Porte-armure
+FURNITURE.ARMOUR_STAND.TOOLTIP,,Utilisé pour entreposer une armure.
+FURNITURE.ARTISAN_WORKSTATION,,Etabli d'artisan
+FURNITURE.ARTISAN_WORKSTATION.TOOLTIP,,Un établi pour produire des objets complexe fait par {{PROFESSION.ARTISAN}}.
+FURNITURE.BAKERS_WORKTOP,,Plan de travail de boulanger
+FURNITURE.BAKERS_WORKTOP.TOOLTIP,,Un {{PROFESSION.CHEF}} travaille ici pour transformer {{RESOURCE.FLOUR.SACK.PLURAL}} en {{INGREDIENT.DUNTY}}.
+FURNITURE.BAKING_OVEN,,Four de boulanger
+FURNITURE.BAKING_OVEN.TOOLTIP,,Un {{PROFESSION.CHEF}} cuit des pains ici en utilisant {{INGREDIENT.Dough}} préparé.
+FURNITURE.BEER_TAPPER,,Tireuse à bière
+FURNITURE.BEER_TAPPER.STATE.BEER_AVAILABLE,,La bière est disponible
+FURNITURE.BEER_TAPPER.STATE.BEER_BARREL_INCOMING,,Un barril de bière est en cours d'acheminement
+FURNITURE.BEER_TAPPER.STATE.BEER_EXHAUSTED,,Il n'y a plus de bières!
+FURNITURE.BEER_TAPPER.STATE.IDLE,,En attente (Pas de bière disponible)
+FURNITURE.BEER_TAPPER.TOOLTIP,,C'est ici que la {{LIQUID.BEER}} fermentée est servie.
+FURNITURE.BLOOMERY_FURNACE,,Bas-fourneau
+FURNITURE.BLOOMERY_FURNACE.TOOLTIP,,Un {{PROFESSION.BLACKSMITH}} utilise ce fourneau à commande manuelle pour transformer des {{RESOURCE.ORE.CRUSHED.PLURAL}} et du {{FUEL.SACK}} en {{MATERIAL_TYPE.METAL.ADJECTIVE}} {{RESOURCE.METAL.INGOT.PLURAL}}}}}.
+FURNITURE.BONE_CRAFTING_BENCH,,Etabli pour les os
+FURNITURE.BONE_CRAFTING_BENCH.TOOLTIP,,Cet établi est utilisé pour créer des objets à partir d'os.
+FURNITURE.BREW_KETTLE,,Cuve de brassage
+FURNITURE.BREW_KETTLE.TOOLTIP,,C'est utilisé pour produire le moût final (bière non fermentée) en utilisant {{VEGETABLE.HOPS}} et le moût de{{FURNITURE.MASH_TUN}}.
+FURNITURE.BUTCHERY_WORKTOP,,Table de boucher
+FURNITURE.BUTCHERY_WORKTOP.TOOLTIP,,Le poisson et les carcasses animales sont préparés ici pour devenir de la viande crue.
+FURNITURE.BUYING_PALLET,,
+FURNITURE.BUYING_PALLET.TOOLTIP,,
+FURNITURE.CARPENTRY_WORKBENCH,,Établi de menuisier
+FURNITURE.CARPENTRY_WORKBENCH.TOOLTIP,,"La plupart des objets et outils en bois sont produits ici, tels que les {{PRODUCT.BUCKET.PLURAL}} et les {{PRODUCT.BARREL.PLURAL}}."
+FURNITURE.CAULDRON,,Chaudron
+FURNITURE.CAULDRON.TOOLTIP,,Un chaudron sert à produire une grande quantité de soupe pour les colons affamés. La soupe est produite dans un {{ROOMS.KITCHEN}} avant d'être déplacée dans un {{ROOMS.FEASTING_HALL}} pour être servie.
+FURNITURE.CHAIR,,Chaise
+FURNITURE.CHAIR.TOOLTIP,,Les colons peuvent s'assoir ici quand ils utilisent la {{FURNITURE.FEASTING_TABLE}}.
+FURNITURE.CHARCOAL_CLAMP,,Four à charbons de bois
+FURNITURE.CHARCOAL_CLAMP.TOOLTIP,,"Il s'agit d'un tas de {{RESOURCE.LOGS.PLURAL}} recouvert de {{MATERIAL_TYPE.EARTH}} et lentement brûlé pour produire du {{ORE.CHARCOAL.NOUN}}, qui peut ensuite être utilisé comme du {FUEL.SACK}}."
+FURNITURE.COKE_OVEN,,Four à charbons
+FURNITURE.COKE_OVEN.TOOLTIP,,Un four à coke convertit {{ORE.BITUMINOUS_COAL.NOUN}} en {{ORE.COKE.NOUN}} afin qu'il puisse être utilisé comme {{FUEL.SACK}}.
+FURNITURE.DESCRIPTION,,{{furnitureType.noun}} {{materialType.adjective}}
+FURNITURE.DESCRIPTION.GENERIC_PROGRESS,,Finalisé dans: {{progress}}%
+FURNITURE.DESCRIPTION.MUSHROOM_INNOCULATION_IN_PROGRESS,,Fin de l'inoculation dans: {{progress}}%
+FURNITURE.DESCRIPTION.SHOCKING_IN_PROGRESS,,Récolte des champignons dans: {{progress}}%
+FURNITURE.DESCRIPTION.WAITING_FOR_ITEM,,En attente de {{itemType.noun}}
+FURNITURE.DESCRIPTION.WAITING_FOR_LIQUID,,En attente d'être rempli
+FURNITURE.DESCRIPTION.WAITING_FOR_MUSHROOM_SPAWN,,En attente d'être inoculé dans la buche de culture à champignons
+FURNITURE.DOUGH_PROOFING_TABLE,,Table de levage
+FURNITURE.DOUGH_PROOFING_TABLE.TOOLTIP,,La pâte à pain provient du {{FURNITURE.BAKERS_WORKTOP}} pour y être entreposée avant d'aller dans le {{FURNITURE.BAKING_OVEN}}.
+FURNITURE.EXPORT_PALLET,,Palette d'exportation
+FURNITURE.EXPORT_PALLET.TOOLTIP,,Utilisé pour déterminer quels objets seront produit depuis la pièce.
+FURNITURE.FEASTING_TABLE,,Table de banquet
+FURNITURE.FEASTING_TABLE.TOOLTIP,,"Avec une {{FURNITURE.CHAIR}} en place, vos colons pourront profiter de leurs repas à cette table."
+FURNITURE.FERMENTATION_TANK,,Cuve de fermentation
+FURNITURE.FERMENTATION_TANK.TOOLTIP,,C'est ici que le {{LIQUID.HOPPED_WORT}} est fermenté en {{LIQUID.BEER}}.
+FURNITURE.FISH_BARREL,,Tonneau à poissons
+FURNITURE.FISH_BARREL.TOOLTIP,,Entrepose soignement le poisson pêché en attente d'être cuisiné.
+FURNITURE.FLETCHERS_WORKBENCH,,Etabli d'archerie
+FURNITURE.FLETCHERS_WORKBENCH.TOOLTIP,,C'est un établi utilisé pour les armes à distances et les munitions.
+FURNITURE.FLOUR_MILL,,Moulin à grains
+FURNITURE.FLOUR_MILL.TOOLTIP,,Le moulin à grains broie {{Vegetable.WHEAT}} en {{RESOURCE.FLOUR.SACK.NOUN}} afin qu'il puisse être utilisé par un {{PROFESSION.CHEF}}.
+FURNITURE.FORGE,,Forge
+FURNITURE.FORGE.TOOLTIP,,C'est là que {{PROFESSION.BLACKSMITH}} travaille le {{MATERIAL_TYPE.METAL.ADJECTIVE}} {{RESOURCE.META.INGOT.PLURAL}} et {{FUEL.SACK}} pour fabriquer des objets et des armes.
+FURNITURE.GRAVE,,Tombe
+FURNITURE.GRAVE.TOOLTIP,,Une tombe creusée à la hâte pour les colons décédés qui ne peut être placée que dans {{MATERIAL_TYPE.EARTH}}.
+FURNITURE.HITCHING_POST,,Piquet d'attelage
+FURNITURE.HITCHING_POST.TOOLTIP,,Les marchands en visite vont se garer ici avec leur chariot.
+FURNITURE.IMPORT_PALLET,,Palette d'importation
+FURNITURE.IMPORT_PALLET.TOOLTIP,,Utilisé pour déterminer quels objets seront amené dans la pièce.
+FURNITURE.INVADER_CAMPFIRE,,Feu de camp
+FURNITURE.KITCHEN_WORKTOP,,Plan de travail de cuisine
+FURNITURE.KITCHEN_WORKTOP.TOOLTIP,,Un espace pour stocker les ingrédients pour un {{PROFESSION.CHEF}} pour cuisiner la soupe.
+FURNITURE.LANTERN,,Lanterne
+FURNITURE.LANTERN.TOOLTIP,,"Une lanterne fournit de la lumière, ce qui n'a pas d'effet dans le jeu actuellement."
+FURNITURE.LEATHERWORKING_STATION,,Atelier de tannage
+FURNITURE.LEATHERWORKING_STATION.TOOLTIP,,Un atelier qui produit des biens en cuirs tel que les armures et les gourdes.
+FURNITURE.LEDGER_TABLE,,Table de registre
+FURNITURE.LEDGER_TABLE.TOOLTIP,,Un repère pour la {{ROOMS.TRADING_DEPOT}}. Cela n'a pas d'effet actuellement en jeu.
+FURNITURE.LOOM,,Métier à tisser
+FURNITURE.LOOM.TOOLTIP,,Utilisé pour créer des tissus tel que {{PRODUCT.LINEN.NOUN}} avec du {{RESOURCE.HEMP.FIBRE.BUNDLE.PLURAL}}.
+FURNITURE.MALTING_STATION,,Malterie
+FURNITURE.MALTING_STATION.TOOLTIP,,"Ici, les brasseurs infusent de l'orge et la font sécher à l'aide d'un four pour produire du malt."
+FURNITURE.MASH_TUN,,Cuve-matière
+FURNITURE.MASH_TUN.TOOLTIP,,Ceci est utilisé pour produire du moût (bière non fermentée) à partir de malt moulu et d'eau.
+FURNITURE.MUSHROOM_LOG,,Buche de culture pour champignons
+FURNITURE.MUSHROOM_LOG.TOOLTIP,,Une bûche qui a été injectée avec {{INGREDIENT.MUSHROOM.SPAWN.PLURAL}} pour produire plusieurs récoltes de délicieux champignons juteux.
+FURNITURE.MUSHROOM_SHOCK_TANK,,Réservoir d’eau pour champignons
+FURNITURE.MUSHROOM_SHOCK_TANK.TOOLTIP,,"Après l'inoculation, un {{FURNITURE.MUSHROOM_LOG}} est placé dans ce réservoir pour «fructifier» la colonie de champignons et l'encourager à cultiver des champignons."
+FURNITURE.ORE_CRUSHING_STATION,,Station de concassage du minerai
+FURNITURE.ORE_CRUSHING_STATION.TOOLTIP,,Le {{RESOURCE.ORE.UNREFINED.PLURAL}} brut est broyé à une taille plus pratique afin qu'il puisse être utilisé dans un {{FURNITURE.BLOOMERY_FURNACE}}.
+FURNITURE.PILLAR,,Pilier
+FURNITURE.PILLAR.TOOLTIP,,Un pilier est nécessaire pour empêcher l'effondrement de grandes zones minées. Une zone de tuiles 7x7 qui ont été extraites sans piliers ou autres supports en place finira par s'effondrer.
+FURNITURE.RETTING_TANK,,Cuve de rouissage
+FURNITURE.RETTING_TANK.TOOLTIP,,C'est utilisé pour transformer le {{VEGETABLE.HEMP}} en fibre de chanvre qui peut ensuite être utilisable.
+FURNITURE.SARCOPHAGUS,,Sarcophage
+FURNITURE.SARCOPHAGUS.TOOLTIP,,Ce conteneur en pierre élaboré est le dernier lieu de repos d'un colon décédé.
+FURNITURE.SELLING_PALLET,,
+FURNITURE.SELLING_PALLET.TOOLTIP,,
+FURNITURE.SERVING_TABLE,,Buffet
+FURNITURE.SERVING_TABLE.TOOLTIP,,{{PRODUCT.BREAD.LOAF.PLURAL}} sont placés ici pour servir après avoir été cuit dans un {{FURNITURE.BAKING_OVEN}}.
+FURNITURE.SINGLE_BED,,Lit
+FURNITURE.SINGLE_BED.TOOLTIP,,Un lit est le meilleur endroit pour une nuit de repos confortable.
+FURNITURE.SINGLE_DOOR,,Porte
+FURNITURE.SINGLE_DOOR_FRAME,,Encadrement de porte
+FURNITURE.SLEEPING_SPOT,,Lieu de couchage
+FURNITURE.SLEEPING_SPOT.TOOLTIP,,Le colon utilise ce espace pour dormir sur le sol. Ce n'est pas très confortable!
+FURNITURE.STONEMASON_WORKBENCH,,Établi du tailleur de pierre
+FURNITURE.STONEMASON_WORKBENCH.TOOLTIP,,Un {{PROFESSION.STONEMASON}} travaille ici avec {{MATERIAL_TYPE.STONE.ADJECTIVE}} ressources.
+FURNITURE.TANNING_FRAME,,Support pour tannage
+FURNITURE.TANNING_FRAME.TOOLTIP,,Utilisé pour transformer les {{CARCASS.HIDE.PLURAL}} en {{PRODUCT.LEATHER.PLURAL}}.
+FURNITURE.TRADE_BANNER,,Bannière
+FURNITURE.TRADE_BANNER.TOOLTIP,,Une bannière décorative pour indiquer la zone de commerce
+FURNITURE.TRAINING_DUMMY,,Manequin d'entraînement
+FURNITURE.TRAINING_DUMMY.TOOLTIP,,Les colons militaire s'entraineront pour améliorer leur compétence de combat au corps à corps jusqu'au niveau 50.
+FURNITURE.WAGON_PARKED,,Chariot
+FURNITURE.WATERWHEEL,,Roue à eau
+FURNITURE.WATERWHEEL.PLURAL,,Roues à eau
+FURNITURE.WATERWHEEL.TOOLTIP,,Fournit de la puissance mécanique aux autres installations via des {{PRODUCT.STONE.GEAR.PLURAL}} et des arbres de transmissions. Doit être construit adjacent à une rivière.
+FURNITURE.WATER_BARREL,,Tonneau à eau
+FURNITURE.WATER_BARREL.TOOLTIP,,"Un tonneau à eau est un objet où vos colons peuvent venir se désaltérer, plutôt que d'avoir à trouver une source d'eau naturelle comme la rivière."
+FURNITURE.WATER_PUMP,,Pompe à eau
+FURNITURE.WATER_PUMP.PLURAL,,Pompes à eau
+FURNITURE.WATER_PUMP.TOOLTIP,,Achemine l'eau de la rivière dans des tuyaux
+FURNITURE.WEAPON_RACK,,Ratelier d'arme
+FURNITURE.WEAPON_RACK.TOOLTIP,,Utilisé pour entreproser les armes
+FURNITURE.WELL,,Puits
+FURNITURE.WELL.TOOLTIP,,"Un puit est un point d'approvisionnement d'eau, mais doit être connecté à des tuyaux fonctionnel"
+FURNITURE.WINDMILL,,Moulin à vent
+FURNITURE.WINDMILL.PLURAL,,Moulins à vent
+FURNITURE.WINDMILL.TOOLTIP,,Fournit de la puissance mécanique aux autres installations via des {{PRODUCT.STONE.GEAR.PLURAL}} et arbres de transmissions.
+FURNITURE.WOODCUTTERS_BENCH,,Etabli de bucheron
+FURNITURE.WOODCUTTERS_BENCH.TOOLTIP,,Un {{PROFESSION.WOODCUTTER}} travaille ici pour transformer les {{RESOURCE.LOGS.PLURAL}} en {{RESOURCE.PLANKS.PLURAL}}.
+GEM.AMETHYST.ADJECTIVE,,en améthyste
+GEM.AMETHYST.NOUN,,Améthyste
+GEM.AMETHYST.TOOLTIP,,"Une variété de quartz violet. Les anciens humains croyaient que cela pouvait les protéger magiquement de devenir trop ivres. Pour cette raison, il n'est pas très populaire dans la culture naine."
+GEM.AMMOLITE.ADJECTIVE,,en ammolite
+GEM.AMMOLITE.NOUN,,Ammolite
+GEM.AMMOLITE.TOOLTIP,,Une pierre précieuse de type opale qui a une irisation de rouge à vert. Elle est connue sous le nom de «pierre de chasse» et les amulettes fabriquées à partir de celle-ci sont destinées à porter chance durant une chasse.
+GEM.AQUAMARINE.ADJECTIVE,,en aigue-marine
+GEM.AQUAMARINE.NOUN,,Aigue-marine
+GEM.AQUAMARINE.TOOLTIP,,Une variété de béryl de couleur bleutée. Certains humains croient qu'elle offre une protection magique contre les dangers des mers. C'est parce qu'un ancien mage utilisait une combinaison de magie du ciel et de glace pour protéger les navires de commerce à l'ère des ténèbres.
+GEM.BIXBITE.ADJECTIVE,,en béryl rouge
+GEM.BIXBITE.NOUN,,Béryl rouge
+GEM.BIXBITE.TOOLTIP,,"Également connue sous le nom de béryl rouge, c'est une pierre précieuse très rare. Il est souvent confondu avec une émeraude grenat"
+GEM.CINNABAR.ADJECTIVE,,en cinabre
+GEM.CINNABAR.NOUN,,Cinabre
+GEM.CINNABAR.TOOLTIP,,Un minerai de mercure qui est souvent utilisé dans les bijoux en raison de sa teinte rouge profond. Il est également utilisé pour produire le colorant connu sous le nom de vermillion.
+GEM.CITRINE.ADJECTIVE,,en citrine
+GEM.CITRINE.NOUN,,Citrine
+GEM.CITRINE.TOOLTIP,,"Une variété de quartz jaunâtre. C'est la pierre précieuse la plus proche de la couleur de l'or, donc la plupart des nains pensent que la citrine porte chance."
+GEM.DIAMOND.ADJECTIVE,,en diamant
+GEM.DIAMOND.NOUN,,Diamant
+GEM.DIAMOND.TOOLTIP,,Le matériau le plus dur connu et l'une des plus importantes des sept pierres célestes. Le diamant est la forme la plus condensée de l'élément neutre connu sous le nom d' «esprit» ou d' «éther».
+GEM.EMERALD.ADJECTIVE,,en émeraude
+GEM.EMERALD.NOUN,,Émeraude
+GEM.EMERALD.TOOLTIP,,Une variété de béryl vert vif. On pense que la gravure sur une émeraude apporte un grand malheur. Les émeraudes sont étroitement liées à la vie élémentaire et associé à la magie.
+GEM.GARNET.ADJECTIVE,,en grenat
+GEM.GARNET.NOUN,,Grenat
+GEM.GARNET.TOOLTIP,,"Les grenats couvrent une variété de minéraux utilisés comme pierres précieuses, tous d'une couleur rouge foncé. Certaines gemmes grenat sont en fait une forme condensée de feu élémentaire."
+GEM.JADE.ADJECTIVE,,en jade
+GEM.JADE.NOUN,,Jade
+GEM.JADE.TOOLTIP,,"Un minéral de couleur vert clair souvent utilisé pour la décoration. En outre, on sait que les elfes utilisent du jade pour produire des médicaments qui peuvent guérir les maux de l'intestin."
+GEM.JASPER.ADJECTIVE,,en jaspe
+GEM.JASPER.NOUN,,Jaspe
+GEM.JASPER.TOOLTIP,,"Une variété impure de silice qui peut se trouver en plusieurs couleurs, mais le plus souvent en rouge. Le jaspe est favorisé comme matériau de décoration par les orcs en raison de sa variété."
+GEM.LABRADORITE.ADJECTIVE,,en labradorite
+GEM.LABRADORITE.NOUN,,Labradorite
+GEM.LABRADORITE.TOOLTIP,,Un rocher qui brille avec une irridescence typiquement bleu clair. Des spécimens plus rares peuvent refléter une large gamme de couleurs.
+GEM.LAPIS.ADJECTIVE,,en lapis lazuli
+GEM.LAPIS.NOUN,,Lapis lazuli
+GEM.LAPIS.TOOLTIP,,Un rocher avec une teinte bleu profond brillant qui est utilisé comme pierre précieuse.
+GEM.MAGNESITE.ADJECTIVE,,en magnésite
+GEM.MAGNESITE.NOUN,,Magnésite
+GEM.MAGNESITE.TOOLTIP,,Un minéral qui peut être poli en perles pour une utilisation dans les bijoux. Ces perles peuvent être teintes dans de nombreuses couleurs différentes.
+GEM.MOONSTONE.ADJECTIVE,,en pierre de lune
+GEM.MOONSTONE.NOUN,,Pierre de lune
+GEM.MOONSTONE.TOOLTIP,,"On pense qu'elle a été formée par le clair de lune capturé dans la roche, ce qui fait de cette pierre précieuse une des préférées des elfes."
+GEM.MORGANITE.ADJECTIVE,,en morganite
+GEM.MORGANITE.NOUN,,Morganite
+GEM.MORGANITE.TOOLTIP,,Une variété de béryl rose. Il a été nommé d'après avoir été popularisé par un marchand particulièrement riche à l'époque du mythe.
+GEM.OPAL.ADJECTIVE,,en opale
+GEM.OPAL.NOUN,,Opale
+GEM.OPAL.TOOLTIP,,"Une forme de silice imprégnée de la magie des océans, ce qui en fait un favori des marins et des pêcheurs."
+GEM.PAINITE.ADJECTIVE,,en painite
+GEM.PAINITE.NOUN,,Painite
+GEM.PAINITE.TOOLTIP,,Une pierre précieuse très rare qui est souvent identifiée comme un saphir décoloré. Ces cristaux sont naturellement hexagonaux et les favoris des tacticiens.
+GEM.RHODOCHROSITE.ADJECTIVE,,en rhodochrosite
+GEM.RHODOCHROSITE.NOUN,,Rhodochrosite
+GEM.RHODOCHROSITE.TOOLTIP,,"Trouvé dans différentes nuances de rouge à rose. Elle n'est pas aussi dure que la plupart des pierres précieuses, ce qui en fait un mauvais choix pour les bagues et autres bijoux à fort impact."
+GEM.ROCK_CRYSTAL.ADJECTIVE,,en cristal de roche
+GEM.ROCK_CRYSTAL.NOUN,,Cristal de roche
+GEM.ROCK_CRYSTAL.TOOLTIP,,La forme la plus pure des cristaux de roche. Le quartz est souvent présents dans des artefacts magiques car ils sont une forme condensée de l'élément de glace.
+GEM.RUBY.ADJECTIVE,,en rubis
+GEM.RUBY.NOUN,,Rubis
+GEM.RUBY.TOOLTIP,,"L'une des sept pierres célestes, les rubis sont l'élément du feu condensé dans une forme solide."
+GEM.SAPPHIRE.ADJECTIVE,,en saphir
+GEM.SAPPHIRE.NOUN,,Saphir
+GEM.SAPPHIRE.TOOLTIP,,"Souvent censés protéger le porteur de l'attention des démons, les saphirs sont très recherchés par les mages pour une utilisation dans les magies du ciel et de l'air."
+GEM.SPINEL.ADJECTIVE,,en spinelle
+GEM.SPINEL.NOUN,,Spinelle
+GEM.SPINEL.TOOLTIP,,"Souvent confondus avec des pierres célestes comme de vrais rubis et saphirs, les spinelles sont une forme moindre de gemme imprégnée de magie qui peut être associée à n'importe quel élément, selon la couleur."
+GEM.TANZANITE.ADJECTIVE,,en tanzanite
+GEM.TANZANITE.NOUN,,Tanzanite
+GEM.TANZANITE.TOOLTIP,,Une pierre précieuse rare qui peut alterner entre le bleu et le violet. Elle est supposée être formée à partir du corps physique d'un dieu mort.
+GEM.TOPAZ.ADJECTIVE,,en topaze
+GEM.TOPAZ.NOUN,,Topaze
+GEM.TOPAZ.TOOLTIP,,"Parfois confondue avec la gemme {{GEM.CITRINE.NOUN}} plus commune, la topaze peut être trouvée en plusieurs couleurs, mais le plus souvent d'un brun jaunâtre. Elle a d'abord été découvert sur une île qui n'existe plus."
+GEM.TOURMALINE.ADJECTIVE,,en tourmaline
+GEM.TOURMALINE.NOUN,,Tourmaline
+GEM.TOURMALINE.TOOLTIP,,Souvent trouvé à côté de gemme de {{ORE.CASSITERITE.NOUN}} . Elle est parfois associée à la magie de la terre.
+GEM.TURQUOISE.ADJECTIVE,,en turquoise
+GEM.TURQUOISE.NOUN,,Turquoise
+GEM.TURQUOISE.TOOLTIP,,Un minéral bleu-vert souvent utilisé dans les décorations. On pense qu'il porte bonne chance au porteur. Il est souvent infusé avec l'élément de la terre.
+GOAL.ABANDON_JOB.DESCRIPTION,,Abandonne sa tâche
+GOAL.ADD_TO_INVENTORY.DESCRIPTION,,Collecte {{targetDescription}}
+GOAL.COMBAT.DESCRIPTION,,Attaque {{targetDescription}}
+GOAL.DRINK.DESCRIPTION,,Boit {{targetZoneMaterial}}
+GOAL.DUMP_LIQUID.DESCRIPTION,,Vide le contenu {{targetDescription}}
+GOAL.EAT.DESCRIPTION,,Mange {{targetDescription}}
+GOAL.EXTINGUISH_FIRE.DESCRIPTION,,Eteind le feu
+GOAL.FLEE_FROM_AGGRESSOR.DESCRIPTION,,Fuit {{targetDescription}}
+GOAL.HAULING.DESCRIPTION,,Transporte {{itemDescription}}
+GOAL.IDLE.DESCRIPTION,,Temps libre
+GOAL.INVADER.CREATE_CAMP.DESCRIPTION,,Etabli le camp
+GOAL.INVADER.RETREAT.DESCRIPTION,,Se retire de la map
+GOAL.INVADER.STEAL_RESOURCES.DESCRIPTION,,Pille la réserve
+GOAL.MILITARY.ATTACK_TARGET.DESCRIPTION,,Part au combat
+GOAL.MILITARY.STAND_IN_FORMATION.DESCRIPTION,,Garde la position
+GOAL.MILITARY.TRAINING.DESCRIPTION,,S'entraine aux armes
+GOAL.ON_FIRE.DESCRIPTION,,En feu!
+GOAL.REFILL_WATERSKIN.DESCRIPTION,,Rempli la gourde
+GOAL.SLEEP.DESCRIPTION,,Va dormir
+GOAL.TRANSFER_LIQUID.DESCRIPTION,,Transfère {{targetZoneMaterial}}
+GUI.ADD_REMOVE_TILES,,Ajouter/retirer des cases
+GUI.ADD_TILES,,Ajouter des cases
+GUI.AMBIENT_EFFECT_VOLUME,,Effet d'ambiance
+GUI.AVAILABLE_PROGRESS_BAR,,{{item}} Disponible:
+GUI.BACK_LABEL,,Retour 
+GUI.BUILD.BRIDGE,,Pont
+GUI.BUILD.DOORS,,Portes
+GUI.BUILD.FLOOR,,Sol
+GUI.BUILD.PILLARS,,Pilliers
+GUI.BUILD.PIPING,,Tuyaux
+GUI.BUILD.POWER,,Puissance
+GUI.BUILD.ROOFING,,Toits
+GUI.BUILD.WALLS,,Murs
+GUI.BUILD_FURNITURE,,Meubles
+GUI.BUILD_LABEL,,Construire 
+GUI.CANCEL_LABEL,,Annuler 
+GUI.CHANGE_PROFESSION_LABEL,,Changer de profession
+GUI.CHANGE_WEAPON_LABEL,,Selectionner arme
+GUI.COMBAT_LABEL,,Combat
+GUI.CONSTRUCTION_LABEL,,Construction
+GUI.CRAFTING_MANAGEMENT.MAINTAINING_TEXT,,Maintenance
+GUI.CRAFTING_MANAGEMENT.SUBTITLE,,{{craftingType}} ({{profession}})
+GUI.CRAFTING_MANAGEMENT.TABLE.CRAFTED_WITH,,Produit avec
+GUI.CRAFTING_MANAGEMENT.TABLE.ITEM,,Objet
+GUI.CRAFTING_MANAGEMENT.TABLE.MANAGEMENT,,Gestion
+GUI.CRAFTING_MANAGEMENT.TABLE.MANAGEMENT.LIMIT,,Limite
+GUI.CRAFTING_MANAGEMENT.TABLE.MANAGEMENT.QUANTITY,,Quantité
+GUI.CRAFTING_MANAGEMENT.TABLE.MANAGEMENT.QUANTITY.DECREMENT,,Réduire
+GUI.CRAFTING_MANAGEMENT.TABLE.MANAGEMENT.QUANTITY.INCREMENT,,Augmenter
+GUI.CRAFTING_MANAGEMENT.TITLE,,Plans
+GUI.CRAFTING_MANAGEMENT.TOTAL_QUANTITY_ACTUAL,,Total actuel: {{quantity}}
+GUI.CRAFTING_MANAGEMENT.TOTAL_QUANTITY_HINT,,({{quantity}} au total)
+GUI.CREDITS.AND_YOU_TITLE,,And You! Thanks For Playing!
+GUI.CREDITS.DEVELOPERS.CHARACTER_ART,,Character Artists
+GUI.CREDITS.DEVELOPERS.CONCEPT_ART,,Concept Artwork
+GUI.CREDITS.DEVELOPERS.ENVIRONMENT_ART,,Environment Artists
+GUI.CREDITS.DEVELOPERS.LEAD_DESIGN,,Lead Design & Programming
+GUI.CREDITS.DEVELOPERS.LEAD_UI,,Lead 2D & UI Artist
+GUI.CREDITS.DEVELOPERS.MUSIC,,Music & Sound Effects
+GUI.CREDITS.DEVELOPERS.MUSIC_ADDITIONAL,,Additional Music Tracks
+GUI.CREDITS.DEVELOPERS.PROGRAMMING,,Programming
+GUI.CREDITS.DEVELOPERS.SPECIAL_THANKS,,Special Thanks
+GUI.CREDITS.FOUNDING_BACKERS_TITLE,,Special Thanks to our Founding Backers
+GUI.CREDITS.PATREON_KICKSTARTER_TITLE,,Additional Thanks to our Patreon and Kickstarter Backers
+GUI.CREDITS.TRANSLATORS_TITLE,,
+GUI.CROP_SELECTION,,Plantation:
+GUI.CROP_SELECTION.DESCRIPTION,,{{plantDescription}} - {{planting}} - {{usage}}
+GUI.CROP_SELECTION.PLANTING_HINT.SEASONS_0,,Ne peut pas être planté
+GUI.CROP_SELECTION.PLANTING_HINT.SEASONS_1,,Planté en {{season1}}
+GUI.CROP_SELECTION.PLANTING_HINT.SEASONS_2,,Planté en {{season1}} ou {{season2}}
+GUI.CROP_SELECTION.PLANTING_HINT.SEASONS_3,,"Planté en {{season1}}, {{season2}} ou {{season3}}"
+GUI.CROP_SELECTION.PLANTING_HINT.SEASONS_4,,Planté toute l'année
+GUI.DATE_TIME_YEAR_LABEL,,"{{timeOfDay}}, Jour {{dayNumber}}, Année {{year}}"
+GUI.DAY_LABEL,,Jour {{dayNumber}}
+GUI.DECONSTRUCT_LABEL,,Détruire
+GUI.DIALOG.CANCEL_BUTTON,,Annuler
+GUI.DIALOG.CONFIRM,,Valider
+GUI.DIALOG.CONFIRM_DELETE_SAVE,,Etes vous sur de vouloir supprimer {{name}}?
+GUI.DIALOG.DISMISS,,Rejeter
+GUI.DIALOG.ERROR_ROOM_NAME_ALREADY_EXISTS,,Une pièce avec ce nom existe déjà.
+GUI.DIALOG.ERROR_SAVE_INCOMPATIBLE,,Le fichier de sauvegarde n'a pas pu être chargé car il est incompatible avec cette version du jeu.
+GUI.DIALOG.ERROR_TITLE,,Une erreur s'est produite
+GUI.DIALOG.ERROR_WHILE_LOADING,,Une erreur inattendue s'est produite lors du chargement du jeu.
+GUI.DIALOG.ERROR_WHILE_SAVING,,Une erreur inattendue s'est produite lors de la sauvegarde du jeu.
+GUI.DIALOG.HIDE_FURTHER_NOTIFICATIONS,,Cacher les notifications
+GUI.DIALOG.INFO_TITLE,,Informations
+GUI.DIALOG.JUMP_TO,,Aller à l'emplacement
+GUI.DIALOG.LANGUAGE_TRANSLATION_INCOMPLETE,,La traduction de la langue sélectionnée est actuellement incomplète et il manque du texte. Un langage de secours sera utilisé.
+GUI.DIALOG.MOD_CHANGES_OUTSTANDING,,Vous avez sélectionné un autre ensemble de mods à appliquer au jeu. Celles-ci seront appliquées au prochain redémarrage du jeu.
+GUI.DIALOG.MOD_INCOMPATIBLE,,Un ou plusieurs mods sont incompatibles avec cette version du jeu et ont été désactivés. Vous pouvez vérifier les mises à jour dans le menu mods.
+GUI.DIALOG.OK_BUTTON,,OK
+GUI.DIALOG.RENAME_ROOM_TITLE,,Renommer la pièce
+GUI.DIALOG.RENAME_SETTLER_TITLE,,Renommer le colon
+GUI.DIALOG.RESTART_REQUIRED,,Vous devez redémarrer le jeu pour que cette modification prenne effet
+GUI.DIALOG.SETTLEMENT_NAME_ALREADY_IN_USE,,Vous avez déjà une partie qui porte le nom de cette colonie {{name}}. Démarrer une nouvelle partie écrasera la sauvegarde existante. Etes vous sur de vouloir continuer?
+GUI.DIALOG.SETTLEMENT_NAME_NOT_SPECIFIED,,Un nom de colonie doit être choisi
+GUI.DIALOG.STOCKPILE_MANAGEMENT.TITLE,,Paramêtre des réserves
+GUI.EMBARK.DISCORD_LINK,,Cliquez ici pour rejoindre notre communauté discord
+GUI.EMBARK.MAP_SEED,,Seed aléatoire
+GUI.EMBARK.MAP_SIZE,,Taille de la carte
+GUI.EMBARK.MAP_SIZE.LARGE,,Grande
+GUI.EMBARK.MAP_SIZE.MEDIUM,,Moyenne
+GUI.EMBARK.MAP_SIZE.SMALL,,Petite
+GUI.EMBARK.PEACEFUL_MODE,,Mode paisible
+GUI.EMBARK.SETTLEMENT_NAME,,Nom
+GUI.EMBARK.START,,Démarrer!
+GUI.EMBARK.TITLE,,Choisir le royaume
+GUI.EMPTY_CONTAINER_LABEL,,Vide
+GUI.EMPTY_CONTAINER_LABEL.BEING_ACTIONED,,Le conteneur est en cours de vidage
+GUI.EMPTY_CONTAINER_LABEL.HINT,,Vide le contenu du récipient par terre
+GUI.FURNITURE_ASSIGNED_TO,,Appartient à {{name}}
+GUI.FURNITURE_BEING_REMOVED,,Retrait en cours
+GUI.FURNITURE_REQUIREMENT.ALL_MATERIALS,,{{amount}} disponible
+GUI.FURNITURE_REQUIREMENT.SPECIFIED_MATERIALS,,{{amount}} {{material}} disponible
+GUI.GRAPHICS.FULLSCREEN,,Plein écran
+GUI.GRAPHICS.RESOLUTION,,Résolution
+GUI.INVASION_LABEL,,Invasion
+GUI.ITEM.WEAPON_ARMOR_NEGATION_DESCRIPTION,,
+GUI.ITEM.WEAPON_ATTACK_DESCRIPTION,,
+GUI.KEY_BINDING.DEBUG_FRAME_BUFFER_0,,Debug frame buffer 0
+GUI.KEY_BINDING.DEBUG_FRAME_BUFFER_1,,Debug frame buffer 1
+GUI.KEY_BINDING.DEBUG_FRAME_BUFFER_2,,Debug frame buffer 2
+GUI.KEY_BINDING.DEBUG_FRAME_BUFFER_3,,Debug frame buffer 3
+GUI.KEY_BINDING.DEBUG_FRAME_BUFFER_4,,Debug frame buffer 4
+GUI.KEY_BINDING.DEBUG_FRAME_BUFFER_5,,Debug frame buffer 5
+GUI.KEY_BINDING.DEBUG_FRAME_BUFFER_6,,Debug frame buffer 6
+GUI.KEY_BINDING.DEBUG_FRAME_BUFFER_7,,Debug frame buffer 7
+GUI.KEY_BINDING.DEBUG_FRAME_BUFFER_8,,Debug frame buffer 8
+GUI.KEY_BINDING.DEBUG_FRAME_BUFFER_9,,Debug frame buffer 9
+GUI.KEY_BINDING.DEBUG_GAME_SPEED_SLOW,,Debug game speed slow
+GUI.KEY_BINDING.DEBUG_GAME_SPEED_ULTRA_FAST,,Debug game speed ultra fast
+GUI.KEY_BINDING.DEBUG_HIDE_GUI,,Debug hide gui
+GUI.KEY_BINDING.DEBUG_SHOW_INDIVIDUAL_LIGHTING_BUFFERS,,Debug show individual lighting buffers
+GUI.KEY_BINDING.DEBUG_SHOW_JOB_STATUS,,Debug show job status
+GUI.KEY_BINDING.DEBUG_SHOW_LIQUID_FLOW,,Debug show liquid flow
+GUI.KEY_BINDING.DEBUG_SHOW_MENU,,Debug show menu
+GUI.KEY_BINDING.DEBUG_SHOW_PATHFINDING_NODES,,Debug show pathfinding nodes
+GUI.KEY_BINDING.DEBUG_SHOW_ZONES,,Debug show zones
+GUI.KEY_BINDING.DEBUG_TOGGLE_FLOOR_OVERLAP_RENDERING,,Debug toggle floor overlap rendering
+GUI.KEY_BINDING.FAST_PAN,,Défilement rapide
+GUI.KEY_BINDING.GAME_SPEED_FAST,,Vitesse de jeu rapide
+GUI.KEY_BINDING.GAME_SPEED_FASTER,,Vitesse de jeu très rapide
+GUI.KEY_BINDING.GAME_SPEED_FASTEST,,Vitesse de jeu la plus rapide
+GUI.KEY_BINDING.GAME_SPEED_NORMAL,,Vitesse de jeu normale
+GUI.KEY_BINDING.PAN_CAMERA_DOWN,,Déplacer caméra vers le bas
+GUI.KEY_BINDING.PAN_CAMERA_LEFT,,Déplacer caméra vers la gauche
+GUI.KEY_BINDING.PAN_CAMERA_RIGHT,,Déplacer caméra vers la droite
+GUI.KEY_BINDING.PAN_CAMERA_UP,,Déplacer caméra vers le haut
+GUI.KEY_BINDING.PAUSE,,Pause
+GUI.KEY_BINDING.QUICKLOAD,,Chargement rapide
+GUI.KEY_BINDING.QUICKSAVE,,Sauvegarde rapide
+GUI.KEY_BINDING.ROTATE,,Rotation
+GUI.KEY_BINDING.ZOOM_IN,,Zoom avant
+GUI.KEY_BINDING.ZOOM_OUT,,Zoom arrière
+GUI.LEAVE_CROP_FALLOW,,Vide (en jachère)
+GUI.LOAD_GAME.TABLE.COPY_SEED,,
+GUI.LOAD_GAME.TABLE.DATE_TIME,,Dernière modification
+GUI.LOAD_GAME.TABLE.DELETE,,Supprimer
+GUI.LOAD_GAME.TABLE.GAME_TIME,,Temps de jeu
+GUI.LOAD_GAME.TABLE.PLAY,,Jouer
+GUI.LOAD_GAME.TABLE.SETTLEMENT_NAME,,Nom
+GUI.LOAD_GAME.TABLE.VERSION,,Version
+GUI.LOAD_GAME.TITLE,,Charger partie
+GUI.MAP_SEED.COPY_TO_CLIPBOARD,,Copier dans le presse papier
+GUI.MAP_SEED_DISPLAY,,Seed actuelle de la carte
+GUI.MECHANISM.SHAFT.HORIZONTAL,,Horizontale
+GUI.MECHANISM.SHAFT.VERTICAL,,Verticale
+GUI.MILITARY.DIALOG.ADD_SQUAD,,Nommer nouvelle escouade
+GUI.MILITARY.DIALOG.CHOOSE_EMBLEM,,Choisir un emblême pour {{squadName}}
+GUI.MILITARY.DIALOG.RENAME_SQUAD,,Renommer escouade
+GUI.MILITARY.DIALOG.SELECT_SQUAD,,Assigner à l'escouade
+GUI.MILITARY.NEW_SQUAD,,Nouvelle escouade
+GUI.MILITARY.ORDERS,,Ordres
+GUI.MILITARY.ORDERS.ATTACK,,Attaquer
+GUI.MILITARY.ORDERS.CANCEL_ATTACK,,Annuler l'attaque
+GUI.MILITARY.ORDERS.GUARD,,Garder
+GUI.MILITARY.ORDERS.RETREAT,,Retraite
+GUI.MILITARY.ORDERS.TRAIN,,S'entrainer
+GUI.MILITARY.REMOVE_SQUAD,,Supprimer l'escouade
+GUI.MILITARY.REMOVE_SQUAD.DIALOG,,Etes vous sûre de vouloir supprimer l'escouade ?
+GUI.MILITARY.SET_FORMATION,,Etablir Formation
+GUI.MILITARY.SET_ORDERS,,Donner un ordre
+GUI.MILITARY.TAB.DWARVES,,Nains militaires
+GUI.MILITARY.TAB.SQUADS,,Escouades militaires
+GUI.MILITARY.TAB.TRAINED_CIVILIANS,,Civils entrainés
+GUI.MINIMAP.LABEL,,Minimap
+GUI.MUSIC_VOLUME,,Musique
+GUI.NEXT_LABEL,,Suivant
+GUI.NON_ROTATABLE_FURNITURE.HINT,,Aucune rotation possible pour ce meuble dans cette version du jeu
+GUI.OK_LABEL,,OK
+GUI.OPTIONS.AUDIO.TITLE,,Options sonores
+GUI.OPTIONS.GAMEPLAY.HIDE_TREES_OBSCURING_SETTLERS,,Rendre les arbres transparents lorsqu'ils cachent les colons.
+GUI.OPTIONS.GAMEPLAY.TITLE,,Options de jeu 
+GUI.OPTIONS.GAMEPLAY.USE_EDGE_SCROLLING,,Faire défiler lorsque le curseur est sur le bord de l'écran
+GUI.OPTIONS.GAMEPLAY.ZOOM_TO_CURSOR,,Zoom au niveau du curseur
+GUI.OPTIONS.GRAPHICS.FULLSCREENMODE.BORDERLESS_FULLSCREEN,,Sans bordures
+GUI.OPTIONS.GRAPHICS.FULLSCREENMODE.EXCLUSIVE_FULLSCREEN,,Plein écran
+GUI.OPTIONS.GRAPHICS.FULLSCREENMODE.WINDOWED,,Fenêtré
+GUI.OPTIONS.GRAPHICS.TITLE,,Options graphiques 
+GUI.OPTIONS.GRAPHICS.WEATHER_EFFECTS,,Effet météo
+GUI.OPTIONS.GRAPHICS.WEATHER_EFFECTS_TOOLTIP,,Affiche les effets météo sur les objets (ex: la neige sur un meuble)
+GUI.OPTIONS.KEY_BINDINGS,,Contrôles
+GUI.OPTIONS.MISC.CRASH_REPORTING_ENABLED,,Opt In For Crash Reports
+GUI.OPTIONS.MISC.TITLE,,Divers
+GUI.OPTIONS.MISC.TUTORIAL_ENABLED,,Débuter la partie avec le tutoriel
+GUI.OPTIONS.RESET,,Réinitialiser
+GUI.OPTIONS.TAB.AUDIO,,Audio
+GUI.OPTIONS.TAB.GAMEPLAY,,Gameplay
+GUI.OPTIONS.TAB.GRAPHICS,,Graphiques
+GUI.OPTIONS.TAB.MISC,,Autres
+GUI.OPTIONS.TAB.TWITCH,,Twitch
+GUI.OPTIONS.TWITCH.ACCOUNT_LABEL,,Compte Twitch
+GUI.OPTIONS.TWITCH.CODE_LABEL,,Code
+GUI.OPTIONS.TWITCH.CONNECTED_LABEL,,Compte Twitch connecté
+GUI.OPTIONS.TWITCH.DISCONNECT,,Déconnecter
+GUI.OPTIONS.TWITCH.DISCONNECTED_LABEL,,Compte Twitch déconnecté
+GUI.OPTIONS.TWITCH.ENABLED,,Intégration Twitch activée
+GUI.OPTIONS.TWITCH.GENERAL_ERROR,,Une erreur est survenue durant la communication avec Twitch
+GUI.OPTIONS.TWITCH.LINK_ACCOUNT_BUTTON,,Lier le compte Twitch
+GUI.OPTIONS.TWITCH.PRIORITISE_SUBSCRIBERS,,Donner la priorité aux abonnés
+GUI.OPTIONS.TWITCH.SUBMIT_BUTTON,,Envoyer
+GUI.OPTIONS.TWITCH.TITLE,,Intégration Twitch
+GUI.OPTIONS.TWITCH.VIEWERS_AS_SETTLERS,,Utilisez les spectateurs comme nom de colons
+GUI.OPTIONS.TWITCH.VIEWERS_LABEL,,{{numViewers}} spectateurs
+GUI.ORDERS.CHOP_WOOD,,Couper
+GUI.ORDERS.CLEAR_GROUND,,Arracher
+GUI.ORDERS.DIG_CHANNELS,,Irrigation
+GUI.ORDERS.DIG_CHANNELS.TOOLTIP,,Cet ordre est utilisé pour creuser les canaux dans le sol
+GUI.ORDERS.EXTINGUISH_FLAMES,,Eteindre les flammes
+GUI.ORDERS.EXTINGUISH_FLAMES.TOOLTIP,,Cet ordre est utilisé pour indiquer les flammes à éteindre.
+GUI.ORDERS.HARVEST_PLANTS,,Récolter
+GUI.ORDERS.HUNT,,Chasser
+GUI.ORDERS.HUNT.TOOLTIP,,Cet ordre est utilisé pour selectionner un animal à chasser.
+GUI.ORDERS.MINE,,Miner
+GUI.ORDERS_LABEL,,Ordres 
+GUI.PLACE_BRIDGE.HINT,,Un pont doit couvrir les deux côtés de la rivière et avoir au moins 3x3 tuiles de taille
+GUI.POWER_LABEL,,Energie & Eau
+GUI.POWER_WATER_INFO,,Les {{FURNITURE.WINDMILL.PLURAL}} {{drawable|tooltip_icon_windmill}} et les {{FURNITURE.WATERWHEEL.PLURAL}} {{drawable|tooltip_icon_waterwheel}} sont connectés à des arbres de transmissions {{drawable|tooltip_icon_power}}{{\n}}Les arbres de transmissions {{drawable|tooltip_icon_power}} alimente les {{FURNITURE.WATER_PUMP.PLURAL}} {{drawable|tooltip_icon_pump}} et les mobiliers nécessitant de la puissance.{{\n}} Les{{FURNITURE.WATER_PUMP.PLURAL}} {{drawable|tooltip_icon_pump}} et les canaux d'irrigation {{drawable|tooltip_icon_irrigation}} sont connectés aux {{PRODUCT.STONE.PIPE.PLURAL}} {{drawable|tooltip_icon_pipes}}
+GUI.PRIORITY_LABEL,,Priorité
+GUI.PRODUCTION_EXPORT.CHOOSE_ITEM_TYPE,,Choisir l'objet à produire
+GUI.PRODUCTION_EXPORT.LIMIT.REACHED,,
+GUI.PRODUCTION_IMPORT.CHOOSE_ITEM_TYPE,,Choisir l'objet à déposer
+GUI.REMOVE_LABEL,,Retirer
+GUI.REMOVE_TILES,,Retirer des cases
+GUI.RESOURCE_MANAGEMENT.ALL_OF,,Les {{item}}
+GUI.RESOURCE_MANAGEMENT.AVAILABLE,,Disponible
+GUI.RESOURCE_MANAGEMENT.AVAILABLE_OF_TOTAL,,{{available}} / {{total}} Disponible
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.CONTENTS_TO_BE_DUMPED,,{{item}} a son contenu vidé par
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.CONTENTS_TO_BE_DUMPED.PLURAL,,{{item}} ont leurs contenus vidé par
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.DUE_TO_BE_HAULED,,{{item}} doit être transporté
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.DUE_TO_BE_HAULED.PLURAL,,{{item}} doivent être transportés
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.EQUIPPED,,{{item}} est équipé par
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.EQUIPPED.PLURAL,,{{item}} sont équipés par
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.FOOD_ALLOCATION,,{{item}} est alloué à
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.FOOD_ALLOCATION.PLURAL,,{{item}} sont alloués à 
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.HAULING,,{{item}} est transporté par
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.HAULING.PLURAL,,{{item}} sont transportés par
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.HELD_IN_INVENTORY,,{{item}} est dans l'inventaire de
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.HELD_IN_INVENTORY.PLURAL,,{{item}} sont dans les inventaires de 
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.ON_FIRE,,{{item}} est en feu
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.ON_FIRE.PLURAL,,{{item}} sont en feu
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.PLACED_FOR_CONSTRUCTION,,{{item}} est entrain d'être placé pour la construction
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.PLACED_FOR_CONSTRUCTION.PLURAL,,{{item}} sont entrain d'être placés pour la construction
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.PRODUCTION_IMPORT,,{{item}} est sur la pallet d'importation
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.PRODUCTION_IMPORT.PLURAL,,{{item}} sont sur les palettes d'importations
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.PRODUCTION_OUTPUT,,
+GUI.RESOURCE_MANAGEMENT.ITEM_ALLOCATION_PURPOSE.PRODUCTION_OUTPUT.PLURAL,,
+GUI.RESOURCE_MANAGEMENT.QUANTIFIED_ITEM,,{{quantity}} {{item}}
+GUI.RESOURCE_MANAGEMENT.SEARCH,,Rechercher
+GUI.RESOURCE_MANAGEMENT.SORT_BY,,Trier par
+GUI.RESOURCE_MANAGEMENT.TITLE,,Ressources
+GUI.RESOURCE_MANAGEMENT.TOTAL,,Total
+GUI.RESOURCE_MANAGEMENT.UNALLOCATED_LABEL,,Disponible: {{count}}
+GUI.ROOFING.ADD,,Ajouter
+GUI.ROOMS_LABEL,,Pièces
+GUI.ROTATE_FURNITURE.HINT,,Appuyez sur (R) pour pivoter les meubles
+GUI.SAVING_PROMPT,,Sauvegarde en cours...
+GUI.SELECT_WEAPON.LABEL,,Sélectionner une arme
+GUI.SETTINGS.LABEL,,Paramêtres
+GUI.SETTLER_MANAGEMENT.CHOOSE_ARMOUR,,Choisir une armure
+GUI.SETTLER_MANAGEMENT.CHOOSE_SHIELD,,Choisir un bouclier
+GUI.SETTLER_MANAGEMENT.CHOOSE_WEAPON,,Choisir une arme
+GUI.SETTLER_MANAGEMENT.HAPPINESS,,Bonheur {{happinessValue}}
+GUI.SETTLER_MANAGEMENT.IMMIGRATION,,Immigration
+GUI.SETTLER_MANAGEMENT.MAIN_HAND.STATUS,,La main dominante ne peut être utilisée. {{status}}
+GUI.SETTLER_MANAGEMENT.OFF_HAND.STATUS,,La main non dominante ne peut être utilisée. {{status}}
+GUI.SETTLER_MANAGEMENT.OFF_HAND.TWO_HANDED_WEAPON,,Le/La/L' {{weaponName}} nécessite deux mains pour être utilisées
+GUI.SETTLER_MANAGEMENT.POPULATION_STATISTICS,,Population Civile {{civilianCount}} (Lits Civils {{civilianBedCount}}) - Population Militaire {{militaryCount}} (Lits Militaires {{militaryBedCount}}) - Population Totale {{populationCount}}
+GUI.SETTLER_MANAGEMENT.PROFESSION.CIVILIAN,,Civil
+GUI.SETTLER_MANAGEMENT.PROFESSION.MILITARY,,Militaire
+GUI.SETTLER_MANAGEMENT.PROFESSION.VILLAGER,,Villageois
+GUI.SETTLER_MANAGEMENT.SEARCH,,Rechercher
+GUI.SETTLER_MANAGEMENT.SORT.HAPPINESS,,Bonheur
+GUI.SETTLER_MANAGEMENT.SORT.MILITARY_CIVILIAN,,Militaire/Civil
+GUI.SETTLER_MANAGEMENT.SORT.NAME,,Nom
+GUI.SETTLER_MANAGEMENT.SORT.SKILL_LEVEL,,Niveau compétence
+GUI.SETTLER_MANAGEMENT.SORT_BY,,Trier par
+GUI.SETTLER_MANAGEMENT.TITLE,,Les colons
+GUI.SOUND_EFFECT_VOLUME,,Effets Sonores
+GUI.UI_SCALE,,Dimension de l'interface:
+GUI.VIEW_MODE.DEFAULT,,Vue par défaut
+GUI.VIEW_MODE.JOB_PRIORITY,,Vue des priorités
+GUI.VIEW_MODE.MECHANISMS,,Vue de l'énergie
+GUI.VIEW_MODE.PIPING,,Vue des tuyaux
+GUI.VIEW_MODE.ROOFING_INFO,,Vue des plafonds
+GUI.VIEW_ROADMAP,,Voir la planification du développement
+GUI.YEAR_LABEL,,Année {{year}}
+HAPPINESS_MODIFIER.ALCOHOL_WITHDRAWAL,,Devient sobre
+HAPPINESS_MODIFIER.ATE_NICELY_PREPARED_FOOD,,A mangé un repas cuisiné
+HAPPINESS_MODIFIER.BLEEDING,,Saigne abondamment
+HAPPINESS_MODIFIER.CARRIED_DEAD_BODY,,A porté un cadavre
+HAPPINESS_MODIFIER.CAUGHT_IN_RAIN,,Piégé sous la pluie
+HAPPINESS_MODIFIER.DRANK_ALCOHOL,,Sous l'effet de l'alcool
+HAPPINESS_MODIFIER.DRANK_FROM_RIVER,,A bu de l'eau de rivière
+HAPPINESS_MODIFIER.DYING_OF_HUNGER,,Affamé
+HAPPINESS_MODIFIER.DYING_OF_THIRST,,Déshydraté de façon critique
+HAPPINESS_MODIFIER.HAD_A_TANTRUM,,A un accès de colère
+HAPPINESS_MODIFIER.NEW_SETTLEMENT_OPTIMISM,,Optimiste quant à la nouvelle colonisation
+HAPPINESS_MODIFIER.ON_FIRE,,A été gravement brulé
+HAPPINESS_MODIFIER.POISONED,,Empoisonné
+HAPPINESS_MODIFIER.SAW_DEAD_BODY,,J'ai vu un cadavre
+HAPPINESS_MODIFIER.SLEEPING_IN_RAIN,,A dormi sous la pluie
+HAPPINESS_MODIFIER.SLEEPING_IN_SNOW,,A dormi dans la neige
+HAPPINESS_MODIFIER.SLEPT_IN_BED,,A dormi dans un lit confortable
+HAPPINESS_MODIFIER.SLEPT_ON_GROUND,,A dormi sur sol rugueux
+HAPPINESS_MODIFIER.SLEPT_OUTSIDE,,A dormi sous les étoiles
+HAPPINESS_MODIFIER.TITLE,,Bonheur:
+HAPPINESS_MODIFIER.VERY_HUNGRY,,Très faim
+HAPPINESS_MODIFIER.VERY_THIRSTY,,Très soif
+HAPPINESS_MODIFIER.VERY_TIRED,,Extrêmement fatigué
+HAPPINESS_MODIFIER.WORKED_IN_ENCLOSED_ROOM,,A travaillé dans un endroit éxigu
+HAPPINESS_MODIFIER.WORKED_IN_RAIN,,Travaille sous la pluie
+HAULING.ASSIGNMENT.DESCRIPTION,,{{quantity}} affecté à {{targetDescription}}
+HINT.BUILD_PIPES.1,,Vous pouvez utiliser cette vue pour poser les tuyaux entre l'arrivée et la sortie du liquide comme les canaux d'irrigation.
+HINT.BUILD_PIPES.2,,"Ils sont placés sous le sol, donc faites en sorte que vos colons est accès à la case par le côté."
+HINT.BUILD_PIPES.3,,Les mobiliers avec une entrée ou sortie de liquide affichent une icône bleue ou verte si ils ont une entrée ou une sortie vers le réseau.
+HINT.BUILD_POWER.1,,Vous pouvez utiliser cette vue pour relier les constructions qui requierent de l'énergie avec des machineries construite avec des {{PRODUCT.STONE.GEAR.PLURAL}} et les arbres de transmissions.
+HINT.BUILD_POWER.2,,"Ils sont placés sous le sol, donc faites en sorte que vos colons est accès à la case par le côté."
+HINT.BUILD_POWER.3,,Les constructions qui nécessitent ou produisent de l'énergie vont afficher une icône rouge ou verte indiquant si ils ont une entrée ou une sortie vers le réseau.
+HINT.BUILD_ROOFING.1,,"Cette vue vous permet de voir quelles cases sont à l'extérieur sans avoir de toits au dessus (bleu clair), et lesquelles ont un toit construit au dessus (marron foncé)."
+HINT.BUILD_ROOFING.2,,"Vous pouvez utilisé les options {{GUI.ROOFING.ADD}} et {{GUI.CANCEL_LABEL}} pour ajouter un toit à construire, et {{GUI.DECONSTRUCT_LABEL}} pour retirer un toit existant."
+HINT.BUILD_ROOFING.3,,Un plafond peut uniquement être batit dans la limite de 3 cases d'un mur ou d'un {{FURNITURE.PILLAR}}.
+HINT.BUTTON.BEGIN_TUTORIAL,,Débuter le tutoriel
+HINT.BUTTON.DISABLE_ALL,,Désactiver tous les conseils
+HINT.BUTTON.DISMISS,,Rejeter
+HINT.BUTTON.HINTS_ONLY,,Aides suivantes
+HINT.BUTTON.NEXT,,Suivant
+HINT.OPEN_PRIORITY_MENU.1,,Vous pouvez utilisé ce menu pour changer les priorités des professions et des tâches. Les professions avec la plus haute priorité seront assignées avant celle ayant la plus basse.
+HINT.OPEN_PRIORITY_MENU.2,,"Lorsque le menu Priorité est ouvert, les icônes de priorité sont affichées dans le monde du jeu là où 'il y a un travail ou une tâche à effectuer, ou lorsqu'une pièce ou un meuble peuvent créer des tâches à l'avenir."
+HINT.TOOL_DEPLETED.AXE1,,"Votre colonie n'a plus de {{TOOL.AXE}} disponible. Vous n'êtes plus en capacité de couper des arbres,"
+HINT.TOOL_DEPLETED.AXE2,,"Des hâches peuvent être produites dans la {{FURNITURE.FORGE}}. Si vous n'avait pas une {{FURNITURE.FORGE}} construite et fonctionnelle, vous aurez besoin de détruire un {{FURNITURE.WOODCUTTERS_BENCH}}."
+HINT.TOOL_DEPLETED.CHISEL1,,Votre colonie n'a plus de {TOOL.CHISEL}} disponible. C'est nécessaire pour produire des objets en pierres.
+HINT.TOOL_DEPLETED.CHISEL2,,"Des burins peuvent être produit dans la {{FURNITURE.FORGE}}. Si vous n'avait pas une {{FURNITURE.FORGE}} construite et fonctionnelle, vous aurez besoin de détruire un {{FURNITURE.WOODCUTTERS_BENCH}}."
+HINT.TOOL_DEPLETED.PLANE1,,Votre colonie n'a plus de {{TOOL.PLANE}} disponible. C'est nécessaire à la production d'objets en bois.
+HINT.TOOL_DEPLETED.PLANE2,,Des rabots peuvent être produit dans l' {{FURNITURE.CARPENTRY_WORKBENCH}} à partir d'une {{RESOURCE.PLANKS.NOUN}}.
+HINT.TOOL_DEPLETED.SAW1,,Votre colonie n'a plus de {{TOOL.SAW}} disponible. C'est requis pour construire un {{FURNITURE.WOODCUTTERS_BENCH}} ou un {{FURNITURE.CARPENTRY_WORKBENCH}}.
+HINT.TOOL_DEPLETED.SAW2,,"Plus de scies peuvent être fabriquées à la {{FURNITURE.FORGE}}.Si vous n'avez pas de {{FURNITURE.FORGE}} opérationnelle, vous devez retirer un {{FURNITURE.WOODCUTTERS_BENCH}} ou un {{FURNITURE.CARPENTRY_WORKBENCH}}."
+HINT.WEAPON_SELECTION.1,,Cette vue permet de sélectionner quel arme sera conservée dans l'inventaire des colons en cas de combat.
+HINT.WEAPON_SELECTION.2,,C'est fortement recommandé d'assigné des armes à distance comme un {{WEAPON.BOW}} ou une {{WEAPON.CROSSBOW}}aux colons ayant l'emploi {{PROFESSION.HUNTER}}.
+HINT.WEAPON_SELECTION.3,,Les armes que vous n'avez pas de disponible sont affichées en rouge.
+HINT.WELCOME.NEXT_STEPS,,"Cliquez sur ""Tutoriel"" pour être guidé dans les notions de base du jeu, et sur ""Aides suivantes"" pour ne pas suivre le didacticiel mais recevoir des informations au fur et à mesure que vous jouez, ou enfin sur ""Désactiver tous les conseils"" pour que ces messages ne s'affichent plus."
+HINT.WELCOME.PRE_SPAWN,,"Démarrer une partie en selectionnant l'emplacement de départ sur la carte proche d'une rivière et avec de l'espace, puis cliquez sur '{{GUI.EMBARK.START}}' ."
+HUMANOID.BROKEN.DESCRIPTION,,"{{name}}, {{madness.adjective}} {{race.noun}}"
+HUMANOID.DESCRIPTION,,"{{name}}, {{profession.noun}} {{race.adjective}}"
+INGREDIENT.DOUGH,,Pâte
+INGREDIENT.FLOUR,,Farine
+INGREDIENT.LOAF,,Miche de pain
+INGREDIENT.LOAF.PLURAL,,Miches de pain
+INGREDIENT.MALT.SACK.NOUN,,Malt
+INGREDIENT.MALT.SACK.TOOLTIP,,Ce produit nécessite d'être moulu avant qu'il soit utilisé pour le brassage.
+INGREDIENT.MILLED.MALT.SACK.NOUN,,Malt moulu
+INGREDIENT.MILLED.MALT.SACK.TOOLTIP,,C'est mélangé avec de l'eau dans le {{FURNITURE.MASH_TUN}} pour produire du {{LIQUID.WORT}}.
+INGREDIENT.MUSHROOM.SPAWN.NOUN,,Champignonnière
+INGREDIENT.MUSHROOM.SPAWN.PLURAL,,Champignonnière
+INGREDIENT.MUSHROOM.SPAWN.TOOLTIP,,"Également connu sous le nom de mycélium, cela peut être considéré comme des «graines» à partir desquelles on peut cultiver des champignons dans une {{ROOMS.MUSHROOM_FARM}}."
+INGREDIENT.SEEDS.NOUN,,Graine de
+INGREDIENT.SEEDS.PLURAL,,Graines de
+INGREDIENT.SEEDS.TOOLTIP,,Les graines du bon type sont nécessaires pour la plantation dans un {{ROOMS.FARM}}. Ils doivent également être disponibles dans le grenier {{STOCKPILE.GRANARY}}.
+INGREDIENT.VEGETABLE.CRATE.NOUN,,légume (caisse)
+INGREDIENT.VEGETABLE.CRATE.PLURAL,,légumes (caisses)
+INGREDIENT.VEGETABLE.SACK.NOUN,,légume (sac)
+INGREDIENT.VEGETABLE.SACK.PLURAL,,légumes (sac)
+INVENTORY.CONTAINS.LABEL,,Inventaire:
+ITEM.AVAILABILITY.DESCRIPTION,,{{quantity}} {{materialType.adjective}} {{itemType.noun_or_plural}} disponible
+ITEM.DESCRIPTION,,{{quantity_if_multiple}}{{itemType.noun_or_plural}} {{materialType.adjective}}
+ITEM.INGREDIENT.DESCRIPTION,,{{quantity_if_multiple}}{{materialType.noun_or_plural}}
+ITEM.NONE_SELECTED,,Non selectionné
+ITEM.QUALITY.PREFIX.AWFUL.ADJECTIVE,,Très mauvais
+ITEM.QUALITY.PREFIX.AWFUL.TOOLTIP,,"Cet objet est vraiment mal fait, difficile à utiliser et ne pourrait pas être pire."
+ITEM.QUALITY.PREFIX.MASTERWORK.ADJECTIVE,,Chef-d'oeuvre
+ITEM.QUALITY.PREFIX.MASTERWORK.TOOLTIP,,Cet objet a clairement été conçu par un Maître artisan. Il est idéal sous tout les angles.
+ITEM.QUALITY.PREFIX.POOR.ADJECTIVE,,Mauvais
+ITEM.QUALITY.PREFIX.POOR.TOOLTIP,,Cet objet est mal fait et impacte quiconque va l'utiliser.
+ITEM.QUALITY.PREFIX.SUPERIOR.ADJECTIVE,,Supérieur
+ITEM.QUALITY.PREFIX.SUPERIOR.TOOLTIP,,Cet objet a été conçu avec talent. Il semble avoir plus de valeur et être facile à utiliser.
+ITEM_GROUP.FUEL.PLURAL,,Carburant
+ITEM_GROUP.PRODUCT.PLURAL,,Produits
+ITEM_GROUP.RESOURCE.PLURAL,,Ressources
+ITEM_GROUP.TOOL.PLURAL,,Outils
+LANGUAGE.LABEL,,Langue
+LIQUID.BEER.NOUN,,Bière
+LIQUID.BEER.TOOLTIP,,"Adoré par les nains, cette boisson offre un substantiel bonus de bonheur pendant un moment. Le seul problème est qu'ils en auront peut être besoin pour supporter la journée de travail."
+LIQUID.HOPPED_WORT.NOUN,,Moût houblonné
+LIQUID.HOPPED_WORT.TOOLTIP,,C'est l'étape finale de la bière non fermentée avant qu'elle ne soit placée dans un {{FERMENTATION_TANK}} pour produire de la bière buvable.
+LIQUID.WATER.NOUN,,Eau
+LIQUID.WORT.NOUN,,Moût
+LIQUID.WORT.TOOLTIP,,"Il s'agit d'une bière non fermentée, elle nécessite l'ajout de {{VEGETABLE.HOPS}} dans un {{FURNITURE.BREW_KETTLE}} pour l'aromatiser avant qu'elle ne soit fermentée."
+MADNESS.BROKEN.ADJECTIVE,,Mentalement brisé
+MADNESS.BROKEN.TOOLTIP,,Ce colon était si malheureux qu'ils ont été poussés au-delà du point de rupture et ne vont plus travailler ou même manger!
+MATERIAL,,Matériau
+MATERIAL_TYPE,,Sorte
+MATERIAL_TYPE.ANY,,Tous
+MATERIAL_TYPE.CLOTH.ADJECTIVE,,en tissu
+MATERIAL_TYPE.CLOTH.NOUN,,Tissu
+MATERIAL_TYPE.EARTH.ADJECTIVE,,En terre
+MATERIAL_TYPE.EARTH.NOUN,,Terre
+MATERIAL_TYPE.FOODSTUFF.NOUN,,Nourriture
+MATERIAL_TYPE.GEM.NOUN,,Gemme
+MATERIAL_TYPE.METAL.ADJECTIVE,,en métal
+MATERIAL_TYPE.METAL.NOUN,,Métal
+MATERIAL_TYPE.ORE.NOUN,,Minerai
+MATERIAL_TYPE.OTHER.NOUN,,Autre
+MATERIAL_TYPE.ROPE.ADJECTIVE,,de corde
+MATERIAL_TYPE.ROPE.NOUN,,Corde
+MATERIAL_TYPE.SEED.NOUN,,Graine
+MATERIAL_TYPE.SKIN.ADJECTIVE,,
+MATERIAL_TYPE.SKIN.NOUN,,
+MATERIAL_TYPE.STONE.ADJECTIVE,,en pierre
+MATERIAL_TYPE.STONE.NOUN,,Pierre
+MATERIAL_TYPE.VEGETABLE.NOUN,,Légumes
+MATERIAL_TYPE.VITRIOL.ADJECTIVE,,Vitriol de
+MATERIAL_TYPE.VITRIOL.NOUN,,Vitriol
+MATERIAL_TYPE.WOOD.ADJECTIVE,,en bois
+MATERIAL_TYPE.WOOD.NOUN,,Bois
+MEAT.BOAR_MEAT,,Sanglier
+MEAT.CARP_MEAT.NOUN,,Carpe
+MEAT.CARP_MEAT.PLURAL,,Carpes
+MEAT.DEER_MEAT,,Biche
+MEAT.DWARF_FLESH,,Chair de nain
+MEAT.ELEPHANT_MEAT,,Eléphant
+MEAT.FOX_MEAT,,Renard
+MEAT.HORSE_MEAT,,
+MEAT.PERCH_MEAT.NOUN,,Perche
+MEAT.PERCH_MEAT.PLURAL,,Perches
+MEAT.PIKE_MEAT.NOUN,,Brochet
+MEAT.PIKE_MEAT.PLURAL,,Brochets
+MECHANISM.FURNITURE.CONSUMING_POWER,,Fonctionne - consome {{power}} d'énergie.
+MECHANISM.FURNITURE.CRAFTING_STATION_REQUIRES_POWER,,Fonctionne très lentement - pas assez d'énergie
+MECHANISM.FURNITURE.CRAFTING_STATION_REQUIRES_POWER.TOOLTIP,,Cet équipement requiert une connexion à de la puissance mécanique produite par un {{FURNITURE.WINDMILL}} ou une {{FURNITURE.WATERWHEEL}}.
+MECHANISM.FURNITURE.PRODUCING_POWER,,Fonctionne - produit {{power}} d'énergie
+MECHANISM.FURNITURE.REQUIRES_OUTSIDE_PLACEMENT,,Doit être à l'extérieur pour fonctionner correctement
+MECHANISM.FURNITURE.REQUIRES_POWER,,Désactivé - pas assez d'énergie
+MECHANISM.FURNITURE.REQUIRES_POWER.TOOLTIP,,Cet équipement requiert une connexion à de la puissance mécanique produite par un {{FURNITURE.WINDMILL}} ou une {{FURNITURE.WATERWHEEL}}.
+MECHANISM.FURNITURE.REQUIRES_POWER_GRID,,Désactivé - connectez à source de puissance souterraine.
+MECHANISM.FURNITURE.REQUIRES_POWER_GRID.TOOLTIP,,Ce équipement requiert une connection à de la puissance mécanique en souterrain - voir l'option {{GUI.BUILD.POWER}} dans le menu {{GUI.BUILD_LABEL}}.
+MECHANISM.STONE.GEAR.NOUN,,Engrenage assemblé
+MECHANISM.STONE.GEAR.TOOLTIP,,Cette pièce permet de relier les mécanismes dans les 4 directions.
+MECHANISM.WOODEN.SHAFT.NOUN,,Arbre de transmission
+MECHANISM.WOODEN.SHAFT.TOOLTIP,,Un arbre de transmission en bois qui transmet la puissance mécanique dans 2 directions
+MENU.CONTINUE_GAME,,Continuer
+MENU.CREDITS,,Crédits
+MENU.JOIN_DISCORD,,Rejoindre Discord
+MENU.LINK_TWITCH_ACCOUNT,,Lier à Twitch
+MENU.LOAD_GAME,,Charger
+MENU.MODS,,Mods
+MENU.NEW_GAME,,Nouvelle partie
+MENU.OPTIONS,,Options
+MENU.QUIT,,Quitter
+MENU.SAVE_AND_QUIT,,Sauver & Quitter
+MENU.SOURCE_CODE,,
+MENU.TOGGLE_FULLSCREEN,,Plein écran
+METAL.BRONZE.ADJECTIVE,,En bronze
+METAL.BRONZE.NOUN,,Bronze
+METAL.BRONZE.TOOLTIP,,Le bronze est un alliage de cuivre et d'étain. Il est plus dur et beaucoup plus durable que le cuivre seul. (Les alliages n'ont pas encore été mis en œuvre à King sous la montagne)
+METAL.COPPER.ADJECTIVE,,en cuivre
+METAL.COPPER.NOUN,,Cuivre
+METAL.COPPER.TOOLTIP,,"En plus de se présenter naturellement comme {{ORE.NATIVE_COPPER.NOUN}}, il est également facile à éperler à partir de {{ORE.MALACHITE.NOUN}} minerai. Le cuivre a de nombreuses utilisations, en particulier dans la monnaie, bien qu'il ne soit pas assez difficile de créer des armes efficaces."
+METAL.COPPER_PATINA.ADJECTIVE,,en cuivre
+METAL.COPPER_PATINA.NOUN,,Cuivre (patiné)
+METAL.COPPER_PATINA.TOOLTIP,,{{METAL.COPPER.TOOLTIP}}
+METAL.DURALUMINIUM.ADJECTIVE,,
+METAL.DURALUMINIUM.NOUN,,
+METAL.DURALUMINIUM.TOOLTIP,,
+METAL.GOLD.ADJECTIVE,,en or
+METAL.GOLD.NOUN,,Or
+METAL.GOLD.TOOLTIP,,"Le roi des métaux. Bien qu'il ne soit pas le plus rare ou le plus précieux, l'or est le métal le plus convoité par la plupart des races — en particulier les nains."
+METAL.IRON.ADJECTIVE,,En fer
+METAL.IRON.NOUN,,Fer
+METAL.IRON.TOOLTIP,,C'est une armée pauvre qui n'a pas accès au fer. Les métallurgistes nains connaissent les secrets de l'opération dans {{METAL.STEEL.NOUN}}.
+METAL.PLATINUM.ADJECTIVE,,En platine
+METAL.PLATINUM.NOUN,,Platine
+METAL.PLATINUM.TOOLTIP,,Un métal argenté très résistant à la corrosion. Le platine est plus rare et donc plus précieux que {{METAL.GOLD.NOUN}}.
+METAL.RUSTED_IRON.ADJECTIVE,,Fer rouillé
+METAL.RUSTED_IRON.NOUN,,Rouille
+METAL.RUSTED_IRON.TOOLTIP,,Le fer rouille quand il est exposé pendant un longue période à la pluie. Il peut éventuellement totalement être détruit.
+METAL.SILVER.ADJECTIVE,,En argent
+METAL.SILVER.NOUN,,Argent
+METAL.SILVER.TOOLTIP,,"Comme {{METAL.GOLD.NOUN}}, l'argent est souvent utilisé pour la monnaie et comme barres solides pour le commerce de la richesse."
+METAL.STEEL.ADJECTIVE,,En acier
+METAL.STEEL.NOUN,,Acier
+METAL.STEEL.TOOLTIP,,"Bien plus fort que {{METAL.IRON.NOUN}} qui fait des armes et des outils supérieurs, seuls les nains connaissent le secret de la création de l'acier."
+METAL.TIN.ADJECTIVE,,Boîte
+METAL.TIN.NOUN,,Étain
+METAL.TIN.TOOLTIP,,L'étain peut être fondu à partir de {{ORE.CASSITERITE.NOUN}} et allié avec {{METAL.COPPER.NOUN}} pour produire {{METAL.BRONZE.NOUN}}. (Les alliages n'ont pas encore été mis en œuvre à King sous la montagne)
+MILITARY.FORMATION.COLUMN,,Colonne - Etroite
+MILITARY.FORMATION.COLUMN_DOUBLE,,Colonne - Large
+MILITARY.FORMATION.COLUMN_SINGLE,,Colonne
+MILITARY.FORMATION.GRID,,Grille - Etroite
+MILITARY.FORMATION.GRID_DOUBLE,,Grille - Large
+MILITARY.FORMATION.GRID_SINGLE,,Grille
+MILITARY.FORMATION.LINE,,Ligne - Etroite
+MILITARY.FORMATION.LINE_DOUBLE,,Ligne - Large
+MILITARY.FORMATION.LINE_SINGLE,,Ligne
+MILITARY.SQUAD.DEFAULT_NAME,,Escouade
+MILITARY.SQUAD.ORDER_DESCRIPTION.COMBAT,,En combat
+MILITARY.SQUAD.ORDER_DESCRIPTION.GUARDING,,Protège
+MILITARY.SQUAD.ORDER_DESCRIPTION.OFF_DUTY,,Hors service
+MILITARY.SQUAD.ORDER_DESCRIPTION.RETREATING,,Fuir
+MILITARY.SQUAD.ORDER_DESCRIPTION.TRAINING,,Entrainement
+MILITARY.SQUAD.SHIFT.DAYTIME,,Service de jour
+MILITARY.SQUAD.SHIFT.NIGHTTIME,,Service de nuit
+MODS.APPLY,,Appliquer
+MODS.BUTTON.BROWSE,,Recherher les mods
+MODS.BUTTON.REFRESH,,Rafraichir
+MODS.COMPATIBILITY.COMPATIBLE,,Oui
+MODS.COMPATIBILITY.INCOMPATIBLE,,Non
+MODS.COMPATIBILITY.UNKNOWN,,Inconnu
+MODS.EMAIL_LOGIN.CHECK_EMAIL,,"Vérifiez vos email pour le code d'authentification. Si vous n'avez pas reçu d'email, vérifiez votre dossier de spam."
+MODS.EMAIL_LOGIN.CODE_LABEL,,Code à 6 chiffres:
+MODS.EMAIL_LOGIN.EMAIL,,Entrez votre adresse email pour recevoir un code d'authentification.
+MODS.EMAIL_LOGIN.EMAIL_LABEL,,Email:
+MODS.EMAIL_LOGIN.ERROR,,"Une erreur est survenue durant la communication avec le serveur. Soit le serveur est indisponible, l'adresse mail est invalide ou vous nêtes pas connecté à internet."
+MODS.EMAIL_LOGIN.INFO,,"Pour télécharger et mettre à jours les mods, vous devez vous connecter à la plateforme Mod.io "
+MODS.EMAIL_LOGIN.REQUEST_CODE,,Demander un code
+MODS.EMAIL_LOGIN.SUBMIT_CODE,,Envoyer
+MODS.INCOMPATIBLE_VERSION_DESCRIPTION,,La version du jeu ({{modGameVersion}}) du mod est incompatible avec la version actuelle du jeu ({{gameVersion}})
+MODS.MISSING_HOMEPAGE_URL,,Les auteur(s) de ce mod n'ont pas inclus de site web à visiter.
+MODS.MISSING_MODS_DIALOG_TEXT,,"Ce fichier de sauvegarde a été utilisé pour la dernière fois alors que les mods suivants étaient actifs. Ces mods sont maintenant manquants ou désactivés, de sorte que l'enregistrement risque de ne pas se charger correctement."
+MODS.MISSING_MODS_SAVE_EXCEPTION_DIALOG_TEXT,,"Le fichier de sauvegarde n'a pas pu être chargé car il est incompatible avec cette version du jeu, ou parce que certains mods ont été désactivés ou supprimés depuis le dernier chargement de cette sauvegarde. Les mods suivants étaient attendus mais ne sont plus actifs:"
+MODS.SYNC_IN_PROGRESS,,Veuillez patienter le temps que la liste des mods soit mise à jour. Cela peut prendre quelques minutes
+MODS.TABLE.COMPATIBILITY,,Compatible
+MODS.TABLE.ENABLED,,Activé
+MODS.TABLE.NAME,,Nom
+MODS.TABLE.ORDERING,,Réorganiser
+MODS.TABLE.VERSION,,Version
+MUSHROOM.DESCRIPTION,,{{materialType.noun}}
+NEEDS.DRINK,,Soif
+NEEDS.FOOD,,Faim
+NEEDS.SLEEP,,Fatigue
+NOTIFICATION.AREA_REVEALED.DESCRIPTION,,Vos mineurs ont découvert une nouvelle zone!
+NOTIFICATION.AREA_REVEALED.TITLE,,Exploration
+NOTIFICATION.DEATH.DESCRIPTION,,"{{character}}, est mort de {{reason}}."
+NOTIFICATION.DEATH.KILLED_BY_DESCRIPTION,,Tué par {{killer}}
+NOTIFICATION.DEATH.SHORT_DESCRIPTION,,Mort de {{reason}}
+NOTIFICATION.DEATH.TITLE,,Décès d'un colon
+NOTIFICATION.FIRE_STARTED.DESCRIPTION,,Un incendie s'est déclaré dans votre colonie!
+NOTIFICATION.FIRE_STARTED.TITLE,,Feu!
+NOTIFICATION.FISH_EXHAUSTED.DESCRIPTION,,Vous avez sur-pêcher dans la rivière à un tel point qu'il n'y a plus de poissons restant. Vous devez attendre jusqu'à ce que les poissons reviennent à printemps prochain.
+NOTIFICATION.FISH_EXHAUSTED.TITLE,,Plus de poissons.
+NOTIFICATION.GAME_OVER.DESCRIPTION,,Toutes les bonnes choses doivent prendre fin. Votre colonie est abandonnée.
+NOTIFICATION.GAME_OVER.TITLE,,Fin de la partie
+NOTIFICATION.IMMIGRANTS_ARRIVED.DESCRIPTION,,La prospérité de votre colonie a attiré un certain nombre de nouveaux immigrants pour augmenter votre population.
+NOTIFICATION.IMMIGRANTS_ARRIVED.TITLE,,Immigration
+NOTIFICATION.INVASION.DESCRIPTION,,Un groupe de pilleurs orcs est arrivé. Préparez vous! Ils attequeront après s'être préparé pendant un moment.
+NOTIFICATION.INVASION.TITLE,,Vous êtes envahis !
+NOTIFICATION.MINING_COLLAPSE.DESCRIPTION,,Une zone s'est effondrée en raison d'un manque de piliers et de supports.
+NOTIFICATION.MINING_COLLAPSE.TITLE,,Effondrement de l'exploitation minière
+NOTIFICATION.OXIDISATION_DESTRUCTION.DESCRIPTION,,Un objet ou une pièces d'équipement a été détruite dûe à une exposition prolongée à la pluie.\nCertains matériaux comme le fer ou l'acier ne doivent pas être laissé à l'extérieur durant une longue période.
+NOTIFICATION.OXIDISATION_DESTRUCTION.TITLE,,Rouillé
+NOTIFICATION.PIRATE_INVASION.DESCRIPTION,,
+NOTIFICATION.PIRATE_INVASION.TITLE,,
+NOTIFICATION.ROOFING_COLLAPSE.DESCRIPTION,,Un plafond s'est effondré dû à un manque de pilliers et de supports
+NOTIFICATION.ROOFING_COLLAPSE.TITLE,,Plafond effondré
+NOTIFICATION.SETTLER_MENTAL_BREAK.DESCRIPTION,,La difficulté éprouvante s'est révélée trop difficile à gérer pour {{character}}.
+NOTIFICATION.SETTLER_MENTAL_BREAK.TITLE,,BURN OUT !
+NOTIFICATION.SETTLER_STUCK.DESCRIPTION,,
+NOTIFICATION.SETTLER_STUCK.TITLE,,
+NOTIFICATION.SETTLER_TANTRUM.DESCRIPTION,,{{character}} est tellement malheureux qu'il pique une crise !
+NOTIFICATION.SETTLER_TANTRUM.TITLE,,Pique une crise !
+NOTIFICATION.TRADER_ARRIVED.DESCRIPTION,,Ils se dirigent vers votre zone de commerce pour acheter et vendre des biens.
+NOTIFICATION.TRADER_ARRIVED.TITLE,,Les marchands sont arrivés !
+NOTIFICATION.TRADER_ARRIVED_NO_DEPOT.DESCRIPTION,,Vous devez construire une zone de commerce pour acheter vendre des biens.
+NOTIFICATION.TRADER_ARRIVED_NO_DEPOT.TITLE,,Les marchands sont arrivés !
+ORE.BAUXITE.ADJECTIVE,,Bauxite
+ORE.BAUXITE.NOUN,,Bauxite
+ORE.BAUXITE.TOOLTIP,,"La bauxite est le minerai primaire de l'aluminium. Malheureusement, un moyen de production d'aluminium n'a pas encore été découvert."
+ORE.BITUMINOUS_COAL.ADJECTIVE,,Charbon bitumineux
+ORE.BITUMINOUS_COAL.NOUN,,Charbon bitumineux
+ORE.BITUMINOUS_COAL.TOOLTIP,,Cela peut être converti en {{ORE.COKE.NOUN}} à l'aide d'un {{FURNITURE.COKE_OVEN}}.
+ORE.CASSITERITE.ADJECTIVE,,Cassitérite
+ORE.CASSITERITE.NOUN,,Cassitérite
+ORE.CASSITERITE.TOOLTIP,,Minerai pouvant être fondu pour produire {{METAL.TIN.NOUN}}.
+ORE.CHARCOAL.ADJECTIVE,,Charbon de bois
+ORE.CHARCOAL.NOUN,,Charbon de bois
+ORE.CHARCOAL.TOOLTIP,,Le {{FUEL.SACK}} est produit à partir de {{RESOURCE.LOGS.PLURAL}} de bois.
+ORE.CHRYSOCOLLA.ADJECTIVE,,Chrysocolla
+ORE.CHRYSOCOLLA.NOUN,,Chrysocolla
+ORE.CHRYSOCOLLA.TOOLTIP,,"Souvent confondu avec la turquoise, c'est en fait un minerai de {{METAL.COPPER}}."
+ORE.COKE.ADJECTIVE,,Charboneux
+ORE.COKE.NOUN,,Charbon
+ORE.COKE.TOOLTIP,,Une forme raffinée de {{ORE.BITUMINOUS_COAL}} qui peut être utilisée comme {{FUEL.SACK}}.
+ORE.GALENA.ADJECTIVE,,Galena
+ORE.GALENA.NOUN,,Galène
+ORE.GALENA.TOOLTIP,,Minerai pouvant être fondu pour produire {{METAL.SILVER}}.
+ORE.HEMATITE.ADJECTIVE,,Hématite
+ORE.HEMATITE.NOUN,,Hématite
+ORE.HEMATITE.TOOLTIP,,Minerai pouvant être fondu pour produire {{METAL.IRON}}.
+ORE.ILMENITE.ADJECTIVE,,Ilménite
+ORE.ILMENITE.NOUN,,Ilménite
+ORE.ILMENITE.TOOLTIP,,"L'ilménite est le minerai primaire du titane. Malheureusement, un moyen de production de titane reste à découvrir."
+ORE.MALACHITE.ADJECTIVE,,Malachite
+ORE.MALACHITE.NOUN,,Malachite
+ORE.MALACHITE.TOOLTIP,,Minerai pouvant être fondu pour produire {{METAL.COPPER}}.
+ORE.NATIVE_COPPER.ADJECTIVE,,Cuivre natif
+ORE.NATIVE_COPPER.NOUN,,Cuivre
+ORE.NATIVE_COPPER.TOOLTIP,,{{METAL.COPPER}} naturel qui doit être fondu avant utilisation.
+ORE.NATIVE_GOLD.ADJECTIVE,,Or natif
+ORE.NATIVE_GOLD.NOUN,,Or
+ORE.NATIVE_GOLD.TOOLTIP,,{{METAL.GOLD}} naturel qui doit être fondu avant utilisation.
+ORE.NATIVE_PLATINUM.ADJECTIVE,,Platine natif
+ORE.NATIVE_PLATINUM.NOUN,,Platine natif
+ORE.NATIVE_PLATINUM.TOOLTIP,,{{METAL.PLATINUM}} naturel qui doit être fondu avant utilisation.
+ORE.NATIVE_SILVER.ADJECTIVE,,Argent natif
+ORE.NATIVE_SILVER.NOUN,,Argent
+ORE.NATIVE_SILVER.TOOLTIP,,{{METAL.SILVER}} naturel qui doit être fondu avant utilisation.
+ORE.POLLUCITE.ADJECTIVE,,Pollucite
+ORE.POLLUCITE.NOUN,,Pollucite
+ORE.POLLUCITE.TOOLTIP,,"La pollucite est un minerai de Césium, qui est actuellement trop dangereux pour produire. Les métallurgistes nains particulièrement fous essaient actuellement de trouver une méthode de production fiable."
+ORE.PYRITE.ADJECTIVE,,L'or de l'imbécile
+ORE.PYRITE.NOUN,,L'or de l'imbécile
+ORE.PYRITE.TOOLTIP,,"Aussi connu sous le nom de Pyrite, son aspect jaune pâle fait que certains la confondent avec de l'or. Il a plusieurs utilisations lorsqu'il est écrasé, mais il faut faire attention car il étincelle lorsqu'il est frappé."
+ORE.THORIUM.ADJECTIVE,,Thorium
+ORE.THORIUM.NOUN,,Thorium
+ORE.THORIUM.TOOLTIP,,Un minerai métallique argenté qui devient noir lorsqu'il est exposé à l'air. Il fait étrangement chaud au toucher.
+ORE.WOLFRAMITE.ADJECTIVE,,Wolframite
+ORE.WOLFRAMITE.NOUN,,Wolframite
+ORE.WOLFRAMITE.TOOLTIP,,Un minerai métallique qui complique la fusion de l'étain. Il a un point de fusion trop élevé pour être fondu avec des processus normaux.
+OTHER.ASH,,Cendres carbonnisée
+OTHER.BRICK.NOUN,,Brique
+OTHER.CLAY_SOIL.NOUN,,Argile
+OTHER.GRASS.NOUN,,Herbe
+PRIORITY.DISABLED,,Désactivé
+PRIORITY.HIGHER,,Haute priorité
+PRIORITY.HIGHEST,,La plus Haute priorité
+PRIORITY.LOWER,,Basse priorité
+PRIORITY.LOWEST,,La plus basse priorité
+PRIORITY.NORMAL,,Priorité normale
+PRIVACY.OPT_IN.ACCEPT_BUTTON,,J'accepte
+PRIVACY.OPT_IN.DATA_POINT.1,,• Votre version du jeu
+PRIVACY.OPT_IN.DATA_POINT.2,,• Vos paramêtres d'options
+PRIVACY.OPT_IN.DATA_POINT.3,,• Le status du jeu au moment du crash
+PRIVACY.OPT_IN.DESCRIPTION,,"Mountaincore est en phase de développement actif. Pour aider au diagnostique et à la résolution des bugs, merci de cliquer sur ""J'accepte"" en dessous pour envoyer anonymement les rapports de crash. \n\nC'est fait uniquement des données suivantes:"
+PRIVACY.OPT_IN.DO_NOT_ACCEPT_BUTTON,,Désactiver les rapports
+PRODUCT.ANVIL,,Enclume
+PRODUCT.ANVIL.PLURAL,,Enclumes
+PRODUCT.ANVIL.TOOLTIP,,Un grand bloc de métal utilisé pour marteler le métal chauffé en forme. Requis pour construire un {{FURNITURE.FORGE}.
+PRODUCT.BARREL.HOOPS,,Cercles de tonneau
+PRODUCT.BARREL.HOOPS.TOOLTIP,,Cerceaux métalliques utilisés pour construire un {{PRODUCT.BARREL.NOUN}}. Également utilisé dans certaines machines.
+PRODUCT.BARREL.NOUN,,Tonneau
+PRODUCT.BARREL.PLURAL,,Tonneaux
+PRODUCT.BARREL.STAVES,,Lattes de tonneaux
+PRODUCT.BARREL.STAVES.TOOLTIP,,Planches de bois courbes utilisées pour construire un {{PRODUCT.BARREL.NOUN}}.
+PRODUCT.BARREL.TOOLTIP,,Un récipient cylindrique pour liquides. La forme incurvée facilite le roulis.
+PRODUCT.BOWL,,Bol
+PRODUCT.BOWL.DESCRIPTION,,Bol de {{cooking.soup.description}}
+PRODUCT.BOWL.PLURAL,,Bols
+PRODUCT.BREAD.DOUGH.NOUN,,Pâte
+PRODUCT.BREAD.DOUGH.PLURAL,,Pâtes
+PRODUCT.BREAD.DOUGH.TOOLTIP,,Un mélange d'ingrédients qui peut être préparé en {{PRODUCT.BREAD.LOAF.PLURAL}} à l'aide d'un {{FURNITURE.BAKING_OVEN}}.
+PRODUCT.BREAD.LOAF.NOUN,,Pain
+PRODUCT.BREAD.LOAF.PLURAL,,Pains
+PRODUCT.BREAD.LOAF.TOOLTIP,,"Le pain est cuit, prêt à manger!"
+PRODUCT.BUCKET.NOUN,,Seau
+PRODUCT.BUCKET.PLURAL,,Seaux
+PRODUCT.BUCKET.TOOLTIP,,Petit récipient utilisé pour déplacer les liquides à la main.
+PRODUCT.CAULDRON,,Chaudron
+PRODUCT.CAULDRON.PLURAL,,Chaudrons
+PRODUCT.CAULDRON.TOOLTIP,,"Utilisé par un {{PROFESSION.CHEF}} pour préparer une soupe dans un {{ROOMS.KITCHEN}}, où elle est ensuite déplacée dans un {{ROOMS.FEASTING_HALL}}."
+PRODUCT.CHEST.NOUN,,Coffre
+PRODUCT.CHEST.PLURAL,,Coffres
+PRODUCT.CHEST.TOOLTIP,,Utilisé pour entreposer des pièces pour le commerce
+PRODUCT.LEATHER.NOUN,,Cuir
+PRODUCT.LEATHER.PLURAL,,Cuirs
+PRODUCT.LINEN.NOUN,,Toile de lin
+PRODUCT.LINEN.PLURAL,,Toiles de lin
+PRODUCT.LINEN.TOOLTIP,,"Un pièce de tissus, basiquement utilisé pour faire le lits."
+PRODUCT.LIQUID.TANK,,Reservoire
+PRODUCT.LIQUID.TANK.PLURAL,,Reservoires
+PRODUCT.LIQUID.TANK.TOOLTIP,,C'est un conteneur en métal utilisé pour garder les liquides. Il peut être produit à la {{FURNITURE.FORGE}}.
+PRODUCT.MILLSTONE,,Meule
+PRODUCT.MILLSTONE.PLURAL,,Meules
+PRODUCT.MILLSTONE.TOOLTIP,,Deux grands disques de pierre qui sont assemblés ensemble pour moudre les cultures récoltées. Utilisé pour construire un {{FURNITURE.FLOUR_MILL}}.
+PRODUCT.RATION.DOUGH.NOUN,,Ration de survie
+PRODUCT.RATION.DOUGH.PLURAL,,Rations de survie
+PRODUCT.RATION.DOUGH.TOOLTIP,,Un mélange d'ingrédients qui peut être préparé en {{PRODUCT.BREAD.LOAF.PLURAL}} à l'aide d'un {{FURNITURE.BAKING_OVEN}}.
+PRODUCT.RATION.NOUN,,Ration
+PRODUCT.RATION.PLURAL,,Rations
+PRODUCT.RATION.TOOLTIP,,"Elles dureront longtemps pour nourrir vos colons, mais vous aurez besoin d'autres sources de nourriture en priorité."
+PRODUCT.ROPE.NOUN,,Corde
+PRODUCT.ROPE.PLURAL,,Cordes
+PRODUCT.STONE.GEAR.NOUN,,Engrennage
+PRODUCT.STONE.GEAR.PLURAL,,Engrennages
+PRODUCT.STONE.GEAR.TOOLTIP,,Utilisé pour construire des machineries
+PRODUCT.STONE.PIPE.NOUN,,Tuyau
+PRODUCT.STONE.PIPE.PLURAL,,Tuyaux
+PRODUCT.STONE.PIPE.TOOLTIP,,Utilisé pour transporter du liquides sous terre.
+PRODUCT.WATERSKIN.NOUN,,Gourde
+PRODUCT.WATERSKIN.PLURAL,,Gourdes
+PRODUCT.WOODEN.SHAFT.HORIZONTAL.NOUN,,Transmission horizontale
+PRODUCT.WOODEN.SHAFT.HORIZONTAL.PLURAL,,Transmissions horizontale
+PRODUCT.WOODEN.SHAFT.HORIZONTAL.TOOLTIP,,Utilisez pour connecter les machineries qui produise ou requiert de l'énergie.
+PRODUCT.WOODEN.SHAFT.VERTICAL.NOUN,,Transmission verticale
+PRODUCT.WOODEN.SHAFT.VERTICAL.PLURAL,,Transmissions verticale
+PRODUCT.WOODEN.SHAFT.VERTICAL.TOOLTIP,,Utilisez pour connecter les machineries qui produise ou requiert de l'énergie.
+PROFESSION.ARTISAN.FEMALE_NOUN,,Artisane
+PROFESSION.ARTISAN.MALE_NOUN,,Artisan
+PROFESSION.ARTISAN.PLURAL,,Artisans
+PROFESSION.ARTISAN.VERB,,Fabrique
+PROFESSION.BAKER.VERB,,Fabrique
+PROFESSION.BLACKSMITH.FEMALE_NOUN,,Forgeronne
+PROFESSION.BLACKSMITH.MALE_NOUN,,Forgeron
+PROFESSION.BLACKSMITH.PLURAL,,Forgerons
+PROFESSION.BLACKSMITH.TOOLTIP,,Artisanat des objets en utilisant du métal et produit également du métal à partir de minerai.
+PROFESSION.BLACKSMITH.VERB,,Forge
+PROFESSION.BREWER.FEMALE_NOUN,,Brasseuse
+PROFESSION.BREWER.MALE_NOUN,,Brasseur
+PROFESSION.BREWER.PLURAL,,Brasseurs
+PROFESSION.BREWER.TOOLTIP,,produit la bière dans la {{ROOMS.BREWERY}}.
+PROFESSION.BREWER.VERB,,Brasse
+PROFESSION.CARPENTER.FEMALE_NOUN,,Menuisière
+PROFESSION.CARPENTER.MALE_NOUN,,Menuisier
+PROFESSION.CARPENTER.PLURAL,,Menuisiers
+PROFESSION.CARPENTER.TOOLTIP,,Crée des meubles et des objets en bois.
+PROFESSION.CARPENTER.VERB,,Élabore
+PROFESSION.CHEF.FEMALE_NOUN,,Cuisinière
+PROFESSION.CHEF.MALE_NOUN,,Cuisinier
+PROFESSION.CHEF.PLURAL,,Cuisiniers
+PROFESSION.CHEF.TOOLTIP,,Prépare tous les aliments à consommer par vos colons.
+PROFESSION.CHEF.VERB,,Cuisine
+PROFESSION.DESCRIPTION,,{{skillLevelDescription.adjective}} {{profession.noun}}
+PROFESSION.FARMER.FEMALE_NOUN,,Fermière
+PROFESSION.FARMER.MALE_NOUN,,Fermier
+PROFESSION.FARMER.PLURAL,,Fermiers
+PROFESSION.FARMER.TOOLTIP,,"Plante, soigne et récolte des cultures."
+PROFESSION.FARMER.VERB,,Cultive
+PROFESSION.FISHER.FEMALE_NOUN,,Pêcheuse
+PROFESSION.FISHER.MALE_NOUN,,Pêcheur
+PROFESSION.FISHER.TOOLTIP,,Capturer des poissons dans les plans d'eau pour être utilisés comme nourriture et ressources.
+PROFESSION.FISHER.VERB,,Pêche
+PROFESSION.HUNTER.FEMALE_NOUN,,Chasseuse
+PROFESSION.HUNTER.MALE_NOUN,,Chasseur
+PROFESSION.HUNTER.TOOLTIP,,Traque et tue les animaux sauvages pour leur viande et leur peau.
+PROFESSION.HUNTER.VERB,,Chasse
+PROFESSION.LEATHERWORKER.FEMALE_NOUN,,Tanneuse
+PROFESSION.LEATHERWORKER.MALE_NOUN,,Tanneur
+PROFESSION.LEATHERWORKER.PLURAL,,Tanneurs
+PROFESSION.LEATHERWORKER.TOOLTIP,,Traite les peaux des créatures pour produire des biens en cuirs.
+PROFESSION.LEATHERWORKER.VERB,,Tanne
+PROFESSION.MAYOR.FEMALE_NOUN,,Maire
+PROFESSION.MAYOR.MALE_NOUN,,Maire
+PROFESSION.MAYOR.VERB,,Gouverne
+PROFESSION.MERCHANT.FEMALE_NOUN,,Marchande
+PROFESSION.MERCHANT.MALE_NOUN,,Marchand
+PROFESSION.MERCHANT.VERB,,Échange
+PROFESSION.MILLER.VERB,,Moud
+PROFESSION.MINER.FEMALE_NOUN,,Mineuse
+PROFESSION.MINER.MALE_NOUN,,Mineur
+PROFESSION.MINER.PLURAL,,Mineurs
+PROFESSION.MINER.TOOLTIP,,Mine de nouvelles zones à l'aide d'un {{TOOL.PICKAXE}}.
+PROFESSION.MINER.VERB,,Mine
+PROFESSION.NOBLE.FEMALE_NOUN,,Noble
+PROFESSION.NOBLE.MALE_NOUN,,Noble
+PROFESSION.NOBLE.TOOLTIP,,"Les nobles ne remplissent pas les emplois de la même manière que les colons communs, mais apportent la renommée et le prestige à votre établissement."
+PROFESSION.NOBLE.VERB,,Règne
+PROFESSION.PIRATE.FEMALE_NOUN,,
+PROFESSION.PIRATE.MALE_NOUN,,
+PROFESSION.PIRATE.VERB,,
+PROFESSION.RUNESMITH.FEMALE_NOUN,,Forgerune
+PROFESSION.RUNESMITH.MALE_NOUN,,Forgerune
+PROFESSION.RUNESMITH.TOOLTIP,,"Enchantera des armes, des armures et des objets avec des runes magiques pour booster leurs capacités."
+PROFESSION.RUNESMITH.VERB,,Enchante
+PROFESSION.SKILL_LEVEL.1,,Néophyte
+PROFESSION.SKILL_LEVEL.1.TOOLTIP,,Un débutant absolu avec peu ou pas d'expérience.
+PROFESSION.SKILL_LEVEL.2,,Novice
+PROFESSION.SKILL_LEVEL.2.TOOLTIP,,Ils ne comprennent que les bases de leur métier.
+PROFESSION.SKILL_LEVEL.3,,Apprentie
+PROFESSION.SKILL_LEVEL.3.TOOLTIP,,"Bien qu'ils deviennent qualifiés, il reste encore beaucoup d'expérience à acquérir."
+PROFESSION.SKILL_LEVEL.4,,Voyageur
+PROFESSION.SKILL_LEVEL.4.TOOLTIP,,"N'étant plus apprentis, ils ont des compétences raisonnables dans leur métier."
+PROFESSION.SKILL_LEVEL.5,,Adepte
+PROFESSION.SKILL_LEVEL.5.TOOLTIP,,Ils ont un bon niveau mais peuvent encore atteindre des sommets.
+PROFESSION.SKILL_LEVEL.6,,Compétent
+PROFESSION.SKILL_LEVEL.6.TOOLTIP,,"Très habiles dans leur métier, ils sont aujourd'hui plus que compétents."
+PROFESSION.SKILL_LEVEL.7,,Expert
+PROFESSION.SKILL_LEVEL.7.TOOLTIP,,Il n'y a pas grand-chose que l'expert ne connaisse pas dans son domaine respectif.
+PROFESSION.SKILL_LEVEL.8,,Maître
+PROFESSION.SKILL_LEVEL.8.TOOLTIP,,"Au-delà même d'un expert, ils sont vraiment des maîtres de leur métier."
+PROFESSION.SKILL_LEVEL.9,,Grand-maître
+PROFESSION.SKILL_LEVEL.9.TOOLTIP,,Il n'y a personne de plus talentueux dans son métier que le Grand-maître.
+PROFESSION.STONEMASON.FEMALE_NOUN,,Tailleuse de pierre
+PROFESSION.STONEMASON.MALE_NOUN,,Tailleur de pierre
+PROFESSION.STONEMASON.PLURAL,,Tailleurs de pierre
+PROFESSION.STONEMASON.TOOLTIP,,Artisanat meubles et objets de pierre.
+PROFESSION.STONEMASON.VERB,,Sculpte
+PROFESSION.VILLAGER.FEMALE_NOUN,,Villageoise
+PROFESSION.VILLAGER.MALE_NOUN,,Villageois
+PROFESSION.VILLAGER.TOOLTIP,,Ce colon n'a pas de profession spécifique et s'acquittera de tâches banales comme le transport d'objets.
+PROFESSION.VILLAGER.VERB,,Travaille
+PROFESSION.WEAVER.FEMALE_NOUN,,Tisseuse
+PROFESSION.WEAVER.MALE_NOUN,,Tisseur
+PROFESSION.WEAVER.PLURAL,,Tisseurs
+PROFESSION.WEAVER.TOOLTIP,,Transforme les matériaux en vêtement ou autres tissus.
+PROFESSION.WEAVER.VERB,,Tisse
+PROFESSION.WOODCUTTER.FEMALE_NOUN,,Bûcheron
+PROFESSION.WOODCUTTER.MALE_NOUN,,Bûcheronne
+PROFESSION.WOODCUTTER.PLURAL,,Bûcherons
+PROFESSION.WOODCUTTER.TOOLTIP,,Découpe les arbres en tant que buche qui peut être utilisé dans un {{ROOMS.SAWMILL}}.
+PROFESSION.WOODCUTTER.VERB,,Coupe
+QUOTA.FIXED_AMOUNT,,au total
+QUOTA.PER_SETTLER,,par colon
+RACE.BOAR.NOUN,,Sanglier
+RACE.CARP.NOUN,,Carpe
+RACE.DEER.FEMALE_NOUN,,Biche
+RACE.DEER.MALE_NOUN,,Cerf
+RACE.DEER.TOOLTIP,,Un cerf est un herbivore non menaçant qui fuira au moindre signe de danger
+RACE.DWARF.FEMALE_ADJECTIVE,,Naine
+RACE.DWARF.FEMALE_NOUN,,Naine
+RACE.DWARF.FEMALE_PLURAL,,Naines
+RACE.DWARF.MALE_ADJECTIVE,,Nain
+RACE.DWARF.MALE_NOUN,,Nain
+RACE.DWARF.MALE_PLURAL,,Nains
+RACE.DWARF.TOOLTIP,,Les nains sont des humanoïdes courts et trapus. Ils sont passé maîtres dans le travail avec la pierre et du métal. La plupart des nains se méfient du ciel et préfèrent rester sous terre.
+RACE.ELEPHANT.NOUN,,Eléphant
+RACE.FOX.FEMALE_NOUN,,Renarde
+RACE.FOX.MALE_NOUN,,Renard
+RACE.FUNGOLEM,,Champigolem
+RACE.HORSE.NOUN,,Cheval
+RACE.ORC.MALE_ADJECTIVE,,Orque
+RACE.ORC.MALE_NOUN,,Orc
+RACE.PERCH.NOUN,,Perche
+RACE.PIKE.NOUN,,Brochet
+RACE.SPIDER,,Araignée
+RACE.UNDEAD_DWARF,,Nain mort-vivant
+RACE.WURM,,Guivre
+RESOURCE.BONE.LARGE.NOUN,,Grand Os
+RESOURCE.BONE.LARGE.PLURAL,,Grands Os
+RESOURCE.BONE.MEDIUM.NOUN,,Os moyen
+RESOURCE.BONE.MEDIUM.PLURAL,,Os moyens
+RESOURCE.BONE.SMALL.NOUN,,Petit os
+RESOURCE.BONE.SMALL.PLURAL,,Petits os
+RESOURCE.FLOUR.SACK.NOUN,,Farine
+RESOURCE.FLOUR.SACK.PLURAL,,Garines
+RESOURCE.FLOUR.SACK.TOOLTIP,,Grain qui a été broyé en une poudre fine prête à être utilisée comme ingrédient dans la production d'aliments.
+RESOURCE.GEMS.UNREFINED.NOUN,,Gemme brute
+RESOURCE.GEMS.UNREFINED.PLURAL,,Gemmes brutes
+RESOURCE.GEMS.UNREFINED.TOOLTIP,,Un morceau de roche contenant des pierres précieuses prêtes à être taillées et polies.
+RESOURCE.GRAIN.SACK.NOUN,,Grain (sac)
+RESOURCE.GRAIN.SACK.PLURAL,,Grain (sacs)
+RESOURCE.HEMP.BUNDLE.NOUN,,Paquet de chanvre
+RESOURCE.HEMP.BUNDLE.PLURAL,,Paquets de chanvre
+RESOURCE.HEMP.FIBRE.BUNDLE.NOUN,,Paquet de fibres de chanvre
+RESOURCE.HEMP.FIBRE.BUNDLE.PLURAL,,Paquets de fibres de chanvre
+RESOURCE.LOGS.NOUN,,Bûche
+RESOURCE.LOGS.PLURAL,,Bûches
+RESOURCE.LOGS.TOOLTIP,,"Les sections d'un tronc qui sont le plus souvent transformé en {{RESOURCE.PLANKS.PLURAL}}, mais qui ont également d'autres utilisations."
+RESOURCE.METAL.BLOOM.NOUN,,Billette
+RESOURCE.METAL.BLOOM.PLURAL,,Billettes
+RESOURCE.METAL.BLOOM.TOOLTIP,,Un morceau de métal impure qui doit être martelé pour avoir une forme utilisable.
+RESOURCE.METAL.INGOT.NOUN,,Lingot
+RESOURCE.METAL.INGOT.PLURAL,,Lingots
+RESOURCE.METAL.INGOT.TOOLTIP,,"Blocs métalliques raffinés, prêts à être utilisés comme ingrédient artisanal."
+RESOURCE.METAL.PLATE.NOUN,,Plaque
+RESOURCE.METAL.PLATE.PLURAL,,Plaques
+RESOURCE.METAL.PLATE.TOOLTIP,,De grandes plaques qui sont utilisées pour construire les plus grandes machines.
+RESOURCE.MUSHROOM.LOG.NOUN,,Bûche de champignons
+RESOURCE.MUSHROOM.LOG.PLURAL,,Bûches de champignons
+RESOURCE.MUSHROOM.LOG.TOOLTIP,,Une bûche qui a été contaminé avec {{INGREDIENT.MUSHROOM.SPAWN.NOUN}}. Le corps de la bûche elle-même est d'où les champignons tirent des nutriments. Il doit être arrosé dans un {{FURNITURE.MUSHROOM_SHOCK_TANK}} après avoir été complètement innoculé.
+RESOURCE.MUSHROOM.LUMBER.NOUN,,Bûche de champignons
+RESOURCE.MUSHROOM.LUMBER.PLURAL,,Bûches de champignons
+RESOURCE.MUSHROOM.LUMBER.TOOLTIP,,Parties d'un champignon géant qui peut être utilisé de la même manière que les {{RESOURCE.LOGS.PLURAL}} de bois.
+RESOURCE.ORE.CRUSHED.NOUN,,Minerai concassé
+RESOURCE.ORE.CRUSHED.PLURAL,,Minerais concassés
+RESOURCE.ORE.CRUSHED.TOOLTIP,,"Sable métallique créé en décomposant le minerai de métal brut, prêt à l'emploi dans un {{FURNITURE.BLOOMERY_FURNACE}}."
+RESOURCE.ORE.UNREFINED.NOUN,,Minerai
+RESOURCE.ORE.UNREFINED.PLURAL,,Minerais
+RESOURCE.ORE.UNREFINED.TOOLTIP,,Pierre contenant des minerais métalliques qui peuvent être transformés en métal utilisable.
+RESOURCE.PLANKS.NOUN,,Planche
+RESOURCE.PLANKS.PLURAL,,Planches
+RESOURCE.PLANKS.TOOLTIP,,Des parties du bois de taille fixe pour qu'elles puissent être facilement utilisées dans la construction et l'artisanat.
+RESOURCE.SHOCKED.MUSHROOM.LOG.NOUN,,Bûche de champignons
+RESOURCE.SHOCKED.MUSHROOM.LOG.PLURAL,,Bûches de champignons
+RESOURCE.SHOCKED.MUSHROOM.LOG.TOOLTIP,,Cette bûche contaminée de spores a été «choquée» dans l'eau pour encourager les champignons à se développer et devrait produire une récolte bientôt.
+RESOURCE.STONE.BLOCK.NOUN,,Bloc
+RESOURCE.STONE.BLOCK.PLURAL,,Blocs
+RESOURCE.STONE.BLOCK.TOOLTIP,,Pierre qui a été façonnée en cube de sorte qu'il peut être facilement utilisé dans la construction ou l'artisanat.
+RESOURCE.STONE.UNREFINED.NOUN,,Rocher brut
+RESOURCE.STONE.UNREFINED.PLURAL,,Rochers bruts
+RESOURCE.STONE.UNREFINED.TOOLTIP,,Un énorme morceau de pierre qui doit être ciselé dans une forme plus utile par un {{PROFESSION.STONEMASON}}.
+RESOURCE.WHEAT.SACK.NOUN,,Blé (sac)
+RESOURCE.WHEAT.SACK.PLURAL,,Blés (sacs)
+RESOURCE.WHEAT.SACK.TOOLTIP,,Le blé est récoltés sur des parcelles agricoles semées avec des graines de blé.
+ROOMS.ARMOURY,,Armurerie
+ROOMS.ARMOURY.TOOLTIP,,Des armes et des armures sont créées ici.
+ROOMS.ARTISAN_WORKSHOP,,Atelier artisanal
+ROOMS.ARTISAN_WORKSHOP.TOOLTIP,,Des objets complexes sont fabriqués ici.
+ROOMS.BAKERY,,Boulangerie
+ROOMS.BAKERY.TOOLTIP,,Là où est produit la pâte et le pain.
+ROOMS.BARRACKS,,Caserne
+ROOMS.BARRACKS.TOOLTIP,,Un endroit où les militaires dorment et s'entraînent.
+ROOMS.BEDROOM,,Chambre
+ROOMS.BEDROOM.TOOLTIP,,"Un endroit où vos colons peuvent dormir. Ils préfèrent avoir des chambres individuelles qui ont au moins une taille de 9 cases, ou de préférence au moins 13 cases"
+ROOMS.BREWERY,,Brasserie
+ROOMS.BREWERY.TOOLTIP,,Brassez de la bière pour rendre vos colons heureux !
+ROOMS.BRIDGE,,Pont
+ROOMS.BRIDGE.TOOLTIP,,Placé de l'autre côté de la rivière pour permettre l'accès à l'autre côté.
+ROOMS.CARPENTRY_WORKSHOP,,Menuiserie
+ROOMS.CARPENTRY_WORKSHOP.TOOLTIP,,Cet atelier produit la plupart des outils et objets en bois.
+ROOMS.COMPONENT.STOCKPILE.DESCRIPTION,,{{allocated}} sur {{total}} espaces actuellement utilisés
+ROOMS.FARM,,Champs
+ROOMS.FARM.PLURAL,,Champs
+ROOMS.FARM.TOOLTIP,,Cultive des parcelles en utilisant des {{INGREDIENT.SEEDS.PLURAL}}. Doit être placé sur {{MATERIAL_TYPE.EARTH.NOUN}}.
+ROOMS.FEASTING_HALL,,Salle de festin
+ROOMS.FEASTING_HALL.TOOLTIP,,"Un endroit où les colons se rassemblent pour manger, boire et être joyeux!"
+ROOMS.FUEL_REFINERY,,Rafinerie
+ROOMS.FUEL_REFINERY.TOOLTIP,,Produit du carburant depuis des {{RESOURCE.LOGS.PLURAL}} ou du {{ORE.BITUMINOUS_COAL.NOUN}}.
+ROOMS.GRAVEYARD,,Cimetière
+ROOMS.GRAVEYARD.TOOLTIP,,Les colons décédés sont mis en terre ici.
+ROOMS.ITERATIVE_NAMED_ROOM,,{{roomName}} #{{number}}
+ROOMS.KITCHEN,,Cuisine
+ROOMS.KITCHEN.TOOLTIP,,La plupart des aliments sont préparés ici avant d'être servis dans un {{ROOMS.FEASTING_HALL}}.
+ROOMS.LEATHER_WORKSHOP,,Tannerie
+ROOMS.LEATHER_WORKSHOP.TOOLTIP,,Créer des objets à partir de la peau d'animal.
+ROOMS.MASONRY_WORKSHOP,,Carrière
+ROOMS.MASONRY_WORKSHOP.TOOLTIP,,Cet atelier produit la plupart des objets en pierre.
+ROOMS.MUSHROOM_FARM,,Champignonnière
+ROOMS.MUSHROOM_FARM.TOOLTIP,,Les champignons peuvent être cultivés en utilisant des {{INGREDIENT.MUSHROOM.SPAWN.NOUN}} et des {{RESOURCE.LOGS.PLURAL}}.
+ROOMS.SAWMILL,,Scierie
+ROOMS.SAWMILL.TOOLTIP,,Les {{RESOURCE.LOGS.PLURAL}} de bois sont transformées en {{RESOURCE.PLANKS.PLURAL}} ici.
+ROOMS.SMELTERY,,Fonderie
+ROOMS.SMELTERY.TOOLTIP,,Les minerais métaliques sont rafinés en lingots ici.
+ROOMS.SMITHY,,Forge
+ROOMS.SMITHY.TOOLTIP,,Utilisée pour fabriquer des outils en métal
+ROOMS.STOCKPILE,,Réserve
+ROOMS.STOCKPILE.TOOLTIP,,Cette zone entrepose différente sortes d'objets en fonction des paramètres.
+ROOMS.STOCKPILES,,Réserves
+ROOMS.STOCKPILES.TOOLTIP,,Les articles inutilisés sont placés dans des stocks pour un accès facile.
+ROOMS.STOCKPILE_WITH_GROUP_NAME,,{{stockpileGroupName}} {{roomTypeName}}
+ROOMS.TEXTILE_WORKSHOP,,Atelier de tisserand
+ROOMS.TEXTILE_WORKSHOP.TOOLTIP,,Transforme le {{SEED.HEMP_SEED}} en tissus pour une variété d'usage.
+ROOMS.TRADING_DEPOT,,Zone de commerce
+ROOMS.TRADING_DEPOT.TOOLTIP,,Acheter et vendre des objets aux marchands itinérants
+ROPE.AGED_ROPE,,Vieilli
+ROPE.BRONZED_ROPE,,Bronzée
+ROPE.GRAY_ROPE,,Grise
+ROPE.HEMP-ROPE,,Chanvre
+ROPE.TOBACCO_ROPE,,Clair
+RUSTED_SCRAP.NOUN,,Ferraille
+RUSTED_SCRAP.TOOLTIP,,Ce sont les restes d'un article qui a été complètement corrodé à cause de la rouille.
+SEASON.AUTUMN,,Automne
+SEASON.SPRING,,Printemps
+SEASON.SUMMER,,Été
+SEASON.WINTER,,Hiver
+SEED.BARLEY_SEED,,Orge
+SEED.BARLEY_SEED.TOOLTIP,,"Un grain utilisé uniquement dans la production de bière. Peut être planté au {{SEASON.SPRING}}, {{SEASON.SUMMER}} ou en {{SEASON.AUTOMN}}."
+SEED.BERSERKER_MUSHROOM_SPAWN,,Berserker
+SEED.BERSERKER_MUSHROOM_SPAWN.TOOLTIP,,Un champignon avec un chapeau rose-rouge portant des taches blanches. Il a des propriétés hallucinogènes que les guerriers utilisent parfois pour préparer la bataille.
+SEED.CARROT_SEED,,Carotte
+SEED.CARROT_SEED.TOOLTIP,,"Un légume racinaire robuste qui survit au gel {{SEASON.WINTER}}. Les carottes poussent rapidement mais ne produisent qu'une petite récolte. Peut être planté au {{SEASON.SPRING}}, en {{SEASON.SUMMER}} ou en {{SEASON.AUTOMN}}."
+SEED.CORN_SEED,,Maïs
+SEED.CORN_SEED.TOOLTIP,,"Un grain de céréales également connu sous le nom de maïs. Il produit une récolte abondante mais prend environ 2 saisons pour croître et ne peut pas survivre à l'{{SEASON.WINTER}}, donc il faut planter au début du {{SEASON.SPRING}}."
+SEED.DEATH_CAP_SPAWN,,Amanite phalloïde
+SEED.DEATH_CAP_SPAWN.TOOLTIP,,Un champignon très toxique avec un chapeau large et plat. Manger même une petite quantité causera presque certainement un empoisonnement qui peut conduire à la mort.
+SEED.ELFSBANE_SPAWN,,Fléau des Elfes
+SEED.ELFSBANE_SPAWN.TOOLTIP,,"Ce champignon a un goût simple et sans saveur pour la plupart des humanoïdes. Curieusement, il a un goût absolument dégoûtant pour les elfes, qui réagissent souvent avec des vomissements explosifs à la consommation, ou dans des cas extrêmes, une crise cardiaque."
+SEED.FIST_SPAWN,,Fist
+SEED.FIST_SPAWN.TOOLTIP,,Un champignon noir-bleu au goût métallique. Il est nommé par un groupe de bardes de l'âge des ténèbres.
+SEED.GLOW_SPAWN,,Champignon lumineux
+SEED.GLOW_SPAWN.TOOLTIP,,Un champignon imprégné de magie qui émet de la lumière et change de couleur au fil des saisons.
+SEED.HEMP_SEED,,Chanvre
+SEED.HEMP_SEED.TOOLTIP,,Utiliser pour produire corde et vêtements après avoir été rafinné.
+SEED.HOPS_SEED,,Houblon
+SEED.HOPS_SEED.TOOLTIP,,Une fleur utilisée pour aromatiser la bière. Doit être planté au {{SEASON.SPRING}}.
+SEED.MILTONIA_SPAWN,,Miltonia
+SEED.MILTONIA_SPAWN.TOOLTIP,,"Autrefois considéré comme n'existant que dans la région de Hudds, il est maintenant présent dans le monde entier."
+SEED.POTATO_SEED,,Pomme de terre
+SEED.POTATO_SEED.TOOLTIP,,"Un légume racine féculent qui peut survivre {{SEASON.WINTER}} ce qui en fait un bon choix pour la plupart des colonies. Peut être planté au {{SEASON.SPRING}}, en {{SEASON.SUMMER}} ou en {{SEASON.AUTOMN}}."
+SEED.PURPLE_HELMET_SPAWN,,Mycène à pied rouge
+SEED.PURPLE_HELMET_SPAWN.TOOLTIP,,"Fat Hat, Dump Turban, Casque gonflé; Ce champignon légendaire porte de nombreux noms. Selon la légende, il y a longtemps, de nombreuses communautés de nains vivaient entièrement sur une souche domestiquée de ce champignon."
+SEED.ROCIOMYCOTA_MUSHROOM_SPAWN,,Rociomycota
+SEED.ROCIOMYCOTA_MUSHROOM_SPAWN.TOOLTIP,,Un champignon tacheté blanc et noir. Il a été connu pour affecter l'apparence de ceux qui l'ingèrent.
+SEED.SUNGLOW_SPAWN,,Aurore
+SEED.SUNGLOW_SPAWN.TOOLTIP,,Un champignon jaune vif qui brille avec l'apparence de la lumière du soleil. Il perd cette lueur au moment où il est récolté.
+SEED.SYRUP_POWDER_SPAWN,,Sirupeux-Poudreux
+SEED.SYRUP_POWDER_SPAWN.TOOLTIP,,"Un champignon rond orange/jaune avec un dessous blanc. On dit qu'il a été utilisé par les mages il y a longtemps, mais dans quel but, personne ne sait."
+SEED.TOMATO_SEED,,Tomate
+SEED.TOMATO_SEED.TOOLTIP,,Une plante qui pousse de grandes baies rouges souvent utilisées comme légume. Ne peut être planté que au {{SEASON.SPRING}}.
+SEED.WHEAT_SEED,,Blé
+SEED.WHEAT_SEED.TOOLTIP,,"Grain de céréales généralement utilisé pour la production de pain. Il peut survivre à l'{{SEASON.WINTER}} mais prend un certain temps à pousser, donc il est planté au {{SEASON.SPRING}} ou en {{SEASON.AUTOMN}}."
+SHRUB.DESCRIPTION,,Arbuste
+SKILL.ARCHERY.FEMALE_NOUN,,Archère
+SKILL.ARCHERY.MALE_NOUN,,Archer
+SKILL.ARCHERY.TOOLTIP,,Habile à l'arc
+SKILL.AXES.FEMALE_NOUN,,Soldat à la hâche
+SKILL.AXES.MALE_NOUN,,Soldat à la hâche
+SKILL.AXES.TOOLTIP,,Habile avec les haches
+SKILL.CROSSBOWS.FEMALE_NOUN,,Arbaletrière
+SKILL.CROSSBOWS.MALE_NOUN,,Arbaletrier
+SKILL.CROSSBOWS.TOOLTIP,,Habile à l'arbalète
+SKILL.MACES.FEMALE_NOUN,,Dame au Marteau
+SKILL.MACES.MALE_NOUN,,Type au Marteau
+SKILL.MACES.TOOLTIP,,Habileté avec les marteaux et les masses
+SKILL.SWORDSMANSHIP.FEMALE_NOUN,,Epéiste
+SKILL.SWORDSMANSHIP.MALE_NOUN,,Epéiste
+SKILL.SWORDSMANSHIP.TOOLTIP,,Habileté à l'épée
+SKILL.UNARMED_COMBAT.FEMALE_NOUN,,Bagarreuse
+SKILL.UNARMED_COMBAT.MALE_NOUN,,Bagarreur
+SKILL.UNARMED_COMBAT.TOOLTIP,,Habileté au combat à mains nues
+SKIN.BOAR_HIDE,,Sanglier
+SKIN.DEER_HIDE,,Cerf
+SKIN.DWARF_HIDE,,Nain
+SKIN.ELEPHANT_HIDE,,Éléphant
+SKIN.HORSE_HIDE,,Cheval
+STATUS.ALCOHOL_WITHDRAWL,,Coma éthylique
+STATUS.BLEEDING,,Saignement
+STATUS.BLINDED,,Aveugle
+STATUS.DEATH,,Mort
+STATUS.DRUNK,,Ivre
+STATUS.DYING_OF_HUNGER,,Mort de faim
+STATUS.DYING_OF_THIRST,,Mort de soif
+STATUS.EXHAUSTED,,Épuisé
+STATUS.INTERNAL_BLEEDING,,Hémorragie interne
+STATUS.KNOCKED_UNCONSCIOUS,,Inconscient
+STATUS.LOSS_MAIN_HAND,,Perte de la main principale
+STATUS.LOSS_OFF_HAND,,Perte de la main secondaire
+STATUS.MOVEMENT_IMPAIRED,,Altération de mouvement
+STATUS.ON_FIRE,,En feu 
+STATUS.POISONED,,Empoisonné
+STATUS.TEMPORARILY_BLINDED,,Temporairement aveuglé
+STATUS.VERY_HUNGRY,,Très affamé
+STATUS.VERY_THIRSTY,,Très assoiffé
+STOCKPILE.GROUP.FOOD,,Nourritures
+STOCKPILE.GROUP.FOOD.TOOLTIP,,Stocke les fruits et légumes récoltés qui peuvent périmer.
+STOCKPILE.GROUP.FUEL,,Carburants
+STOCKPILE.GROUP.GRANARY,,Grenier
+STOCKPILE.GROUP.GRANARY.TOOLTIP,,Stocke les céréales et les graines qui n'expireront pas.
+STOCKPILE.GROUP.PRODUCTS,,Produits
+STOCKPILE.GROUP.RAW_MATERIALS,,Matériaux bruts
+STOCKPILE.GROUP.SEEDS,,Graines
+STOCKPILE.GROUP.TOOLS,,Outils
+STOCKPILE.GROUP.TOOLS.TOOLTIP,,Stocke les outils nécessaires pour travailler.
+STOCKPILE.GROUP.TREASURE,,Trésors
+STOCKPILE.GROUP.WEAPONS,,Armes
+STOCKPILE.GROUP.WEAPONS.TOOLTIP,,Stocke les fruits et légumes récoltés qui peuvent périmer.
+STONE.BASALT.ADJECTIVE,,en basalte
+STONE.BASALT.NOUN,,Basalte
+STONE.BASALT.TOOLTIP,,Une roche ignée formée par le refroidissement rapide de la lave. Presque toute la roche volcanique dans le monde est basalte.
+STONE.DOLOSTONE.ADJECTIVE,,en dolomie
+STONE.DOLOSTONE.NOUN,,Dolimie
+STONE.DOLOSTONE.TOOLTIP,,"Une roche sédimentaire composée principalement de la dolomite minérale, de sorte qu'elle est également connue sous le nom de roche dolomite."
+STONE.FRONITE.ADJECTIVE,,Frónite
+STONE.FRONITE.NOUN,,Frónite
+STONE.FRONITE.TOOLTIP,,Un rocher aux teintes bleues que l'on trouve surtout sur une île glacée au nord. Il a une teneur élevée en fer.
+STONE.GRANITE.ADJECTIVE,,en granite
+STONE.GRANITE.NOUN,,Granite
+STONE.GRANITE.TOOLTIP,,"Un type commun de roche ignée. Il a une grande proportion de quartz, ce qui le rend bon pour localiser certaines pierres précieuses."
+STONE.LIMESTONE.ADJECTIVE,,en calcaire
+STONE.LIMESTONE.NOUN,,Calcaire
+STONE.LIMESTONE.TOOLTIP,,Une roche sédimentaire aux couleurs claires qui constitue un bon matériau de construction. Il est également utilisé comme flux dans la production de l'{{METAL.STEEL.NOUN}}.
+STONE.MARBLE.ADJECTIVE,,en marbre
+STONE.MARBLE.NOUN,,Marbre
+STONE.MARBLE.TOOLTIP,,Une roche métamorphique qui est utilisée comme matériau de haute qualité pour la sculpture et la maçonnerie en raison de son aspect brillant.
+STONE.SANDSTONE.ADJECTIVE,,en grès
+STONE.SANDSTONE.NOUN,,Grès
+STONE.SANDSTONE.TOOLTIP,,Une roche sédimentaire composée de fragments de sable.
+STONE.SHALE.ADJECTIVE,,en roche argileuse
+STONE.SHALE.NOUN,,Roche argileuse
+STONE.SHALE.TOOLTIP,,Une roche sédimentaire à grains fins composée de boue pressurisée. Il peut être facilement divisé en couches minces.
+STONE.SLATE.ADJECTIVE,,en ardoise
+STONE.SLATE.NOUN,,Ardoise
+STONE.SLATE.TOOLTIP,,Roche métamorphique habituellement formée de {{STONE.SHALE.NOUN}}. Il est souvent transformé en tuiles pour la toiture ou l'écriture.
+TOOL.AXE.NOUN,,Hâche
+TOOL.AXE.PLURAL,,les hâches
+TOOL.AXE.TOOLTIP,,Utilisé pour couper les arbres. L'outil principal d'un {{PROFESSION.WOODCUTTER}}.
+TOOL.CHISEL.NOUN,,Burin
+TOOL.CHISEL.PLURAL,,Burrins
+TOOL.CHISEL.TOOLTIP,,Utilisé pour sculpter la roche. Un des outils utilisés par un {{PROFESSION.STONEMASON}}.
+TOOL.FISHING.ROD.NOUN,,Canne à pêche
+TOOL.FISHING.ROD.PLURAL,,Cannes à pêche
+TOOL.FISHING.ROD.TOOLTIP,,Utilisé pour attraper du poisson dans un plan d'eau. L'outil principal d'un {{PROFESSION.FISHER}}.
+TOOL.KITCHEN.KNIFE.NOUN,,Couteau de cuisine
+TOOL.KITCHEN.KNIFE.PLURAL,,Couteaux de cuisine
+TOOL.KITCHEN.KNIFE.TOOLTIP,,"Utilisé pour préparer les aliments, en particulier la viande."
+TOOL.LARGE.HAMMER.NOUN,,Gros marteau
+TOOL.LARGE.HAMMER.PLURAL,,Gros marteaux
+TOOL.LARGE.HAMMER.TOOLTIP,,Utilisé pour mettre en forme de gros objets de pierre et de métal. L'outil principal d'un {{PROFESSION.BLACKSMITH}}.
+TOOL.PICKAXE.NOUN,,Pioche
+TOOL.PICKAXE.PLURAL,,Pioches
+TOOL.PICKAXE.TOOLTIP,,Utilisé pour casser la pierre en petits morceaux. Outil principal d'un {{profession.miner}}.
+TOOL.PLANE.NOUN,,Rabot
+TOOL.PLANE.PLURAL,,Rabots
+TOOL.PLANE.TOOLTIP,,Utilisé pour raboter les meubles en bois et les objets. L'outil principal d'un {{PROFESSION.CARPENTER}}.
+TOOL.ROLLING.PIN.NOUN,,Rouleau à pâtisserie
+TOOL.ROLLING.PIN.PLURAL,,Rouleaux à pâtisserie
+TOOL.ROLLING.PIN.TOOLTIP,,Utilisé pour préparer la pâte. Un des outils utilisés par un {{PROFESSION.CHEF}}.
+TOOL.SAW.NOUN,,Scie
+TOOL.SAW.PLURAL,,Scies
+TOOL.SAW.TOOLTIP,,Utilisé pour couper les bûches de bois en planche. Requis pour couper du bois dans le {{ROOMS.SAWMILL}}.
+TOOL.SMALL.HAMMER.NOUN,,Marteau
+TOOL.SMALL.HAMMER.PLURAL,,Marteaux
+TOOL.SMALL.HAMMER.TOOLTIP,,Utilisé pour donner une forme de petits objets de pierre et de métal. Un des outils utilisés par un {{PROFESSION.BLACKSMITH}}.
+TOOL.TONGS.NOUN,,Pinces
+TOOL.TONGS.PLURAL,,Pinces
+TOOL.TONGS.TOOLTIP,,Utilisé pour maintenir des objets métalliques extrêmement chauds. Utilisé dans le processus de fusion du minerai.
+TREASURE.COIN.NOUN,,Pièce
+TREASURE.COIN.PLURAL,,Pièces
+TREASURE.COIN.TOOLTIP,,Pièces frappées utilisée monnaie dans les échanges.
+TREASURE.GEM.NOUN,,Gemme
+TREASURE.GEM.PLURAL,,Gemmes
+TREASURE.GEM.TOOLTIP,,Des pierres précieuses qui ont été taillées et polies pour rehausser leur beauté. Le plus souvent utilisé comme ornement.
+TREE.DESCRIPTION,,{{materialType.noun}}
+TUTORIAL.COMPLETED.A,,Cela explique les bases du jeu.
+TUTORIAL.COMPLETED.B,,"Vous devez installer une {{SALLE.SMITHY}} fonctionnelle avec une {{FURNITURE.FORGE}} alimentée en combustible et en minerai de métal raffiné, afin de produire des objets métalliques."
+TUTORIAL.COMPLETED.C,,"De plus, vous devriez déplacer votre colonie sous terre ou au moins construire un toit pour protéger vos colons et vos objets en fer des intempéries."
+TUTORIAL.COMPLETED.D,,Bonne Chance ! ;D
+TUTORIAL.CRAFTING.A,,Les pièces contenant des ateliers qui produisent des objets sont alimentés par des palettes d'importation et d'exportation.
+TUTORIAL.CRAFTING.B,,Placez au moins une palette d'importation et une palette d'exportation dans la scierie et la carrière.
+TUTORIAL.CRAFTING.C,,Placez également une réserve qui contiendra les objets produits.
+TUTORIAL.CRAFTING_SELECTION.A,,Sélectionnez chaque palette d'importation et d'exportation et choisissez l'élément à importer ou à exporter de la pièce.
+TUTORIAL.CRAFTING_SELECTION.B,,"Dans la scierie, importez des bûches et exportez des planches."
+TUTORIAL.CRAFTING_SELECTION.C,,"Dans la carrière, importez des blocs de pierre bruts et exportez des blocs."
+TUTORIAL.DISMISS_DIALOG.CONFIRM_TEXT,,Désactiver le tutoriel
+TUTORIAL.DISMISS_DIALOG.DESCRIPTION,,Êtes-vous sûr de vouloir finir le tutoriel ?
+TUTORIAL.DISMISS_DIALOG.TITLE,,Finir le tutoriel ?
+TUTORIAL.FARMING.A,,Cliquez sur Pièces et sélectionnez Parcelles agricoles. Elles sont classées par ordre alphabétique.
+TUTORIAL.FARMING.B,,Créer 4 Champs séparés dans une zone herbeuse
+TUTORIAL.FARMING_2.A,,Cliquez sur les Champs et sélectionnez une culture à planter.
+TUTORIAL.FARMING_2.A.STEAMDECK,,Appuyez sur R2 sur chaque parcelle agricole et sélectionnez une culture à planter.
+TUTORIAL.FARMING_2.B,,"Oubliez le chanvre, l'orge et le houblon pour l'instant, car ils sont utilisés pour les textiles et la brasserie."
+TUTORIAL.FEASTING_HALL.A,,Les colons mangent dans la salle de festin.
+TUTORIAL.FEASTING_HALL.B,,Le chaudron de la salle de festin n'est complété que lorsqu'un chaudron contenant de la soupe est disponible.
+TUTORIAL.FEASTING_HALL.C,,Sélectionnez Pièces et placez une salle de festin. Positionner un Chaudron qui sera placé plus tard dans la salle de festin.
+TUTORIAL.FOOD_COMPLETE.A,,Cette configuration simple permettra à vos colons d'avoir de la nourriture lorsque les cultures seront récoltées plus tard dans l'année.
+TUTORIAL.FOOD_COMPLETE.B,,Vous pouvez également pêcher dans la rivière ou chasser des animaux une fois que vous avez mis en place une armée pour fournir plus de nourriture.
+TUTORIAL.KITCHEN.A,,Les cultures sont récoltées en automne et doivent être stockées dans une réserve alimentaire.
+TUTORIAL.KITCHEN.B,,"Pour tirer le meilleur parti de vos récoltes, il est préférable de préparer de la soupe à partir des légumes ou de faire du pain à partir des céréales."
+TUTORIAL.KITCHEN.C,,"Sélectionnez Pièces et placez une cuisine. Contrairement aux parcelles agricoles, la plupart des pièces ont besoin de meubles pour fonctionner."
+TUTORIAL.MAIN_VIEW.A,,Les commandes dans le coin inférieur gauche de l'écran sont le principal moyen d'interagir avec le jeu.
+TUTORIAL.MAIN_VIEW.B,,"Vous pouvez assigner des ordres, des files d'attentes et des aménagements à créer ainsi que ajuster les priorités des tâches."
+TUTORIAL.MAIN_VIEW.C,,Vous pouvez faire un clic droit avec souris pour revenir à un menu précédent ou effacer la sélection en cours.
+TUTORIAL.MAIN_VIEW.C.STEAMDECK,,Vous pouvez appuyer sur L2 pour revenir à un menu précédent ou effacer la sélection en cours.
+TUTORIAL.MANAGEMENT_BUTTONS.DESCRIPTION,,Les icônes situées à gauche de l'heure et de la date correspondent à divers écrans de gestion et de vue d'ensemble.
+TUTORIAL.MANAGEMENT_BUTTONS.RESOURCE_MANAGEMENT,,Regardez l'écran de gestion des ressources
+TUTORIAL.MANAGEMENT_BUTTONS.SETTLER_MANAGEMENT,,Regardez l'écran de gestion des colons
+TUTORIAL.MINIMAP.DESCRIPTION,,C'est la minimap !
+TUTORIAL.MINIMAP.PROGRESS,,Click sur la minimap pour aller à un emplacement
+TUTORIAL.MINIMAP.PROGRESS.STEAMDECK,,Appuyez sur R2 avec le curseur positionner sur la Minimap pour aller à la destination.
+TUTORIAL.NEEDS.A,,"Les colons ont besoin de Manger, Boire et Dormir."
+TUTORIAL.NEEDS.B,,"Pour l'instant, ils peuvent boire à la rivière et dormir par terre."
+TUTORIAL.NEEDS.C,,"Cependant, pour se nourrir, ils doivent faire pousser des plantations."
+TUTORIAL.PROFESSIONS.A,,"Chaque colon peut se voir attribuer jusqu'à 3 professions, qui déterminent les tâches qu'il effectuera."
+TUTORIAL.PROFESSIONS.B,,Vous pouvez sélectionner un colon pour afficher ou modifier ses professions. Cela peut également être fait à partir de l'écran de gestion des colons.
+TUTORIAL.PROFESSIONS.C,,"Affectez au moins 4 colons comme fermiers. Assurez-vous que certains d'entre eux soient également affectés à la fonction de transporteur, car ils sont chargés de déplacer les objets."
+TUTORIAL.PROGRESS_DESCRIPTION.FARM_PLOT_SELECTIONS,,{{ROOMS.FARM.PLURAL}} assigné à une culture.
+TUTORIAL.PROGRESS_DESCRIPTION.PROFESSIONS_ASSIGNED,,{{professionPlural}} affecté
+TUTORIAL.PROGRESS_DESCRIPTION.TEXT,,{{currentQuantity}} sur {{requiredQuantity}} {{targetDescription}}
+TUTORIAL.PROGRESS_DESCRIPTION.TILES,,{{roomName}} cases
+TUTORIAL.RESOURCES.A,,De nombreux objets sont fabriqués à partir de planches de bois et de blocs de pierre. Il est important de maintenir un approvisionnement régulier de ceux-ci.
+TUTORIAL.RESOURCES.B,,Sélectionnez Ordres > Mine. Faites glisser une sélection sur la zone de montagne pour ordonner à vos mineurs de commencer à miner.
+TUTORIAL.RESOURCES.C,,Ensuite sélectionner Ordres > Couper. Glissez pour sélectionner une zone forestière afin d'ordonner à vos bucherons de commencer à abattre les arbres.
+TUTORIAL.RESOURCE_COLLECTION.A,,"Avec tout cela en place, vos ateliers commenceront à produire des planches de bois et des blocs de pierre."
+TUTORIAL.RESOURCE_COLLECTION.B,,Continuez jusqu'à ce que vous ayez une quantité raisonnable de planches et de blocs.
+TUTORIAL.SAVING.A,,La progression est sauvegardée automatiquement à minuit ou lorsque vous quittez le jeu.
+TUTORIAL.SAVING.A.STEAMDECK,,La progression est sauvegardée automatiquement à minuit chaque jour.
+TUTORIAL.SAVING.B,,Vous pouvez aussi appuyer sur F5 pour faire une sauvegarde rapide.
+TUTORIAL.SAVING.B.STEAMDECK,,La partie est aussi sauvegader lorsque vous quitter pour le menu principal.
+TUTORIAL.SAVING.C,,Appuyez sur F5 pour faire une sauvegarde rapide
+TUTORIAL.SHOW_LABEL,,Montrer le tutoriel
+TUTORIAL.START.CAMERA_CONTROLS_1,,Appuyez sur les touches ZQSD pour déplacer la caméra autour de vous.
+TUTORIAL.START.CAMERA_CONTROLS_1.STEAMDECK,,Utilisez le joystick gauche ou le D-Pad pour déplacer la caméra autour de vous.
+TUTORIAL.START.CAMERA_CONTROLS_2,,Appuyez sur A & E ou faites défiler la molette pour zoomer.
+TUTORIAL.START.CAMERA_CONTROLS_2.STEAMDECK,,Appuyez sur L1 et R1 pour zoom en avant et en arrière
+TUTORIAL.START.INTRO_1,,Bienvenue à Mountaincore ! Il s'agit d'une version Early Access avec un gameplay et des fonctionnalités encore en développement.
+TUTORIAL.START.INTRO_2,,"Votre intrépide groupe de colons nains a choisi cette région pour fonder une nouvelle colonie. Fournissez-leur de la nourriture, un abri et de la prospérité et qui sait, peut-être qu'un jour cette région deviendra la capitale d'un royaume à part entière !"
+TUTORIAL.STOCKPILES.A,,C'est une bonne idée de placer des réserves pour que vos colons puissent placer et partager des objets.
+TUTORIAL.STOCKPILES.B,,"Sélectionnez Pièces, puis Réserve, et enfin Outils. Faites glisser une réserve d'outils à un endroit central."
+TUTORIAL.TIME_AND_DATE.DESCRIPTION,,"Vous pouvez voir l'heure actuelle, la date, la météo et contrôler la vitesse du jeu ici."
+TUTORIAL.TIME_AND_DATE.FAST_SPEED_STEP,,"Cliquez sur l'icone ou cliquez sur les touches 2, 3 et 4 pour augmenter la vitesse de jeu"
+TUTORIAL.TIME_AND_DATE.FAST_SPEED_STEP.STEAMDECK,,Appuie sur la touche R2 sur l'icone pour augmenter la vitesse de jeu
+TUTORIAL.TIME_AND_DATE.NORMAL_SPEED_STEP,,Cliquez sur l'icône ou appuyer sur 1 pour la vitesse normale
+TUTORIAL.TIME_AND_DATE.NORMAL_SPEED_STEP.STEAMDECK,,Appuyez sur R2 sur l'icône pour la vitesse normale
+TUTORIAL.TIME_AND_DATE.PAUSE_STEP,,Appuyez sur l'espace pour mettre le jeu en pause et le reprendre.
+TUTORIAL.TIME_AND_DATE.PAUSE_STEP.STEAMDECK,,Appuyez sur le bouton A pour mettre le jeu en pause et le reprendre.
+TUTORIAL.VIEW_MODES.DEFAULT_STEP,,Cliquez sur le bouton le plus à gauche pour revenir au mode d'affichage par défaut.
+TUTORIAL.VIEW_MODES.DEFAULT_STEP.STEAMDECK,,Appuyez sur R2 sur l'icône la plus à gauche pour revenir au mode d'affichage par défaut
+TUTORIAL.VIEW_MODES.DESCRIPTION,,Sous l'heure et la date se trouvent des boutons pour afficher différentes vues superposées sur le monde du jeu.
+TUTORIAL.VIEW_MODES.OTHER_STEP,,Cliquez sur un autre mode de vue.
+TUTORIAL.VIEW_MODES.OTHER_STEP.STEAMDECK,,Appuyez sur R2 pour basculer sur un autre mode de vue.
+TUTORIAL.WORKSHOPS.A,,Les planches de bois sont produites dans une scierie par un bûcheron. Les blocs de pierre sont créés dans une carrière par un tailleur de pierre.
+TUTORIAL.WORKSHOPS.B,,Sélectionnez Pièces et placez une Scierie et une Carrière. Ils nécessitent tous deux la construction d'un établi.
+TUTORIAL.WORKSHOPS.C,,Vous pouvez appuyer sur la touche R pour faire pivoter les meubles
+TUTORIAL.WORKSHOPS.C.STEAMDECK,,Vous pouvez appuyer sur le bouton X pour faire pivoter les meubles
+TUTORIAL.WORKSHOPS.D,,"Les établis ont un bouton ""Plan"" qui montre ce qui peut être produit."
+VEGETABLE.BARLEY,,Orge
+VEGETABLE.BARLEY.PLURAL,,Orges
+VEGETABLE.BARLEY.TOOLTIP,,"Un grain utilisé uniquement dans la production de bière. Peut être planté au {{SEASON.SPRING}}, en {{SEASON.SUMMER}} ou en {{SEASON.AUTOMN}}."
+VEGETABLE.BERSERKER_MUSHROOM,,Champignon Berserker
+VEGETABLE.BERSERKER_MUSHROOM.PLURAL,,Champignons berserker
+VEGETABLE.BERSERKER_MUSHROOM.TOOLTIP,,Un champignon avec un chapeau rose-rouge portant des taches blanches. Il a des propriétés hallucinogènes que les guerriers utilisent parfois pour préparer la bataille.
+VEGETABLE.CARROT,,Carotte
+VEGETABLE.CARROT.PLURAL,,Carottes
+VEGETABLE.CARROT.TOOLTIP,,"Un légume racine robuste qui survit au gel {{SEASON.WINTER}}. Les carottes poussent rapidement mais ne produisent qu'une petite récolte. Peut être planté au {{SEASON.SPRING}}, en {{SEASON.SUMMER}} ou en {{SEASON.AUTOMN}}."
+VEGETABLE.CORN,,Maïs doux
+VEGETABLE.CORN.PLURAL,,Maïs doux
+VEGETABLE.CORN.TOOLTIP,,"Une céréales également connu sous le nom de maïs. Il produit une récolte abondante mais prend environ 2 saisons pour croître et ne peut pas survivre à l'{{SEASON.WINTER}}, donc il faut planter au début du {{SEASON.SPRING}}."
+VEGETABLE.DEATH_CAP_MUSHROOM,,Amanite phalloïde
+VEGETABLE.DEATH_CAP_MUSHROOM.PLURAL,,Amanites phalloïdes
+VEGETABLE.DEATH_CAP_MUSHROOM.TOOLTIP,,Un champignon très toxique avec un chapeau large et plat. Manger même une petite quantité causera presque certainement un empoisonnement qui peut conduire à la mort.
+VEGETABLE.DRAGONFRUIT,,Fruit du dragon
+VEGETABLE.DRAGONFRUIT.PLURAL,,Fruits du dragon
+VEGETABLE.ELFSBANE_MUSHROOM,,Fléau des Elfes
+VEGETABLE.ELFSBANE_MUSHROOM.PLURAL,,Fléaux des Elfes
+VEGETABLE.ELFSBANE_MUSHROOM.TOOLTIP,,"Ce champignon a un goût simple et sans saveur pour la plupart des humanoïdes. Curieusement, il a un goût absolument dégoûtant pour les elfes, qui réagissent souvent par des vomissements explosifs après leur consommation, ou dans des cas extrêmes, par une crise cardiaque."
+VEGETABLE.FIST_MUSHROOM,,Champignon Poing
+VEGETABLE.FIST_MUSHROOM.PLURAL,,Champignons Poings
+VEGETABLE.FIST_MUSHROOM.TOOLTIP,,Un champignon noir-bleu au goût métallique. Il est nommé pour un groupe de bardes de l'âge des ténèbres.
+VEGETABLE.FOR_BEER.USAGE,,utilisé pour brasser de la {{LIQUID.BEER}}
+VEGETABLE.FUNGOLEM_MUSHROOM,,
+VEGETABLE.FUNGOLEM_MUSHROOM.PLURAL,,
+VEGETABLE.FUNGOLEM_MUSHROOM.TOOLTIP,,
+VEGETABLE.GLOW_MUSHROOM,,Champignon lumineux
+VEGETABLE.GLOW_MUSHROOM.PLURAL,,Champignons lumineux
+VEGETABLE.GLOW_MUSHROOM.TOOLTIP,,Un champignon imprégné de magie qui émet de la lumière et change de couleur au fil des saisons.
+VEGETABLE.HEMP,,Chanvre
+VEGETABLE.HEMP.PLURAL,,Chanvres
+VEGETABLE.HEMP.TOOLTIP,,Nécessite d'être traité à {{ROOMS.TEXTILE_WORKSHOP}} pour en faire un matériau utilisable
+VEGETABLE.HEMP.USAGE,,Une matériau requis pour produire {{PRODUCT.LINEN}} dans l' {{ROOMS.TEXTILE_WORKSHOP}}
+VEGETABLE.HEMP_FIBRE,,Fibre de chanvre
+VEGETABLE.HEMP_FIBRE.PLURAL,,Fibres de chanvre
+VEGETABLE.HOPS,,Houblon
+VEGETABLE.HOPS.PLURAL,,Houblon
+VEGETABLE.HOPS.TOOLTIP,,Une fleur utilisée pour aromatiser la bière. Doit être planté au {{SEASON.SPRING}}.
+VEGETABLE.INGREDIENT.USAGE,,"Utilisé dans la préparation de la soupe, ou peut être consommé cru"
+VEGETABLE.LOQUAT,,Néflier du Japon
+VEGETABLE.LOQUAT.PLURAL,,Néfliers du Japon
+VEGETABLE.MILTONIA_MUSHROOM,,Champignon Miltonia
+VEGETABLE.MILTONIA_MUSHROOM.PLURAL,,Champignons Miltonia
+VEGETABLE.MILTONIA_MUSHROOM.TOOLTIP,,"Autrefois considéré comme n'existant que dans la région de Hudds, il est maintenant présent dans le monde entier."
+VEGETABLE.POTATO,,Pomme de terre
+VEGETABLE.POTATO.PLURAL,,Pommes de terre
+VEGETABLE.POTATO.TOOLTIP,,"Une tubercule comestible qui peut survivre {{SEASON.WINTER}} ce qui en fait un bon choix pour la plupart des colonies. Peut être planté au {{SEASON.SPRING}}, en {{SEASON.SUMMER}} ou en {{SEASON.AUTOMN}}."
+VEGETABLE.PURPLE_HELMET_MUSHROOM,,Mycène à pied rouge
+VEGETABLE.PURPLE_HELMET_MUSHROOM.PLURAL,,Mycènes à pied rouge
+VEGETABLE.PURPLE_HELMET_MUSHROOM.TOOLTIP,,"Fat Hat, Dump Turban, Casque gonflé; Ce champignon légendaire porte de nombreux noms. Selon la légende, il y a longtemps, de nombreuses communautés de nains vivaient entièrement sur une souche domestiquée de ce champignon."
+VEGETABLE.ROCIOMYCOTA_MUSHROOM,,Champignon Rociomycota
+VEGETABLE.ROCIOMYCOTA_MUSHROOM.PLURAL,,Champignons rociomycota
+VEGETABLE.ROCIOMYCOTA_MUSHROOM.TOOLTIP,,Un champignon tacheté blanc et noir. Il a été connu pour affecter l'apparence de ceux qui l'ingèrent.
+VEGETABLE.SUNGLOW_MUSHROOM,,Champignon Aurore
+VEGETABLE.SUNGLOW_MUSHROOM.PLURAL,,Champignons Aurore
+VEGETABLE.SUNGLOW_MUSHROOM.TOOLTIP,,Un champignon jaune vif qui brille avec l'apparence de la lumière du soleil. Il perd cette lueur au moment où il est récolté.
+VEGETABLE.SYRUP_POWDER_MUSHROOM,,Champignon Sirupeux-Poudreux
+VEGETABLE.SYRUP_POWDER_MUSHROOM.PLURAL,,Champignons Sirupeux-Poudreux
+VEGETABLE.SYRUP_POWDER_MUSHROOM.TOOLTIP,,"Un champignon rond orange/jaune avec un dessous blanc. On dit qu'il a été utilisé par les mages il y a longtemps, mais dans quel but, personne ne sait."
+VEGETABLE.TAMARILLO,,Tamarillo
+VEGETABLE.TAMARILLO.PLURAL,,Tamarillos
+VEGETABLE.THIMBLEBERRY,,Ronce odorante
+VEGETABLE.THIMBLEBERRY.PLURAL,,Ronces odorante
+VEGETABLE.TOMATO,,Tomate
+VEGETABLE.TOMATO.PLURAL,,Tomates
+VEGETABLE.TOMATO.TOOLTIP,,Une plante qui produite de gros fruits rouges souvent utilisées comme légume. Ne peut être planté que au {{SEASON.SPRING}}.
+VEGETABLE.WHEAT,,Blé
+VEGETABLE.WHEAT.PLURAL,,Blés
+VEGETABLE.WHEAT.TOOLTIP,,"Grain de céréales généralement utilisé pour la production de pain. Il peut survivre à l'{{SEASON.WINTER}} mais prend un certain temps à pousser, donc il est planté au {{SEASON.SPRING}} ou en {{SEASON.AUTOMN}}."
+VEGETABLE.WHEAT.USAGE,,utilisé pour faire du pain
+VEHICLE.DESCRIPTION,,{{materialType.adjective}} {{vehicleType.noun}}
+WALL.DESCRIPTION,,{{wallType.noun}} {{materialType.adjective}}
+WALL.GEMS.NOUN,,Gemme
+WALL.ORE.NOUN,,Minerai
+WALL.ROUGH_STONE.NOUN,,Mur de pierre
+WALL.STONE_BLOCK.NOUN,,Paroi lisse
+WALL.WOODEN.NOUN,,Mur en bois
+WEAPON.BATTLE.AXE,,Hâche de bataille
+WEAPON.BATTLE.HAMMER,,Marteau de bataille
+WEAPON.BONE.ARROW.HEADS.NOUN,,Tête de flèche en os
+WEAPON.BONE.ARROW.HEADS.PLURAL,,Têtes de flèche en os
+WEAPON.BONE.ARROWS.NOUN,,Flèche en os
+WEAPON.BONE.ARROWS.PLURAL,,Flèches en os
+WEAPON.BOW,,Arc
+WEAPON.CROSSBOW,,Arbalète
+WEAPON.METAL.ARROW.HEADS.NOUN,,Tête de fèche en métal
+WEAPON.METAL.ARROW.HEADS.PLURAL,,Têtes de flèche en métal
+WEAPON.METAL.ARROWS.NOUN,,Flèche en métal
+WEAPON.METAL.ARROWS.PLURAL,,Flèches en métal
+WEAPON.METAL.BOLTS.NOUN,,Carreau en métal
+WEAPON.METAL.BOLTS.PLURAL,,Carreaux en métal
+WEAPON.METAL.SHIELD,,Bouclier en métal
+WEAPON.NONE,,rien
+WEAPON.NO_ARMOUR,,Sans armure
+WEAPON.NO_SHIELD,,Sans bouclier
+WEAPON.SWORD,,Epée
+WEAPON.UNARMED,,désarmé
+WEAPON.WOODEN.SHIELD,,Bouclier en bois
+WEATHER.TYPE.CLOUDY,,Nuageux et gris
+WEATHER.TYPE.COLD_WINDS,,Vent froid
+WEATHER.TYPE.PERFECT,,Temps parfait
+WEATHER.TYPE.RAIN,,Pluie battante
+WEATHER.TYPE.SNOW,,Neige
+WEATHER.TYPE.THUNDERSTORM,,Tempête orageuse
+WOOD.ASPEN.ADJECTIVE,,en peuplier faux-tremble
+WOOD.ASPEN.NOUN,,Peuplier faux-tremble
+WOOD.BAOBAB.ADJECTIVE,,en Baobab
+WOOD.BAOBAB.NOUN,,Baobab
+WOOD.BARKSHROOM.ADJECTIVE,,en barkshroom
+WOOD.BARKSHROOM.NOUN,,Barkshroom
+WOOD.BEECH.ADJECTIVE,,en hêtre
+WOOD.BEECH.NOUN,,Hêtre
+WOOD.BIRCH.ADJECTIVE,,en bouleau
+WOOD.BIRCH.NOUN,,Bouleau
+WOOD.EBONY.ADJECTIVE,,en ébène
+WOOD.EBONY.NOUN,,Ébène
+WOOD.FIR.ADJECTIVE,,en sapin
+WOOD.FIR.NOUN,,Sapin
+WOOD.FUNGIWOOD.ADJECTIVE,,Bois de champignons
+WOOD.FUNGIWOOD.NOUN,,Bois de champignons
+WOOD.IRONWOOD.ADJECTIVE,,Bois de fer
+WOOD.IRONWOOD.NOUN,,Bois de fer
+WOOD.MAPLE.ADJECTIVE,,en érable
+WOOD.MAPLE.NOUN,,Érable
+WOOD.NUYTSIA.ADJECTIVE,,Nuytsia
+WOOD.NUYTSIA.NOUN,,Nuytsia
+WOOD.OAK.ADJECTIVE,,en chêne
+WOOD.OAK.NOUN,,Chêne
+WOOD.PECAN.ADJECTIVE,,Pacanier
+WOOD.PECAN.NOUN,,Pacanier
+WOOD.PINE.ADJECTIVE,,en pin
+WOOD.PINE.NOUN,,Pin
+WOOD.RED_CEDAR.ADJECTIVE,,Cèdre rouge
+WOOD.RED_CEDAR.NOUN,,Cèdre rouge
+WOOD.RED_EMPEROR.ADJECTIVE,,Erable du Japon
+WOOD.RED_EMPEROR.NOUN,,Erable du Japon
+WOOD.ROSEWOOD.ADJECTIVE,,Bois de rose
+WOOD.ROSEWOOD.NOUN,,Bois de rose
+WOOD.SPRUCE.ADJECTIVE,,L'épicéa
+WOOD.SPRUCE.NOUN,,L'épicéa
+WOOD.STAR_PINE.ADJECTIVE,,Pin de Norfolk
+WOOD.STAR_PINE.NOUN,,Pin de Norfolk
+WOOD.SYCAMORE.ADJECTIVE,,Erable Sycomore
+WOOD.SYCAMORE.NOUN,,Erable Sycomore
+GUI.STOCKPILE_UPGRADE.LABEL,,Agrandir
+GUI.STOCKPILE_UPGRADE.CANCEL_LABEL,,Annuler l'agrandissement

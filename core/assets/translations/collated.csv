@@ -742,6 +742,8 @@ GUI.SETTLER_MANAGEMENT.SORT.SKILL_LEVEL,Skill Level,,Fähigkeitenlevel,Niveau co
 GUI.SETTLER_MANAGEMENT.SORT_BY,Sort By,,Sortieren nach,Trier par,Ordina per,Ordenar por,,,,,,Sortér efter,,,,,,,排序,
 GUI.SETTLER_MANAGEMENT.TITLE,Settlers,,Siedler,Les colons,Coloni,Colonos,Colonos,,,Поселенцы,Vatandaşlar,Bosættere,,Nybyggare,,,,入植者,殖民者,
 GUI.SOUND_EFFECT_VOLUME,Sound Effects,,Sound-Effekte,Effets Sonores,Volume degli effetti sonori,Efectos de Sonido,,,,,,Lydeffekter,,,,,,,声音效果,
+GUI.STOCKPILE_UPGRADE.CANCEL_LABEL,Cancel enlarging,,,Annuler l'agrandissement,,,,,,,,,,,,,,,,
+GUI.STOCKPILE_UPGRADE.LABEL,Enlarge,,,Agrandir,,,,,,,,,,,,,,,,
 GUI.UI_SCALE,UI Scale,,Interfacegröße,Dimension de l'interface:,Dimensione dell'interfaccia:,Tamaño de la Interfaz:,Tamanho da interface:,Tamanho da interface:,,Размер интерфейса:,Arayüz ölçeği:,Brugerfladeskala,,Gränssnittskala:,,,,UIスケール:,UI缩放：,
 GUI.VIEW_MODE.DEFAULT,Default view,,Standardansicht,Vue par défaut,Vista predefinita,Vista General,,,,,,Standardvisning,,,,,,,默认视图,
 GUI.VIEW_MODE.JOB_PRIORITY,Priority view,,Prioritätsansicht,Vue des priorités,Vista prioritaria,Vista de Prioridad,,,,,,Prioritetsvisning,,,,,,,优先级视图,

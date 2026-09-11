@@ -352,7 +352,7 @@ public class LiquidContainerComponent implements ParentDependentEntityComponent,
 			}
 		}
 
-		this.liquidQuantity = asJson.getIntValue("quantity");
+		this.liquidQuantity = asJson.getFloatValue("quantity");
 
 		JSONArray allocationsArray = asJson.getJSONArray("allocations");
 		if (allocationsArray != null) {

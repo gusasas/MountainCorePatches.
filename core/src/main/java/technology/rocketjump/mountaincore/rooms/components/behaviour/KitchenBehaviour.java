@@ -27,6 +27,7 @@ import technology.rocketjump.mountaincore.jobs.model.Job;
 import technology.rocketjump.mountaincore.jobs.model.JobPriority;
 import technology.rocketjump.mountaincore.jobs.model.JobType;
 import technology.rocketjump.mountaincore.jobs.model.Skill;
+import technology.rocketjump.mountaincore.materials.model.GameMaterial;
 import technology.rocketjump.mountaincore.messaging.MessageType;
 import technology.rocketjump.mountaincore.messaging.types.JobCompletedMessage;
 import technology.rocketjump.mountaincore.messaging.types.RequestHaulingAllocationMessage;
@@ -449,6 +450,15 @@ public class KitchenBehaviour extends RoomBehaviourComponent implements Telegrap
 		return false;
 	}
 
+	private boolean recipeAcceptsLiquid(CookingRecipe recipe, GameMaterial material) {
+		for (ItemTypeWithMaterial inputLiquidOption : recipe.getInputLiquidOptions()) {
+			if (inputLiquidOption.getMaterial() == null || inputLiquidOption.getMaterial().equals(material)) {
+				return true;
+			}
+		}
+		return false;
+	}
+
 	private boolean allIngredientsInPlace(CookingSession cookingSession) {
 		boolean liquidComplete = false;
 		boolean ingredientsComplete = false;
@@ -458,8 +468,8 @@ public class KitchenBehaviour extends RoomBehaviourComponent implements Telegrap
 			if (liquidContainerComponent == null) {
 				Logger.error("Could not find required liquid container in assigned furniture entity ("+cookingSession.getAssignedFurnitureEntity()+") for cooking session with recipe " + cookingSession.getRecipe().getRecipeName());
 			} else {
-				if (liquidContainerComponent.getLiquidQuantity() >= cookingSession.getRecipe().getInputLiquidQuantity()) {
-					// FIXME not checking liquid material
+				if (liquidContainerComponent.getLiquidQuantity() >= cookingSession.getRecipe().getInputLiquidQuantity() &&
+						recipeAcceptsLiquid(cookingSession.getRecipe(), liquidContainerComponent.getTargetLiquidMaterial())) {
 					liquidComplete = true;
 				}
 			}

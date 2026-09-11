@@ -79,6 +79,7 @@ import technology.rocketjump.mountaincore.ui.GameInteractionStateContainer;
 import java.util.*;
 import java.util.stream.Collectors;
 
+import static technology.rocketjump.mountaincore.entities.ai.goap.actions.CancelLiquidAllocationAction.cancelLiquidAllocation;
 import static technology.rocketjump.mountaincore.entities.behaviour.furniture.InnoculationLogBehaviour.InnoculationLogState.INNOCULATING;
 import static technology.rocketjump.mountaincore.entities.model.EntityType.*;
 import static technology.rocketjump.mountaincore.jobs.SkillDictionary.NULL_PROFESSION;
@@ -217,6 +218,11 @@ public class JobMessageHandler implements GameContextAware, Telegraph {
 						if (cancelledJob.getHaulingAllocation() != null) {
 							messageDispatcher.dispatchMessage(MessageType.HAULING_ALLOCATION_CANCELLED, cancelledJob.getHaulingAllocation());
 							cancelledJob.setHaulingAllocation(null);
+						}
+
+						if (cancelledJob.getLiquidAllocation() != null) {
+							cancelLiquidAllocation(cancelledJob.getLiquidAllocation(), gameContext);
+							cancelledJob.setLiquidAllocation(null);
 						}
 
 						jobStore.remove(cancelledJob);

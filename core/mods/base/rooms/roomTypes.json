@@ -138,6 +138,7 @@
       "KITCHEN_BEHAVIOUR": []
     },
     "furnitureNames": [
+    "TRADE_CHEST",
       "WATER_BARREL",
       "BUTCHERY_WORKTOP",
       "KITCHEN_WORKTOP",
@@ -157,6 +158,7 @@
       "KITCHEN_BEHAVIOUR": []
     },
     "furnitureNames": [
+    "TRADE_CHEST",
       "BAKERS_WORKTOP",
       "BAKING_OVEN",
       "IMPORT_PALLET",

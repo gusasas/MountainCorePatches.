@@ -87,7 +87,7 @@
   "i18nKey" : "ROOMS.KITCHEN",
   "drawableName" : "btn_room_kitchen",
   "colorCode" : "#b98da0",
-  "furnitureNames" : [ "WATER_BARREL", "BUTCHERY_WORKTOP", "KITCHEN_WORKTOP", "CHEFS_CAULDRON", "FLOUR_MILL", "FISH_BARREL", "IMPORT_PALLET", "EXPORT_PALLET" ],
+  "furnitureNames" : [ "TRADE_CHEST", "WATER_BARREL", "BUTCHERY_WORKTOP", "KITCHEN_WORKTOP", "CHEFS_CAULDRON", "FLOUR_MILL", "FISH_BARREL", "IMPORT_PALLET", "EXPORT_PALLET" ],
   "tags" : {
     "KITCHEN_BEHAVIOUR" : [ ]
   }
@@ -96,7 +96,7 @@
   "i18nKey" : "ROOMS.BAKERY",
   "drawableName" : "btn_room_bakery",
   "colorCode" : "#b98da0",
-  "furnitureNames" : [ "BAKERS_WORKTOP", "BAKING_OVEN", "IMPORT_PALLET", "Dough_Proofing_Table" ],
+  "furnitureNames" : [ "TRADE_CHEST", "BAKERS_WORKTOP", "BAKING_OVEN", "IMPORT_PALLET", "Dough_Proofing_Table" ],
   "tags" : {
     "KITCHEN_BEHAVIOUR" : [ ]
   }

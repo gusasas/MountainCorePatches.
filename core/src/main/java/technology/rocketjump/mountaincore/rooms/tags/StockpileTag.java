@@ -10,6 +10,7 @@ import technology.rocketjump.mountaincore.entities.tags.InventoryItemsUnallocate
 import technology.rocketjump.mountaincore.entities.tags.Tag;
 import technology.rocketjump.mountaincore.entities.tags.TagProcessingUtils;
 import technology.rocketjump.mountaincore.gamecontext.GameContext;
+import technology.rocketjump.mountaincore.mapping.tile.MapTile;
 import technology.rocketjump.mountaincore.production.FurnitureStockpile;
 import technology.rocketjump.mountaincore.production.StockpileComponentUpdater;
 import technology.rocketjump.mountaincore.production.StockpileSettings;
@@ -43,6 +44,21 @@ public class StockpileTag extends Tag {
 		return isValid;
 	}
 
+	/**
+	 * @return the stockpile settings of the room this entity sits in, or null when it is not in a stockpile
+	 */
+	private StockpileSettings settingsOfContainingRoom(Entity entity, GameContext gameContext) {
+		if (gameContext == null || gameContext.getAreaMap() == null || entity.getLocationComponent() == null) {
+			return null;
+		}
+		MapTile tile = gameContext.getAreaMap().getTile(entity.getLocationComponent().getWorldOrParentPosition());
+		if (tile == null || tile.getRoomTile() == null || tile.getRoomTile().getRoom() == null) {
+			return null;
+		}
+		StockpileRoomComponent stockpileRoomComponent = tile.getRoomTile().getRoom().getComponent(StockpileRoomComponent.class);
+		return stockpileRoomComponent == null ? null : stockpileRoomComponent.getStockpileSettings();
+	}
+
 	@Override
 	public void apply(Room room, TagProcessingUtils tagProcessingUtils) {
 		room.createComponent(StockpileRoomComponent.class, tagProcessingUtils.messageDispatcher);
@@ -63,8 +79,11 @@ public class StockpileTag extends Tag {
 			FurnitureStockpile furnitureStockpile = new FurnitureStockpile();
 			furnitureStockpile.setMaxQuantity(maxQuantity);
 
-			StockpileSettings stockpileSettings = new StockpileSettings();
-			if (args.size() <= 1) {
+			// Placed into a stockpile which has already been set up, so match it rather than making
+			// the player repeat the same choices for every chest they drop in
+			StockpileSettings roomSettings = args.size() <= 1 ? settingsOfContainingRoom(entity, gameContext) : null;
+			final StockpileSettings stockpileSettings = roomSettings == null ? new StockpileSettings() : roomSettings.clone();
+			if (args.size() <= 1 && roomSettings == null) {
 				// No restrictions given, so it holds anything; the player can still switch entries off.
 				for (ItemType itemType : tagProcessingUtils.itemTypeDictionary.getAll()) {
 					// A handful of item types have no stockpile group, so don't ask for the parent to

@@ -98,19 +98,7 @@ public class FoodAllocationMessageHandler implements Telegraph, GameContextAware
 
 
 	private void cancel(LiquidAllocation liquidAllocation) {
-		switch (liquidAllocation.getType()) {
-			case FROM_RIVER: {
-				// Nothing to do
-				return;
-			}
-			case FROM_LIQUID_CONTAINER: {
-				CancelLiquidAllocationAction.cancelLiquidAllocation(liquidAllocation, gameContext);
-				break;
-			}
-			default:
-				Logger.error("Not yet implemented: Cancelling liquid allocation of type " + liquidAllocation.getType());
-		}
-
+		CancelLiquidAllocationAction.cancelLiquidAllocation(liquidAllocation, gameContext);
 	}
 
 	private void handle(FoodAllocationRequestMessage requestMessage) {

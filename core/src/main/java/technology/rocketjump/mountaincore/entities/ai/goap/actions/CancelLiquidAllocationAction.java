@@ -38,6 +38,9 @@ public class CancelLiquidAllocationAction extends Action {
 			case FROM_RIVER: {
 				return CompletionType.SUCCESS;
 			}
+			case CRAFTING_ASSIGNMENT:
+			case REQUESTER_INVENTORY:
+			case PARENT_HAULING:
 			case FROM_LIQUID_CONTAINER: {
 				Entity targetEntity = gameContext.getEntities().get(liquidAllocation.getTargetContainerId());
 				if (targetEntity == null) {
@@ -59,9 +62,8 @@ public class CancelLiquidAllocationAction extends Action {
 					return CompletionType.FAILURE;
 				}
 			}
-			default:
-				Logger.error("Not yet implemented cancelLiquidAllocation() for type " + liquidAllocation.getType());
 		}
+		Logger.error("Not yet implemented cancelLiquidAllocation() for type " + liquidAllocation.getType());
 		return CompletionType.FAILURE;
 	}
 

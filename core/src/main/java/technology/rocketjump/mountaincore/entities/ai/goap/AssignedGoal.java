@@ -37,7 +37,6 @@ import static technology.rocketjump.mountaincore.entities.ai.goap.actions.Action
  */
 public class AssignedGoal implements ChildPersistable, Destructible {
 
-	private static final Double MIN_NEED_BEFORE_GOAL_INTERRUPTED = 0.12;
 	public Entity parentEntity;
 	public MessageDispatcher messageDispatcher;
 
@@ -133,7 +132,7 @@ public class AssignedGoal implements ChildPersistable, Destructible {
 			NeedsComponent needsComponent = parentEntity.getComponent(NeedsComponent.class);
 			if (needsComponent != null) {
 				for (Map.Entry<EntityNeed, Double> entry : needsComponent.getAll()) {
-					if (entry.getValue() < MIN_NEED_BEFORE_GOAL_INTERRUPTED) {
+					if (entry.getValue() < gameContext.getConstantsRepo().getWorldConstants().getMinNeedBeforeGoalInterrupted()) {
 						setInterrupted(true);
 						break;
 					}

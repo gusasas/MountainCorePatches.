@@ -43,6 +43,8 @@
   "ambientLightingColor" : "#404052FF",
   "oreHarvestMinSkillChance" : 0.3,
   "stoneHarvestedItemType" : "Resource-Stone-Unrefined",
+  "chanceOfPestsPerDay" : 0.025,
+  "minNeedBeforeGoalInterrupted" : 25.0,
   "corpseDecayColor" : "#8b9d89",
   "maxNeighbouringShrubs" : 4
 }

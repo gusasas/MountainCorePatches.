@@ -17,6 +17,7 @@ public class WorldConstants {
 	private Color ambientLightingColorInstance;
 
 	private int maxNeighbouringShrubs;
+	private double minNeedBeforeGoalInterrupted;
 	private float attachedLightSourceTogglePoint;
 	private double corpseDecayHours;
 	private String corpseDecayColor;
@@ -80,6 +81,14 @@ public class WorldConstants {
 
 	public void setGemHarvestedItemType(String gemHarvestedItemType) {
 		this.gemHarvestedItemType = gemHarvestedItemType;
+	}
+
+	public double getMinNeedBeforeGoalInterrupted() {
+		return minNeedBeforeGoalInterrupted;
+	}
+
+	public void setMinNeedBeforeGoalInterrupted(double minNeedBeforeGoalInterrupted) {
+		this.minNeedBeforeGoalInterrupted = minNeedBeforeGoalInterrupted;
 	}
 
 	public int getMaxNeighbouringShrubs() {

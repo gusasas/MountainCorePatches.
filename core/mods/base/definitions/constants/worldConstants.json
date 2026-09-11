@@ -3,6 +3,7 @@
   "ambientLightingColor": "#404052FF",
 
   "maxNeighbouringShrubs": 4,
+  "minNeedBeforeGoalInterrupted": 25.0,
   "attachedLightSourceTogglePoint": 0.75,
   "corpseDecayHours": 480.0,
   "corpseDecayColor": "#8b9d89",

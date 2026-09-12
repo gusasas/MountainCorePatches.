@@ -28,6 +28,7 @@ import technology.rocketjump.mountaincore.persistence.model.SavedGameStateHolder
 import static technology.rocketjump.mountaincore.entities.ai.goap.actions.Action.CompletionType.FAILURE;
 import static technology.rocketjump.mountaincore.entities.ai.goap.actions.Action.CompletionType.SUCCESS;
 import static technology.rocketjump.mountaincore.entities.components.LiquidAllocation.LiquidAllocationType.FROM_RIVER;
+import static technology.rocketjump.mountaincore.entities.components.LiquidAllocation.LiquidAllocationType.REQUESTER_INVENTORY;
 import static technology.rocketjump.mountaincore.entities.components.creature.HappinessComponent.HappinessModifier.DRANK_FROM_RIVER;
 
 public class ConsumeLiquidFromContainerAction extends Action {
@@ -60,7 +61,9 @@ public class ConsumeLiquidFromContainerAction extends Action {
 		if (elapsedTime > getTimeToSpendDrinking()) {
 			// Just going to assume we're on the correct position, doesn't matter too much if we were pushed away
 			MapTile targetZoneTile = gameContext.getAreaMap().getTile(liquidAllocation.getTargetZoneTile().getTargetTile());
-			Entity targetFurniture = getFirstFurnitureEntity(targetZoneTile);
+			// A drink from the settler's own inventory records whatever tile it happened to stand on.
+			Entity targetFurniture = REQUESTER_INVENTORY.equals(liquidAllocation.getType()) ?
+					null : getFirstFurnitureEntity(targetZoneTile);
 			if (targetFurniture != null) {
 				LiquidContainerComponent liquidContainerComponent = targetFurniture.getComponent(LiquidContainerComponent.class);
 				if (liquidContainerComponent != null) {
@@ -106,7 +109,7 @@ public class ConsumeLiquidFromContainerAction extends Action {
 
 	private Entity tryEquipContainerFromInventory(GameContext gameContext) {
 		LiquidAllocation liquidAllocation = parent.getLiquidAllocation();
-		if (LiquidAllocation.LiquidAllocationType.REQUESTER_INVENTORY == liquidAllocation.getType()) {
+		if (REQUESTER_INVENTORY.equals(liquidAllocation.getType())) {
 			InventoryComponent inventory = parent.parentEntity.getComponent(InventoryComponent.class);
 			EquippedItemComponent equipped = parent.parentEntity.getOrCreateComponent(EquippedItemComponent.class);
 			if (inventory == null) {

@@ -136,10 +136,18 @@ public class PathfindingTask implements Callable<BackgroundTaskResult> {
 	private TileNeighbours filterToNavigable(TileNeighbours tileNeighbours) {
 		TileNeighbours filtered = new TileNeighbours();
 
+		// A diagonal asks this of the same tile up to three times, and it walks the tile's entities, so
+		// work it out once.
+		boolean[] navigable = new boolean[CompassDirection.ALL_DIRECTIONS.length];
+		for (CompassDirection direction : CompassDirection.ALL_DIRECTIONS) {
+			MapTile cellInDirection = tileNeighbours.get(direction);
+			navigable[direction.ordinal()] = cellInDirection != null && cellInDirection.isNavigable(parentEntity, originCell);
+		}
+
 		for (Map.Entry<CompassDirection, MapTile> compassDirectionMapCellEntry : tileNeighbours.entrySet()) {
 			CompassDirection direction = compassDirectionMapCellEntry.getKey();
 			MapTile cellInDirection = compassDirectionMapCellEntry.getValue();
-			if (cellInDirection.isNavigable(parentEntity, originCell)) {
+			if (navigable[direction.ordinal()]) {
 				if (flags.contains(PathfindingFlag.AVOID_COMBATANTS_HOLDING_TILES)) {
 					boolean hasCombatantHoldingTile = cellInDirection.getEntities()
 							.stream().anyMatch(entity -> {
@@ -159,25 +167,25 @@ public class PathfindingTask implements Callable<BackgroundTaskResult> {
 					// Assuming that if there is a diagonal neighbour, both the orthogonal neighbours must not be null
 					switch (direction) {
 						case NORTH_EAST: {
-							if (tileNeighbours.get(CompassDirection.NORTH).isNavigable(parentEntity, originCell) && tileNeighbours.get(CompassDirection.EAST).isNavigable(parentEntity, originCell)) {
+							if (navigable[CompassDirection.NORTH.ordinal()] && navigable[CompassDirection.EAST.ordinal()]) {
 								filtered.put(direction, cellInDirection);
 							}
 							break;
 						}
 						case NORTH_WEST: {
-							if (tileNeighbours.get(CompassDirection.NORTH).isNavigable(parentEntity, originCell) && tileNeighbours.get(CompassDirection.WEST).isNavigable(parentEntity, originCell)) {
+							if (navigable[CompassDirection.NORTH.ordinal()] && navigable[CompassDirection.WEST.ordinal()]) {
 								filtered.put(direction, cellInDirection);
 							}
 							break;
 						}
 						case SOUTH_WEST: {
-							if (tileNeighbours.get(CompassDirection.SOUTH).isNavigable(parentEntity, originCell) && tileNeighbours.get(CompassDirection.WEST).isNavigable(parentEntity, originCell)) {
+							if (navigable[CompassDirection.SOUTH.ordinal()] && navigable[CompassDirection.WEST.ordinal()]) {
 								filtered.put(direction, cellInDirection);
 							}
 							break;
 						}
 						case SOUTH_EAST: {
-							if (tileNeighbours.get(CompassDirection.SOUTH).isNavigable(parentEntity, originCell) && tileNeighbours.get(CompassDirection.EAST).isNavigable(parentEntity, originCell)) {
+							if (navigable[CompassDirection.SOUTH.ordinal()] && navigable[CompassDirection.EAST.ordinal()]) {
 								filtered.put(direction, cellInDirection);
 							}
 							break;
@@ -196,7 +204,8 @@ public class PathfindingTask implements Callable<BackgroundTaskResult> {
 	}
 
 	private float getDistance(Vector2 a, Vector2 b) {
-		return b.cpy().sub(a).len();
+		// cpy().sub().len() meant a throwaway Vector2 for every node the search looked at
+		return a.dst(b);
 	}
 
 }

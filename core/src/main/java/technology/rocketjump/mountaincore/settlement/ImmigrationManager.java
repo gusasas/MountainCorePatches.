@@ -267,6 +267,38 @@ public class ImmigrationManager implements Updatable, Telegraph {
 	}
 
 	public static int determineSettlementRegionId(GameContext gameContext, boolean settlersOnly) {
+		return (settlersOnly ? settlerRegion : settlementRegion).get(gameContext, settlersOnly);
+	}
+
+	/**
+	 * Working this out walks every entity in the game, and the settlement does not move from one hour
+	 * to the next.
+	 */
+	private static final double HOURS_BETWEEN_REGION_CHECKS = 1.0;
+	private static final SettlementRegion settlerRegion = new SettlementRegion();
+	private static final SettlementRegion settlementRegion = new SettlementRegion();
+
+	private static class SettlementRegion {
+
+		private GameContext calculatedFor;
+		private double calculatedAtGameTime;
+		private int regionId;
+
+		int get(GameContext gameContext, boolean settlersOnly) {
+			double currentGameTime = gameContext.getGameClock().getCurrentGameTime();
+			boolean stale = gameContext != calculatedFor ||
+					currentGameTime < calculatedAtGameTime || // an older save has been loaded
+					currentGameTime - calculatedAtGameTime > HOURS_BETWEEN_REGION_CHECKS;
+			if (stale) {
+				regionId = calculateSettlementRegionId(gameContext, settlersOnly);
+				calculatedFor = gameContext;
+				calculatedAtGameTime = currentGameTime;
+			}
+			return regionId;
+		}
+	}
+
+	private static int calculateSettlementRegionId(GameContext gameContext, boolean settlersOnly) {
 		TiledMap areaMap = gameContext.getAreaMap();
 		final Predicate<Entity> predicate;
 		if (settlersOnly) {

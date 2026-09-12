@@ -40,16 +40,18 @@ public class GoToSettlementAction extends GoToLocationAction {
 		Deque<MapTile> frontier = new ArrayDeque<>();
 		Set<MapTile> explored = new HashSet<>();
 		frontier.add(startingTile);
+		explored.add(startingTile);
 
 		while (!frontier.isEmpty()) {
 			MapTile currentTile = frontier.pop();
-			explored.add(currentTile);
 			if (currentTile.isEmpty() && currentTile.getRegionId() == targetRegionId) {
 				return currentTile.getWorldPositionOfCenter();
 			}
 
 			for (MapTile neighbour : areaMap.getNeighbours(currentTile.getTileX(), currentTile.getTileY()).values()) {
-				if (!explored.contains(neighbour) && distance(startingTile, currentTile) < MAX_DISTANCE) {
+				// Mark tiles as they are queued rather than as they are taken off, or most are expanded several
+				// times over.
+				if (distance(startingTile, neighbour) < MAX_DISTANCE && explored.add(neighbour)) {
 					frontier.add(neighbour);
 				}
 			}

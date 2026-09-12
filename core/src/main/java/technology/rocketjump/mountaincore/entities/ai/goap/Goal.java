@@ -20,6 +20,8 @@ public class Goal {
 	public final long goalId;
 	public final boolean interruptedByCombat;
 	public final boolean interruptedByLowNeeds;
+	/** The need this goal exists to deal with, which therefore must not interrupt it */
+	public final EntityNeed satisfiesNeed;
 	public final List<CreatureCategory> creatureCategories;
 
 	private List<GoalSelector> selectors = new LinkedList<>();
@@ -27,14 +29,15 @@ public class Goal {
 	private final List<Class<? extends Action>> initialActions = new ArrayList<>();
 	private final Map<Class<? extends Action>, ActionTransitions> actionTransitionsMap = new HashMap<>();
 
-	public static final Goal NULL_GOAL = new Goal("NULL_GOAL", "", 0.0, false, false, List.of());
+	public static final Goal NULL_GOAL = new Goal("NULL_GOAL", "", 0.0, false, false, null, List.of());
 
-	public Goal(String name, String i18nDescription, Double expiryHours, boolean interruptedByCombat, boolean interruptedByLowNeeds, List<CreatureCategory> creatureCategories) {
+	public Goal(String name, String i18nDescription, Double expiryHours, boolean interruptedByCombat, boolean interruptedByLowNeeds, EntityNeed satisfiesNeed, List<CreatureCategory> creatureCategories) {
 		this.name = name;
 		this.i18nDescription = i18nDescription;
 		this.expiryHours = expiryHours;
 		this.interruptedByCombat = interruptedByCombat;
 		this.interruptedByLowNeeds = interruptedByLowNeeds;
+		this.satisfiesNeed = satisfiesNeed;
 		this.goalId = SequentialIdGenerator.nextId();
 		this.creatureCategories = creatureCategories;
 	}

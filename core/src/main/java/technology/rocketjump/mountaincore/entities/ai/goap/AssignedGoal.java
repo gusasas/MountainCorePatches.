@@ -132,6 +132,10 @@ public class AssignedGoal implements ChildPersistable, Destructible {
 			NeedsComponent needsComponent = parentEntity.getComponent(NeedsComponent.class);
 			if (needsComponent != null) {
 				for (Map.Entry<EntityNeed, Double> entry : needsComponent.getAll()) {
+					if (entry.getKey().equals(goal.satisfiesNeed)) {
+						// The need this goal is here to deal with must not interrupt it
+						continue;
+					}
 					if (entry.getValue() < gameContext.getConstantsRepo().getWorldConstants().getMinNeedBeforeGoalInterrupted()) {
 						setInterrupted(true);
 						break;

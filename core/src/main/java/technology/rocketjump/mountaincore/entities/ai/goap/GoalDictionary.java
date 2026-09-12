@@ -83,6 +83,7 @@ public class GoalDictionary {
 		if (interruptedByLowNeeds == null) {
 			interruptedByLowNeeds = false;
 		}
+		EntityNeed satisfiesNeed = EnumUtils.getEnum(EntityNeed.class, goalJson.getString("satisfiesNeed"));
 
 
 		List<CreatureCategory> creatureCategories = new ArrayList<>();
@@ -100,7 +101,7 @@ public class GoalDictionary {
 			}
 		}
 		Goal goal = new Goal(goalJson.getString("name"), goalJson.getString("i18nDescription"), goalJson.getDouble("expiryHours"),
-				interruptedByCombat, interruptedByLowNeeds, creatureCategories);
+				interruptedByCombat, interruptedByLowNeeds, satisfiesNeed, creatureCategories);
 
 		List<GoalSelector> selectors = objectMapper.readValue(goalJson.getJSONArray("selectors").toJSONString(),
 				objectMapper.getTypeFactory().constructParametrizedType(ArrayList.class, List.class, GoalSelector.class));

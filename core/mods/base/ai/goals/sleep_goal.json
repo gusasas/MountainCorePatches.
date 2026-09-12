@@ -1,5 +1,7 @@
 {
   "name": "Sleep in bed goal",
+  "interruptedByLowNeeds": true,
+  "satisfiesNeed": "SLEEP",
   "i18nDescription": "GOAL.SLEEP.DESCRIPTION",
   "selectors": [
     {

@@ -164,11 +164,30 @@ public class FurnitureLayout {
 		}
 	}
 
+	/**
+	 * @return the workspace of this furniture worked from the given tile, or null when that tile is not one
+	 */
+	public static FurnitureLayout.Workspace getWorkspaceAccessedFrom(Entity furnitureEntity, GridPoint2 accessedFrom) {
+		FurnitureEntityAttributes attributes = (FurnitureEntityAttributes) furnitureEntity.getPhysicalEntityComponent().getAttributes();
+
+		GridPoint2 furniturePosition = VectorUtils.toGridPoint(furnitureEntity.getLocationComponent().getWorldPosition());
+		for (FurnitureLayout.Workspace workspace : attributes.getCurrentLayout().getWorkspaces()) {
+			if (furniturePosition.cpy().add(workspace.getAccessedFrom()).equals(accessedFrom)) {
+				FurnitureLayout.Workspace worldPositionedWorkspace = new FurnitureLayout.Workspace();
+				worldPositionedWorkspace.setLocation(furniturePosition.cpy().add(workspace.getLocation()));
+				worldPositionedWorkspace.setAccessedFrom(furniturePosition.cpy().add(workspace.getAccessedFrom()));
+				return worldPositionedWorkspace;
+			}
+		}
+
+		return null;
+	}
+
 	public static FurnitureLayout.Workspace getAnyNavigableWorkspace(Entity furnitureEntity, TiledMap areaMap) {
 		FurnitureEntityAttributes attributes = (FurnitureEntityAttributes) furnitureEntity.getPhysicalEntityComponent().getAttributes();
 
 		GridPoint2 furniturePosition = VectorUtils.toGridPoint(furnitureEntity.getLocationComponent().getWorldPosition());
-		List<FurnitureLayout.Workspace> workspaces = attributes.getCurrentLayout().getWorkspaces();
+		List<FurnitureLayout.Workspace> workspaces = new ArrayList<>(attributes.getCurrentLayout().getWorkspaces());
 		Collections.shuffle(workspaces);
 		for (FurnitureLayout.Workspace workspace : workspaces) {
 			GridPoint2 accessedFromLocation = furniturePosition.cpy().add(workspace.getAccessedFrom());

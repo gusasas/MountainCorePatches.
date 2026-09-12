@@ -62,9 +62,8 @@ public class PlaceEntityAction extends Action {
 					Logger.warn("Furniture not found for hauling allocation");
 					completionType = CompletionType.FAILURE;
 				} else if (hasWorkspaces(targetFurniture)) {
-					FurnitureLayout.Workspace nearestNavigableWorkspace = FurnitureLayout.getNearestNavigableWorkspace(targetFurniture, gameContext.getAreaMap(), currentTile.getTilePosition());
-					if (nearestNavigableWorkspace == null || !nearestNavigableWorkspace.getAccessedFrom().equals(currentTile.getTilePosition())) {
-						Logger.error("Not in nearest workspace for furniture to place item into");
+					if (FurnitureLayout.getWorkspaceAccessedFrom(targetFurniture, currentTile.getTilePosition()) == null) {
+						Logger.error("Not in a workspace for furniture to place item into");
 						completionType = CompletionType.FAILURE;
 					} else {
 						Entity itemToPlace = getTargetFrom(containerComponent);

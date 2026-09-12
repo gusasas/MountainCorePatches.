@@ -104,7 +104,7 @@ public class TiledMap {
 
 	public TileNeighbours getNeighbours(int x, int y) {
 		TileNeighbours neighbours = new TileNeighbours();
-		for (CompassDirection direction : CompassDirection.values()) {
+		for (CompassDirection direction : CompassDirection.ALL_DIRECTIONS) {
 			MapTile cellInDirection = getTile(x + direction.getXOffset(), y + direction.getYOffset());
 			if (cellInDirection != null) {
 				neighbours.put(direction, cellInDirection);

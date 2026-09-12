@@ -37,6 +37,10 @@ public enum CompassDirection {
 	private final int index;
 	private final float distance;
 
+	/**
+	 * values() clones the array on every call, and this is asked for per tile. Do not write to it.
+	 */
+	public static final CompassDirection[] ALL_DIRECTIONS = values();
 	public static final List<CompassDirection> CARDINAL_DIRECTIONS = Arrays.asList(NORTH, EAST, SOUTH, WEST);
 	public static final List<CompassDirection> DIAGONAL_DIRECTIONS = Arrays.asList(NORTH_WEST, NORTH_EAST, SOUTH_WEST, SOUTH_EAST);
 

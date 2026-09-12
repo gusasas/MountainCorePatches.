@@ -215,7 +215,7 @@ public class MapTile implements Persistable {
 			} else {
 				return false; // Otherwise channels are not navigable
 			}
-		} else if (!hasWall() && !hasTree()) {
+		} else if (!hasWall()) {
 			if (getFloor().hasBridge() && !getFloor().isBridgeNavigable()) {
 				return false;
 			}
@@ -224,8 +224,14 @@ public class MapTile implements Persistable {
 					return false;
 				}
 			}
+			// Checked here rather than through hasTree() so the tile's entities are only walked once.
 			for (Entity entity : getEntities()) {
-				if (entity.getType().equals(EntityType.FURNITURE)) {
+				if (entity.getType().equals(EntityType.PLANT)) {
+					PlantEntityAttributes attributes = (PlantEntityAttributes) entity.getPhysicalEntityComponent().getAttributes();
+					if (attributes.isTree()) {
+						return false;
+					}
+				} else if (entity.getType().equals(EntityType.FURNITURE)) {
 					if (entity.getPhysicalEntityComponent().getAttributes() instanceof DoorwayEntityAttributes) {
 						continue;
 					}

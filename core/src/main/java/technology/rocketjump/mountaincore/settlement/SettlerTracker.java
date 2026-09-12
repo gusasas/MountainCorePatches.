@@ -118,16 +118,14 @@ public class SettlerTracker implements GameContextAware, Telegraph {
 				SettlerLocateDrinkStatusMessage message = (SettlerLocateDrinkStatusMessage) msg.extraInfo;
 				Entity settler = message.settler();
 				if (settler.isSettler()) {
-					int sizeBefore = trappedSettlers.size();
 					if (message.drinkFound()) {
 						trappedSettlers.remove(settler.getId());
-					} else {
-						trappedSettlers.put(settler.getId(), settler);
-						if (sizeBefore == 0) {
-							Notification notification = new Notification(NotificationType.SETTLER_STUCK,
-									settler.getLocationComponent().getWorldOrParentPosition(), new Selectable(settler, 0));
-							messageDispatcher.dispatchMessage(MessageType.POST_NOTIFICATION, notification);
-						}
+					} else if (trappedSettlers.put(settler.getId(), settler) == null) {
+						// Only when this settler was not already known to be stuck, so repeated
+						// failures by the same settler do not repeat the notification
+						Notification notification = new Notification(NotificationType.SETTLER_STUCK,
+								settler.getLocationComponent().getWorldOrParentPosition(), new Selectable(settler, 0));
+						messageDispatcher.dispatchMessage(MessageType.POST_NOTIFICATION, notification);
 					}
 				}
 

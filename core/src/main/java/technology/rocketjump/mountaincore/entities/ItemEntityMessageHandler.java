@@ -381,8 +381,12 @@ public class ItemEntityMessageHandler implements GameContextAware, Telegraph {
 			for (Entity pieceOfFurniture : furniture) {
 				FurnitureStockpileComponent stockpileComponent = pieceOfFurniture.getComponent(FurnitureStockpileComponent.class);
 				if (stockpileComponent != null && stockpileComponent.getStockpileSettings().canHold(entity) && pieceOfFurniture.getLocationComponent().getWorldPosition() != null) {
-					Map<Float, AbstractStockpile> byDistance = stockpilesByDistanceByPriority.get(stockpileComponent.getPriority());
-					byDistance.put(entityPosition.dst2(pieceOfFurniture.getLocationComponent().getWorldPosition()), stockpileComponent.getStockpile());
+					// Same region check as the rooms above, so furniture that cannot be walked to is not offered.
+					int furnitureRegionId = areaMap.getNavigableRegionId(pieceOfFurniture, pieceOfFurniture.getLocationComponent().getWorldPosition());
+					if (sourceRegionId == furnitureRegionId) {
+						Map<Float, AbstractStockpile> byDistance = stockpilesByDistanceByPriority.get(stockpileComponent.getPriority());
+						byDistance.put(entityPosition.dst2(pieceOfFurniture.getLocationComponent().getWorldPosition()), stockpileComponent.getStockpile());
+					}
 				}
 			}
 		}));
@@ -544,6 +548,8 @@ public class ItemEntityMessageHandler implements GameContextAware, Telegraph {
 			if (component != null) {
 				return component.getPriority();
 			}
+			// Not in a stockpile, so it must not be judged by whichever one its holder happens to stand in.
+			return JobPriority.DISABLED;
 		}
 		if (tile.getRoomTile() != null) {
 			Room room = tile.getRoomTile().getRoom();

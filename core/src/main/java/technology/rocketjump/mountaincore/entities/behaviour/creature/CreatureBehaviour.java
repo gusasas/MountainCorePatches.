@@ -41,7 +41,11 @@ import technology.rocketjump.mountaincore.persistence.model.SavedGameStateHolder
 import technology.rocketjump.mountaincore.ui.i18n.I18nText;
 import technology.rocketjump.mountaincore.ui.i18n.I18nTranslator;
 
+import technology.rocketjump.mountaincore.entities.ai.goap.EntityNeed;
+import technology.rocketjump.mountaincore.entities.components.creature.NeedsComponent;
+
 import java.util.ArrayList;
+import java.util.Map;
 import java.util.List;
 import java.util.Optional;
 import java.util.Random;
@@ -222,6 +226,20 @@ public class CreatureBehaviour implements BehaviourComponent, Destructible, Sele
 		return goalQueue;
 	}
 
+	private boolean hasCriticallyLowNeed() {
+		NeedsComponent needsComponent = parentEntity.getComponent(NeedsComponent.class);
+		if (needsComponent == null) {
+			return false;
+		}
+		double minNeedBeforeInterrupted = gameContext.getConstantsRepo().getWorldConstants().getMinNeedBeforeGoalInterrupted();
+		for (Map.Entry<EntityNeed, Double> need : needsComponent.getAll()) {
+			if (need.getValue() < minNeedBeforeInterrupted) {
+				return true;
+			}
+		}
+		return false;
+	}
+
 	protected AssignedGoal pickNextGoalFromQueue() throws EnteringCombatException {
 		if (inVehicleAndNotDriving()) {
 			return AssignedGoalFactory.doNothingGoal(parentEntity, messageDispatcher, gameContext);
@@ -261,8 +279,10 @@ public class CreatureBehaviour implements BehaviourComponent, Destructible, Sele
 
 		MemoryComponent memoryComponent = parentEntity.getOrCreateComponent(MemoryComponent.class);
 
-		// (Override) if we're hauling an item, need to place it
-		if (parentEntity.getComponent(HaulingComponent.class) != null && parentEntity.getComponent(HaulingComponent.class).getHauledEntity() != null) {
+		// (Override) if we're hauling an item, need to place it, unless something more pressing is
+		// about to kill us - the item stays in hand and is placed once the need has been dealt with
+		if (parentEntity.getComponent(HaulingComponent.class) != null && parentEntity.getComponent(HaulingComponent.class).getHauledEntity() != null
+				&& !hasCriticallyLowNeed()) {
 			return AssignedGoalFactory.placeHauledItemGoal(parentEntity, messageDispatcher, gameContext);
 		}
 

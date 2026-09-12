@@ -354,7 +354,8 @@ public class SteeringComponent implements ChildPersistable {
 	@Override
 	public void readFrom(JSONObject asJson, SavedGameStateHolder savedGameStateHolder, SavedGameDependentDictionaries relatedStores) throws InvalidSaveException {
 		this.destination = JSONUtils.vector2(asJson.getJSONObject("destination"));
-		this.nextWaypoint = JSONUtils.vector2(asJson.getJSONObject("destination"));
+		// Was reading the waypoint out of "destination", so a saved walk headed for the far end.
+		this.nextWaypoint = JSONUtils.vector2(asJson.getJSONObject("nextWaypoint"));
 		this.movementImpaired = asJson.getBooleanValue("movementImpaired");
 		this.immobilised = asJson.getBooleanValue("immobilised");
 	}

@@ -45,12 +45,17 @@ public class GoToLocationAction extends Action implements PathfindingCallback {
 	public static final float WAYPOINT_TOLERANCE = 0.5f;
 	public static final float DESTINATION_TOLERANCE = 0.15f;
 	public static final float MAX_TIME_TO_WAIT = 8f;
+	/**
+	 * Give up after a few attempts rather than re-pathing for ever.
+	 */
+	public static final int MAX_PATHFINDING_ATTEMPTS = 3;
 	public static final double ONE_HOUR = 1.0d;
 
 	protected boolean pathfindingRequested;
 	protected volatile GraphPath<Vector2> path; //volatile ensures goes back to main memory
 	private float timeWaitingForPath;
 	private int pathCursor = 0;
+	private int pathfindingAttempts;
 	private double startOfWaypointGameTime;
 
 	protected Vector2 overrideLocation;
@@ -127,6 +132,11 @@ public class GoToLocationAction extends Action implements PathfindingCallback {
 
 		if (Math.abs(gameClock.getCurrentGameTime() - startOfWaypointGameTime) > ONE_HOUR) {
 			//consider no progress made and request new path finding
+			pathfindingAttempts++;
+			if (pathfindingAttempts > MAX_PATHFINDING_ATTEMPTS) {
+				completionType = CompletionType.FAILURE;
+				return;
+			}
 			requestPathfinding(gameContext);
 			return;
 		}

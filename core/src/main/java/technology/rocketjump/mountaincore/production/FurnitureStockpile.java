@@ -18,7 +18,9 @@ import technology.rocketjump.mountaincore.rooms.HaulingAllocation;
 import technology.rocketjump.mountaincore.rooms.HaulingAllocationBuilder;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 public class FurnitureStockpile extends AbstractStockpile implements ChildPersistable {
 
@@ -68,10 +70,30 @@ public class FurnitureStockpile extends AbstractStockpile implements ChildPersis
         return null;
     }
 
+    /**
+     * Counts what is spoken for in stacks rather than in deliveries: several deliveries heading for the
+     * same new stack share one place.
+     */
+    private int placesTakenUp(InventoryComponent inventoryComponent) {
+        Set<String> newStacks = new HashSet<>();
+        for (StockpileAllocation allocation : allocationsByHaulingAllocationId.values()) {
+            if (allocation == null) {
+                continue;
+            }
+            if (allocation.getItemType() == null) {
+                // A corpse, which always wants a place of its own
+                newStacks.add("corpse/" + allocation.getRaceCorpse());
+            } else if (inventoryComponent.findByItemTypeAndMaterial(allocation.getItemType(), allocation.getGameMaterial(), null) == null) {
+                newStacks.add(allocation.getItemType().getItemTypeName() + "/" + allocation.getGameMaterial());
+            }
+        }
+        return inventoryComponent.getInventoryEntries().size() + newStacks.size();
+    }
+
     @Override
     protected StockpileAllocation createAllocation(TiledMap map, ItemType itemType, GameMaterial itemMaterial, Race corpseRace) {
         InventoryComponent inventoryComponent = parentEntity.getComponent(InventoryComponent.class);
-        if (inventoryComponent != null && (inventoryComponent.getInventoryEntries().size() + allocationsByHaulingAllocationId.size()) < maxQuantity) {
+        if (inventoryComponent != null && placesTakenUp(inventoryComponent) < maxQuantity) {
             //if enough space then return one else return null
             StockpileAllocation allocationToUse = new StockpileAllocation(VectorUtils.toGridPoint(parentEntity.getLocationComponent().getWorldPosition()));
             allocationToUse.setItemType(itemType);

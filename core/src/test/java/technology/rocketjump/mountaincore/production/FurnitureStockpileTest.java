@@ -16,6 +16,7 @@ import technology.rocketjump.mountaincore.entities.model.physical.item.ItemType;
 import technology.rocketjump.mountaincore.materials.model.GameMaterial;
 
 import java.lang.reflect.Field;
+import java.util.List;
 import java.util.Map;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -86,6 +87,39 @@ public class FurnitureStockpileTest {
 
 		assertThat(allocation).isNotNull();
 		assertThat(allocation.getItemType()).isEqualTo(carrotCrate);
+	}
+
+	@Test
+	public void deliveriesMergingIntoOneStackDoNotUseUpEveryPlace() throws Exception {
+		ItemType planks = mock(ItemType.class);
+		when(planks.getItemTypeName()).thenReturn("Resource-Planks");
+		GameMaterial sycamore = mock(GameMaterial.class);
+
+		// One stack of planks sat in the chest, and a pile of small deliveries booked against it
+		Entity alreadyInChest = itemOf(planks, sycamore, 7);
+		InventoryComponent.InventoryEntry entry = mock(InventoryComponent.InventoryEntry.class);
+		entry.entity = alreadyInChest;
+		when(chestInventory.findByItemTypeAndMaterial(planks, sycamore, null)).thenReturn(entry);
+		when(chestInventory.getInventoryEntries()).thenReturn(List.of(entry));
+
+		Field field = FurnitureStockpile.class.getDeclaredField("allocationsByHaulingAllocationId");
+		field.setAccessible(true);
+		@SuppressWarnings("unchecked")
+		Map<Long, StockpileAllocation> allocations = (Map<Long, StockpileAllocation>) field.get(stockpile);
+		for (long i = 0; i < 15; i++) {
+			StockpileAllocation incoming = new StockpileAllocation(new GridPoint2(4, 7));
+			incoming.setItemType(planks);
+			incoming.setGameMaterial(sycamore);
+			incoming.incrementIncomingHaulingQuantity(2);
+			allocations.put(i, incoming);
+		}
+
+		// Something of another kind should still find room: those fifteen trips share one place
+		ItemType carrotCrate = mock(ItemType.class);
+		when(carrotCrate.getItemTypeName()).thenReturn("Ingredient-Vegetable-Crate");
+		GameMaterial carrot = mock(GameMaterial.class);
+
+		assertThat(stockpile.createAllocation(null, carrotCrate, carrot, null)).isNotNull();
 	}
 
 	@Test

@@ -119,10 +119,12 @@ public class AttackCreatureCombatAction extends CombatAction implements Particle
 	private void triggerAttack(Entity targetedEntity, MessageDispatcher messageDispatcher) {
 		CreatureCombat creatureCombat = new CreatureCombat(parentEntity);
 		ItemEntityAttributes ammoAttributes = decrementAmmoFromInventory(creatureCombat.getEquippedWeapon().getRequiresAmmoType(), messageDispatcher);
+		// Unarmed attacks use no item, and so have no material.
+		ItemEntityAttributes weaponAttributes = creatureCombat.getEquippedWeaponAttributes();
 		messageDispatcher.dispatchMessage(MessageType.MAKE_ATTACK_WITH_WEAPON, new CombatAttackMessage(
 				parentEntity, targetedEntity, new WeaponAttack(creatureCombat.getEquippedWeapon(),
 				creatureCombat.getEquippedWeaponQuality(),
-				creatureCombat.getEquippedWeaponAttributes().getPrimaryMaterial()),
+				weaponAttributes == null ? null : weaponAttributes.getPrimaryMaterial()),
 				ammoAttributes));
 		attackMade = true;
 	}

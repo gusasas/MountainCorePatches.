@@ -37,6 +37,9 @@ public class FurnitureStockpile extends AbstractStockpile implements ChildPersis
     @Override
     protected StockpileAllocation findExistingAllocation(Entity entity, TiledMap map, int maxStackSize, int quantityToAllocate) {
         InventoryComponent parentInventory = parentEntity.getComponent(InventoryComponent.class);
+        if (parentInventory == null) {
+            return null; // createAllocation below already allows for this
+        }
         if (entity.getPhysicalEntityComponent().getAttributes() instanceof ItemEntityAttributes itemAttributes) {
             InventoryComponent.InventoryEntry matchingInventoryEntry = parentInventory.findByItemTypeAndMaterial(itemAttributes.getItemType(), itemAttributes.getPrimaryMaterial(), null);
             if (matchingInventoryEntry != null) {
@@ -44,8 +47,12 @@ public class FurnitureStockpile extends AbstractStockpile implements ChildPersis
                 int quantityAssignedToEntry = inventoryItemAttributes.getQuantity();
                 quantityAssignedToEntry += quantityToAllocate;
                 for (StockpileAllocation stockpileAllocation : allocationsByHaulingAllocationId.values()) {
+                    // A corpse allocation carries a race and no item type, and a saved entry can have no allocation.
+                    if (stockpileAllocation == null || stockpileAllocation.getItemType() == null) {
+                        continue;
+                    }
                     if (stockpileAllocation.getItemType().equals(itemAttributes.getItemType()) &&
-                            stockpileAllocation.getGameMaterial().equals(itemAttributes.getPrimaryMaterial())) {
+                            itemAttributes.getPrimaryMaterial().equals(stockpileAllocation.getGameMaterial())) {
                         quantityAssignedToEntry += stockpileAllocation.getIncomingHaulingQuantity();
                     }
                 }

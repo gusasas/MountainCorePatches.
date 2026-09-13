@@ -357,9 +357,13 @@ public class ItemEntityMessageHandler implements GameContextAware, Telegraph {
 			return null;
 		}
 		int sourceRegionId = areaMap.getNavigableRegionId(requestingEntity, entityPosition);
-		Map<JobPriority, Map<Float, AbstractStockpile>> stockpilesByDistanceByPriority = new EnumMap<>(JobPriority.class);
+		// Kept apart so that a chest is preferred to bare stockpile floor at the same priority, and
+		// both to dropping the thing on the ground, which is only what happens when neither answers
+		Map<JobPriority, Map<Float, AbstractStockpile>> furnitureByDistanceByPriority = new EnumMap<>(JobPriority.class);
+		Map<JobPriority, Map<Float, AbstractStockpile>> roomsByDistanceByPriority = new EnumMap<>(JobPriority.class);
 		for (JobPriority jobPriority : JobPriority.values()) {
-			stockpilesByDistanceByPriority.put(jobPriority, new TreeMap<>(Comparator.comparingInt(o -> (int) (o * 10))));
+			furnitureByDistanceByPriority.put(jobPriority, new TreeMap<>(Comparator.comparingInt(o -> (int) (o * 10))));
+			roomsByDistanceByPriority.put(jobPriority, new TreeMap<>(Comparator.comparingInt(o -> (int) (o * 10))));
 		}
 
 		JobPriority currentStockpilePriority = getStockpilePriority(entity, entityPosition, areaMap);
@@ -370,7 +374,7 @@ public class ItemEntityMessageHandler implements GameContextAware, Telegraph {
 				if (stockpileRoomComponent.getStockpileSettings().canHold(entity)) {
 					int roomRegionId = room.getRoomTiles().values().iterator().next().getTile().getRegionId();
 					if (sourceRegionId == roomRegionId) {
-						Map<Float, AbstractStockpile> byDistance = stockpilesByDistanceByPriority.get(stockpileRoomComponent.getPriority());
+						Map<Float, AbstractStockpile> byDistance = roomsByDistanceByPriority.get(stockpileRoomComponent.getPriority());
 						byDistance.put(entityPosition.dst2(room.getAvgWorldPosition()), stockpileRoomComponent.getStockpile());
 					}
 				}
@@ -384,7 +388,7 @@ public class ItemEntityMessageHandler implements GameContextAware, Telegraph {
 					// Same region check as the rooms above, so furniture that cannot be walked to is not offered.
 					int furnitureRegionId = areaMap.getNavigableRegionId(pieceOfFurniture, pieceOfFurniture.getLocationComponent().getWorldPosition());
 					if (sourceRegionId == furnitureRegionId) {
-						Map<Float, AbstractStockpile> byDistance = stockpilesByDistanceByPriority.get(stockpileComponent.getPriority());
+						Map<Float, AbstractStockpile> byDistance = furnitureByDistanceByPriority.get(stockpileComponent.getPriority());
 						byDistance.put(entityPosition.dst2(pieceOfFurniture.getLocationComponent().getWorldPosition()), stockpileComponent.getStockpile());
 					}
 				}
@@ -394,15 +398,27 @@ public class ItemEntityMessageHandler implements GameContextAware, Telegraph {
 		for (int i = 0; i < currentStockpilePriority.ordinal(); i++) {
 			JobPriority priority = JobPriority.values()[i];
 
-			Map<Float, AbstractStockpile> byDistance = stockpilesByDistanceByPriority.getOrDefault(priority, Collections.emptyMap());
-			for (AbstractStockpile stockpile : byDistance.values()) {
-				HaulingAllocation haulingAllocation = stockpile.requestAllocation(entity, areaMap, requestingEntity);
-				if (haulingAllocation != null) {
-					return haulingAllocation;
-				}
+			HaulingAllocation intoFurniture = firstAvailable(furnitureByDistanceByPriority.get(priority), entity, areaMap, requestingEntity);
+			if (intoFurniture != null) {
+				return intoFurniture;
+			}
+			HaulingAllocation ontoStockpileFloor = firstAvailable(roomsByDistanceByPriority.get(priority), entity, areaMap, requestingEntity);
+			if (ontoStockpileFloor != null) {
+				return ontoStockpileFloor;
 			}
 		}
 
+		return null;
+	}
+
+	private static HaulingAllocation firstAvailable(Map<Float, AbstractStockpile> byDistance, Entity entity,
+													TiledMap areaMap, Entity requestingEntity) {
+		for (AbstractStockpile stockpile : byDistance == null ? Collections.<AbstractStockpile>emptyList() : byDistance.values()) {
+			HaulingAllocation haulingAllocation = stockpile.requestAllocation(entity, areaMap, requestingEntity);
+			if (haulingAllocation != null) {
+				return haulingAllocation;
+			}
+		}
 		return null;
 	}
 

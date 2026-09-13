@@ -7,6 +7,7 @@ import technology.rocketjump.mountaincore.entities.model.physical.LocationCompon
 import technology.rocketjump.mountaincore.gamecontext.GameContext;
 import technology.rocketjump.mountaincore.mapping.model.TiledMap;
 import technology.rocketjump.mountaincore.mapping.tile.MapTile;
+import technology.rocketjump.mountaincore.rooms.components.FarmPlotComponent;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
@@ -24,7 +25,12 @@ public class GoToRandomEmptyLocationAction extends GoToLocationAction {
 
 	@Override
 	protected Vector2 selectDestination(GameContext gameContext) {
-		Vector2 location = findEmptyLocation(gameContext);
+		// Somewhere out of the way first. Dropping a crate on a farm plot only means the next settler
+		// to plant there has to move it again, and with a big enough farm that goes on all day
+		Vector2 location = findEmptyLocation(gameContext, true);
+		if (location == null) {
+			location = findEmptyLocation(gameContext, false);
+		}
 		if (location == null) {
 			return IdleAction.pickRandomLocation(gameContext, parent.parentEntity);
 		} else {
@@ -32,7 +38,17 @@ public class GoToRandomEmptyLocationAction extends GoToLocationAction {
 		}
 	}
 
-	private Vector2 findEmptyLocation(GameContext gameContext) {
+	/**
+	 * @return false for anywhere something is going to be in the way again shortly
+	 */
+	private boolean wouldBeInTheWay(MapTile tile) {
+		if (tile.hasConstruction()) {
+			return true;
+		}
+		return tile.getRoomTile() != null && tile.getRoomTile().getRoom().getComponent(FarmPlotComponent.class) != null;
+	}
+
+	private Vector2 findEmptyLocation(GameContext gameContext, boolean keepOutOfTheWay) {
 		TiledMap areaMap = gameContext.getAreaMap();
 		LocationComponent locationComponent = parent.parentEntity.getLocationComponent();
 		
@@ -46,7 +62,8 @@ public class GoToRandomEmptyLocationAction extends GoToLocationAction {
 		while (!frontier.isEmpty()) {
 			MapTile currentTile = frontier.pop();
 			if (currentTile.isEmpty() &&
-				distance(startingTile, currentTile) >= MIN_DISTANCE) {
+				distance(startingTile, currentTile) >= MIN_DISTANCE &&
+				!(keepOutOfTheWay && wouldBeInTheWay(currentTile))) {
 				return currentTile.getWorldPositionOfCenter();
 			}
 

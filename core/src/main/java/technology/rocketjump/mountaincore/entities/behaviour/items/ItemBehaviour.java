@@ -15,6 +15,9 @@ import technology.rocketjump.mountaincore.entities.model.Entity;
 import technology.rocketjump.mountaincore.entities.model.physical.LocationComponent;
 import technology.rocketjump.mountaincore.entities.model.physical.item.ItemEntityAttributes;
 import technology.rocketjump.mountaincore.gamecontext.GameContext;
+import technology.rocketjump.mountaincore.rooms.components.StockpileRoomComponent;
+import technology.rocketjump.mountaincore.mapping.tile.MapTile;
+import technology.rocketjump.mountaincore.jobs.model.JobPriority;
 import technology.rocketjump.mountaincore.messaging.MessageType;
 import technology.rocketjump.mountaincore.messaging.types.RequestHaulingMessage;
 import technology.rocketjump.mountaincore.persistence.SavedGameDependentDictionaries;
@@ -71,6 +74,17 @@ public class ItemBehaviour implements BehaviourComponent {
 		//TODO: Yagni: iterate additionalBehaviours to update too
 	}
 
+	/**
+	 * @return true when the item is sat on open ground rather than in a stockpile of any kind
+	 */
+	private boolean lyingLooseOutsideStockpile(GameContext gameContext, Vector2 worldPosition) {
+		MapTile tile = gameContext.getAreaMap().getTile(worldPosition);
+		if (tile == null || tile.getRoomTile() == null) {
+			return true;
+		}
+		return tile.getRoomTile().getRoom().getComponent(StockpileRoomComponent.class) == null;
+	}
+
 	@Override
 	public void infrequentUpdate(GameContext gameContext) {
  		ItemEntityAttributes attributes = (ItemEntityAttributes) parentEntity.getPhysicalEntityComponent().getAttributes();
@@ -79,8 +93,10 @@ public class ItemBehaviour implements BehaviourComponent {
 
 		if (itemAllocationComponent.getNumUnallocated() > 0 && parentEntity.getOrCreateComponent(FactionComponent.class).getFaction().equals(Faction.SETTLEMENT)) {
 			if (worldPosition != null && attributes.getItemPlacement().equals(ItemPlacement.ON_GROUND)) {
-				// This should haul to a stockpile or to a higher priority stockpile
-				messageDispatcher.dispatchMessage(MessageType.REQUEST_ENTITY_HAULING, new RequestHaulingMessage(parentEntity, parentEntity, false, null, null));
+				// This should haul to a stockpile or to a higher priority stockpile.
+				// Something lying outside a stockpile is put away ahead of ordinary work.
+				JobPriority priority = lyingLooseOutsideStockpile(gameContext, worldPosition) ? JobPriority.HIGHER : null;
+				messageDispatcher.dispatchMessage(MessageType.REQUEST_ENTITY_HAULING, new RequestHaulingMessage(parentEntity, parentEntity, false, priority, null));
 			}
 
 			Entity container = parentEntity.getLocationComponent().getContainerEntity();

@@ -5,6 +5,8 @@ import technology.rocketjump.mountaincore.entities.ai.goap.AssignedGoal;
 import technology.rocketjump.mountaincore.entities.ai.memory.Memory;
 import technology.rocketjump.mountaincore.entities.ai.memory.MemoryType;
 import technology.rocketjump.mountaincore.entities.components.creature.MemoryComponent;
+import technology.rocketjump.mountaincore.entities.model.physical.creature.HaulingComponent;
+import technology.rocketjump.mountaincore.entities.model.physical.item.ItemEntityAttributes;
 import technology.rocketjump.mountaincore.gamecontext.GameContext;
 import technology.rocketjump.mountaincore.persistence.SavedGameDependentDictionaries;
 import technology.rocketjump.mountaincore.persistence.model.InvalidSaveException;
@@ -25,6 +27,13 @@ public class RememberFailedGoalAction extends Action {
 		MemoryComponent memoryComponent = parent.parentEntity.getOrCreateComponent(MemoryComponent.class);
 		Memory failedGoalMemory = new Memory(MemoryType.FAILED_GOAL, gameContext.getGameClock());
 		failedGoalMemory.setRelatedGoalName(parent.goal.name);
+		// Note what was being carried, so that failing to put one thing away does not condemn
+		// everything else this settler picks up for the next couple of hours
+		HaulingComponent haulingComponent = parent.parentEntity.getComponent(HaulingComponent.class);
+		if (haulingComponent != null && haulingComponent.getHauledEntity() != null &&
+				haulingComponent.getHauledEntity().getPhysicalEntityComponent().getAttributes() instanceof ItemEntityAttributes hauledAttributes) {
+			failedGoalMemory.setRelatedItemType(hauledAttributes.getItemType());
+		}
 		memoryComponent.addShortTerm(failedGoalMemory, gameContext.getGameClock());
 		completionType = CompletionType.SUCCESS;
 	}

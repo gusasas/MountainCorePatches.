@@ -48,11 +48,14 @@ public class AssignedGoalFactory {
 		// need somewhere to place it
 
 		HaulingAllocation stockpileAllocation = null;
-		// Special case - if recently attempted to place item and failed, just dump it instead
+		// Special case - if recently attempted to place THIS KIND OF item and failed, dump it instead.
+		ItemType hauledItemType = hauledEntity.getPhysicalEntityComponent().getAttributes() instanceof ItemEntityAttributes hauledAttributes ?
+				hauledAttributes.getItemType() : null;
 		boolean recentlyFailedPlaceItemGoal = parentEntity.getOrCreateComponent(MemoryComponent.class)
 				.getShortTermMemories(gameContext.getGameClock())
 				.stream()
-				.anyMatch(m -> m.getType().equals(MemoryType.FAILED_GOAL) && SpecialGoal.PLACE_ITEM.goalName.equals(m.getRelatedGoalName()));
+				.anyMatch(m -> m.getType().equals(MemoryType.FAILED_GOAL) && SpecialGoal.PLACE_ITEM.goalName.equals(m.getRelatedGoalName())
+						&& (m.getRelatedItemType() == null || m.getRelatedItemType().equals(hauledItemType)));
 
 		if (!recentlyFailedPlaceItemGoal) {
 			// Temp un-requestAllocation

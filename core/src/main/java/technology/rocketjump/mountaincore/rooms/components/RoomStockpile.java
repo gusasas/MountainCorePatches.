@@ -73,6 +73,18 @@ public class RoomStockpile extends AbstractStockpile {
         return null;
     }
 
+    /**
+     * A reservation with nothing on the tile and nothing on its way is left over from something that
+     * never happened, and a reserved tile is never offered again.
+     */
+    private boolean isLeftOver(StockpileAllocation allocation, MapTile tile) {
+        if (allocation.getIncomingHaulingQuantity() > 0) {
+            return false; // something is being carried here
+        }
+        allocation.refreshQuantityInTile(tile);
+        return allocation.getTotalQuantity() <= 0;
+    }
+
     @Override
     protected StockpileAllocation createAllocation(TiledMap map, ItemType itemType, GameMaterial itemMaterial, Race corpseRace) {
         // Deterministically go through points to traverse for a new location
@@ -83,6 +95,10 @@ public class RoomStockpile extends AbstractStockpile {
         for (GridPoint2 position : pointsToTraverse) {
             MapTile tileAtPosition = map.getTile(position);
             StockpileAllocation allocationAtPosition = allocations.get(position);
+            if (allocationAtPosition != null && isLeftOver(allocationAtPosition, tileAtPosition)) {
+                allocations.remove(position);
+                allocationAtPosition = null;
+            }
             if (allocationAtPosition == null) {
                 if (tileAtPosition.isEmpty()) {
                     StockpileAllocation allocationToUse = new StockpileAllocation(position);

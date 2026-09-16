@@ -87,6 +87,11 @@ public class ItemBehaviour implements BehaviourComponent {
 
 	@Override
 	public void infrequentUpdate(GameContext gameContext) {
+		if (parentEntity.getPhysicalEntityComponent().getBaseAsset() == null) {
+			// An item saved without a sprite never looked for one again, and stayed invisible.
+			messageDispatcher.dispatchMessage(MessageType.ENTITY_ASSET_UPDATE_REQUIRED, parentEntity);
+		}
+
  		ItemEntityAttributes attributes = (ItemEntityAttributes) parentEntity.getPhysicalEntityComponent().getAttributes();
 		ItemAllocationComponent itemAllocationComponent = parentEntity.getComponent(ItemAllocationComponent.class);
 		Vector2 worldPosition = locationComponent.getWorldPosition();

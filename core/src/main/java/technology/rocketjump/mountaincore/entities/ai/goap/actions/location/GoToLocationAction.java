@@ -49,6 +49,10 @@ public class GoToLocationAction extends Action implements PathfindingCallback {
 	 * Give up after a few attempts rather than re-pathing for ever.
 	 */
 	public static final int MAX_PATHFINDING_ATTEMPTS = 3;
+	/**
+	 * How long to keep trying for the middle of the tile before settling for the tile itself.
+	 */
+	public static final float MAX_TIME_ON_DESTINATION_TILE = 2f;
 	public static final double ONE_HOUR = 1.0d;
 
 	protected boolean pathfindingRequested;
@@ -56,6 +60,7 @@ public class GoToLocationAction extends Action implements PathfindingCallback {
 	private float timeWaitingForPath;
 	private int pathCursor = 0;
 	private int pathfindingAttempts;
+	private float timeOnDestinationTile;
 	private double startOfWaypointGameTime;
 
 	protected Vector2 overrideLocation;
@@ -79,7 +84,7 @@ public class GoToLocationAction extends Action implements PathfindingCallback {
 			}
 		} else {
 			// Path found
-			followPath(gameContext);
+			followPath(deltaTime, gameContext);
 
 			checkForCompletion(gameContext);
 
@@ -112,7 +117,7 @@ public class GoToLocationAction extends Action implements PathfindingCallback {
 
 	}
 
-	private void followPath(GameContext gameContext) {
+	private void followPath(float deltaTime, GameContext gameContext) {
 		GameClock gameClock = gameContext.getGameClock();
 		SteeringComponent steeringComponent = parent.parentEntity.getBehaviourComponent().getSteeringComponent();
 		LocationComponent locationComponent = parent.parentEntity.getOwnOrVehicleLocationComponent();
@@ -129,6 +134,12 @@ public class GoToLocationAction extends Action implements PathfindingCallback {
 
 		steeringComponent.setDestination(destination);
 		steeringComponent.setNextWaypoint(nextPathNode);
+
+		if (VectorUtils.toGridPoint(locationComponent.getWorldOrParentPosition()).equals(VectorUtils.toGridPoint(destination))) {
+			timeOnDestinationTile += deltaTime;
+		} else {
+			timeOnDestinationTile = 0f;
+		}
 
 		if (Math.abs(gameClock.getCurrentGameTime() - startOfWaypointGameTime) > ONE_HOUR) {
 			//consider no progress made and request new path finding
@@ -172,7 +183,8 @@ public class GoToLocationAction extends Action implements PathfindingCallback {
 
 			boolean arrivedAtDestination = (Math.abs(worldPosition.x - destination.x) < DESTINATION_TOLERANCE &&
 					Math.abs(worldPosition.y - destination.y) < DESTINATION_TOLERANCE);
-			if (arrivedAtDestination) {
+			// Being on the right tile is near enough; somebody in the middle can stop us reaching it.
+			if (arrivedAtDestination || timeOnDestinationTile > MAX_TIME_ON_DESTINATION_TILE) {
 				completionType = CompletionType.SUCCESS;
 			}
 		}

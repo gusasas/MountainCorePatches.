@@ -25,7 +25,7 @@ public class SteeringComponent implements ChildPersistable {
 
 	private static final float ROTATION_MULTIPLIER = 1.5f; // for quicker turning speed
 	private static final float KNOCKBACK_DISTANCE_PER_SECOND = 8f;
-	private static final float MAX_DISTANCE_WITHIN_TILE_TO_ARRIVE = 0.08f;
+	static final float MAX_DISTANCE_WITHIN_TILE_TO_ARRIVE = 0.08f;
 	private static final float MAP_EDGE_MARGIN = 0.01f;
 	private MessageDispatcher messageDispatcher;
 	private Entity parentEntity;
@@ -182,6 +182,11 @@ public class SteeringComponent implements ChildPersistable {
 					checkToPauseForOtherEntities();
 				}
 			}
+
+			if (nextWaypoint != null && nextWaypoint.equals(destination)) {
+				maxSpeed = arrivalSpeed(maxSpeed, currentPosition.dst(destination), deltaTime);
+			}
+
 			Vector2 newVelocity = currentVelocity.cpy().mulAdd(steeringOutputForce, deltaTime).limit(maxSpeed);
 			if (vehicle != null) {
 				float animationProgress = vehicle.getPhysicalEntityComponent().getAnimationProgress();
@@ -212,6 +217,16 @@ public class SteeringComponent implements ChildPersistable {
 				repelFromImpassableCollisions(deltaTime, currentTile);
 			}
 		}
+	}
+
+	/**
+	 * Ease into the last step: a step longer than the arrival window steps over the spot for ever.
+	 */
+	static float arrivalSpeed(float maxSpeed, float distanceToDestination, float deltaTime) {
+		if (deltaTime <= 0f) {
+			return maxSpeed;
+		}
+		return Math.min(maxSpeed, distanceToDestination / deltaTime);
 	}
 
 	private void rotateFacingAndApplyVelocity(float deltaTime, Vector2 currentVelocity, Vector2 target) {

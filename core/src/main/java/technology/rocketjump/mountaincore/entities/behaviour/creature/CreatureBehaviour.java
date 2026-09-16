@@ -300,9 +300,12 @@ public class CreatureBehaviour implements BehaviourComponent, Destructible, Sele
 			}
 		}
 
-		AssignedGoal placeInventoryItemsGoal = AssignedGoalFactory.checkToPlaceInventoryItems(parentEntity, messageDispatcher, gameContext);
-		if (placeInventoryItemsGoal != null) {
-			return placeInventoryItemsGoal;
+		// As with the hauling override above: tidying up waits until the settler has dealt with its needs.
+		if (!hasCriticallyLowNeed()) {
+			AssignedGoal placeInventoryItemsGoal = AssignedGoalFactory.checkToPlaceInventoryItems(parentEntity, messageDispatcher, gameContext);
+			if (placeInventoryItemsGoal != null) {
+				return placeInventoryItemsGoal;
+			}
 		}
 
 		if (creatureGroup != null && creatureGroup instanceof InvasionCreatureGroup invasionCreatureGroup) {

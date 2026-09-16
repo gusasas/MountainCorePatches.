@@ -93,6 +93,8 @@ public class AssignedGoalTest {
 		gameContext.setRandom(new RandomXS128(1L));
 		gameContext.setGameClock(new GameClock());
 		gameContext.setAreaMap(mockMap);
+		// Settlers read the world constants on every goal pick.
+		gameContext.setConstantsRepo(injector.getInstance(technology.rocketjump.mountaincore.constants.ConstantsRepo.class));
 
 
 		this.goalDictionary = injector.getInstance(GoalDictionary.class);

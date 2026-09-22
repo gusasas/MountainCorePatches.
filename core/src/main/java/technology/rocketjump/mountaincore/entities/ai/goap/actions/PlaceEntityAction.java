@@ -67,7 +67,7 @@ public class PlaceEntityAction extends Action {
 						completionType = CompletionType.FAILURE;
 					} else {
 						Entity itemToPlace = getTargetFrom(containerComponent);
-						if (itemToPlace != null) {
+						if (itemToPlace != null && hasRoomFor(itemToPlace, targetFurniture)) {
 							removeTargetFrom(containerComponent, itemToPlace);
 							placeEntityInFurniture(itemToPlace, targetFurniture, gameContext, haulingAllocation);
 						} else {
@@ -76,7 +76,7 @@ public class PlaceEntityAction extends Action {
 					}
 				} else if (adjacentTo(targetFurniture)) {
 					Entity itemToPlace = getTargetFrom(containerComponent);
-					if (itemToPlace != null) {
+					if (itemToPlace != null && hasRoomFor(itemToPlace, targetFurniture)) {
 						removeTargetFrom(containerComponent, itemToPlace);
 						placeEntityInFurniture(itemToPlace, targetFurniture, gameContext, haulingAllocation);
 					} else {
@@ -98,6 +98,17 @@ public class PlaceEntityAction extends Action {
 			// No item allocation, just place item down
 			placeEntityIntoTile(getTargetFrom(containerComponent), containerComponent, currentTile);
 		}
+	}
+
+	/**
+	 * Checked before the item leaves the settler's hands, so a refusal leaves it holding the thing.
+	 */
+	private boolean hasRoomFor(Entity itemToPlace, Entity targetFurniture) {
+		FurnitureStockpileComponent stockpileComponent = targetFurniture.getComponent(FurnitureStockpileComponent.class);
+		if (stockpileComponent == null) {
+			return true; // not a stockpile, so places do not come into it
+		}
+		return stockpileComponent.getStockpile().canAccept(itemToPlace);
 	}
 
 	protected boolean adjacentTo(Entity targetFurniture) {

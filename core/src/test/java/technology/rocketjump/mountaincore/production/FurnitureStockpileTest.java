@@ -16,10 +16,12 @@ import technology.rocketjump.mountaincore.entities.model.physical.item.ItemType;
 import technology.rocketjump.mountaincore.materials.model.GameMaterial;
 
 import java.lang.reflect.Field;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
@@ -120,6 +122,52 @@ public class FurnitureStockpileTest {
 		GameMaterial carrot = mock(GameMaterial.class);
 
 		assertThat(stockpile.createAllocation(null, carrotCrate, carrot, null)).isNotNull();
+	}
+
+	@Test
+	public void aFullChestTurnsAwaySomethingThatWouldNeedAPlaceOfItsOwn() {
+		ItemType seeds = mock(ItemType.class);
+		GameMaterial carrotSeed = mock(GameMaterial.class);
+
+		// Six stacks in a chest with six places, so every place is taken
+		List<InventoryComponent.InventoryEntry> full = new ArrayList<>();
+		for (int i = 0; i < 6; i++) {
+			InventoryComponent.InventoryEntry entry = mock(InventoryComponent.InventoryEntry.class);
+			entry.entity = itemOf(seeds, carrotSeed, 50);
+			full.add(entry);
+		}
+		when(chestInventory.getInventoryEntries()).thenReturn(full);
+		when(chestInventory.wouldMergeIntoExisting(any())).thenReturn(false);
+
+		// A different seed needs a stack of its own, and there is nowhere to put it
+		assertThat(stockpile.canAccept(itemOf(seeds, mock(GameMaterial.class), 10))).isFalse();
+	}
+
+	@Test
+	public void aFullChestStillTakesSomethingThatJoinsAStackAlreadyInIt() {
+		ItemType seeds = mock(ItemType.class);
+		GameMaterial carrotSeed = mock(GameMaterial.class);
+
+		List<InventoryComponent.InventoryEntry> full = new ArrayList<>();
+		for (int i = 0; i < 6; i++) {
+			InventoryComponent.InventoryEntry entry = mock(InventoryComponent.InventoryEntry.class);
+			entry.entity = itemOf(seeds, carrotSeed, 20);
+			full.add(entry);
+		}
+		when(chestInventory.getInventoryEntries()).thenReturn(full);
+		when(chestInventory.wouldMergeIntoExisting(any())).thenReturn(true);
+
+		assertThat(stockpile.canAccept(itemOf(seeds, carrotSeed, 5))).isTrue();
+	}
+
+	@Test
+	public void aChestWithAPlaceLeftTakesSomethingNew() {
+		InventoryComponent.InventoryEntry entry = mock(InventoryComponent.InventoryEntry.class);
+		entry.entity = itemOf(mock(ItemType.class), mock(GameMaterial.class), 1);
+		when(chestInventory.getInventoryEntries()).thenReturn(List.of(entry));
+		when(chestInventory.wouldMergeIntoExisting(any())).thenReturn(false);
+
+		assertThat(stockpile.canAccept(itemOf(mock(ItemType.class), mock(GameMaterial.class), 1))).isTrue();
 	}
 
 	@Test

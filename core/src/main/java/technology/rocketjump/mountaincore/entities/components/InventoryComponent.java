@@ -283,6 +283,13 @@ public class InventoryComponent implements ParentDependentEntityComponent, Destr
 		return entry;
 	}
 
+	/**
+	 * @return true when this would join a stack already here rather than take a place of its own
+	 */
+	public boolean wouldMergeIntoExisting(ItemEntityAttributes attributes) {
+		return !noMerging && findMatchingEntry(attributes) != null;
+	}
+
 	private InventoryEntry findMatchingEntry(ItemEntityAttributes attributes) {
 		for (InventoryEntry entry : inventoryEntries.values()) {
 			Entity inventoryItem = entry.entity;

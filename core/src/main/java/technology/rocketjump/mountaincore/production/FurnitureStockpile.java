@@ -90,6 +90,21 @@ public class FurnitureStockpile extends AbstractStockpile implements ChildPersis
         return inventoryComponent.getInventoryEntries().size() + newStacks.size();
     }
 
+    /**
+     * Whether this can take the entity: either it joins a stack already here, or a place is free.
+     */
+    public boolean canAccept(Entity entity) {
+        InventoryComponent inventoryComponent = parentEntity.getComponent(InventoryComponent.class);
+        if (inventoryComponent == null) {
+            return false;
+        }
+        if (entity.getPhysicalEntityComponent().getAttributes() instanceof ItemEntityAttributes itemAttributes &&
+                inventoryComponent.wouldMergeIntoExisting(itemAttributes)) {
+            return true;
+        }
+        return inventoryComponent.getInventoryEntries().size() < maxQuantity;
+    }
+
     @Override
     protected StockpileAllocation createAllocation(TiledMap map, ItemType itemType, GameMaterial itemMaterial, Race corpseRace) {
         InventoryComponent inventoryComponent = parentEntity.getComponent(InventoryComponent.class);

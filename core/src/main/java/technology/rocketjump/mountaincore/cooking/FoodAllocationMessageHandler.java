@@ -228,6 +228,18 @@ public class FoodAllocationMessageHandler implements Telegraph, GameContextAware
 		return null;
 	}
 
+	/**
+	 * Food in a chest stands on the chest's tile, which blocks movement and is a region of its own,
+	 * so ask the map where it is reached from instead.
+	 */
+	private int regionFoodCanBeCollectedFrom(Entity foodItem) {
+		Vector2 position = foodItem.getLocationComponent().getWorldOrParentPosition();
+		if (position == null || gameContext.getAreaMap().getTile(position) == null) {
+			return -1;
+		}
+		return gameContext.getAreaMap().getNavigableRegionId(foodItem.getLocationComponent().getContainerEntity(), position);
+	}
+
 	private FoodAllocation findAnyAvailableFood(Entity requestingEntity) {
 		Vector2 requesterPosition = requestingEntity.getLocationComponent().getWorldOrParentPosition();
 		MapTile requesterTile = gameContext.getAreaMap().getTile(requesterPosition);
@@ -238,11 +250,7 @@ public class FoodAllocationMessageHandler implements Telegraph, GameContextAware
 		final int requesterRegionId = requesterTile.getRegionId();
 
 		Optional<Entity> unallocatedEdibleItem = settlementItemTracker.getUnallocatedEdibleItems().stream()
-				.filter(item -> {
-					Vector2 position = item.getLocationComponent().getWorldOrParentPosition();
-					MapTile positionTile = gameContext.getAreaMap().getTile(position);
-					return positionTile != null && positionTile.getRegionId() == requesterRegionId;
-				})
+				.filter(item -> regionFoodCanBeCollectedFrom(item) == requesterRegionId)
 				.sorted((i1, i2) ->
 					Math.round(i1.getLocationComponent().getWorldOrParentPosition().dst2(requesterPosition) - i2.getLocationComponent().getWorldOrParentPosition().dst2(requesterPosition))
 				)

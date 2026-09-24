@@ -116,6 +116,20 @@ public class RoomStockpileTest {
 	}
 
 	@Test
+	public void byDefaultTheFloorOfARoomIsUsed() {
+		assertThat(stockpile.isFloorStorageEnabled()).isTrue();
+	}
+
+	@Test
+	public void aRoomWithItsFloorTurnedOffTakesNothingOntoIt() {
+		stockpile.setFloorStorageEnabled(false);
+
+		// The tile is empty and unreserved, so this would be handed out if the floor were in use
+		assertThat(stockpile.requestAllocation(mock(Entity.class), map, mock(Entity.class))).isNull();
+		assertThat(stockpile.getAllocations()).isEmpty();
+	}
+
+	@Test
 	public void anUnreservedEmptyTileIsHandedOutAsBefore() {
 		assertThat(stockpile.createAllocation(map, chest, sycamore, null)).isNotNull();
 	}

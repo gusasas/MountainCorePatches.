@@ -1419,6 +1419,8 @@ ROOMS.SMITHY,,Smithy
 ROOMS.SMITHY.TOOLTIP,,Used to craft metal tools.
 ROOMS.STOCKPILE,,Stockpile
 ROOMS.STOCKPILE.TOOLTIP,,This area stores different kinds of items depending on settings.
+ROOMS.STOCKPILE.FLOOR_STORAGE,,Store on the floor
+ROOMS.STOCKPILE.FLOOR_STORAGE.TOOLTIP,,"When this is off nothing new is put down on the bare floor of this room. Chests standing in it carry on as normal, and whatever is already on the floor is tidied into them."
 ROOMS.STOCKPILES,,Stockpiles
 ROOMS.STOCKPILES.TOOLTIP,,Unused items are placed in stockpiles for easy access.
 ROOMS.STOCKPILE_WITH_GROUP_NAME,,{{stockpileGroupName}} {{roomTypeName}}

@@ -24,9 +24,29 @@ public class RoomStockpile extends AbstractStockpile {
     private final Room room;
     // This keeps track of allocations - null for empty spaces
     private final Map<GridPoint2, StockpileAllocation> allocations = new HashMap<>();
+    /**
+     * Whether the bare floor of the room is used for storage. Chests standing in it are unaffected.
+     */
+    private boolean floorStorageEnabled = true;
 
     RoomStockpile(Room room) {
         this.room = room;
+    }
+
+    public boolean isFloorStorageEnabled() {
+        return floorStorageEnabled;
+    }
+
+    public void setFloorStorageEnabled(boolean floorStorageEnabled) {
+        this.floorStorageEnabled = floorStorageEnabled;
+    }
+
+    @Override
+    public HaulingAllocation requestAllocation(Entity entity, TiledMap map, Entity requestingEntity) {
+        if (!floorStorageEnabled) {
+            return null;
+        }
+        return super.requestAllocation(entity, map, requestingEntity);
     }
 
     @Override

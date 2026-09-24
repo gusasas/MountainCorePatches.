@@ -1360,6 +1360,8 @@ ROOMS.SMITHY,,Forge
 ROOMS.SMITHY.TOOLTIP,,Utilisée pour fabriquer des outils en métal
 ROOMS.STOCKPILE,,Réserve
 ROOMS.STOCKPILE.TOOLTIP,,Cette zone entrepose différente sortes d'objets en fonction des paramètres.
+ROOMS.STOCKPILE.FLOOR_STORAGE,,Stocker au sol
+ROOMS.STOCKPILE.FLOOR_STORAGE.TOOLTIP,,"Décoché, plus rien n'est posé sur le sol nu de cette salle. Les coffres qui s'y trouvent continuent normalement, et ce qui traîne déjà par terre est rangé dedans."
 ROOMS.STOCKPILES,,Réserves
 ROOMS.STOCKPILES.TOOLTIP,,Les articles inutilisés sont placés dans des stocks pour un accès facile.
 ROOMS.STOCKPILE_WITH_GROUP_NAME,,{{stockpileGroupName}} {{roomTypeName}}

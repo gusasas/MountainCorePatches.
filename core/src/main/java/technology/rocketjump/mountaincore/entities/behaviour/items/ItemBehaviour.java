@@ -82,7 +82,9 @@ public class ItemBehaviour implements BehaviourComponent {
 		if (tile == null || tile.getRoomTile() == null) {
 			return true;
 		}
-		return tile.getRoomTile().getRoom().getComponent(StockpileRoomComponent.class) == null;
+		StockpileRoomComponent stockpileRoom = tile.getRoomTile().getRoom().getComponent(StockpileRoomComponent.class);
+		// A room whose floor is turned off counts as open ground.
+		return stockpileRoom == null || !stockpileRoom.isFloorStorageEnabled();
 	}
 
 	@Override

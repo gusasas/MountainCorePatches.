@@ -66,6 +66,7 @@ public class StockpileRoomComponent extends RoomComponent implements SelectableD
 	public RoomComponent clone(Room newParent) {
 
 		StockpileRoomComponent cloned = new StockpileRoomComponent(newParent, messageDispatcher, stockpileSettings.clone());
+		cloned.stockpile.setFloorStorageEnabled(this.stockpile.isFloorStorageEnabled());
 
 		// Copy over allocations, duplicates will be removed after
 		for (Map.Entry<GridPoint2, StockpileAllocation> entry : this.stockpile.getAllocations().entrySet()) {
@@ -77,6 +78,10 @@ public class StockpileRoomComponent extends RoomComponent implements SelectableD
 	@Override
 	public void mergeFrom(RoomComponent otherComponent) {
 		StockpileRoomComponent other = (StockpileRoomComponent) otherComponent;
+		// Two rooms becoming one keep the stricter of the two settings.
+		if (!other.stockpile.isFloorStorageEnabled()) {
+			this.stockpile.setFloorStorageEnabled(false);
+		}
 		for (Map.Entry<GridPoint2, StockpileAllocation> entry : other.stockpile.getAllocations().entrySet()) {
 			this.stockpile.getAllocations().put(entry.getKey(), entry.getValue());
 		}
@@ -99,6 +104,18 @@ public class StockpileRoomComponent extends RoomComponent implements SelectableD
 
 	public AbstractStockpile getStockpile() {
 		return stockpile;
+	}
+
+	/**
+	 * Whether the bare floor of this room is used for storage. Chests standing in it are unaffected,
+	 * and what is already on the floor becomes fair game to be tidied into them.
+	 */
+	public boolean isFloorStorageEnabled() {
+		return stockpile.isFloorStorageEnabled();
+	}
+
+	public void setFloorStorageEnabled(boolean floorStorageEnabled) {
+		stockpile.setFloorStorageEnabled(floorStorageEnabled);
 	}
 
 	public void itemOrCreaturePickedUp(MapTile targetTile) {
@@ -224,6 +241,10 @@ public class StockpileRoomComponent extends RoomComponent implements SelectableD
 		if (!priority.equals(JobPriority.NORMAL)) {
 			asJson.put("priority", priority.name());
 		}
+
+		if (!stockpile.isFloorStorageEnabled()) {
+			asJson.put("floorStorageDisabled", true);
+		}
 	}
 
 	@Override
@@ -232,6 +253,8 @@ public class StockpileRoomComponent extends RoomComponent implements SelectableD
 		if (stockpileSettingsJson != null) {
 			stockpileSettings.readFrom(stockpileSettingsJson, savedGameStateHolder, relatedStores);
 		}
+
+		stockpile.setFloorStorageEnabled(!asJson.getBooleanValue("floorStorageDisabled"));
 
 		JSONArray allocationsJson = asJson.getJSONArray("allocations");
 		if (allocationsJson != null) {

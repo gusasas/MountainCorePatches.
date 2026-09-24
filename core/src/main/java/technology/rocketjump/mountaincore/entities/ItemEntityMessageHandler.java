@@ -570,7 +570,8 @@ public class ItemEntityMessageHandler implements GameContextAware, Telegraph {
 		if (tile.getRoomTile() != null) {
 			Room room = tile.getRoomTile().getRoom();
 			StockpileRoomComponent stockpileRoomComponent = room.getComponent(StockpileRoomComponent.class);
-			if (stockpileRoomComponent != null && stockpileRoomComponent.getStockpileSettings().canHold(entity)) {
+			if (stockpileRoomComponent != null && stockpileRoomComponent.isFloorStorageEnabled() &&
+					stockpileRoomComponent.getStockpileSettings().canHold(entity)) {
 				return stockpileRoomComponent.getPriority();
 			}
 		}

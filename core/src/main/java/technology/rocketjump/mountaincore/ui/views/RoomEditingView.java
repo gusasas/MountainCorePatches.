@@ -7,6 +7,7 @@ import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.Touchable;
 import com.badlogic.gdx.scenes.scene2d.ui.*;
+import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.scenes.scene2d.utils.Drawable;
 import com.google.inject.Inject;
@@ -49,6 +50,7 @@ import technology.rocketjump.mountaincore.ui.i18n.I18nTranslator;
 import technology.rocketjump.mountaincore.ui.skins.GuiSkinRepository;
 import technology.rocketjump.mountaincore.ui.skins.ManagementSkin;
 import technology.rocketjump.mountaincore.ui.skins.MenuSkin;
+import technology.rocketjump.mountaincore.ui.eventlistener.TooltipLocationHint;
 import technology.rocketjump.mountaincore.ui.widgets.*;
 import technology.rocketjump.mountaincore.ui.widgets.furniture.FurnitureRequirementsWidget;
 import technology.rocketjump.mountaincore.ui.widgets.rooms.FarmPlotDescriptionWidget;
@@ -96,6 +98,7 @@ public class RoomEditingView implements GuiView, GameContextAware, DisplaysText,
 	private final RaceDictionary raceDictionary;
 	private final SoundAssetDictionary soundAssetDictionary;
 	private final SettlementItemTracker settlementItemTracker;
+	private final WidgetFactory widgetFactory;
 
 	@Inject
 	public RoomEditingView(MessageDispatcher messageDispatcher, TooltipFactory tooltipFactory, GuiSkinRepository skinRepository,
@@ -105,8 +108,10 @@ public class RoomEditingView implements GuiView, GameContextAware, DisplaysText,
 						   PlantSpeciesDictionary plantSpeciesDictionary, FurnitureRequirementsWidget furnitureRequirementsWidget,
 						   RoomFactory roomFactory, GameMaterialDictionary materialDictionary, GameDialogDictionary gameDialogDictionary,
 						   ButtonFactory buttonFactory, StockpileComponentUpdater stockpileComponentUpdater, StockpileGroupDictionary stockpileGroupDictionary,
-						   ItemTypeDictionary itemTypeDictionary, RaceDictionary raceDictionary, SoundAssetDictionary soundAssetDictionary, SettlementItemTracker settlementItemTracker) {
+						   ItemTypeDictionary itemTypeDictionary, RaceDictionary raceDictionary, SoundAssetDictionary soundAssetDictionary,
+						   SettlementItemTracker settlementItemTracker, WidgetFactory widgetFactory) {
 		this.messageDispatcher = messageDispatcher;
+		this.widgetFactory = widgetFactory;
 		this.tooltipFactory = tooltipFactory;
 		skin = skinRepository.getMainGameSkin();
 		managementSkin = skinRepository.getManagementSkin();
@@ -280,6 +285,18 @@ public class RoomEditingView implements GuiView, GameContextAware, DisplaysText,
 			}
 
 			StockpileRoomComponent stockpileComponent = selectedRoom.getComponent(StockpileRoomComponent.class);
+			if (stockpileComponent != null) {
+				CheckBox floorStorageCheckbox = widgetFactory.createLeftLabelledCheckbox("ROOMS.STOCKPILE.FLOOR_STORAGE", skin, 400f);
+				floorStorageCheckbox.setChecked(stockpileComponent.isFloorStorageEnabled());
+				floorStorageCheckbox.addListener(new ChangeListener() {
+					@Override
+					public void changed(ChangeEvent event, Actor actor) {
+						stockpileComponent.setFloorStorageEnabled(floorStorageCheckbox.isChecked());
+					}
+				});
+				mainTable.add(floorStorageCheckbox).center().row();
+				tooltipFactory.simpleTooltip(floorStorageCheckbox, "ROOMS.STOCKPILE.FLOOR_STORAGE.TOOLTIP", TooltipLocationHint.ABOVE);
+			}
 			if (stockpileComponent != null && stockpileSettingsExpanded) {
 				StockpileManagementTree stockpileManagementTree = new StockpileManagementTree(skin, messageDispatcher,
 						stockpileComponentUpdater, stockpileGroupDictionary,

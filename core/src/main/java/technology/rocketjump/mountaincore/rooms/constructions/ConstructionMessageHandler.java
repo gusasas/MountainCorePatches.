@@ -47,6 +47,10 @@ import technology.rocketjump.mountaincore.ui.widgets.furniture.FurnitureRequirem
 import java.util.*;
 
 import static technology.rocketjump.mountaincore.entities.model.physical.item.QuantifiedItemTypeWithMaterial.convert;
+import technology.rocketjump.mountaincore.jobs.model.JobPriority;
+import technology.rocketjump.mountaincore.entities.components.furniture.FurnitureStockpileComponent;
+import technology.rocketjump.mountaincore.entities.components.InventoryComponent;
+import com.badlogic.gdx.math.Vector2;
 
 @Singleton
 public class ConstructionMessageHandler implements GameContextAware, Telegraph {
@@ -234,14 +238,20 @@ public class ConstructionMessageHandler implements GameContextAware, Telegraph {
 	private void handleFurnitureConstructionCompleted(FurnitureConstruction construction) {
 		// Remove items in all covered tiles
 		Map<Long, Entity> itemsRemovedFromConstruction = new HashMap<>();
+		// Anything the finished piece will hold is not a building material and must not be destroyed.
+		List<Entity> itemsToTakeIn = new ArrayList<>();
 		Room tempPlacedOnRoom = null;
 		for (GridPoint2 tileLocation : construction.getTileLocations()) {
 			MapTile tileAtLocation = gameContext.getAreaMap().getTile(tileLocation);
 			if (tileAtLocation != null) {
 				for (Entity entity : tileAtLocation.getEntities()) {
 					if (entity.getType().equals(EntityType.ITEM)) {
-						itemsRemovedFromConstruction.put(entity.getId(), entity);
-						messageDispatcher.dispatchMessage(0.01f, MessageType.DESTROY_ENTITY, entity);
+						if (construction.willTakeInOnCompletion(entity)) {
+							itemsToTakeIn.add(entity);
+						} else {
+							itemsRemovedFromConstruction.put(entity.getId(), entity);
+							messageDispatcher.dispatchMessage(0.01f, MessageType.DESTROY_ENTITY, entity);
+						}
 					}
 				}
 				tileAtLocation.setConstruction(null);
@@ -285,8 +295,31 @@ public class ConstructionMessageHandler implements GameContextAware, Telegraph {
 								placedOnRoom.getBehaviourComponent() instanceof Prioritisable) {
 							((Prioritisable)furnitureEntity.getBehaviourComponent()).setPriority(((Prioritisable)placedOnRoom.getBehaviourComponent()).getPriority());
 						}
+						takeInWhatWasStandingHere(furnitureEntity, itemsToTakeIn);
 					}
 			));
+		}
+	}
+
+	/**
+	 * Moves what was standing on the site into the piece built over it, taking it off the tile first.
+	 */
+	private void takeInWhatWasStandingHere(Entity furnitureEntity, List<Entity> itemsToTakeIn) {
+		FurnitureStockpileComponent stockpileComponent = furnitureEntity.getComponent(FurnitureStockpileComponent.class);
+		for (Entity item : itemsToTakeIn) {
+			Vector2 itemPosition = item.getLocationComponent().getWorldPosition();
+			if (itemPosition != null) {
+				MapTile itemTile = gameContext.getAreaMap().getTile(itemPosition);
+				if (itemTile != null) {
+					itemTile.removeEntity(item.getId());
+				}
+			}
+			if (stockpileComponent != null && !stockpileComponent.getStockpile().canAccept(item)) {
+				messageDispatcher.dispatchMessage(MessageType.REQUEST_ENTITY_HAULING,
+						new RequestHaulingMessage(item, item, true, JobPriority.HIGHER, null));
+			}
+			furnitureEntity.getOrCreateComponent(InventoryComponent.class)
+					.add(item, furnitureEntity, messageDispatcher, gameContext.getGameClock());
 		}
 	}
 

@@ -179,6 +179,11 @@ public class ConstructionManager implements Updatable {
 			if (tileAtLocation != null) {
 				for (Entity entity : tileAtLocation.getEntities()) {
 					if (entity.getType().equals(EntityType.ITEM)) {
+						if (furnitureConstruction instanceof FurnitureConstruction furniture && furniture.willTakeInOnCompletion(entity)) {
+							// A chest going up over a stack it is happy to hold takes it in when it is
+							// finished, so carrying it away first and back again afterwards is wasted work
+							continue;
+						}
 						ItemAllocationComponent itemAllocationComponent = entity.getOrCreateComponent(ItemAllocationComponent.class);
 						if (itemAllocationComponent.getAllocationForPurpose(ItemAllocation.Purpose.ON_FIRE) != null) {
 							// Item is on fire so ignore this for now

@@ -5,6 +5,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.badlogic.gdx.math.GridPoint2;
 import org.pmw.tinylog.Logger;
 import technology.rocketjump.mountaincore.entities.SequentialIdGenerator;
+import technology.rocketjump.mountaincore.entities.components.furniture.FurnitureStockpileComponent;
 import technology.rocketjump.mountaincore.entities.model.Entity;
 import technology.rocketjump.mountaincore.entities.model.physical.furniture.FurnitureEntityAttributes;
 import technology.rocketjump.mountaincore.entities.model.physical.furniture.FurnitureType;
@@ -86,6 +87,19 @@ public class FurnitureConstruction extends Construction {
 	@Override
 	public void allocationCancelled(HaulingAllocation allocation) {
 		incomingHaulingAllocations.remove(allocation);
+	}
+
+	/**
+	 * Whether the finished piece will take this in, in which case there is no sense carrying it away.
+	 */
+	public boolean willTakeInOnCompletion(Entity item) {
+		if (isItemUsedInConstruction(item)) {
+			return false; // this is one of the materials, and is consumed
+		}
+		FurnitureStockpileComponent stockpileComponent = furnitureEntityToBePlaced.getComponent(FurnitureStockpileComponent.class);
+		return stockpileComponent != null &&
+				stockpileComponent.getStockpileSettings().canHold(item) &&
+				stockpileComponent.getStockpile().canAccept(item);
 	}
 
 	public Entity getFurnitureEntityToBePlaced() {

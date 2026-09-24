@@ -61,6 +61,81 @@ public class ConstructionMaterialsTest {
 		return item;
 	}
 
+	/**
+	 * The public constructor wants a piece of furniture placed on the map; only the piece matters here.
+	 */
+	private FurnitureConstruction constructionFor(Entity ghost) {
+		try {
+			FurnitureConstruction built = new FurnitureConstruction();
+			java.lang.reflect.Field field = FurnitureConstruction.class.getDeclaredField("furnitureEntityToBePlaced");
+			field.setAccessible(true);
+			field.set(built, ghost);
+			return built;
+		} catch (ReflectiveOperationException e) {
+			throw new RuntimeException(e);
+		}
+	}
+
+	private Entity ghostChestHolding(java.util.List<technology.rocketjump.mountaincore.entities.components.InventoryComponent.InventoryEntry> contents,
+	                                 boolean settingsAllowIt) {
+		technology.rocketjump.mountaincore.entities.components.InventoryComponent inventory =
+				mock(technology.rocketjump.mountaincore.entities.components.InventoryComponent.class);
+		when(inventory.getInventoryEntries()).thenReturn(contents);
+
+		Entity ghost = mock(Entity.class);
+		when(ghost.getComponent(technology.rocketjump.mountaincore.entities.components.InventoryComponent.class)).thenReturn(inventory);
+
+		technology.rocketjump.mountaincore.production.FurnitureStockpile stockpile =
+				new technology.rocketjump.mountaincore.production.FurnitureStockpile();
+		stockpile.setParentEntity(ghost);
+		stockpile.setMaxQuantity(6);
+
+		technology.rocketjump.mountaincore.production.StockpileSettings settings =
+				mock(technology.rocketjump.mountaincore.production.StockpileSettings.class);
+		when(settings.canHold(org.mockito.ArgumentMatchers.any())).thenReturn(settingsAllowIt);
+
+		technology.rocketjump.mountaincore.entities.components.furniture.FurnitureStockpileComponent component =
+				mock(technology.rocketjump.mountaincore.entities.components.furniture.FurnitureStockpileComponent.class);
+		when(component.getStockpile()).thenReturn(stockpile);
+		when(component.getStockpileSettings()).thenReturn(settings);
+		when(ghost.getComponent(technology.rocketjump.mountaincore.entities.components.furniture.FurnitureStockpileComponent.class))
+				.thenReturn(component);
+		return ghost;
+	}
+
+	@Test
+	public void aChestGoingUpOverAStackItWillHoldLeavesItWhereItIs() {
+		construction = constructionFor(ghostChestHolding(java.util.List.of(), true));
+		requires(chest, sycamore);
+
+		assertThat(construction.willTakeInOnCompletion(itemOf(planks, beech))).isTrue();
+	}
+
+	@Test
+	public void aChestDoesNotAdoptItsOwnBuildingMaterials() {
+		construction = constructionFor(ghostChestHolding(java.util.List.of(), true));
+		requires(chest, sycamore);
+
+		// The chest it is built out of is consumed, not stored
+		assertThat(construction.willTakeInOnCompletion(itemOf(chest, sycamore))).isFalse();
+	}
+
+	@Test
+	public void aChestTurnsDownWhatItsSettingsRefuse() {
+		construction = constructionFor(ghostChestHolding(java.util.List.of(), false));
+		requires(chest, sycamore);
+
+		assertThat(construction.willTakeInOnCompletion(itemOf(planks, beech))).isFalse();
+	}
+
+	@Test
+	public void somethingWithNowhereToPutThingsKeepsClearingTheSiteAsBefore() {
+		construction = constructionFor(mock(Entity.class));
+		requires(chest, sycamore);
+
+		assertThat(construction.willTakeInOnCompletion(itemOf(planks, beech))).isFalse();
+	}
+
 	@Test
 	public void theThingItAskedForCountsAsAMaterial() {
 		requires(chest, sycamore);

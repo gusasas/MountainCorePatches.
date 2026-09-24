@@ -99,8 +99,9 @@ public abstract class Construction implements Persistable, SelectableDescription
 	public boolean isItemUsedInConstruction(Entity itemEntity) {
 		ItemEntityAttributes itemAttributes = (ItemEntityAttributes) itemEntity.getPhysicalEntityComponent().getAttributes();
 		for (QuantifiedItemTypeWithMaterial requirement : requirements) {
+			// The brackets fell so that the item type stopped being checked at all once a material was named.
 			if (requirement.getItemType().equals(itemAttributes.getItemType()) &&
-					(requirement.getMaterial()) == null || (requirement.getMaterial() != null &&
+					(requirement.getMaterial() == null ||
 							requirement.getMaterial().equals(itemAttributes.getMaterial(requirement.getMaterial().getMaterialType())))) {
 
 				if (constructionOverrideSettings.contains(ConstructionOverrideTag.ConstructionOverrideSetting.REQUIRES_EDIBLE_LIQUID)) {

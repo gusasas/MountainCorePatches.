@@ -98,7 +98,6 @@ public class RoomEditingView implements GuiView, GameContextAware, DisplaysText,
 	private final RaceDictionary raceDictionary;
 	private final SoundAssetDictionary soundAssetDictionary;
 	private final SettlementItemTracker settlementItemTracker;
-	private final WidgetFactory widgetFactory;
 
 	@Inject
 	public RoomEditingView(MessageDispatcher messageDispatcher, TooltipFactory tooltipFactory, GuiSkinRepository skinRepository,
@@ -109,9 +108,8 @@ public class RoomEditingView implements GuiView, GameContextAware, DisplaysText,
 						   RoomFactory roomFactory, GameMaterialDictionary materialDictionary, GameDialogDictionary gameDialogDictionary,
 						   ButtonFactory buttonFactory, StockpileComponentUpdater stockpileComponentUpdater, StockpileGroupDictionary stockpileGroupDictionary,
 						   ItemTypeDictionary itemTypeDictionary, RaceDictionary raceDictionary, SoundAssetDictionary soundAssetDictionary,
-						   SettlementItemTracker settlementItemTracker, WidgetFactory widgetFactory) {
+						   SettlementItemTracker settlementItemTracker) {
 		this.messageDispatcher = messageDispatcher;
-		this.widgetFactory = widgetFactory;
 		this.tooltipFactory = tooltipFactory;
 		skin = skinRepository.getMainGameSkin();
 		managementSkin = skinRepository.getManagementSkin();
@@ -286,7 +284,9 @@ public class RoomEditingView implements GuiView, GameContextAware, DisplaysText,
 
 			StockpileRoomComponent stockpileComponent = selectedRoom.getComponent(StockpileRoomComponent.class);
 			if (stockpileComponent != null) {
-				CheckBox floorStorageCheckbox = widgetFactory.createLeftLabelledCheckbox("ROOMS.STOCKPILE.FLOOR_STORAGE", skin, 400f);
+				// The plain style, as used by the stockpile tree below; the labelled ones live in the menu skin.
+				CheckBox floorStorageCheckbox = new CheckBox(
+						i18nTranslator.getTranslatedString("ROOMS.STOCKPILE.FLOOR_STORAGE").toString(), skin);
 				floorStorageCheckbox.setChecked(stockpileComponent.isFloorStorageEnabled());
 				floorStorageCheckbox.addListener(new ChangeListener() {
 					@Override

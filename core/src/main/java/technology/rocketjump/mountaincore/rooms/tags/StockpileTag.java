@@ -16,6 +16,7 @@ import technology.rocketjump.mountaincore.production.StockpileComponentUpdater;
 import technology.rocketjump.mountaincore.production.StockpileSettings;
 import technology.rocketjump.mountaincore.rooms.Room;
 import technology.rocketjump.mountaincore.rooms.components.StockpileRoomComponent;
+import technology.rocketjump.mountaincore.rooms.components.behaviour.TradeDepotBehaviour;
 
 import java.util.function.Predicate;
 import java.util.regex.Matcher;
@@ -62,6 +63,45 @@ public class StockpileTag extends Tag {
 	@Override
 	public void apply(Room room, TagProcessingUtils tagProcessingUtils) {
 		room.createComponent(StockpileRoomComponent.class, tagProcessingUtils.messageDispatcher);
+	}
+
+	/**
+	 * What a chest standing in a trade depot is allowed to hold, whatever it holds elsewhere.
+	 */
+	private static final String TRADE_DEPOT_CONTENTS = "Treasure-Coin";
+
+	private boolean isInTradeDepot(Entity entity, GameContext gameContext) {
+		if (gameContext == null || gameContext.getAreaMap() == null || entity.getLocationComponent() == null ||
+				entity.getLocationComponent().getWorldOrParentPosition() == null) {
+			return false;
+		}
+		MapTile tile = gameContext.getAreaMap().getTile(entity.getLocationComponent().getWorldOrParentPosition());
+		if (tile == null || tile.getRoomTile() == null || tile.getRoomTile().getRoom() == null) {
+			return false;
+		}
+		return tile.getRoomTile().getRoom().getComponent(TradeDepotBehaviour.class) != null;
+	}
+
+	/**
+	 * A chest in a trade depot takes the traders' coins and nothing else. Left open to everything, as
+	 * a chest built anywhere else now is, the settlers fill the depot with whatever is nearest.
+	 */
+	private void restrictToDepotContents(Entity entity, TagProcessingUtils tagProcessingUtils, GameContext gameContext) {
+		FurnitureStockpileComponent component = entity.getComponent(FurnitureStockpileComponent.class);
+		if (component == null || !isInTradeDepot(entity, gameContext)) {
+			return;
+		}
+		ItemType depotContents = tagProcessingUtils.itemTypeDictionary.getByName(TRADE_DEPOT_CONTENTS);
+		if (depotContents == null) {
+			return;
+		}
+		StockpileSettings settings = component.getStockpileSettings();
+		if (settings.getEnabledItemTypes().size() == 1 && settings.getEnabledItemTypes().contains(depotContents)) {
+			return; // already set, and this runs whenever the chest is drawn again
+		}
+		settings.clearAll();
+		tagProcessingUtils.stockpileComponentUpdater.toggleItem(settings, depotContents, true, true, true);
+		settings.addRestriction(depotContents);
 	}
 
 	@Override
@@ -121,5 +161,9 @@ public class StockpileTag extends Tag {
 			component.init(entity, messageDispatcher, gameContext);
 			entity.addComponent(component);
 		}
+
+		// Outside the block above on purpose: tags are applied again whenever the furniture is redrawn,
+		// so a chest already standing in a depot in a saved game is put right without being rebuilt
+		restrictToDepotContents(entity, tagProcessingUtils, gameContext);
 	}
 }

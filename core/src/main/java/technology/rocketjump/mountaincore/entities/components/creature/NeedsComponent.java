@@ -3,6 +3,7 @@ package technology.rocketjump.mountaincore.entities.components.creature;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.badlogic.gdx.ai.msg.MessageDispatcher;
+import technology.rocketjump.mountaincore.entities.ai.goap.CreatureCategory;
 import technology.rocketjump.mountaincore.entities.ai.goap.EntityNeed;
 import technology.rocketjump.mountaincore.entities.components.EntityComponent;
 import technology.rocketjump.mountaincore.entities.model.Entity;
@@ -57,7 +58,11 @@ public class NeedsComponent implements EntityComponent {
 	public void update(double elapsedGameHours, Entity parentEntity, MessageDispatcher messageDispatcher) {
 		CreatureEntityAttributes attributes = (CreatureEntityAttributes) parentEntity.getPhysicalEntityComponent().getAttributes();
 
-		if (needValues.containsKey(EntityNeed.SLEEP)) {
+		// Invaders come to raid and then leave. They do not bed down in the middle of somebody else's
+		// settlement, and holding their rest still also keeps them off the exhaustion clock
+		boolean rests = !CreatureCategory.INVADER.equals(CreatureCategory.getCategoryFor(parentEntity));
+
+		if (rests && needValues.containsKey(EntityNeed.SLEEP)) {
 			Double currentSleepValue = needValues.get(EntityNeed.SLEEP);
 
 			// TODO MODDING data-drive this

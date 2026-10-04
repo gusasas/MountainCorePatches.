@@ -797,11 +797,18 @@ public class CraftingStationBehaviour extends FurnitureBehaviour
 		return craftingOverrideTag == null || !craftingOverrideTag.includes(CraftingOverrideTag.CraftingOverrideSetting.DO_NOT_HAUL_OUTPUT);
 	}
 
+	/**
+	 * Gets rid of whatever is left standing on the station, which is the only way it ever takes on new
+	 * work again - the update above refuses to look for anything else while the inventory is occupied.
+	 * <p>
+	 * This used to give up at once on a station tagged DO_NOT_HAUL_OUTPUT, and the baker's worktop
+	 * carries that tag. Three sacks of flour stranded on it were therefore never cleared and never
+	 * used, and the whole bakery stopped for good - demolishing the worktop, which tips its contents
+	 * onto the floor, was the only cure. The tag is still honoured where it matters: a finished item
+	 * waiting to be carried to its proofing table holds a PRODUCTION_OUTPUT allocation, so it is not
+	 * unallocated and nothing below touches it. Only genuinely abandoned items are sent away.
+	 */
 	private void clearInventoryItems() {
-		if (!outputHaulingAllowed()) {
-			return;
-		}
-
 		InventoryComponent inventoryComponent = parentEntity.getComponent(InventoryComponent.class);
 		for (InventoryComponent.InventoryEntry entry : inventoryComponent.getInventoryEntries()) {
 			ItemAllocationComponent itemAllocationComponent = entry.entity.getOrCreateComponent(ItemAllocationComponent.class);

@@ -4,6 +4,7 @@ import com.badlogic.gdx.math.GridPoint2;
 import com.badlogic.gdx.math.Vector2;
 import org.pmw.tinylog.Logger;
 import technology.rocketjump.mountaincore.entities.behaviour.creature.CreatureBehaviour;
+import technology.rocketjump.mountaincore.entities.components.creature.SteeringComponent;
 import technology.rocketjump.mountaincore.entities.model.Entity;
 import technology.rocketjump.mountaincore.gamecontext.GameContext;
 import technology.rocketjump.mountaincore.gamecontext.Updatable;
@@ -117,6 +118,13 @@ public class TrappedSettlerRescuer implements Updatable {
 		}
 
 		settler.getLocationComponent().setWorldPosition(VectorUtils.toVector(wayBack), true);
+		if (settler.getBehaviourComponent() != null) {
+			SteeringComponent steering = settler.getBehaviourComponent().getSteeringComponent();
+			if (steering != null) {
+				// the route they were walking started on the other side of the wall
+				steering.destinationReached();
+			}
+		}
 		if (settler.getBehaviourComponent() instanceof CreatureBehaviour behaviour && behaviour.getCurrentGoal() != null) {
 			behaviour.getCurrentGoal().setInterrupted(true); // whatever they were trying to do, they were not getting there
 		}

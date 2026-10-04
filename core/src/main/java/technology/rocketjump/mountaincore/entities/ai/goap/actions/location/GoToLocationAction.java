@@ -37,12 +37,18 @@ import technology.rocketjump.mountaincore.persistence.model.InvalidSaveException
 import technology.rocketjump.mountaincore.persistence.model.SavedGameStateHolder;
 import technology.rocketjump.mountaincore.rooms.HaulingAllocation;
 
+import java.util.ArrayDeque;
 import java.util.ArrayList;
+import java.util.Deque;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class GoToLocationAction extends Action implements PathfindingCallback {
 
 	public static final float WAYPOINT_TOLERANCE = 0.5f;
+	/** Enough ground to tell an open side from a sealed pocket, without walking the whole map */
+	private static final int TILES_TO_LOOK_AT_EACH_SIDE = 400;
 	public static final float DESTINATION_TOLERANCE = 0.15f;
 	public static final float MAX_TIME_TO_WAIT = 8f;
 	/**
@@ -326,6 +332,8 @@ public class GoToLocationAction extends Action implements PathfindingCallback {
 				return null;
 			} else if (navigableTiles.size == 1) {
 				return VectorUtils.toVector(navigableTiles.get(0));
+			} else if (gameContext.getAreaMap().getTile(assignedJob.getJobLocation()).hasWallConstruction()) {
+				return VectorUtils.toVector(sideToBuildWallFrom(navigableTiles, assignedJob.getJobLocation(), parent.parentEntity, gameContext));
 			} else {
 				// Slight hack - picking one at random should eventually pick one we can get to
 				return VectorUtils.toVector(navigableTiles.get(gameContext.getRandom().nextInt(navigableTiles.size)));
@@ -333,6 +341,57 @@ public class GoToLocationAction extends Action implements PathfindingCallback {
 		} else {
 			return VectorUtils.toVector(assignedJob.getJobLocation());
 		}
+	}
+
+	/**
+	 * How far the walkable ground reaches from a tile once the wall is in place, counted up to
+	 * {@link #TILES_TO_LOOK_AT_EACH_SIDE} and no further - all we need to know is which side is the
+	 * open one, not how big the world is.
+	 */
+	private static int groundReachableFrom(GridPoint2 start, GridPoint2 wallToBe, Entity walker, GameContext gameContext) {
+		Set<GridPoint2> seen = new HashSet<>();
+		Deque<GridPoint2> toVisit = new ArrayDeque<>();
+		seen.add(start);
+		toVisit.add(start);
+
+		while (!toVisit.isEmpty() && seen.size() < TILES_TO_LOOK_AT_EACH_SIDE) {
+			GridPoint2 position = toVisit.poll();
+			for (MapTile neighbour : gameContext.getAreaMap().getOrthogonalNeighbours(position.x, position.y).values()) {
+				GridPoint2 neighbourPosition = neighbour.getTilePosition();
+				if (neighbourPosition.equals(wallToBe) || seen.contains(neighbourPosition) || !neighbour.isNavigable(walker)) {
+					continue;
+				}
+				seen.add(neighbourPosition);
+				toVisit.add(neighbourPosition);
+			}
+		}
+		return seen.size();
+	}
+
+	/**
+	 * Which side of a wall to stand on while building it.
+	 * <p>
+	 * This used to be picked at random, and half the time that meant standing on the side being
+	 * walled off, laying the last stone and sealing yourself in. Each side is measured with the wall
+	 * treated as already built: one of them opens out onto the rest of the settlement and runs out of
+	 * counting, the other closes on a pocket of a few tiles. The open side wins.
+	 */
+	private static GridPoint2 sideToBuildWallFrom(Array<GridPoint2> candidates, GridPoint2 wallToBe, Entity walker, GameContext gameContext) {
+		List<GridPoint2> best = new ArrayList<>();
+		int widest = -1;
+		for (GridPoint2 candidate : candidates) {
+			int reachable = groundReachableFrom(candidate, wallToBe, walker, gameContext);
+			if (reachable > widest) {
+				widest = reachable;
+				best.clear();
+			}
+			if (reachable == widest) {
+				best.add(candidate);
+			}
+		}
+		// Walling between two cupboards, or off the edge of what we bothered to look at, leaves no
+		// better answer than the old one
+		return best.get(gameContext.getRandom().nextInt(best.size()));
 	}
 
 	@Override

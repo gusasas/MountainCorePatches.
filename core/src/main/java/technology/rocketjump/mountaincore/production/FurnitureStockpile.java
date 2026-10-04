@@ -28,6 +28,10 @@ public class FurnitureStockpile extends AbstractStockpile implements ChildPersis
     private int maxQuantity;
     private final Map<Long, StockpileAllocation> allocationsByHaulingAllocationId = new HashMap<>();
 
+    public int getMaxQuantity() {
+        return maxQuantity;
+    }
+
     public void setMaxQuantity(int maxQuantity) {
         this.maxQuantity = maxQuantity;
     }

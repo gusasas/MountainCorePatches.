@@ -1152,7 +1152,8 @@ public class EntitySelectedGuiView implements GuiView, GameContextAware {
 
 
 			table.clear();
-			for (int slotIndex = 1; slotIndex <= numTotalCells(MAX_SLOTS_PER_ROW, inventoryEntities); slotIndex++) {
+			final int totalCells = numTotalCells(MAX_SLOTS_PER_ROW, inventoryEntities, entity);
+			for (int slotIndex = 1; slotIndex <= totalCells; slotIndex++) {
 				Stack entityStack = new Stack();
 
 				Drawable emptyBackgroundDrawable = mainGameSkin.getDrawable("asset_dwarf_select_inventory_bg");
@@ -1222,7 +1223,7 @@ public class EntitySelectedGuiView implements GuiView, GameContextAware {
 				} else {
 					table.add(entityStack).bottom().spaceLeft(22f).spaceTop(slotIndex > MAX_SLOTS_PER_ROW ? 22f : 0f);
 				}
-				if (slotIndex % MAX_SLOTS_PER_ROW == 0 && slotIndex < inventoryEntities.size()) {
+				if (slotIndex % MAX_SLOTS_PER_ROW == 0 && slotIndex < totalCells) {
 					table.row();
 				}
 			}
@@ -1232,7 +1233,18 @@ public class EntitySelectedGuiView implements GuiView, GameContextAware {
 		return updatable;
 	}
 
-	private static int numTotalCells(int MAX_SLOTS_PER_ROW, List<Entity> inventoryEntities) {
+	/**
+	 * How many slots to draw. Furniture which holds a set number of stacks shows exactly that many,
+	 * so a chest which only ever takes six no longer displays eight, two of which can never fill.
+	 * Everything else keeps filling out whole rows, since it has no capacity to go by.
+	 */
+	private static int numTotalCells(int MAX_SLOTS_PER_ROW, List<Entity> inventoryEntities, Entity entity) {
+		FurnitureStockpileComponent stockpileComponent = entity.getComponent(FurnitureStockpileComponent.class);
+		if (stockpileComponent != null && stockpileComponent.getStockpile().getMaxQuantity() > 0) {
+			// a saved game from before chests were kept to their capacity can hold more than that,
+			// and those items still have to be visible
+			return Math.max(stockpileComponent.getStockpile().getMaxQuantity(), inventoryEntities.size());
+		}
 		return ((inventoryEntities.size() / MAX_SLOTS_PER_ROW) + (inventoryEntities.size() % MAX_SLOTS_PER_ROW == 0 ? 0 : 1)) * MAX_SLOTS_PER_ROW;
 	}
 

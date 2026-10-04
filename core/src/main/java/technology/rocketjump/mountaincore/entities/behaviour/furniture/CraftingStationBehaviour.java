@@ -189,6 +189,19 @@ public class CraftingStationBehaviour extends FurnitureBehaviour
 
 		if (craftingAssignment != null) {
 
+			// A crafting job can be taken away from under its assignment - dropped as unreachable, or
+			// swept up as invalid - and nothing here ever noticed. The station then sat waiting for a
+			// job which no longer existed, holding on to the ingredients it had reserved, and the only
+			// cure was demolishing it. Worse, a second station sharing the same ingredients could not
+			// start either, which is why pulling down one of two ovens got both of them going again.
+			// While the recipe needs extra time to finish, the job is gone for a good reason: it is
+			// done, and the station is counting down the baking.
+			Job assignedCraftingJob = craftingAssignment.getCraftingJob();
+			if (extraTimeToProcess == null && (assignedCraftingJob == null || JobState.REMOVED.equals(assignedCraftingJob.getJobState()))) {
+				cancelAssignment();
+				return;
+			}
+
 			ProductionExportFurnitureBehaviour targetExportFurniture = gameContext.getAreaMap().getTile(craftingAssignment.getOutputLocation()).getEntities().stream()
 					.filter(e -> e.getBehaviourComponent() instanceof ProductionExportFurnitureBehaviour)
 					.map(e -> (ProductionExportFurnitureBehaviour) e.getBehaviourComponent())

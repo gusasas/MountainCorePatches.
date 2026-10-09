@@ -27,6 +27,7 @@ import technology.rocketjump.mountaincore.entities.behaviour.creature.CreatureBe
 import technology.rocketjump.mountaincore.entities.behaviour.furniture.*;
 import technology.rocketjump.mountaincore.entities.components.*;
 import technology.rocketjump.mountaincore.entities.components.creature.*;
+import technology.rocketjump.mountaincore.entities.behaviour.furniture.HoldsLimitedItems;
 import technology.rocketjump.mountaincore.entities.components.furniture.ConstructedEntityComponent;
 import technology.rocketjump.mountaincore.entities.components.furniture.DecorationInventoryComponent;
 import technology.rocketjump.mountaincore.entities.components.furniture.FurnitureStockpileComponent;
@@ -1244,6 +1245,9 @@ public class EntitySelectedGuiView implements GuiView, GameContextAware {
 			// a saved game from before chests were kept to their capacity can hold more than that,
 			// and those items still have to be visible
 			return Math.max(stockpileComponent.getStockpile().getMaxQuantity(), inventoryEntities.size());
+		}
+		if (entity.getBehaviourComponent() instanceof HoldsLimitedItems limitedItems && limitedItems.getItemCapacity() > 0) {
+			return Math.max(limitedItems.getItemCapacity(), inventoryEntities.size());
 		}
 		return ((inventoryEntities.size() / MAX_SLOTS_PER_ROW) + (inventoryEntities.size() % MAX_SLOTS_PER_ROW == 0 ? 0 : 1)) * MAX_SLOTS_PER_ROW;
 	}

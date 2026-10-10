@@ -479,8 +479,9 @@ public class ConstructionManager implements Updatable {
 			}
 		}
 
-		// Some kind of error - must be using more types of ingredients than tile covered
-		Logger.error("More construction ingredients than tile locations - the construction recipe should be simplified to use fewer ingredients or cover more tiles");
+		// Every tile already holds ingredients this delivery cannot join, so it stacks on the primary
+		// one with the rest. A single tile construction has nowhere else by definition
+		Logger.debug("No free tile for a construction ingredient, stacking it on the primary tile");
 		return construction.getPrimaryLocation();
 	}
 

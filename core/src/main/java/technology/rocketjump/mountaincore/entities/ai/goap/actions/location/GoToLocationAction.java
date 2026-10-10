@@ -278,8 +278,12 @@ public class GoToLocationAction extends Action implements PathfindingCallback {
 		if (HaulingAllocation.AllocationPositionType.FURNITURE.equals(allocationPositionType)) {
 			Entity targetFurniture = gameContext.getAreaMap().getTile(allocationPosition)
 					.getEntity(targetEntityId);
-			if (targetFurniture != null) {
-				FurnitureEntityAttributes furnitureEntityAttributes = (FurnitureEntityAttributes)targetFurniture.getPhysicalEntityComponent().getAttributes();
+			if (targetFurniture == null) {
+				// The allocation names the furniture, and that one tile is only where its position
+				// rounds to, so a piece covering several tiles is looked up by id instead
+				targetFurniture = gameContext.getEntities().get(targetEntityId);
+			}
+			if (targetFurniture != null && targetFurniture.getPhysicalEntityComponent().getAttributes() instanceof FurnitureEntityAttributes furnitureEntityAttributes) {
 				FurnitureLayout.Workspace navigableWorkspace = FurnitureLayout.getAnyNavigableWorkspace(targetFurniture, gameContext.getAreaMap());
 				FurnitureStockpileComponent stockpileComponent = targetFurniture.getComponent(FurnitureStockpileComponent.class);
 				if (navigableWorkspace != null) {

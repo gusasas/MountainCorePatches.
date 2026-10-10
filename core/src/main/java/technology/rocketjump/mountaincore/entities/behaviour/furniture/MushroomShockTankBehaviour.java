@@ -3,6 +3,7 @@ package technology.rocketjump.mountaincore.entities.behaviour.furniture;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.badlogic.gdx.ai.msg.MessageDispatcher;
+import com.badlogic.gdx.math.GridPoint2;
 import com.google.common.collect.Lists;
 import org.pmw.tinylog.Logger;
 import technology.rocketjump.mountaincore.entities.components.InventoryComponent;
@@ -10,6 +11,8 @@ import technology.rocketjump.mountaincore.entities.components.ItemAllocation;
 import technology.rocketjump.mountaincore.entities.components.ItemAllocationComponent;
 import technology.rocketjump.mountaincore.entities.components.LiquidContainerComponent;
 import technology.rocketjump.mountaincore.entities.model.Entity;
+import technology.rocketjump.mountaincore.entities.model.physical.furniture.FurnitureEntityAttributes;
+import technology.rocketjump.mountaincore.entities.model.physical.furniture.FurnitureLayout;
 import technology.rocketjump.mountaincore.entities.model.physical.item.ItemEntityAttributes;
 import technology.rocketjump.mountaincore.entities.model.physical.item.ItemType;
 import technology.rocketjump.mountaincore.gamecontext.GameContext;
@@ -24,6 +27,7 @@ import technology.rocketjump.mountaincore.persistence.EnumParser;
 import technology.rocketjump.mountaincore.persistence.SavedGameDependentDictionaries;
 import technology.rocketjump.mountaincore.persistence.model.InvalidSaveException;
 import technology.rocketjump.mountaincore.persistence.model.SavedGameStateHolder;
+import technology.rocketjump.mountaincore.rooms.HaulingAllocation;
 import technology.rocketjump.mountaincore.ui.i18n.I18nString;
 import technology.rocketjump.mountaincore.ui.i18n.I18nText;
 import technology.rocketjump.mountaincore.ui.i18n.I18nTranslator;
@@ -220,12 +224,12 @@ public class MushroomShockTankBehaviour extends FillLiquidContainerBehaviour imp
 		boolean[] sentFor = new boolean[1];
 		messageDispatcher.dispatchMessage(MessageType.REQUEST_HAULING_ALLOCATION, new RequestHaulingAllocationMessage(
 				parentEntity, parentEntity.getLocationComponent().getWorldPosition(), targetItemType, null,
-				false, 1, null, haulingAllocation -> {
+				true, 1, null, haulingAllocation -> {
 					if (haulingAllocation != null) {
 						Job haulingJob = new Job(relatedJobTypes.get(0));
 						haulingJob.setJobPriority(priority);
 						haulingJob.setTargetId(haulingAllocation.getTargetId());
-						haulingJob.setJobLocation(haulingAllocation.getSourcePosition());
+						haulingJob.setJobLocation(collectedFrom(haulingAllocation, gameContext));
 						haulingJob.setHaulingAllocation(haulingAllocation);
 //						haulingJob.setRequiredProfession(mushroomFarmingProfession);
 
@@ -237,6 +241,24 @@ public class MushroomShockTankBehaviour extends FillLiquidContainerBehaviour imp
 			)
 		);
 		return sentFor[0];
+	}
+
+	/**
+	 * A bundle sitting in a chest is reached from one of the chest's walkable sides, never from the
+	 * chest's own tile, which nobody can stand on.
+	 */
+	private GridPoint2 collectedFrom(HaulingAllocation allocation, GameContext gameContext) {
+		if (HaulingAllocation.AllocationPositionType.FURNITURE.equals(allocation.getSourcePositionType())
+				&& allocation.getSourceContainerId() != null) {
+			Entity container = gameContext.getEntities().get(allocation.getSourceContainerId());
+			if (container != null && container.getPhysicalEntityComponent().getAttributes() instanceof FurnitureEntityAttributes) {
+				FurnitureLayout.Workspace workspace = FurnitureLayout.getAnyNavigableWorkspace(container, gameContext.getAreaMap());
+				if (workspace != null) {
+					return workspace.getAccessedFrom();
+				}
+			}
+		}
+		return allocation.getSourcePosition();
 	}
 
 	float soakingProgress(InventoryComponent.InventoryEntry entry, GameContext gameContext) {

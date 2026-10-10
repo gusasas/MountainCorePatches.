@@ -577,16 +577,20 @@ public class EntityMessageHandler implements GameContextAware, Telegraph {
 							}
 							case FURNITURE -> {
 								Entity targetFurnitureEntity = entityStore.getById(allocation.getTargetId());
-								if (targetFurnitureEntity != null && targetFurnitureEntity.getBehaviourComponent() instanceof CraftingStationBehaviour) {
-									((CraftingStationBehaviour) targetFurnitureEntity.getBehaviourComponent()).allocationCancelled(allocation);
-								} else if (targetFurnitureEntity != null && targetFurnitureEntity.getComponent(FurnitureStockpileComponent.class) != null) {
+								if (targetFurnitureEntity == null) {
+									// The furniture has already gone, so there is nobody left to tell
+								} else if (targetFurnitureEntity.getBehaviourComponent() instanceof CraftingStationBehaviour craftingStationBehaviour) {
+									craftingStationBehaviour.allocationCancelled(allocation);
+								} else if (targetFurnitureEntity.getComponent(FurnitureStockpileComponent.class) != null) {
 									targetFurnitureEntity.getComponent(FurnitureStockpileComponent.class).getStockpile().cancelAllocation(allocation);
+								} else if (targetFurnitureEntity.getBehaviourComponent() instanceof MushroomShockTankBehaviour shockTankBehaviour) {
+									shockTankBehaviour.allocationCancelled(allocation);
 								} else if (
-										targetFurnitureEntity != null && targetFurnitureEntity.getBehaviourComponent() instanceof CollectItemFurnitureBehaviour ||
-										targetFurnitureEntity != null && targetFurnitureEntity.getBehaviourComponent() instanceof InnoculationLogBehaviour ||
-										targetFurnitureEntity != null && targetFurnitureEntity.getBehaviourComponent() instanceof ProductionImportFurnitureBehaviour ||
-										targetFurnitureEntity != null && targetFurnitureEntity.getBehaviourComponent() instanceof TradingExportFurnitureBehaviour ||
-										targetFurnitureEntity != null && targetFurnitureEntity.getBehaviourComponent() instanceof TradingImportFurnitureBehaviour
+										targetFurnitureEntity.getBehaviourComponent() instanceof CollectItemFurnitureBehaviour ||
+										targetFurnitureEntity.getBehaviourComponent() instanceof InnoculationLogBehaviour ||
+										targetFurnitureEntity.getBehaviourComponent() instanceof ProductionImportFurnitureBehaviour ||
+										targetFurnitureEntity.getBehaviourComponent() instanceof TradingExportFurnitureBehaviour ||
+										targetFurnitureEntity.getBehaviourComponent() instanceof TradingImportFurnitureBehaviour
 								) {
 									// Do nothing, CollectItemFurnitureBehaviour will deal with cancelled allocations, eventually, might want to improve this
 								} else {

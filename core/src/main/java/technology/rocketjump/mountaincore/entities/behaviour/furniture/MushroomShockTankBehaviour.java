@@ -58,6 +58,9 @@ public class MushroomShockTankBehaviour extends FillLiquidContainerBehaviour imp
 	public void init(Entity parentEntity, MessageDispatcher messageDispatcher, GameContext gameContext) {
 		super.init(parentEntity, messageDispatcher, gameContext);
 		TIME_TO_SHOCK_MUSHROOM_LOG = gameContext.getConstantsRepo().getSettlementConstants().getMushroomShockTimeHours();
+		// One bundle to a place. Left to merge, arrivals pile into a single slot and restart that
+		// stack's clock each time, which is the opposite of timing each one from when it went in
+		parentEntity.getOrCreateComponent(InventoryComponent.class).setNoMerging(true);
 	}
 
 	@Override
@@ -74,9 +77,6 @@ public class MushroomShockTankBehaviour extends FillLiquidContainerBehaviour imp
 
 		LiquidContainerComponent liquidContainerComponent = parentEntity.getComponent(LiquidContainerComponent.class);
 		InventoryComponent inventoryComponent = parentEntity.getOrCreateComponent(InventoryComponent.class);
-		// One bundle to a place. Left to merge, arrivals pile into a single slot and restart that
-		// stack's clock each time, which is the opposite of timing each one from when it went in
-		inventoryComponent.setNoMerging(true);
 		haulingJobs.removeIf(job -> job.getJobState().equals(JobState.REMOVED));
 
 		// Every item soaks on its own clock, taken from when it went in, so each one is dealt with
@@ -309,6 +309,14 @@ public class MushroomShockTankBehaviour extends FillLiquidContainerBehaviour imp
 
 	public List<Job> getHaulingJobs() {
 		return haulingJobs;
+	}
+
+	/**
+	 * A cancelled delivery has to give its place back, as a place in here counts from the moment a
+	 * bundle is sent for rather than from when it arrives.
+	 */
+	public void allocationCancelled(HaulingAllocation allocation) {
+		haulingJobs.removeIf(job -> allocation.equals(job.getHaulingAllocation()));
 	}
 
 	@Override

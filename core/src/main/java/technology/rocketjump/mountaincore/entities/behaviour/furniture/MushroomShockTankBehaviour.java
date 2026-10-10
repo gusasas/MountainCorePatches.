@@ -74,6 +74,9 @@ public class MushroomShockTankBehaviour extends FillLiquidContainerBehaviour imp
 
 		LiquidContainerComponent liquidContainerComponent = parentEntity.getComponent(LiquidContainerComponent.class);
 		InventoryComponent inventoryComponent = parentEntity.getOrCreateComponent(InventoryComponent.class);
+		// One bundle to a place. Left to merge, arrivals pile into a single slot and restart that
+		// stack's clock each time, which is the opposite of timing each one from when it went in
+		inventoryComponent.setNoMerging(true);
 		haulingJobs.removeIf(job -> job.getJobState().equals(JobState.REMOVED));
 
 		// Every item soaks on its own clock, taken from when it went in, so each one is dealt with
@@ -131,11 +134,29 @@ public class MushroomShockTankBehaviour extends FillLiquidContainerBehaviour imp
 		}
 	}
 
+	/**
+	 * Counted in bundles rather than in slots, so a stack left over from an older save is honoured
+	 * for what it holds instead of passing for one.
+	 */
 	private int placesTaken(InventoryComponent inventoryComponent) {
-		return inventoryComponent.getInventoryEntries().size() + (int) haulingJobs.stream()
-				.filter(job -> job.getHaulingAllocation() != null)
-				.filter(job -> parentEntity.getId() == (job.getHaulingAllocation().getTargetId() == null ? -1L : job.getHaulingAllocation().getTargetId()))
-				.count();
+		int taken = 0;
+		for (InventoryComponent.InventoryEntry entry : inventoryComponent.getInventoryEntries()) {
+			taken += quantityOf(entry.entity);
+		}
+		for (Job job : haulingJobs) {
+			HaulingAllocation allocation = job.getHaulingAllocation();
+			if (allocation != null && allocation.getTargetId() != null && parentEntity.getId() == allocation.getTargetId()) {
+				taken += allocation.getItemAllocation() == null ? 1 : Math.max(1, allocation.getItemAllocation().getAllocationAmount());
+			}
+		}
+		return taken;
+	}
+
+	private int quantityOf(Entity item) {
+		if (item.getPhysicalEntityComponent().getAttributes() instanceof ItemEntityAttributes attributes) {
+			return Math.max(1, attributes.getQuantity());
+		}
+		return 1;
 	}
 
 	private boolean alreadyBeingCollected(InventoryComponent.InventoryEntry entry) {

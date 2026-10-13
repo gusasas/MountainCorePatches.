@@ -36,6 +36,13 @@ public class CollectItemsBehaviourTag extends Tag {
 			return;
 		}
 
+		if (entity.getBehaviourComponent() instanceof CollectItemFurnitureBehaviour alreadyCollecting
+				&& CollectItemBehaviourArg.PREPARED_FOOD.equals(CollectItemBehaviourArg.valueOf(args.get(0)))) {
+			// A table built before this setting existed keeps the one saved with it, and the block
+			// below leaves it alone, so hand it over here
+			alreadyCollecting.setIncludeFromFurniture(true);
+		}
+
 		if (!entity.getBehaviourComponent().getClass().equals(CollectItemFurnitureBehaviour.class)) {
 			// Only switch behaviour if already different
 			CollectItemFurnitureBehaviour newBehaviour = new CollectItemFurnitureBehaviour();
@@ -58,6 +65,9 @@ public class CollectItemsBehaviourTag extends Tag {
 					newBehaviour.setItemsToCollect(new ArrayList<>(cookingIngredients));
 					break;
 				case PREPARED_FOOD:
+					// Bread tidied into a chest is still bread. Only recipe outputs are collected here,
+					// and no recipe takes one as an ingredient, so nothing can tug it back the other way
+					newBehaviour.setIncludeFromFurniture(true);
 					Set<ItemTypeWithMaterial> itemsToCollect = new HashSet<>();
 					for (CookingRecipe cookingRecipe : tagProcessingUtils.cookingRecipeDictionary.getAll()) {
 						if (cookingRecipe.getOutputItemType() != null & cookingRecipe.getOutputMaterial() != null) {

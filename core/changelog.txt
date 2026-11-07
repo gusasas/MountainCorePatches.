@@ -1,3 +1,87 @@
+Community bugfix pack v1.1.2 - 7th November 2026
+
+IMPORTANT FOR EXISTING COLONIES: deconstruct and rebuild your serving table once after
+updating. Serving tables could not take prepared food out of a chest, which could starve a
+colony sitting on plenty of bread. The fix applies to newly built tables, so an existing
+one needs rebuilding to pick it up. Nothing else in this pack needs any action from you.
+
+- Serving tables now take prepared food out of chests, instead of only seeing what is lying
+  on the floor. A colony that stored its bread tidily could starve beside it
+- Thirsty settlers now walk to the nearest water they can actually reach. Sources were ranked
+  by the average position of the whole zone, so a river crossing the map could outrank a
+  cistern in the next room, and the tile to drink from was then picked at random anywhere
+  along it
+- A training dummy smashed to pieces is no longer handed back out after loading a game, so
+  soldiers stop training against the wreck. The same held for any destroyed furniture, such
+  as a burnt bed or a broken grave
+- The retting tank and the mushroom shock tank now hold two items instead of one, and the
+  panel draws two slots instead of padding the row out to eight. Each item is timed from
+  when it went in, so one bundle on its own still soaks and still finishes rather than
+  waiting for a companion that never arrives
+- Both tanks now fetch their input out of a chest, as every other piece of furniture does
+- Carriers no longer abandon a delivery because the furniture it was bound for sits across
+  more than one tile
+- The tanks are now told when a delivery to them is cancelled, so a cancelled load no longer
+  keeps its place and shuts the tank out of asking for more
+- Fixed the French, Italian, Portuguese, Turkish and Swedish progress text on the retting
+  tank, which talked about shocking a mushroom log
+- Ordinary stacking of construction materials is no longer reported as an error in the log
+
+Community bugfix pack v1.1.1 - 7th October 2026
+
+- The bakery starts again after flour is left on the worktop
+- Builders no longer wall themselves in behind their own work
+- A settler shut in behind a wall can now find their way back out
+- A freed settler drops the route they were walking before being moved
+- Put back the missing space between an item's count and its name
+- Reverted a 1.1 change that freed a crafting station too eagerly: it stopped every workshop
+  moving its finished goods to the export pallet
+
+Community bugfix pack v1.1 - 4th October 2026
+
+- Stop reachable jobs starving behind an inaccessible backlog
+- Stop every build from throwing away 18 languages
+- Let the chest hold anything, with six slots
+- Allow chests to be built in stockpile rooms
+- Let settlers drop what they are doing to eat, drink and sleep
+- Match the stockpile a chest sits in, and allow chests in kitchens and bakeries
+- Release liquid allocations of every type when cancelling
+- Keep moving entities on the map
+- Stop liquid evaporating every time a game is loaded
+- Check what the liquid in a pot actually is before cooking with it
+- Release the liquid allocation when a job assignment is cancelled
+- Accept any workspace when placing an item into furniture
+- Warn about every settler who cannot find a drink, not just the first
+- Let a dying settler put survival before the item in their hands
+- Wake a settler who is starving while asleep
+- Let a settler drink from their own tankard wherever they are standing
+- Stop pathfinding throwing away so much garbage per tile
+- Cover tile navigability around plants
+- Stop arriving traders searching the same tiles a thousand times over
+- Let a starving settler put down what they are carrying and go eat
+- Stop settlers circling a spot they cannot reach
+- Stop settlers dumping on the floor next to the empty chest they are stood by
+- Prefer a chest, then stockpile floor, and only then the ground
+- Stop a corpse booked into a chest taking the game down
+- Put things away rather than shuffling them around the fields
+- Stop dumped items landing back on the fields they were cleared from
+- Stop an unarmed swing taking the game down mid-fight
+- Count what a chest is holding in stacks, not in deliveries
+- Stop settlers circling the spot they are walking to
+- Give back stockpile tiles reserved for things that never came
+- Look again for the sprite of an item that came back from a save without one
+- Let a settler drink before it tidies away what is in its pockets
+- Check every item type's art covers the stacks it is allowed to form
+- Hold a chest to the number of stacks it says it holds
+- Let a stockpile room be told not to use its floor
+- Use the panel own checkbox style for the floor storage tick
+- Let a hungry settler see the food that is in the chests
+- Stop a construction swallowing anything that shares a material with it
+- Build a chest over a stack and let it swallow what was there
+- Keep a trade depot chest for coins, as it was before chests held anything
+- Stop invaders bedding down in the middle of the settlement they came to raid
+- Show a chest as many slots as it actually fills
+
 Early Access 2.0.0
 
 - Added a save file migration system so that saved games can be reused between compatibility-breaking changes to the game

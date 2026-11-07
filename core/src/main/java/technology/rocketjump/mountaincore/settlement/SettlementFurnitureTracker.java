@@ -50,6 +50,11 @@ public class SettlementFurnitureTracker implements GameContextAware, Telegraph {
 		if (attributes instanceof DoorwayEntityAttributes) {
 			return;
 		}
+		if (attributes.isDestroyed()) {
+			// Broken furniture is taken out of here when it breaks, and loading a game must not put
+			// it back: a smashed training dummy would be handed out for training all over again
+			return;
+		}
 		FurnitureType furnitureType = attributes.getFurnitureType();
 
 		byFurnitureType.computeIfAbsent(furnitureType, (f) -> new HashMap<>()).put(entity.getId(), entity);

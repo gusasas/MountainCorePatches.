@@ -146,7 +146,7 @@ public class LiquidMessageHandler implements GameContextAware, Telegraph {
 
 		Job transferLiquidJob = new Job(transferLiquidJobType);
 		if (nearestApplicableZone.isPresent()) {
-			ZoneTile zoneTile = pickTileInZone(nearestApplicableZone.get(), gameContext.getRandom(), areaMap);
+			ZoneTile zoneTile = nearestTileInZone(nearestApplicableZone.get(), message.requesterPosition, gameContext.getRandom(), areaMap);
 			if (zoneTile != null) {
 				MapTile accessTile = areaMap.getTile(zoneTile.getAccessLocation());
 
@@ -269,7 +269,7 @@ public class LiquidMessageHandler implements GameContextAware, Telegraph {
 
 		Optional<LiquidAllocation> foundAllocation = Optional.empty();
 		for (Zone zone : nearestApplicableZones) {
-			ZoneTile zoneTile = pickTileInZone(zone, gameContext.getRandom(), gameContext.getAreaMap());
+			ZoneTile zoneTile = nearestTileInZone(zone, requesterPosition, gameContext.getRandom(), gameContext.getAreaMap());
 			if (zoneTile != null) {
 				MapTile targetTile = gameContext.getAreaMap().getTile(zoneTile.getTargetTile());
 
@@ -377,14 +377,49 @@ public class LiquidMessageHandler implements GameContextAware, Telegraph {
 						return true; // Include all non-constructed
 					}
 				})
-				.sorted(
-						(o1, o2) -> {
-							// Using proper square-root calculated distance as dst2 seems to not be a good pick
-							float distanceTo1 = o1.getAvgWorldPosition().dst(requesterPosition) * 1000;
-							float distanceTo2 = o2.getAvgWorldPosition().dst(requesterPosition) * 1000;
-							return Math.round(distanceTo1 - distanceTo2);
-						}
-				);
+				// Ranked by the nearest tile that can actually be drunk from. A river's average position
+				// can sit closer than a cistern while every bank of it is further away
+				.sorted(Comparator.comparingDouble(zone -> distanceToNearestTile(zone, requesterPosition, gameContext.getAreaMap())));
+	}
+
+	/**
+	 * The tile to walk to when fetching from this zone. Shuffled between the equally near ones so a
+	 * crowd does not converge on a single square.
+	 */
+	public static ZoneTile nearestTileInZone(Zone zone, Vector2 position, Random random, TiledMap areaMap) {
+		List<ZoneTile> nearest = new ArrayList<>();
+		float nearestDistance = Float.MAX_VALUE;
+		for (Iterator<ZoneTile> iter = zone.iterator(); iter.hasNext(); ) {
+			ZoneTile zoneTile = iter.next();
+			MapTile accessibleTile = areaMap.getTile(zoneTile.getAccessLocation());
+			if (accessibleTile == null || !accessibleTile.isNavigable(null)) {
+				continue;
+			}
+			float distance = VectorUtils.toVector(zoneTile.getAccessLocation()).dst(position);
+			if (distance < nearestDistance - 0.01f) {
+				nearestDistance = distance;
+				nearest.clear();
+				nearest.add(zoneTile);
+			} else if (distance < nearestDistance + 0.01f) {
+				nearest.add(zoneTile);
+			}
+		}
+		if (nearest.isEmpty()) {
+			return null;
+		}
+		return nearest.get(random.nextInt(nearest.size()));
+	}
+
+	private static float distanceToNearestTile(Zone zone, Vector2 position, TiledMap areaMap) {
+		float nearestDistance = Float.MAX_VALUE;
+		for (Iterator<ZoneTile> iter = zone.iterator(); iter.hasNext(); ) {
+			ZoneTile zoneTile = iter.next();
+			MapTile accessibleTile = areaMap.getTile(zoneTile.getAccessLocation());
+			if (accessibleTile != null && accessibleTile.isNavigable(null)) {
+				nearestDistance = Math.min(nearestDistance, VectorUtils.toVector(zoneTile.getAccessLocation()).dst(position));
+			}
+		}
+		return nearestDistance;
 	}
 
 	public static ZoneTile pickTileInZone(Zone zone, Random random, TiledMap areaMap) {
